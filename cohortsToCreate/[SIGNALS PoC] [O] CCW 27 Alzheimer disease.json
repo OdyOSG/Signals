@@ -2,15 +2,15 @@
   "ConceptSets": [
     {
       "id": 0,
-      "name": "T2D",
+      "name": "27 CCW Alzheimers disease",
       "expression": {
         "items": [
           {
             "concept": {
               "CONCEPT_CLASS_ID": "Clinical Finding",
-              "CONCEPT_CODE": "44054006",
-              "CONCEPT_ID": 201826,
-              "CONCEPT_NAME": "Type 2 diabetes mellitus",
+              "CONCEPT_CODE": "26929004",
+              "CONCEPT_ID": 378419,
+              "CONCEPT_NAME": "Alzheimer's disease",
               "DOMAIN_ID": "Condition",
               "INVALID_REASON": "V",
               "INVALID_REASON_CAPTION": "Valid",
@@ -28,11 +28,7 @@
     "CriteriaList": [
       {
         "ConditionOccurrence": {
-          "CodesetId": 0,
-          "Age": {
-            "Value": 45,
-            "Op": "gte"
-          }
+          "CodesetId": 0
         }
       }
     ],
