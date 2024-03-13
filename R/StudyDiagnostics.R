@@ -241,31 +241,31 @@ develop <- function() {
 
   library(dplyr)
 
-  legendT2dmConnectionDetails <- DatabaseConnector::createConnectionDetails(
+  signalsConnectionDetails <- DatabaseConnector::createConnectionDetails(
     dbms = "postgresql",
-    server = paste(keyring::key_get("legendt2dmServer"),
-                   keyring::key_get("legendt2dmDatabase"),
+    server = paste(keyring::key_get("signalsServer"),
+                   keyring::key_get("signalsDatabase"),
                    sep = "/"),
-    user = keyring::key_get("legendt2dmUser"),
-    password = keyring::key_get("legendt2dmPassword"))
+    user = keyring::key_get("signalsUser"),
+    password = keyring::key_get("signalsPassword"))
 
-  connection <- DatabaseConnector::connect(legendT2dmConnectionDetails)
+  connection <- DatabaseConnector::connect(signalsConnectionDetails)
 
 #   balanceTable <- getCovariateBalance(connection = connection,
-#                                       resultsDatabaseSchema = "legendt2dm_class_results",
+#                                       resultsDatabaseSchema = "signals_class_results",
 #                                       targetId = 101100000,
 #                                       comparatorId = 201100000,
 #                                       analysisId = 5,
 #                                       databaseId = "CCAE")
 
 
-  tcs <- read.csv(system.file("settings", "classTcosOfInterest.csv", package = "LegendT2dm")) %>% dplyr::select(targetId, comparatorId)
-  outcomeIds <- read.csv(system.file("settings", "OutcomesOfInterest.csv", package = "LegendT2dm")) %>% dplyr::select(cohortId) %>% pull(cohortId)
+  tcs <- read.csv(system.file("settings", "classTcosOfInterest.csv", package = "Signals")) %>% dplyr::select(targetId, comparatorId)
+  outcomeIds <- read.csv(system.file("settings", "OutcomesOfInterest.csv", package = "Signals")) %>% dplyr::select(cohortId) %>% pull(cohortId)
 
   databaseIds <- c("OptumEHR", "MDCR", "OptumDod", "UK_IMRD", "MDCD", "CCAE", "US_Open_Claims", "SIDIAP")
 
   diagnostics <- makeDiagnosticsTable(connection = connection,
-                                      resultsDatabaseSchema = "legendt2dm_class_results",
+                                      resultsDatabaseSchema = "signals_class_results",
                                       tcs = tcs,
                                       outcomeIds = outcomeIds,
                                       analysisIds = c(5,6),

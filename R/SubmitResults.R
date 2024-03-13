@@ -39,7 +39,7 @@ uploadPhenotypeResults <- function(cohorts, outputFolder, privateKeyFileName, us
   }
   OhdsiSharing::sftpUploadFile(privateKeyFileName = privateKeyFileName,
                                userName = userName,
-                               remoteFolder = paste0("LegendT2dm_", cohorts, "_diagnostics"),
+                               remoteFolder = paste0("Signals_", cohorts, "_diagnostics"),
                                fileName = fileName)
   ParallelLogger::logInfo("Finished uploading")
 }
@@ -70,7 +70,7 @@ uploadPsAssessmentResults <- function(cohorts, outputFolder, privateKeyFileName,
   }
   OhdsiSharing::sftpUploadFile(privateKeyFileName = privateKeyFileName,
                                userName = userName,
-                               remoteFolder = paste0("LegendT2dm_", cohorts, "_ps"),
+                               remoteFolder = paste0("Signals_", cohorts, "_ps"),
                                fileName = fileName)
   ParallelLogger::logInfo("Finished uploading")
 }
@@ -101,7 +101,7 @@ uploadStudyResults <- function(cohorts, outputFolder, privateKeyFileName, userNa
   }
   OhdsiSharing::sftpUploadFile(privateKeyFileName = privateKeyFileName,
                                userName = userName,
-                               remoteFolder = paste0("LegendT2dm_", cohorts, "_study"),
+                               remoteFolder = paste0("Signals_", cohorts, "_study"),
                                fileName = fileName)
   ParallelLogger::logInfo("Finished uploading")
 }
