@@ -1,0 +1,10 @@
+2024-03-13 15:27:21	[Main thread]	INFO	Signals	assessPhenotypes	Starting assessPhenotypes() for LEGEND-T2DM class-vs-class studies
+2024-03-13 15:27:21	[Main thread]	INFO	Signals	createExposureCohorts	Creating class exposure cohorts
+2024-03-13 15:27:21	[Main thread]	INFO	Signals	createExposureCohorts	- Populating table legendt2dm_study_class_cohort
+2024-03-13 15:27:21	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2024-03-13 15:27:22	[Main thread]	INFO	CohortDiagnostics	createCohortTable	Creating cohort table
+2024-03-13 15:27:23	[Main thread]	DEBUG	CohortDiagnostics	createCohortTable	Created table jmt_signals.dbo.legendt2dm_study_class_cohort
+2024-03-13 15:27:23	[Main thread]	DEBUG	CohortDiagnostics	getCohortsJsonAndSqlFromPackage	Executing on cohorts specified in package - Signals
+2024-03-13 15:27:26	[Main thread]	INFO	CohortDiagnostics	getCohortsJsonAndSql	Number of cohorts 176
+2024-03-13 15:27:26	[Main thread]	INFO	CohortDiagnostics	createTempInclusionStatsTables	Creating temporary inclusion statistics tables
+2024-03-13 15:27:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.837 secs
