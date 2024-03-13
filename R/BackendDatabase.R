@@ -1,6 +1,6 @@
 # Copyright 2021 Observational Health Data Sciences and Informatics
 #
-# This file is part of LegendT2dm
+# This file is part of Signals
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@
 #' @export
 grantPermissionOnServer <- function(connectionDetails,
                                     schema,
-                                    user = "legendt2dm_readonly") {
+                                    user = "signals_readonly") {
   connection <- DatabaseConnector::connect(connectionDetails)
 
   sql <- paste0("grant usage on schema ", schema, " to ", user, ";")
@@ -110,7 +110,7 @@ createDataModelOnServer <- function(connection = NULL,
                                     connectionDetails = NULL,
                                     schema,
                                     sqlFileName,
-                                    package = "LegendT2dm") {
+                                    package = "Signals") {
   if (is.null(connection)) {
     if (!is.null(connectionDetails)) {
       connection <- DatabaseConnector::connect(connectionDetails)

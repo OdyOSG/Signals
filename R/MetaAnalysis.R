@@ -1,6 +1,6 @@
 # Copyright 2023 Observational Health Data Sciences and Informatics
 #
-# This file is part of Legend-T2DM
+# This file is part of Signals
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -72,7 +72,7 @@ doMetaAnalysis <- function(connectionDetails,
     indicationId = c(indicationId),
     databaseId = c(maName),
     dateTime = c(Sys.time()),
-    packageVersion = packageVersion("LegendT2dm"))
+    packageVersion = packageVersion("Signals"))
 
   colnames(dateTime) <- SqlRender::camelCaseToSnakeCase(colnames(dateTime))
   fileName <- file.path(maExportFolder, "results_date_time.csv")

@@ -1,6 +1,6 @@
 # Copyright 2021 Observational Health Data Sciences and Informatics
 #
-# This file is part of LegendT2dm
+# This file is part of Signals
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -48,7 +48,7 @@ fetchAllDataFromServer <- function(connectionDetails,
                                    cohortDatabaseSchema,
                                    oracleTempSchema,
                                    indicationId = "class",
-                                   tablePrefix = "legendt2dm",
+                                   tablePrefix = "signals",
                                    useSample = FALSE,
                                    forceNewObjects = FALSE,
                                    studyEndDate = "",
@@ -102,7 +102,7 @@ fetchAllDataFromServer <- function(connectionDetails,
 
     # Lump persons of interest into one table -----------------------------------------------------
     sql <- SqlRender::loadRenderTranslateSql("UnionExposureCohorts.sql",
-                                             "LegendT2dm",
+                                             "Signals",
                                              dbms = connectionDetails$dbms,
                                              oracleTempSchema = oracleTempSchema,
                                              cohort_database_schema = cohortDatabaseSchema,
@@ -121,7 +121,7 @@ fetchAllDataFromServer <- function(connectionDetails,
     DatabaseConnector::executeSql(conn, sql, progressBar = FALSE, reportOverallTime = FALSE)
 
     # Construct covariates ---------------------------------------------------------------------
-    pathToCsv <- system.file("settings", "Indications.csv", package = "LegendT2dm")
+    pathToCsv <- system.file("settings", "Indications.csv", package = "Signals")
     indications <- read.csv(pathToCsv)
     filterConceptIds <- as.character(indications$filterConceptIds[indications$indicationId == indicationId])
     filterConceptIds <- as.numeric(strsplit(filterConceptIds, split = ";")[[1]])
@@ -133,7 +133,7 @@ fetchAllDataFromServer <- function(connectionDetails,
     # add continuous age to covariates
     defaultCovariateSettings$DemographicsAge = TRUE
 
-    # Add subgroupCovariateSettings here (see Legend package )
+    # Add subgroupCovariateSettings here (see Signals package )
     covariateSettings <- list(defaultCovariateSettings)
 
     if (!file.exists(covariatesFolder) || forceNewObjects) {
@@ -181,7 +181,7 @@ fetchAllDataFromServer <- function(connectionDetails,
             andromeda <- Andromeda::andromeda()
 
             cohortSql <- SqlRender::loadRenderTranslateSql("GetCohorts.sql",
-                                                           packageName = "LegendT2dm",
+                                                           packageName = "Signals",
                                                            dbms = connectionDetails$dbms,
                                                            tempEmulationSchema = oracleTempSchema,
                                                            cdm_version = 5,
@@ -197,7 +197,7 @@ fetchAllDataFromServer <- function(connectionDetails,
             # fileName <- file.path(cohortsFolder, paste0("outcomes_t", targetId, "_c", comparatorId, ".rds"))
             outcomeCohortTable <- paste(tablePrefix, "outcome", "cohort", sep = "_")
             outcomeSql <- SqlRender::loadRenderTranslateSql("GetOutcomes.sql",
-                                                            packageName = "LegendT2dm",
+                                                            packageName = "Signals",
                                                             dbms = connectionDetails$dbms,
                                                             tempEmulationSchema = oracleTempSchema,
                                                             cdm_database_schema = cdmDatabaseSchema,
@@ -247,7 +247,7 @@ fetchAllDataFromServer <- function(connectionDetails,
     # if (!file.exists(outcomesFolder) || forceNewObjects) {
     #     outcomeCohortTable <- paste(tablePrefix, "outcome", "cohort", sep = "_")
     #     sql <- SqlRender::loadRenderTranslateSql("GetOutcomes.sql",
-    #                                              "LegendT2dm",
+    #                                              "Signals",
     #                                              dbms = connectionDetails$dbms,
     #                                              oracleTempSchema = oracleTempSchema,
     #                                              cdm_database_schema = cdmDatabaseSchema,

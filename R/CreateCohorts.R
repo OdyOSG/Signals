@@ -9,7 +9,7 @@
 
   # Create study cohort table structure:
   sql <- SqlRender::loadRenderTranslateSql(sqlFilename = "CreateCohortTable.sql",
-                                           packageName = "LegendT2dm",
+                                           packageName = "Signals",
                                            dbms = attr(connection, "dbms"),
                                            oracleTempSchema = oracleTempSchema,
                                            cohort_database_schema = cohortDatabaseSchema,
@@ -17,13 +17,13 @@
   DatabaseConnector::executeSql(connection, sql, progressBar = FALSE, reportOverallTime = FALSE)
 
   # # Instantiate cohorts:
-  # pathToCsv <- system.file("settings", "OutcomesOfInterest.csv", package = "Legend")
+  # pathToCsv <- system.file("settings", "OutcomesOfInterest.csv", package = "Signals")
   # cohortsToCreate <- read.csv(pathToCsv)
   # cohortsToCreate <- cohortsToCreate[cohortsToCreate$indicationId == indicationId, ]
   # for (i in 1:nrow(cohortsToCreate)) {
   #   writeLines(paste("Creating cohort:", cohortsToCreate$name[i]))
   #   sql <- SqlRender::loadRenderTranslateSql(sqlFilename = paste0(cohortsToCreate$name[i], ".sql"),
-  #                                            packageName = "Legend",
+  #                                            packageName = "Signals",
   #                                            dbms = attr(connection, "dbms"),
   #                                            oracleTempSchema = oracleTempSchema,
   #                                            cdm_database_schema = cdmDatabaseSchema,

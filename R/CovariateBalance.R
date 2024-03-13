@@ -1,6 +1,6 @@
 # Copyright 2021 Observational Health Data Sciences and Informatics
 #
-# This file is part of LegendT2dm
+# This file is part of SIgnals
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@
 #'                       can speed up the analyses.
 #'
 #' @export
-computeCovariateBalance <- function(indicationId = "legendt2dm",
+computeCovariateBalance <- function(indicationId = "SIgnals",
                                     outputFolder,
                                     maxCores) {
 
@@ -45,7 +45,7 @@ computeCovariateBalance <- function(indicationId = "legendt2dm",
     # Using ITT study population, stratification, and matching arguments:
     cmAnalysisListFile <- system.file("settings",
                                       "ittCmAnalysisList.json",
-                                      package = "LegendT2dm")
+                                      package = "SIgnals")
     cmAnalysisList <- CohortMethod::loadCmAnalysisList(cmAnalysisListFile)
 
     matchingId <- 2
@@ -57,7 +57,7 @@ computeCovariateBalance <- function(indicationId = "legendt2dm",
     stratifyByPsArgs <- cmAnalysisList[[stratificationId]]$stratifyByPsArgs
 
     # Load restricted set of covariates to use for per-outcome balance:
-    csvFile <- system.file("settings", "Table1Specs.csv", package = "LegendT2dm")
+    csvFile <- system.file("settings", "Table1Specs.csv", package = "SIgnals")
     table1Specs <- read.csv(csvFile)
     analysisIds <- table1Specs$analysisId[table1Specs$covariateIds == ""]
     covariateIds <- table1Specs$covariateIds[table1Specs$covariateIds != ""]
@@ -70,7 +70,7 @@ computeCovariateBalance <- function(indicationId = "legendt2dm",
     pathToRds <- file.path(outputFolder, indicationId, "cmOutput", "outcomeModelReference.rds")
     outcomeModelReference <- readRDS(pathToRds)
 
-    pathToCsv <- system.file("settings", "OutcomesOfInterest.csv", package = "LegendT2dm")
+    pathToCsv <- system.file("settings", "OutcomesOfInterest.csv", package = "SIgnals")
     outcomesOfInterest <- read.csv(pathToCsv, stringsAsFactors = FALSE)
     outcomeModelReference <- outcomeModelReference[outcomeModelReference$outcomeId %in% outcomesOfInterest$cohortId, ]
 

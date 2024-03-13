@@ -1,6 +1,6 @@
 # Copyright 2021 Observational Health Data Sciences and Informatics
 #
-# This file is part of LegendT2dm
+# This file is part of Signals
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -78,7 +78,7 @@ execute <- function(connectionDetails,
                     cohortDatabaseSchema,
                     outputFolder,
                     indicationId = "class",
-                    tablePrefix = "legendt2dm",
+                    tablePrefix = "signals",
                     databaseId = "Unknown",
                     databaseName = "Unknown",
                     databaseDescription = "Unknown",
@@ -234,7 +234,7 @@ execute <- function(connectionDetails,
 writePairedCounts <- function(outputFolder, indicationId) {
 
     tcos <- readr::read_csv(file = system.file("settings", paste0(indicationId, "TcosOfInterest.csv"),
-                                               package = "LegendT2dm"),
+                                               package = "Signals"),
                             col_types = readr::cols())
     counts <- readr::read_csv(file = file.path(outputFolder, indicationId, "cohortCounts.csv"),
                               col_types = readr::cols()) %>%

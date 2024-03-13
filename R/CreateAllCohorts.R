@@ -32,7 +32,7 @@ createExposureCohorts <- function(connectionDetails,
                              cdmDatabaseSchema,
                              vocabularyDatabaseSchema = cdmDatabaseSchema,
                              cohortDatabaseSchema,
-                             tablePrefix = "legendt2dm",
+                             tablePrefix = "signals",
                              indicationId = "class",
                              oracleTempSchema,
                              outputFolder,
@@ -66,7 +66,7 @@ createExposureCohorts <- function(connectionDetails,
                                           cohortDatabaseSchema = cohortDatabaseSchema,
                                           oracleTempSchema = oracleTempSchema,
                                           cohortTable = cohortTable,
-                                          packageName = "LegendT2dm",
+                                          packageName = "Signals",
                                           createCohortTable = TRUE,
                                           cohortToCreateFile = paste0("settings/", indicationId, "CohortsToCreate.csv"),
                                           generateInclusionStats = TRUE,
@@ -74,7 +74,7 @@ createExposureCohorts <- function(connectionDetails,
 
   ParallelLogger::logInfo("Counting ", indicationId, " exposure cohorts")
   sql <- SqlRender::loadRenderTranslateSql("GetCounts.sql",
-                                           "LegendT2dm",
+                                           "Signals",
                                            dbms = connectionDetails$dbms,
                                            oracleTempSchema = oracleTempSchema,
                                            cdm_database_schema = cdmDatabaseSchema,
@@ -120,7 +120,7 @@ createOutcomeCohorts <- function(connectionDetails,
                                cdmDatabaseSchema,
                                vocabularyDatabaseSchema = cdmDatabaseSchema,
                                cohortDatabaseSchema,
-                               tablePrefix = "legendt2dm",
+                               tablePrefix = "Signals",
                                oracleTempSchema,
                                outputFolder,
                                databaseId,
@@ -150,7 +150,7 @@ createOutcomeCohorts <- function(connectionDetails,
                                           cohortDatabaseSchema = cohortDatabaseSchema,
                                           oracleTempSchema = oracleTempSchema,
                                           cohortTable = cohortTable,
-                                          packageName = "LegendT2dm",
+                                          packageName = "Signals",
                                           cohortToCreateFile = "settings/OutcomesOfInterest.csv",
                                           generateInclusionStats = FALSE,
                                           createCohortTable = TRUE,
@@ -160,14 +160,14 @@ createOutcomeCohorts <- function(connectionDetails,
   ParallelLogger::logInfo("Creating negative control outcome cohorts")
   # negativeControls <- loadNegativeControls()
   # sql <- SqlRender::loadRenderTranslateSql("NegativeControlOutcomes.sql",
-  #                                          "LegendT2dm",
+  #                                          "Signals",
   #                                          dbms = connectionDetails$dbms,
   #                                          cdm_database_schema = cdmDatabaseSchema,
   #                                          cohort_database_schema = cohortDatabaseSchema,
   #                                          cohort_table = cohortTable,
   #                                          outcome_ids = unique(negativeControls$conceptId))
   # DatabaseConnector::executeSql(connection, sql)
-  pathToCsv <- system.file("settings", "NegativeControls.csv", package = "LegendT2dm")
+  pathToCsv <- system.file("settings", "NegativeControls.csv", package = "Signals")
   negativeControls <- read.csv(pathToCsv)
   data <- negativeControls[, c("conceptId", "cohortId")]
   colnames(data) <- SqlRender::camelCaseToSnakeCase(colnames(data))
@@ -179,7 +179,7 @@ createOutcomeCohorts <- function(connectionDetails,
                                  tempTable = TRUE,
                                  oracleTempSchema = oracleTempSchema)
   sql <- SqlRender::loadRenderTranslateSql("NegativeControls.sql",
-                                           "LegendT2dm",
+                                           "Signals",
                                            dbms = connectionDetails$dbms,
                                            oracleTempSchema = oracleTempSchema,
                                            cdm_database_schema = cdmDatabaseSchema,
@@ -196,7 +196,7 @@ createOutcomeCohorts <- function(connectionDetails,
   # Count cohort sizes
   ParallelLogger::logInfo("Counting outcome cohorts")
   sql <- SqlRender::loadRenderTranslateSql("GetCounts.sql",
-                                           "LegendT2dm",
+                                           "Signals",
                                            dbms = connectionDetails$dbms,
                                            oracleTempSchema = oracleTempSchema,
                                            cdm_database_schema = cdmDatabaseSchema,
@@ -210,7 +210,7 @@ createOutcomeCohorts <- function(connectionDetails,
 }
 
 loadNegativeControls <- function() {
-  pathToCsv <- system.file("settings", "NegativeControls.csv", package = "LegendT2dm")
+  pathToCsv <- system.file("settings", "NegativeControls.csv", package = "Signals")
   negativeControls <- readr::read_csv(pathToCsv, col_types = readr::cols())
   return(negativeControls)
 }

@@ -20,7 +20,7 @@ createAnalysesDetails <- function(outputFolder,
 
   # TODO This is still code-duplicated with CustomCmDataObjectBuilding.R lines 122 - 129
   # TODO getDbCmDataArgs is currently only used in the unit-tests; fix
-  pathToCsv <- system.file("settings", "Indications.csv", package = "LegendT2dm")
+  pathToCsv <- system.file("settings", "Indications.csv", package = "Signals")
   indications <- read.csv(pathToCsv)
   filterConceptIds <- as.character(indications$filterConceptIds[indications$indicationId == "class"])
   filterConceptIds <- as.numeric(strsplit(filterConceptIds, split = ";")[[1]])

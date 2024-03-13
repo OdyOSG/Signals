@@ -1,6 +1,6 @@
 # Copyright 2020 Observational Health Data Sciences and Informatics
 #
-# This file is part of LegendT2dm
+# This file is part of Signals
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -27,7 +27,7 @@ runExposureCohortDiagnostics <- function(connectionDetails,
                                          databaseDescription,
                                          minCellCount) {
 
-  CohortDiagnostics::runCohortDiagnostics(packageName = "LegendT2dm",
+  CohortDiagnostics::runCohortDiagnostics(packageName = "Signals",
                                           cohortToCreateFile = paste0("settings/", indicationId, "CohortsToCreate.csv"),
                                           connectionDetails = connectionDetails,
                                           cdmDatabaseSchema = cdmDatabaseSchema,
@@ -64,7 +64,7 @@ runOutcomeCohortDiagnostics <- function(connectionDetails,
                                       databaseDescription,
                                       minCellCount) {
 
-  CohortDiagnostics::runCohortDiagnostics(packageName = "LegendT2dm",
+  CohortDiagnostics::runCohortDiagnostics(packageName = "Signals",
                                           cohortToCreateFile = "settings/OutcomesOfInterest.csv",
                                           connectionDetails = connectionDetails,
                                           cdmDatabaseSchema = cdmDatabaseSchema,

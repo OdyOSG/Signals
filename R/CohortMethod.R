@@ -1,6 +1,6 @@
 # Copyright 2021 Observational Health Data Sciences and Informatics
 #
-# This file is part of LegendT2dm
+# This file is part of Signals
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -36,10 +36,10 @@ runCohortMethod <- function(outputFolder, indicationId = "class", databaseId, ma
     indicationFolder <- file.path(outputFolder, indicationId)
     exposureSummary <- read.csv(file.path(indicationFolder,
                                           "pairedExposureSummaryFilteredBySize.csv"))
-    pathToCsv <- system.file("settings", "OutcomesOfInterest.csv", package = "LegendT2dm")
+    pathToCsv <- system.file("settings", "OutcomesOfInterest.csv", package = "Signals")
     hois <- read.csv(pathToCsv)
 
-    pathToCsv <- system.file("settings", "NegativeControls.csv", package = "LegendT2dm")
+    pathToCsv <- system.file("settings", "NegativeControls.csv", package = "Signals")
     negativeControls <- read.csv(pathToCsv)
 
     # First run: ITT
@@ -47,7 +47,7 @@ runCohortMethod <- function(outputFolder, indicationId = "class", databaseId, ma
         executeSingleCmRun(message = "ITT analyses",
                            folder = "Run_1",
                            exposureSummary = exposureSummary[isOt1(exposureSummary$targetId), ],
-                           cmAnalysisList = system.file("settings", "ittCmAnalysisList.json", package = "LegendT2dm"),
+                           cmAnalysisList = system.file("settings", "ittCmAnalysisList.json", package = "Signals"),
                            outcomeIds = unique(c(hois$cohortId, negativeControls$cohortId)),
                            outcomeIdsOfInterest = hois$cohortId,
                            indicationFolder = indicationFolder,
@@ -59,7 +59,7 @@ runCohortMethod <- function(outputFolder, indicationId = "class", databaseId, ma
         executeSingleCmRun(message = "OT1 analyses",
                            folder = "Run_2",
                            exposureSummary = exposureSummary[isOt1(exposureSummary$targetId), ],
-                           cmAnalysisList = system.file("settings", "ot1CmAnalysisList.json", package = "LegendT2dm"),
+                           cmAnalysisList = system.file("settings", "ot1CmAnalysisList.json", package = "Signals"),
                            outcomeIds = unique(c(hois$cohortId, negativeControls$cohortId)),
                            outcomeIdsOfInterest = hois$cohortId,
                            copyPsFileFolder = "Run_1",
@@ -72,7 +72,7 @@ runCohortMethod <- function(outputFolder, indicationId = "class", databaseId, ma
         executeSingleCmRun(message = "OT2 analyses",
                            folder = "Run_3",
                            exposureSummary = exposureSummary[!isOt1(exposureSummary$targetId), ],
-                           cmAnalysisList = system.file("settings", "ot2CmAnalysisList.json", package = "LegendT2dm"),
+                           cmAnalysisList = system.file("settings", "ot2CmAnalysisList.json", package = "Signals"),
                            outcomeIds = unique(c(hois$cohortId, negativeControls$cohortId)),
                            outcomeIdsOfInterest = hois$cohortId,
                            copyPsFileFolder = "Run_1",
@@ -88,7 +88,7 @@ runCohortMethod <- function(outputFolder, indicationId = "class", databaseId, ma
         executeSingleCmRun(message = "ITT-PO analyses",
                            folder = "Run_4",
                            exposureSummary = exposureSummary[isOt1(exposureSummary$targetId), ],
-                           cmAnalysisList = system.file("settings", "ittPoCmAnalysisList.json", package = "LegendT2dm"),
+                           cmAnalysisList = system.file("settings", "ittPoCmAnalysisList.json", package = "Signals"),
                            outcomeIds = unique(c(glycemicId, negativeControls$cohortId)),
                            outcomeIdsOfInterest = glycemicId,
                            copyPsFileFolder = "Run_1",
@@ -101,7 +101,7 @@ runCohortMethod <- function(outputFolder, indicationId = "class", databaseId, ma
         executeSingleCmRun(message = "OT1-PO analyses",
                            folder = "Run_5",
                            exposureSummary = exposureSummary[isOt1(exposureSummary$targetId), ],
-                           cmAnalysisList = system.file("settings", "ot1PoCmAnalysisList.json", package = "LegendT2dm"),
+                           cmAnalysisList = system.file("settings", "ot1PoCmAnalysisList.json", package = "Signals"),
                            outcomeIds = unique(c(glycemicId, negativeControls$cohortId)),
                            outcomeIdsOfInterest = glycemicId,
                            copyPsFileFolder = "Run_1",
@@ -114,7 +114,7 @@ runCohortMethod <- function(outputFolder, indicationId = "class", databaseId, ma
         executeSingleCmRun(message = "OT2-PO analyses",
                            folder = "Run_6",
                            exposureSummary = exposureSummary[!isOt1(exposureSummary$targetId), ],
-                           cmAnalysisList = system.file("settings", "ot2PoCmAnalysisList.json", package = "LegendT2dm"),
+                           cmAnalysisList = system.file("settings", "ot2PoCmAnalysisList.json", package = "Signals"),
                            outcomeIds = unique(c(glycemicId, negativeControls$cohortId)),
                            outcomeIdsOfInterest = glycemicId,
                            copyPsFileFolder = "Run_1",
@@ -200,7 +200,7 @@ makeOt2 <- Vectorize(
 
 getOutcomesOfInterest <- function(indicationId) {
     pathToCsv <- system.file("settings", "OutcomesOfInterest.csv",
-                             package = "LegendT2dm")
+                             package = "Signals")
     outcomesOfInterest <- read.csv(pathToCsv, stringsAsFactors = FALSE)
     return (outcomesOfInterest$cohortId)
 }
@@ -212,7 +212,7 @@ getAllControls <- function(indicationId, outputFolder) {
         allControls <- read.csv(allControlsFile)
     } else {
         # Include only negative controls
-        pathToCsv <- system.file("settings", "NegativeControls.csv", package = "LegendT2dm")
+        pathToCsv <- system.file("settings", "NegativeControls.csv", package = "Signals")
         allControls <- read.csv(pathToCsv)
         allControls$oldOutcomeId <- allControls$outcomeId
         allControls$targetEffectSize <- rep(1, nrow(allControls))

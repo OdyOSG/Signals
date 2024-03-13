@@ -1,6 +1,6 @@
 # Copyright 2021 Observational Health Data Sciences and Informatics
 #
-# This file is part of LegendT2dm
+# This file is part of Signals
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -123,7 +123,7 @@ swapColumnContents <- function(df, column1 = "targetId", column2 = "comparatorId
 # getAsymAnalysisIds <- function() {
 #     cmAnalysisListFile <- system.file("settings",
 #                                       sprintf("cmAnalysisListAsym%s.json", indicationId),
-#                                       package = "Legend")
+#                                       package = "Signals")
 #     cmAnalysisListAsym <- CohortMethod::loadCmAnalysisList(cmAnalysisListFile)
 #     analysisIds <- as.vector(unlist(ParallelLogger::selectFromList(cmAnalysisListAsym, "analysisId")))
 #     return(analysisIds)
@@ -168,7 +168,7 @@ enforceMinCellValue <- function(data, fieldName, minValues, silent = FALSE) {
 # exportIndication <- function(indicationId, outputFolder, exportFolder, databaseId) {
 #     ParallelLogger::logInfo("Exporting indication")
 #     ParallelLogger::logInfo("- indication table")
-#     pathToCsv <- system.file("settings", "Indications.csv", package = "LegendT2dm")
+#     pathToCsv <- system.file("settings", "Indications.csv", package = "Signals")
 #     indications <- read.csv(pathToCsv)
 #     indications$definition <- ""
 #     indications <- indications[indications$indicationId == indicationId, ]
@@ -188,7 +188,7 @@ exportAnalyses <- function(indicationId, outputFolder, exportFolder, databaseId,
       if (test) {
         CohortMethod::loadCmAnalysisList(system.file("settings",
                                                      fileName,
-                                                     package = "LegendT2dm"))
+                                                     package = "Signals"))
       }
     }
 
@@ -245,16 +245,16 @@ exportExposures <- function(indicationId, outputFolder, exportFolder, databaseId
     ParallelLogger::logInfo("Exporting exposures")
     ParallelLogger::logInfo("- exposure_of_interest table")
 
-    pathToCsv <- system.file("settings", paste0(indicationId, "TcosOfInterest.csv"), package = "LegendT2dm")
+    pathToCsv <- system.file("settings", paste0(indicationId, "TcosOfInterest.csv"), package = "Signals")
     tcosOfInterest <- read.csv(pathToCsv, stringsAsFactors = FALSE)
 
-    pathToCsv <- system.file("settings", paste0(indicationId, "CohortsToCreate.csv"), package = "LegendT2dm")
+    pathToCsv <- system.file("settings", paste0(indicationId, "CohortsToCreate.csv"), package = "Signals")
     cohortsToCreate <- read.csv(pathToCsv)
 
     createExposureRow <- function(exposureId) {
         atlasName <- as.character(cohortsToCreate$atlasName[cohortsToCreate$cohortId == exposureId])
         name <- as.character(cohortsToCreate$name[cohortsToCreate$cohortId == exposureId])
-        cohortFileName <- system.file("cohorts", paste0(name, ".json"), package = "LegendT2dm")
+        cohortFileName <- system.file("cohorts", paste0(name, ".json"), package = "Signals")
         definition <- readChar(cohortFileName, file.info(cohortFileName)$size)
         return(tibble::tibble(exposureId = exposureId,
                               exposureName = atlasName,
@@ -271,11 +271,11 @@ exportExposures <- function(indicationId, outputFolder, exportFolder, databaseId
 exportOutcomes <- function(indicationId, outputFolder, exportFolder, databaseId) {
     ParallelLogger::logInfo("Exporting outcomes")
     ParallelLogger::logInfo("- outcome_of_interest table")
-    pathToCsv <- system.file("settings", "OutcomesOfInterest.csv", package = "LegendT2dm")
+    pathToCsv <- system.file("settings", "OutcomesOfInterest.csv", package = "Signals")
     outcomesOfInterest <- read.csv(pathToCsv, stringsAsFactors = FALSE)
 
     getDefinition <- function(name) {
-        fileName <- system.file("cohorts", paste0(name, ".json"), package = "LegendT2dm")
+        fileName <- system.file("cohorts", paste0(name, ".json"), package = "Signals")
         return(readChar(fileName, file.info(fileName)$size))
     }
     outcomesOfInterest$definition <- sapply(outcomesOfInterest$name, getDefinition)
@@ -292,7 +292,7 @@ exportOutcomes <- function(indicationId, outputFolder, exportFolder, databaseId)
     write.csv(outcomesOfInterest, fileName, row.names = FALSE)
 
     ParallelLogger::logInfo("- negative_control_outcome table")
-    pathToCsv <- system.file("settings", "NegativeControls.csv", package = "LegendT2dm")
+    pathToCsv <- system.file("settings", "NegativeControls.csv", package = "Signals")
     negativeControls <- read.csv(pathToCsv)
 
     negativeControls <- negativeControls[, c("cohortId", "name", "conceptId")]
@@ -785,7 +785,7 @@ exportDateTime <- function(indicationId,
         indicationId = c(indicationId),
         databaseId = c(databaseId),
         dateTime = c(Sys.time()),
-        packageVersion = packageVersion("LegendT2dm"))
+        packageVersion = packageVersion("Signals"))
 
     colnames(dateTime) <- SqlRender::camelCaseToSnakeCase(colnames(dateTime))
     write.table(x = dateTime,
@@ -1129,7 +1129,7 @@ exportDiagnostics <- function(indicationId,
         dir.create(tempFolder)
       }
       cluster <- ParallelLogger::makeCluster(min(4, maxCores))
-      ParallelLogger::clusterRequire(cluster, "LegendT2dm")
+      ParallelLogger::clusterRequire(cluster, "Signals")
       tasks <- split(reference, seq(nrow(reference)))
       ParallelLogger::clusterApply(cluster,
                                    tasks,
