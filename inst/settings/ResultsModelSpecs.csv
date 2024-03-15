@@ -5,7 +5,7 @@ database,description,text,"Longer description, e.g. â€˜Truven Health MarketScanÂ
 database,vocabulary_version,varchar(255),Version information on OMOP vocabulary,No,No,Yes,Yes
 database,min_obs_period_date,date,Earliest observation date in database,No,No,Yes,Yes
 database,max_obs_period_date,date,Latest observation date in database,No,No,Yes,Yes
-database,study_package_version,varchar(255),Version of the LegendT2dm study package,No,No,Yes,Yes
+database,study_package_version,varchar(255),Version of the Signals study package,No,No,Yes,Yes
 database,is_meta_analysis,integer,"Does the record pertain a meta-analysis across databases? (0=no, 1=yes)",Yes,No,No,Yes
 exposure_summary,database_id,varchar(255),Foreign key referencing the database,Yes,Yes,No,Yes
 exposure_summary,exposure_id,bigint,Foreign key referencing the exposure_of_interest table,Yes,Yes,No,Yes
@@ -146,7 +146,7 @@ ps_auc_assessment,auc,numeric,"Area under the receiver-operator curve classifyin
 ps_auc_assessment,equipoise,numeric,"%-subjects with preference scores between 0.3 and 0.7",Yes,No,No,Yes
 results_date_time,database_id,varchar(255),"Foreign key referencing the database",Yes,Yes,No,Yes
 results_date_time,date_time,varchar(255),"Date and time when results were compiled",Yes,No,No,Yes
-results_date_time,package_version,varchar(255), "LegendT2dm package version",Yes,No,No,Yes
+results_date_time,package_version,varchar(255), "Signals package version",Yes,No,No,Yes
 diagnostics,database_id,varchar(255),Foreign key referencing the database,Yes,Yes,No,Yes
 diagnostics,target_id,bigint,Foreign key referencing the exposure_of_interest table,Yes,Yes,No,Yes
 diagnostics,comparator_id,bigint,Foreign key referencing the exposure_of_interest table,Yes,Yes,No,Yes
