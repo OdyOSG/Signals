@@ -172,11 +172,11 @@ UNION  select c.concept_id
 ) C UNION ALL 
 SELECT 15 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (44816332,1583722,40170911,44506754,793143)
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (1583722,40170911,44506754,793143,44816332,779705,36851064)
 UNION  select c.concept_id
   from @vocabulary_database_schema.CONCEPT c
   join @vocabulary_database_schema.CONCEPT_ANCESTOR ca on c.concept_id = ca.descendant_concept_id
-  and ca.ancestor_concept_id in (44816332,1583722,40170911,44506754,793143)
+  and ca.ancestor_concept_id in (1583722,40170911,44506754,793143,44816332,779705,36851064)
   and c.invalid_reason is null
 
 ) I

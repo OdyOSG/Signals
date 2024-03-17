@@ -67,7 +67,7 @@ assessPhenotypes <- function(connectionDetails,
   on.exit(ParallelLogger::unregisterLogger("DEFAULT_FILE_LOGGER", silent = TRUE))
   on.exit(ParallelLogger::unregisterLogger("DEFAULT_ERRORREPORT_LOGGER", silent = TRUE), add = TRUE)
 
-  ParallelLogger::logInfo(sprintf("Starting assessPhenotypes() for LEGEND-T2DM %s-vs-%s studies",
+  ParallelLogger::logInfo(sprintf("Starting assessPhenotypes() for Signals %s-vs-%s studies",
                                   indicationId, indicationId))
 
   if (createExposureCohorts) {
@@ -146,7 +146,7 @@ assessPhenotypes <- function(connectionDetails,
     ParallelLogger::logInfo("Outcome diagnostics results are ready for sharing at:", zipName)
   }
 
-  ParallelLogger::logInfo(sprintf("Finished assessPhenotypes() for LEGEND-T2DM %s-vs-%s studies",
+  ParallelLogger::logInfo(sprintf("Finished assessPhenotypes() for Signals %s-vs-%s studies",
                                   indicationId, indicationId))
 }
 
@@ -208,7 +208,7 @@ assessPropensityModels <- function(connectionDetails,
   }
   ParallelLogger::addDefaultFileLogger(file.path(indicationFolder, "logAssesPropensityModels.txt"))
 
-  ParallelLogger::logInfo(sprintf("Starting assessPropensityModels() for LEGEND-T2DM %s-vs-%s studies",
+  ParallelLogger::logInfo(sprintf("Starting assessPropensityModels() for Signals %s-vs-%s studies",
                                   indicationId, indicationId))
 
   ParallelLogger::logInfo("Sampling cohorts for propensity model feasibility")
@@ -419,6 +419,6 @@ assessPropensityModels <- function(connectionDetails,
   DatabaseConnector::createZipFile(zipFile = zipName, files = files)
   ParallelLogger::logInfo("Propensity score assessment results are ready for sharing at:", zipName)
 
-  ParallelLogger::logInfo(sprintf("Finished assessPropensityModels() for LEGEND-T2DM %s-vs-%s studies",
+  ParallelLogger::logInfo(sprintf("Finished assessPropensityModels() for Signals %s-vs-%s studies",
                                   indicationId, indicationId))
 }

@@ -1,7 +1,7 @@
 # add additional columns to the "covariate_balance" table on the results database
 
-schema = "legendt2dm_drug_results"
-#schema = "legendt2dm_class_results"
+schema = "signals_drug_results"
+#schema = "Signals_class_results"
 
 Sys.setenv(DATABASECONNECTOR_JAR_FOLDER="d:/Drivers")
 
@@ -45,7 +45,7 @@ connection = DatabaseConnector::connect(connectionDetails)
 DatabaseConnector::disconnect(connection)
 
 ## test it by uploading one table
-outputFolder = "E:/LegendT2dmOutput_optum_ehr_drug2"
+outputFolder = "E:/SignalsOutput_optum_ehr_drug2"
 #balanceExportPath = file.path(outputFolder, "drug", "export", "covariate_balance.csv")
 #balance = readr::read_csv(balanceExportPath)
 
@@ -62,7 +62,7 @@ outputFolder = "E:/LegendT2dmOutput_optum_ehr_drug2"
 # )
 
 ## test upload
-outputFolder = "E:/LegendT2dmOutput_optum_dod_drug2"
+outputFolder = "E:/SignalsOutput_optum_dod_drug2"
 exportFolder = file.path(outputFolder, "drug", "export")
 tablesNames = c("covariate_balance")
 

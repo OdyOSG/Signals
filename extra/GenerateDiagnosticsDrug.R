@@ -1,15 +1,15 @@
 # study diagnostics & meta analysis for drug-level CES
 
 library(dplyr)
-library(LegendT2dm)
+library(Signals)
 
 legendT2dmConnectionDetails <- DatabaseConnector::createConnectionDetails(
   dbms = "postgresql",
-  server = paste(keyring::key_get("legendt2dmServer"),
-                 keyring::key_get("legendt2dmDatabase"),
+  server = paste(keyring::key_get("signalsServer"),
+                 keyring::key_get("signalsDatabase"),
                  sep = "/"),
-  user = keyring::key_get("legendt2dmUser"),
-  password = keyring::key_get("legendt2dmPassword"))
+  user = keyring::key_get("signalsUser"),
+  password = keyring::key_get("signalsPassword"))
 
 connection <- DatabaseConnector::connect(legendT2dmConnectionDetails)
 
@@ -19,14 +19,14 @@ connection <- DatabaseConnector::connect(legendT2dmConnectionDetails)
 indicationId = "drug"
 tcoFileName = sprintf("%sTcosOfInterest.csv", indicationId)
 
-resultsSchema = "legendt2dm_drug_results"
+resultsSchema = "signals_drug_results"
 
 tcs <- read.csv(system.file("settings", tcoFileName,
-                            package = "LegendT2dm")) %>%
+                            package = "Signals")) %>%
   dplyr::select(targetId, comparatorId)
 
 outcomeIds <- read.csv(system.file("settings", "OutcomesOfInterest.csv",
-                                   package = "LegendT2dm")) %>%
+                                   package = "Signals")) %>%
   dplyr::select(cohortId) %>% pull(cohortId)
 
 # databaseIds <- c("OptumEHR", "MDCR", "OptumDod", "UK_IMRD", "MDCD",
@@ -77,7 +77,7 @@ diagnosticsLitNoOc <- diagnosticsLit %>%
 
 # (1) using LEGEND-HTN data-driven diagnostics rule
 doMetaAnalysis(legendT2dmConnectionDetails,
-               resultsDatabaseSchema = "legendt2dm_drug_results",
+               resultsDatabaseSchema = "signals_drug_results",
                maName = "Meta-analysis1",
                maExportFolder = "maHtn",
                diagnosticsFilter = diagnosticsHtn,
@@ -86,7 +86,7 @@ doMetaAnalysis(legendT2dmConnectionDetails,
 
 # (2) using literature-common rules of thumb
 doMetaAnalysis(legendT2dmConnectionDetails,
-               resultsDatabaseSchema = "legendt2dm_drug_results",
+               resultsDatabaseSchema = "signals_drug_results",
                maName = "Meta-analysis2",
                maExportFolder = "maLit",
                diagnosticsFilter = diagnosticsLit,
@@ -95,7 +95,7 @@ doMetaAnalysis(legendT2dmConnectionDetails,
 
 # (3) exclude Open Claims
 doMetaAnalysis(legendT2dmConnectionDetails,
-               resultsDatabaseSchema = "legendt2dm_drug_results",
+               resultsDatabaseSchema = "signals_drug_results",
                maName = "Meta-analysis3",
                maExportFolder = "maLitNoOc",
                diagnosticsFilter = diagnosticsLit,
@@ -103,7 +103,7 @@ doMetaAnalysis(legendT2dmConnectionDetails,
                maxCores = 4)
 
 doMetaAnalysis(legendT2dmConnectionDetails,
-               resultsDatabaseSchema = "legendt2dm_drug_results",
+               resultsDatabaseSchema = "signals_drug_results",
                maName = "Meta-analysis0",
                maExportFolder = "maAll",
                diagnosticsFilter = NULL,
@@ -119,9 +119,9 @@ writeableConnectionDetails <- DatabaseConnector::createConnectionDetails(
   user = keyring::key_get("ohdsiPostgresUser"),
   password = keyring::key_get("ohdsiPostgresPassword"))
 
-LegendT2dm::uploadResultsToDatabase(
+Signals::uploadResultsToDatabase(
   connectionDetails = writeableConnectionDetails,
-  schema = "legendt2dm_drug_results",
+  schema = "signals_drug_results",
   purgeSiteDataBeforeUploading = TRUE,
   zipFileName = c(
     "maAll/Results_drug_study_Meta-analysis0.zip",

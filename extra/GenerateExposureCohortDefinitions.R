@@ -25,10 +25,12 @@ keyring::key_set_with_value('baseUrl', password = baseUrl)
 baseUrlWebApi <- keyring::key_get("baseUrl")
 
 # code to query the Atlas Web API to get the base cohort (based on pre-defined ATLAS cohort)
-# baseCohort <- ROhdsiWebApi::getCohortDefinition(1487, baseUrl = "https://atlas-demo.ohdsi.org/WebAPI")
-# baseCohortJson <- RJSONIO::toJSON(baseCohort$expression, indent = 2, digits = 50)
-# SqlRender::writeSql(baseCohortJson, targetFile = "inst/settings/baseCohort.json")
-# saveRDS(baseCohort, file = "inst/settings/baseCohort.rds")
+# Make sure you download the right cohort
+
+ # baseCohort <- ROhdsiWebApi::getCohortDefinition(674, baseUrl = baseUrl)
+ # baseCohortJson <- RJSONIO::toJSON(baseCohort$expression, indent = 2, digits = 50)
+ # SqlRender::writeSql(baseCohortJson, targetFile = "inst/settings/baseCohort.json")
+ # saveRDS(baseCohort, file = "inst/settings/baseCohort.rds")
 
 # Inclusion rules: Age == 1, Sex == 2, Race == 3, CVD == 4, Renal == 5, PriorMet == 6, NoMet == 7
 
@@ -475,7 +477,7 @@ permutationsForDrugs$sql <-
                                                     generateStats = generateStats)
           }))
 
-#cohortDefinition <- permuteTC(baseCohort, permutationsForDrugs[1,])
+cohortDefinition <- permuteTC(baseCohort, permutationsForDrugs[1,])
 
 # save SQL and JSON files under class name (e.g., "DPP4I") folder
 ## need to create the directory for this class first
@@ -483,15 +485,20 @@ this.class = tolower(permutationsForDrugs[1,]$class)
 dir.create(file.path("inst/sql/sql_server", this.class))
 dir.create(file.path("inst/cohorts", this.class))
 
-for (i in 1:nrow(permutationsForDrugs)) {
-  row <- permutationsForDrugs[i,]
-  sqlFileName <- file.path("inst/sql/sql_server", tolower(row$class), paste(row$name, "sql", sep = "."))
-  SqlRender::writeSql(row$sql, sqlFileName)
-  jsonFileName <- file.path("inst/cohorts", tolower(row$class), paste(row$name, "json", sep = "."))
-  SqlRender::writeSql(row$json, jsonFileName)
+classNames = unique(permutationsForDrugs$class)
+
+for (value in classNames){
+    class = value
+    perutationsForClass = permutationsForDrugs[permutationsForDrugs$class == value,]
+    for (i in 1:nrow(permutationsForDrugs)) {
+      row <- permutationsForDrugs[i,]
+      sqlFileName <- file.path("inst/sql/sql_server", tolower(row$class), paste(row$name, "sql", sep = "."))
+      SqlRender::writeSql(row$sql, sqlFileName)
+      jsonFileName <- file.path("inst/cohorts", tolower(row$class), paste(row$name, "json", sep = "."))
+      SqlRender::writeSql(row$json, jsonFileName)
+    }
+
 }
-
-
 # # sanity check --- inspect json and sql concept set IDs
 # cohortID = 2
 # conceptSetJson = CohortDiagnostics:::extractConceptSetsJsonFromCohortJson(permutationsForDrugs$json[cohortID])
@@ -600,7 +607,11 @@ drugTcos <- rbind(
 
 # save TCOs 
 for (x in 1:4){
-this.class = tolower(permutationsForDrugs$class[x])
+  
+this.class = classNames[x]
+drugTcos$targetId = as.character(drugTcos$targetId)
+grepstring = paste0("^",x)
+drugs <- drugTcos[grepl(grepstring,drugTcos$targetId),]
 filePath = "inst/settings/"
 fileName = sprintf('%sTcosOfInterest.csv', this.class)
 

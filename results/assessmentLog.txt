@@ -8,3 +8,603 @@
 2024-03-13 15:27:26	[Main thread]	INFO	CohortDiagnostics	getCohortsJsonAndSql	Number of cohorts 176
 2024-03-13 15:27:26	[Main thread]	INFO	CohortDiagnostics	createTempInclusionStatsTables	Creating temporary inclusion statistics tables
 2024-03-13 15:27:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.837 secs
+2024-03-16 12:19:23	[Main thread]	INFO	Signals	assessPhenotypes	Starting assessPhenotypes() for LEGEND-T2DM sglt2i-vs-sglt2i studies
+2024-03-16 12:19:23	[Main thread]	INFO	Signals	createExposureCohorts	Creating sglt2i exposure cohorts
+2024-03-16 12:19:23	[Main thread]	INFO	Signals	createExposureCohorts	- Populating table legendt2dm_study_sglt2i_cohort
+2024-03-16 12:19:23	[Main thread]	FATAL	Signals	createExposureCohorts	'instantiateCohortSet' is not an exported object from 'namespace:CohortDiagnostics'
+2024-03-16 12:19:33	[Main thread]	INFO	Signals	assessPhenotypes	Starting assessPhenotypes() for LEGEND-T2DM sglt2i-vs-sglt2i studies
+2024-03-16 12:19:33	[Main thread]	INFO	Signals	createExposureCohorts	Creating sglt2i exposure cohorts
+2024-03-16 12:19:33	[Main thread]	INFO	Signals	createExposureCohorts	- Populating table legendt2dm_study_sglt2i_cohort
+2024-03-16 12:19:33	[Main thread]	FATAL	Signals	createExposureCohorts	'instantiateCohortSet' is not an exported object from 'namespace:CohortDiagnostics'
+2024-03-16 12:20:47	[Main thread]	INFO	Signals	assessPhenotypes	Starting assessPhenotypes() for LEGEND-T2DM class-vs-class studies
+2024-03-16 12:20:47	[Main thread]	INFO	Signals	createExposureCohorts	Creating class exposure cohorts
+2024-03-16 12:20:47	[Main thread]	INFO	Signals	createExposureCohorts	- Populating table legendt2dm_study_class_cohort
+2024-03-16 12:20:47	[Main thread]	FATAL	Signals	createExposureCohorts	'instantiateCohortSet' is not an exported object from 'namespace:CohortDiagnostics'
+2024-03-16 12:21:41	[Main thread]	INFO	Signals	assessPhenotypes	Starting assessPhenotypes() for LEGEND-T2DM class-vs-class studies
+2024-03-16 12:21:41	[Main thread]	FATAL	vroom	check_path	'results/class/cohortCounts.csv' does not exist in current working directory ('C:/Users/Jeff Telford/Documents/Signals').
+2024-03-16 12:33:51	[Main thread]	INFO	Signals	assessPhenotypes	Starting assessPhenotypes() for Signals sglt2i-vs-sglt2i studies
+2024-03-16 12:33:51	[Main thread]	INFO	Signals	createExposureCohorts	Creating sglt2i exposure cohorts
+2024-03-16 12:33:51	[Main thread]	INFO	Signals	createExposureCohorts	- Populating table legendt2dm_study_sglt2i_cohort
+2024-03-16 12:33:51	[Main thread]	FATAL	Signals	createExposureCohorts	'instantiateCohortSet' is not an exported object from 'namespace:CohortDiagnostics'
+2024-03-16 12:34:03	[Main thread]	INFO	Signals	assessPhenotypes	Starting assessPhenotypes() for Signals class-vs-class studies
+2024-03-16 12:34:03	[Main thread]	INFO	Signals	createExposureCohorts	Creating class exposure cohorts
+2024-03-16 12:34:03	[Main thread]	INFO	Signals	createExposureCohorts	- Populating table legendt2dm_study_class_cohort
+2024-03-16 12:34:03	[Main thread]	FATAL	Signals	createExposureCohorts	'instantiateCohortSet' is not an exported object from 'namespace:CohortDiagnostics'
+2024-03-16 12:36:05	[Main thread]	INFO			Starting assessPhenotypes() for Signals sglt2i-vs-sglt2i studies
+2024-03-16 12:36:08	[Main thread]	INFO	Signals	createExposureCohorts	Creating sglt2i exposure cohorts
+2024-03-16 12:36:08	[Main thread]	INFO	Signals	createExposureCohorts	- Populating table legendt2dm_study_sglt2i_cohort
+2024-03-16 12:36:08	[Main thread]	FATAL	Signals	createExposureCohorts	'instantiateCohortSet' is not an exported object from 'namespace:CohortDiagnostics'
+2024-03-16 12:37:28	[Main thread]	INFO			Creating sglt2i exposure cohorts
+2024-03-16 12:37:33	[Main thread]	INFO			- Populating table legendt2dm_study_sglt2i_cohort
+2024-03-16 12:37:35	[Main thread]	FATAL			'instantiateCohortSet' is not an exported object from 'namespace:CohortDiagnostics'
+2024-03-16 12:41:20	[Main thread]	WARN	renv	FUN	object 'C:/Users/Jeff Telford/Documents/Signals/renv/staging/1/CohortDiagnostics/DESCRIPTION' not found
+2024-03-16 12:41:20	[Main thread]	WARN	renv	FUN	object 'C:/Users/Jeff Telford/Documents/Signals/renv/staging/1/CohortDiagnostics/DESCRIPTION' not found
+2024-03-16 12:41:20	[Main thread]	WARN	renv	FUN	object 'C:/Users/Jeff Telford/Documents/Signals/renv/staging/1/CohortDiagnostics/DESCRIPTION' not found
+2024-03-16 12:41:20	[Main thread]	WARN	renv	FUN	object 'C:/Users/Jeff Telford/Documents/Signals/renv/staging/1/CohortDiagnostics/DESCRIPTION' not found
+2024-03-16 12:41:20	[Main thread]	WARN	renv	FUN	object 'C:/Users/Jeff Telford/Documents/Signals/renv/staging/1/CohortDiagnostics/DESCRIPTION' not found
+2024-03-16 12:41:20	[Main thread]	WARN	renv	FUN	object 'C:/Users/Jeff Telford/Documents/Signals/renv/staging/1/CohortDiagnostics/DESCRIPTION' not found
+2024-03-16 12:43:04	[Main thread]	INFO	Signals	assessPhenotypes	Starting assessPhenotypes() for Signals sglt2i-vs-sglt2i studies
+2024-03-16 12:43:04	[Main thread]	INFO	Signals	assessPhenotypes	Starting assessPhenotypes() for Signals sglt2i-vs-sglt2i studies
+2024-03-16 12:43:04	[Main thread]	INFO	Signals	createExposureCohorts	Creating sglt2i exposure cohorts
+2024-03-16 12:43:04	[Main thread]	INFO	Signals	createExposureCohorts	Creating sglt2i exposure cohorts
+2024-03-16 12:43:04	[Main thread]	INFO	Signals	createExposureCohorts	- Populating table signals_study_sglt2i_cohort
+2024-03-16 12:43:04	[Main thread]	INFO	Signals	createExposureCohorts	- Populating table signals_study_sglt2i_cohort
+2024-03-16 12:45:31	[Main thread]	INFO	Signals	assessPhenotypes	Starting assessPhenotypes() for Signals sglt2i-vs-sglt2i studies
+2024-03-16 12:45:31	[Main thread]	INFO	Signals	createExposureCohorts	Creating sglt2i exposure cohorts
+2024-03-16 12:45:31	[Main thread]	INFO	Signals	createExposureCohorts	- Populating table signals_study_sglt2i_cohort
+2024-03-16 12:45:31	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2024-03-16 12:45:33	[Main thread]	INFO	CohortDiagnostics	createCohortTable	Creating cohort table
+2024-03-16 12:45:34	[Main thread]	DEBUG	CohortDiagnostics	createCohortTable	Created table jmt_signals.dbo.signals_study_sglt2i_cohort
+2024-03-16 12:45:34	[Main thread]	DEBUG	CohortDiagnostics	getCohortsJsonAndSqlFromPackage	Executing on cohorts specified in package - Signals
+2024-03-16 12:45:36	[Main thread]	INFO	CohortDiagnostics	getCohortsJsonAndSql	Number of cohorts 176
+2024-03-16 12:45:36	[Main thread]	INFO	CohortDiagnostics	createTempInclusionStatsTables	Creating temporary inclusion statistics tables
+2024-03-16 12:45:37	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 1.03 secs
+2024-03-16 12:45:40	[Main thread]	INFO	DatabaseConnector	insertTable.default	Inserting data took 0.676 secs
+2024-03-16 12:45:40	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311100000)
+2024-03-16 12:45:40	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311100000 SQL has inclusion rule statistics tables.
+2024-03-16 12:47:23	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 1.72 mins
+2024-03-16 12:47:23	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311110000)
+2024-03-16 12:47:23	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311110000 SQL has inclusion rule statistics tables.
+2024-03-16 12:47:58	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34 secs
+2024-03-16 12:47:58	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311120000)
+2024-03-16 12:47:58	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311120000 SQL has inclusion rule statistics tables.
+2024-03-16 12:48:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.1 secs
+2024-03-16 12:48:31	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311130000)
+2024-03-16 12:48:31	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311130000 SQL has inclusion rule statistics tables.
+2024-03-16 12:49:05	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.1 secs
+2024-03-16 12:49:05	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311100010)
+2024-03-16 12:49:05	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311100010 SQL has inclusion rule statistics tables.
+2024-03-16 12:49:39	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.2 secs
+2024-03-16 12:49:39	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311100020)
+2024-03-16 12:49:39	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311100020 SQL has inclusion rule statistics tables.
+2024-03-16 12:50:14	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35.2 secs
+2024-03-16 12:50:14	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311101000)
+2024-03-16 12:50:14	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311101000 SQL has inclusion rule statistics tables.
+2024-03-16 12:50:48	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.4 secs
+2024-03-16 12:50:48	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311102000)
+2024-03-16 12:50:48	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311102000 SQL has inclusion rule statistics tables.
+2024-03-16 12:51:22	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.3 secs
+2024-03-16 12:51:22	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311100100)
+2024-03-16 12:51:22	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311100100 SQL has inclusion rule statistics tables.
+2024-03-16 12:51:57	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.1 secs
+2024-03-16 12:51:57	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311100001)
+2024-03-16 12:51:57	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311100001 SQL has inclusion rule statistics tables.
+2024-03-16 12:52:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33 secs
+2024-03-16 12:52:30	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311100002)
+2024-03-16 12:52:30	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311100002 SQL has inclusion rule statistics tables.
+2024-03-16 12:53:04	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.6 secs
+2024-03-16 12:53:04	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312100000)
+2024-03-16 12:53:04	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312100000 SQL has inclusion rule statistics tables.
+2024-03-16 12:53:36	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.4 secs
+2024-03-16 12:53:36	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312110000)
+2024-03-16 12:53:36	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312110000 SQL has inclusion rule statistics tables.
+2024-03-16 12:54:11	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35 secs
+2024-03-16 12:54:11	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312120000)
+2024-03-16 12:54:11	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312120000 SQL has inclusion rule statistics tables.
+2024-03-16 12:54:44	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.6 secs
+2024-03-16 12:54:44	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312130000)
+2024-03-16 12:54:44	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312130000 SQL has inclusion rule statistics tables.
+2024-03-16 12:55:18	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.3 secs
+2024-03-16 12:55:18	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312100010)
+2024-03-16 12:55:18	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312100010 SQL has inclusion rule statistics tables.
+2024-03-16 12:55:52	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.4 secs
+2024-03-16 12:55:52	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312100020)
+2024-03-16 12:55:52	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312100020 SQL has inclusion rule statistics tables.
+2024-03-16 12:56:25	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.1 secs
+2024-03-16 12:56:25	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312101000)
+2024-03-16 12:56:25	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312101000 SQL has inclusion rule statistics tables.
+2024-03-16 12:57:00	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.8 secs
+2024-03-16 12:57:00	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312102000)
+2024-03-16 12:57:00	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312102000 SQL has inclusion rule statistics tables.
+2024-03-16 12:57:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.3 secs
+2024-03-16 12:57:33	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312100100)
+2024-03-16 12:57:33	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312100100 SQL has inclusion rule statistics tables.
+2024-03-16 12:58:07	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.7 secs
+2024-03-16 12:58:07	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312100001)
+2024-03-16 12:58:07	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312100001 SQL has inclusion rule statistics tables.
+2024-03-16 12:58:40	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.1 secs
+2024-03-16 12:58:40	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312100002)
+2024-03-16 12:58:40	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312100002 SQL has inclusion rule statistics tables.
+2024-03-16 12:59:14	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.8 secs
+2024-03-16 12:59:14	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311200000)
+2024-03-16 12:59:14	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311200000 SQL has inclusion rule statistics tables.
+2024-03-16 12:59:50	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 36.1 secs
+2024-03-16 12:59:50	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311210000)
+2024-03-16 12:59:50	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311210000 SQL has inclusion rule statistics tables.
+2024-03-16 13:00:25	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.3 secs
+2024-03-16 13:00:25	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311220000)
+2024-03-16 13:00:25	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311220000 SQL has inclusion rule statistics tables.
+2024-03-16 13:01:00	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.9 secs
+2024-03-16 13:01:00	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311230000)
+2024-03-16 13:01:00	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311230000 SQL has inclusion rule statistics tables.
+2024-03-16 13:01:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.3 secs
+2024-03-16 13:01:35	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311200010)
+2024-03-16 13:01:35	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311200010 SQL has inclusion rule statistics tables.
+2024-03-16 13:02:09	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.8 secs
+2024-03-16 13:02:09	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311200020)
+2024-03-16 13:02:09	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311200020 SQL has inclusion rule statistics tables.
+2024-03-16 13:02:43	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.8 secs
+2024-03-16 13:02:43	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311201000)
+2024-03-16 13:02:43	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311201000 SQL has inclusion rule statistics tables.
+2024-03-16 13:03:17	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.6 secs
+2024-03-16 13:03:17	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311202000)
+2024-03-16 13:03:17	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311202000 SQL has inclusion rule statistics tables.
+2024-03-16 13:03:52	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35.2 secs
+2024-03-16 13:03:52	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311200100)
+2024-03-16 13:03:52	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311200100 SQL has inclusion rule statistics tables.
+2024-03-16 13:04:25	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.2 secs
+2024-03-16 13:04:25	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311200001)
+2024-03-16 13:04:25	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311200001 SQL has inclusion rule statistics tables.
+2024-03-16 13:05:01	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35.4 secs
+2024-03-16 13:05:01	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 311200002)
+2024-03-16 13:05:01	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 311200002 SQL has inclusion rule statistics tables.
+2024-03-16 13:05:37	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35.4 secs
+2024-03-16 13:05:37	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312200000)
+2024-03-16 13:05:37	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312200000 SQL has inclusion rule statistics tables.
+2024-03-16 13:06:11	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.6 secs
+2024-03-16 13:06:11	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312210000)
+2024-03-16 13:06:11	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312210000 SQL has inclusion rule statistics tables.
+2024-03-16 13:06:46	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.2 secs
+2024-03-16 13:06:46	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312220000)
+2024-03-16 13:06:46	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312220000 SQL has inclusion rule statistics tables.
+2024-03-16 13:07:21	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35.1 secs
+2024-03-16 13:07:21	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312230000)
+2024-03-16 13:07:21	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312230000 SQL has inclusion rule statistics tables.
+2024-03-16 13:07:56	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.4 secs
+2024-03-16 13:07:56	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312200010)
+2024-03-16 13:07:56	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312200010 SQL has inclusion rule statistics tables.
+2024-03-16 13:08:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.8 secs
+2024-03-16 13:08:30	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312200020)
+2024-03-16 13:08:30	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312200020 SQL has inclusion rule statistics tables.
+2024-03-16 13:09:04	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.4 secs
+2024-03-16 13:09:04	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312201000)
+2024-03-16 13:09:04	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312201000 SQL has inclusion rule statistics tables.
+2024-03-16 13:09:39	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.8 secs
+2024-03-16 13:09:39	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312202000)
+2024-03-16 13:09:39	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312202000 SQL has inclusion rule statistics tables.
+2024-03-16 13:10:14	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.9 secs
+2024-03-16 13:10:14	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312200100)
+2024-03-16 13:10:14	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312200100 SQL has inclusion rule statistics tables.
+2024-03-16 13:10:48	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.1 secs
+2024-03-16 13:10:48	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312200001)
+2024-03-16 13:10:48	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312200001 SQL has inclusion rule statistics tables.
+2024-03-16 13:11:21	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33 secs
+2024-03-16 13:11:21	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort canagliflozin (Cohort id: 312200002)
+2024-03-16 13:11:21	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 312200002 SQL has inclusion rule statistics tables.
+2024-03-16 13:11:56	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.1 secs
+2024-03-16 13:11:56	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321100000)
+2024-03-16 13:11:56	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321100000 SQL has inclusion rule statistics tables.
+2024-03-16 13:12:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.5 secs
+2024-03-16 13:12:29	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321110000)
+2024-03-16 13:12:29	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321110000 SQL has inclusion rule statistics tables.
+2024-03-16 13:13:04	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.9 secs
+2024-03-16 13:13:04	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321120000)
+2024-03-16 13:13:04	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321120000 SQL has inclusion rule statistics tables.
+2024-03-16 13:13:39	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.4 secs
+2024-03-16 13:13:39	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321130000)
+2024-03-16 13:13:39	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321130000 SQL has inclusion rule statistics tables.
+2024-03-16 13:14:14	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.7 secs
+2024-03-16 13:14:14	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321100010)
+2024-03-16 13:14:14	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321100010 SQL has inclusion rule statistics tables.
+2024-03-16 13:14:48	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.5 secs
+2024-03-16 13:14:48	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321100020)
+2024-03-16 13:14:48	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321100020 SQL has inclusion rule statistics tables.
+2024-03-16 13:15:24	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35.9 secs
+2024-03-16 13:15:24	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321101000)
+2024-03-16 13:15:24	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321101000 SQL has inclusion rule statistics tables.
+2024-03-16 13:15:59	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.7 secs
+2024-03-16 13:15:59	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321102000)
+2024-03-16 13:15:59	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321102000 SQL has inclusion rule statistics tables.
+2024-03-16 13:16:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.8 secs
+2024-03-16 13:16:33	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321100100)
+2024-03-16 13:16:33	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321100100 SQL has inclusion rule statistics tables.
+2024-03-16 13:17:07	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34 secs
+2024-03-16 13:17:07	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321100001)
+2024-03-16 13:17:07	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321100001 SQL has inclusion rule statistics tables.
+2024-03-16 13:17:42	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.6 secs
+2024-03-16 13:17:42	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321100002)
+2024-03-16 13:17:42	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321100002 SQL has inclusion rule statistics tables.
+2024-03-16 13:18:17	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35.1 secs
+2024-03-16 13:18:17	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322100000)
+2024-03-16 13:18:17	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322100000 SQL has inclusion rule statistics tables.
+2024-03-16 13:18:50	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.6 secs
+2024-03-16 13:18:50	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322110000)
+2024-03-16 13:18:50	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322110000 SQL has inclusion rule statistics tables.
+2024-03-16 13:19:25	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35.1 secs
+2024-03-16 13:19:25	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322120000)
+2024-03-16 13:19:26	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322120000 SQL has inclusion rule statistics tables.
+2024-03-16 13:20:00	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.5 secs
+2024-03-16 13:20:00	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322130000)
+2024-03-16 13:20:00	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322130000 SQL has inclusion rule statistics tables.
+2024-03-16 13:20:36	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35.7 secs
+2024-03-16 13:20:36	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322100010)
+2024-03-16 13:20:36	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322100010 SQL has inclusion rule statistics tables.
+2024-03-16 13:21:11	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.4 secs
+2024-03-16 13:21:11	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322100020)
+2024-03-16 13:21:11	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322100020 SQL has inclusion rule statistics tables.
+2024-03-16 13:21:46	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35 secs
+2024-03-16 13:21:46	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322101000)
+2024-03-16 13:21:46	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322101000 SQL has inclusion rule statistics tables.
+2024-03-16 13:22:20	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.5 secs
+2024-03-16 13:22:20	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322102000)
+2024-03-16 13:22:20	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322102000 SQL has inclusion rule statistics tables.
+2024-03-16 13:22:54	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.5 secs
+2024-03-16 13:22:54	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322100100)
+2024-03-16 13:22:55	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322100100 SQL has inclusion rule statistics tables.
+2024-03-16 13:23:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.7 secs
+2024-03-16 13:23:29	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322100001)
+2024-03-16 13:23:29	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322100001 SQL has inclusion rule statistics tables.
+2024-03-16 13:24:03	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.4 secs
+2024-03-16 13:24:03	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322100002)
+2024-03-16 13:24:03	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322100002 SQL has inclusion rule statistics tables.
+2024-03-16 13:24:39	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35.7 secs
+2024-03-16 13:24:39	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321200000)
+2024-03-16 13:24:39	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321200000 SQL has inclusion rule statistics tables.
+2024-03-16 13:25:13	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.7 secs
+2024-03-16 13:25:13	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321210000)
+2024-03-16 13:25:13	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321210000 SQL has inclusion rule statistics tables.
+2024-03-16 13:25:47	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34 secs
+2024-03-16 13:25:47	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321220000)
+2024-03-16 13:25:47	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321220000 SQL has inclusion rule statistics tables.
+2024-03-16 13:26:21	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.7 secs
+2024-03-16 13:26:21	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321230000)
+2024-03-16 13:26:21	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321230000 SQL has inclusion rule statistics tables.
+2024-03-16 13:26:54	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33 secs
+2024-03-16 13:26:54	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321200010)
+2024-03-16 13:26:54	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321200010 SQL has inclusion rule statistics tables.
+2024-03-16 13:27:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.2 secs
+2024-03-16 13:27:29	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321200020)
+2024-03-16 13:27:29	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321200020 SQL has inclusion rule statistics tables.
+2024-03-16 13:28:02	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33 secs
+2024-03-16 13:28:02	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321201000)
+2024-03-16 13:28:02	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321201000 SQL has inclusion rule statistics tables.
+2024-03-16 13:28:36	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.2 secs
+2024-03-16 13:28:36	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321202000)
+2024-03-16 13:28:36	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321202000 SQL has inclusion rule statistics tables.
+2024-03-16 13:29:11	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.9 secs
+2024-03-16 13:29:11	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321200100)
+2024-03-16 13:29:11	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321200100 SQL has inclusion rule statistics tables.
+2024-03-16 13:29:44	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.2 secs
+2024-03-16 13:29:44	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321200001)
+2024-03-16 13:29:44	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321200001 SQL has inclusion rule statistics tables.
+2024-03-16 13:30:17	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.5 secs
+2024-03-16 13:30:17	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 321200002)
+2024-03-16 13:30:17	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 321200002 SQL has inclusion rule statistics tables.
+2024-03-16 13:30:50	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.2 secs
+2024-03-16 13:30:50	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322200000)
+2024-03-16 13:30:50	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322200000 SQL has inclusion rule statistics tables.
+2024-03-16 13:31:26	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35 secs
+2024-03-16 13:31:26	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322210000)
+2024-03-16 13:31:26	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322210000 SQL has inclusion rule statistics tables.
+2024-03-16 13:32:00	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.9 secs
+2024-03-16 13:32:00	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322220000)
+2024-03-16 13:32:00	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322220000 SQL has inclusion rule statistics tables.
+2024-03-16 13:32:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34 secs
+2024-03-16 13:32:34	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322230000)
+2024-03-16 13:32:34	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322230000 SQL has inclusion rule statistics tables.
+2024-03-16 13:33:08	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.5 secs
+2024-03-16 13:33:08	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322200010)
+2024-03-16 13:33:08	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322200010 SQL has inclusion rule statistics tables.
+2024-03-16 13:33:42	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.1 secs
+2024-03-16 13:33:42	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322200020)
+2024-03-16 13:33:42	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322200020 SQL has inclusion rule statistics tables.
+2024-03-16 13:34:17	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35.2 secs
+2024-03-16 13:34:17	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322201000)
+2024-03-16 13:34:17	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322201000 SQL has inclusion rule statistics tables.
+2024-03-16 13:34:50	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.1 secs
+2024-03-16 13:34:50	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322202000)
+2024-03-16 13:34:50	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322202000 SQL has inclusion rule statistics tables.
+2024-03-16 13:35:23	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.1 secs
+2024-03-16 13:35:23	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322200100)
+2024-03-16 13:35:23	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322200100 SQL has inclusion rule statistics tables.
+2024-03-16 13:35:57	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.3 secs
+2024-03-16 13:35:57	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322200001)
+2024-03-16 13:35:57	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322200001 SQL has inclusion rule statistics tables.
+2024-03-16 13:36:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.8 secs
+2024-03-16 13:36:30	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dapagliflozin (Cohort id: 322200002)
+2024-03-16 13:36:30	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 322200002 SQL has inclusion rule statistics tables.
+2024-03-16 13:37:04	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.8 secs
+2024-03-16 13:37:04	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331100000)
+2024-03-16 13:37:04	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331100000 SQL has inclusion rule statistics tables.
+2024-03-16 13:37:39	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35.1 secs
+2024-03-16 13:37:39	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331110000)
+2024-03-16 13:37:39	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331110000 SQL has inclusion rule statistics tables.
+2024-03-16 13:38:12	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33 secs
+2024-03-16 13:38:12	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331120000)
+2024-03-16 13:38:13	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331120000 SQL has inclusion rule statistics tables.
+2024-03-16 13:38:46	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.5 secs
+2024-03-16 13:38:46	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331130000)
+2024-03-16 13:38:46	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331130000 SQL has inclusion rule statistics tables.
+2024-03-16 13:39:21	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.3 secs
+2024-03-16 13:39:21	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331100010)
+2024-03-16 13:39:21	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331100010 SQL has inclusion rule statistics tables.
+2024-03-16 13:39:55	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.3 secs
+2024-03-16 13:39:55	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331100020)
+2024-03-16 13:39:55	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331100020 SQL has inclusion rule statistics tables.
+2024-03-16 13:40:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.5 secs
+2024-03-16 13:40:30	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331101000)
+2024-03-16 13:40:30	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331101000 SQL has inclusion rule statistics tables.
+2024-03-16 13:41:05	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.4 secs
+2024-03-16 13:41:05	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331102000)
+2024-03-16 13:41:05	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331102000 SQL has inclusion rule statistics tables.
+2024-03-16 13:41:39	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.7 secs
+2024-03-16 13:41:39	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331100100)
+2024-03-16 13:41:39	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331100100 SQL has inclusion rule statistics tables.
+2024-03-16 13:42:13	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.2 secs
+2024-03-16 13:42:13	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331100001)
+2024-03-16 13:42:13	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331100001 SQL has inclusion rule statistics tables.
+2024-03-16 13:42:47	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.9 secs
+2024-03-16 13:42:47	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331100002)
+2024-03-16 13:42:47	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331100002 SQL has inclusion rule statistics tables.
+2024-03-16 13:43:20	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.5 secs
+2024-03-16 13:43:20	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332100000)
+2024-03-16 13:43:20	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332100000 SQL has inclusion rule statistics tables.
+2024-03-16 13:43:55	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35 secs
+2024-03-16 13:43:55	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332110000)
+2024-03-16 13:43:55	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332110000 SQL has inclusion rule statistics tables.
+2024-03-16 13:44:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.6 secs
+2024-03-16 13:44:29	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332120000)
+2024-03-16 13:44:29	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332120000 SQL has inclusion rule statistics tables.
+2024-03-16 13:45:02	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.5 secs
+2024-03-16 13:45:02	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332130000)
+2024-03-16 13:45:02	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332130000 SQL has inclusion rule statistics tables.
+2024-03-16 13:45:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.6 secs
+2024-03-16 13:45:35	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332100010)
+2024-03-16 13:45:35	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332100010 SQL has inclusion rule statistics tables.
+2024-03-16 13:46:09	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.9 secs
+2024-03-16 13:46:09	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332100020)
+2024-03-16 13:46:09	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332100020 SQL has inclusion rule statistics tables.
+2024-03-16 13:46:43	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.6 secs
+2024-03-16 13:46:43	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332101000)
+2024-03-16 13:46:43	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332101000 SQL has inclusion rule statistics tables.
+2024-03-16 13:47:16	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.2 secs
+2024-03-16 13:47:16	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332102000)
+2024-03-16 13:47:16	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332102000 SQL has inclusion rule statistics tables.
+2024-03-16 13:47:48	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.2 secs
+2024-03-16 13:47:48	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332100100)
+2024-03-16 13:47:48	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332100100 SQL has inclusion rule statistics tables.
+2024-03-16 13:48:21	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.5 secs
+2024-03-16 13:48:21	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332100001)
+2024-03-16 13:48:21	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332100001 SQL has inclusion rule statistics tables.
+2024-03-16 13:48:55	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.1 secs
+2024-03-16 13:48:55	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332100002)
+2024-03-16 13:48:55	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332100002 SQL has inclusion rule statistics tables.
+2024-03-16 13:49:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.7 secs
+2024-03-16 13:49:29	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331200000)
+2024-03-16 13:49:29	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331200000 SQL has inclusion rule statistics tables.
+2024-03-16 13:50:03	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.8 secs
+2024-03-16 13:50:03	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331210000)
+2024-03-16 13:50:04	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331210000 SQL has inclusion rule statistics tables.
+2024-03-16 13:50:37	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.4 secs
+2024-03-16 13:50:37	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331220000)
+2024-03-16 13:50:37	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331220000 SQL has inclusion rule statistics tables.
+2024-03-16 13:51:10	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.1 secs
+2024-03-16 13:51:10	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331230000)
+2024-03-16 13:51:10	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331230000 SQL has inclusion rule statistics tables.
+2024-03-16 13:51:44	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.8 secs
+2024-03-16 13:51:44	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331200010)
+2024-03-16 13:51:45	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331200010 SQL has inclusion rule statistics tables.
+2024-03-16 13:52:18	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.4 secs
+2024-03-16 13:52:18	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331200020)
+2024-03-16 13:52:18	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331200020 SQL has inclusion rule statistics tables.
+2024-03-16 13:52:53	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.6 secs
+2024-03-16 13:52:53	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331201000)
+2024-03-16 13:52:53	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331201000 SQL has inclusion rule statistics tables.
+2024-03-16 13:53:26	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.4 secs
+2024-03-16 13:53:26	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331202000)
+2024-03-16 13:53:26	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331202000 SQL has inclusion rule statistics tables.
+2024-03-16 13:53:59	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.2 secs
+2024-03-16 13:53:59	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331200100)
+2024-03-16 13:53:59	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331200100 SQL has inclusion rule statistics tables.
+2024-03-16 13:54:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.5 secs
+2024-03-16 13:54:33	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331200001)
+2024-03-16 13:54:33	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331200001 SQL has inclusion rule statistics tables.
+2024-03-16 13:55:07	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.2 secs
+2024-03-16 13:55:07	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 331200002)
+2024-03-16 13:55:07	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 331200002 SQL has inclusion rule statistics tables.
+2024-03-16 13:55:41	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.3 secs
+2024-03-16 13:55:41	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332200000)
+2024-03-16 13:55:41	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332200000 SQL has inclusion rule statistics tables.
+2024-03-16 13:56:15	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.6 secs
+2024-03-16 13:56:15	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332210000)
+2024-03-16 13:56:15	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332210000 SQL has inclusion rule statistics tables.
+2024-03-16 13:56:48	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.3 secs
+2024-03-16 13:56:48	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332220000)
+2024-03-16 13:56:48	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332220000 SQL has inclusion rule statistics tables.
+2024-03-16 13:57:21	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.8 secs
+2024-03-16 13:57:21	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332230000)
+2024-03-16 13:57:21	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332230000 SQL has inclusion rule statistics tables.
+2024-03-16 13:57:56	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35 secs
+2024-03-16 13:57:56	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332200010)
+2024-03-16 13:57:56	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332200010 SQL has inclusion rule statistics tables.
+2024-03-16 13:58:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.1 secs
+2024-03-16 13:58:30	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332200020)
+2024-03-16 13:58:30	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332200020 SQL has inclusion rule statistics tables.
+2024-03-16 13:59:04	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.6 secs
+2024-03-16 13:59:04	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332201000)
+2024-03-16 13:59:04	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332201000 SQL has inclusion rule statistics tables.
+2024-03-16 13:59:37	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.7 secs
+2024-03-16 13:59:37	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332202000)
+2024-03-16 13:59:37	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332202000 SQL has inclusion rule statistics tables.
+2024-03-16 14:00:11	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.8 secs
+2024-03-16 14:00:11	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332200100)
+2024-03-16 14:00:11	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332200100 SQL has inclusion rule statistics tables.
+2024-03-16 14:00:46	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35.7 secs
+2024-03-16 14:00:46	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332200001)
+2024-03-16 14:00:46	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332200001 SQL has inclusion rule statistics tables.
+2024-03-16 14:01:20	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.8 secs
+2024-03-16 14:01:20	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort empagliflozin (Cohort id: 332200002)
+2024-03-16 14:01:20	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 332200002 SQL has inclusion rule statistics tables.
+2024-03-16 14:01:53	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.7 secs
+2024-03-16 14:01:53	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341100000)
+2024-03-16 14:01:54	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341100000 SQL has inclusion rule statistics tables.
+2024-03-16 14:02:26	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.3 secs
+2024-03-16 14:02:26	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341110000)
+2024-03-16 14:02:26	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341110000 SQL has inclusion rule statistics tables.
+2024-03-16 14:03:00	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.3 secs
+2024-03-16 14:03:00	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341120000)
+2024-03-16 14:03:00	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341120000 SQL has inclusion rule statistics tables.
+2024-03-16 14:03:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.3 secs
+2024-03-16 14:03:34	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341130000)
+2024-03-16 14:03:34	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341130000 SQL has inclusion rule statistics tables.
+2024-03-16 14:04:08	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.5 secs
+2024-03-16 14:04:08	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341100010)
+2024-03-16 14:04:08	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341100010 SQL has inclusion rule statistics tables.
+2024-03-16 14:04:42	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.3 secs
+2024-03-16 14:04:42	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341100020)
+2024-03-16 14:04:42	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341100020 SQL has inclusion rule statistics tables.
+2024-03-16 14:05:16	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.6 secs
+2024-03-16 14:05:16	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341101000)
+2024-03-16 14:05:16	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341101000 SQL has inclusion rule statistics tables.
+2024-03-16 14:05:50	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.1 secs
+2024-03-16 14:05:50	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341102000)
+2024-03-16 14:05:50	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341102000 SQL has inclusion rule statistics tables.
+2024-03-16 14:06:24	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.6 secs
+2024-03-16 14:06:24	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341100100)
+2024-03-16 14:06:24	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341100100 SQL has inclusion rule statistics tables.
+2024-03-16 14:06:57	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.9 secs
+2024-03-16 14:06:57	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341100001)
+2024-03-16 14:06:57	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341100001 SQL has inclusion rule statistics tables.
+2024-03-16 14:07:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.9 secs
+2024-03-16 14:07:33	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341100002)
+2024-03-16 14:07:33	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341100002 SQL has inclusion rule statistics tables.
+2024-03-16 14:08:07	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.3 secs
+2024-03-16 14:08:07	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342100000)
+2024-03-16 14:08:07	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342100000 SQL has inclusion rule statistics tables.
+2024-03-16 14:08:40	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.8 secs
+2024-03-16 14:08:40	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342110000)
+2024-03-16 14:08:40	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342110000 SQL has inclusion rule statistics tables.
+2024-03-16 14:09:13	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.9 secs
+2024-03-16 14:09:13	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342120000)
+2024-03-16 14:09:13	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342120000 SQL has inclusion rule statistics tables.
+2024-03-16 14:09:47	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33 secs
+2024-03-16 14:09:47	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342130000)
+2024-03-16 14:09:47	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342130000 SQL has inclusion rule statistics tables.
+2024-03-16 14:10:21	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.1 secs
+2024-03-16 14:10:21	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342100010)
+2024-03-16 14:10:21	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342100010 SQL has inclusion rule statistics tables.
+2024-03-16 14:10:55	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.8 secs
+2024-03-16 14:10:55	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342100020)
+2024-03-16 14:10:55	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342100020 SQL has inclusion rule statistics tables.
+2024-03-16 14:11:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.2 secs
+2024-03-16 14:11:30	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342101000)
+2024-03-16 14:11:30	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342101000 SQL has inclusion rule statistics tables.
+2024-03-16 14:12:03	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.9 secs
+2024-03-16 14:12:03	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342102000)
+2024-03-16 14:12:03	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342102000 SQL has inclusion rule statistics tables.
+2024-03-16 14:12:37	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.6 secs
+2024-03-16 14:12:37	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342100100)
+2024-03-16 14:12:37	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342100100 SQL has inclusion rule statistics tables.
+2024-03-16 14:13:12	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35.2 secs
+2024-03-16 14:13:12	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342100001)
+2024-03-16 14:13:12	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342100001 SQL has inclusion rule statistics tables.
+2024-03-16 14:13:46	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.2 secs
+2024-03-16 14:13:46	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342100002)
+2024-03-16 14:13:46	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342100002 SQL has inclusion rule statistics tables.
+2024-03-16 14:14:21	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.7 secs
+2024-03-16 14:14:21	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341200000)
+2024-03-16 14:14:21	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341200000 SQL has inclusion rule statistics tables.
+2024-03-16 14:14:55	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.3 secs
+2024-03-16 14:14:55	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341210000)
+2024-03-16 14:14:55	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341210000 SQL has inclusion rule statistics tables.
+2024-03-16 14:15:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.9 secs
+2024-03-16 14:15:28	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341220000)
+2024-03-16 14:15:28	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341220000 SQL has inclusion rule statistics tables.
+2024-03-16 14:16:01	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33 secs
+2024-03-16 14:16:01	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341230000)
+2024-03-16 14:16:02	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341230000 SQL has inclusion rule statistics tables.
+2024-03-16 14:16:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.8 secs
+2024-03-16 14:16:34	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341200010)
+2024-03-16 14:16:35	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341200010 SQL has inclusion rule statistics tables.
+2024-03-16 14:17:10	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35.2 secs
+2024-03-16 14:17:10	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341200020)
+2024-03-16 14:17:10	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341200020 SQL has inclusion rule statistics tables.
+2024-03-16 14:17:43	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33 secs
+2024-03-16 14:17:43	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341201000)
+2024-03-16 14:17:43	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341201000 SQL has inclusion rule statistics tables.
+2024-03-16 14:18:18	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.6 secs
+2024-03-16 14:18:18	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341202000)
+2024-03-16 14:18:18	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341202000 SQL has inclusion rule statistics tables.
+2024-03-16 14:18:52	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.5 secs
+2024-03-16 14:18:52	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341200100)
+2024-03-16 14:18:52	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341200100 SQL has inclusion rule statistics tables.
+2024-03-16 14:19:25	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32.9 secs
+2024-03-16 14:19:25	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341200001)
+2024-03-16 14:19:25	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341200001 SQL has inclusion rule statistics tables.
+2024-03-16 14:19:59	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.2 secs
+2024-03-16 14:19:59	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 341200002)
+2024-03-16 14:19:59	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 341200002 SQL has inclusion rule statistics tables.
+2024-03-16 14:20:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.3 secs
+2024-03-16 14:20:33	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342200000)
+2024-03-16 14:20:33	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342200000 SQL has inclusion rule statistics tables.
+2024-03-16 14:21:05	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 32 secs
+2024-03-16 14:21:05	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342210000)
+2024-03-16 14:21:05	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342210000 SQL has inclusion rule statistics tables.
+2024-03-16 14:21:41	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35.5 secs
+2024-03-16 14:21:41	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342220000)
+2024-03-16 14:21:41	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342220000 SQL has inclusion rule statistics tables.
+2024-03-16 14:22:14	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.1 secs
+2024-03-16 14:22:14	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342230000)
+2024-03-16 14:22:14	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342230000 SQL has inclusion rule statistics tables.
+2024-03-16 14:22:49	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.8 secs
+2024-03-16 14:22:49	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342200010)
+2024-03-16 14:22:49	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342200010 SQL has inclusion rule statistics tables.
+2024-03-16 14:23:23	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.3 secs
+2024-03-16 14:23:23	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342200020)
+2024-03-16 14:23:23	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342200020 SQL has inclusion rule statistics tables.
+2024-03-16 14:23:58	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 35.1 secs
+2024-03-16 14:23:58	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342201000)
+2024-03-16 14:23:58	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342201000 SQL has inclusion rule statistics tables.
+2024-03-16 14:24:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.8 secs
+2024-03-16 14:24:32	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342202000)
+2024-03-16 14:24:32	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342202000 SQL has inclusion rule statistics tables.
+2024-03-16 14:25:07	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.6 secs
+2024-03-16 14:25:07	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342200100)
+2024-03-16 14:25:07	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342200100 SQL has inclusion rule statistics tables.
+2024-03-16 14:25:41	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.7 secs
+2024-03-16 14:25:41	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342200001)
+2024-03-16 14:25:41	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342200001 SQL has inclusion rule statistics tables.
+2024-03-16 14:26:15	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 33.6 secs
+2024-03-16 14:26:15	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort ertugliflozin (Cohort id: 342200002)
+2024-03-16 14:26:15	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 342200002 SQL has inclusion rule statistics tables.
+2024-03-16 14:26:49	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 34.1 secs
+2024-03-16 14:26:49	[Main thread]	DEBUG	CohortDiagnostics	fetchStats	- Fetching data from #cohort_inclusion
+2024-03-16 14:26:50	[Main thread]	DEBUG	CohortDiagnostics	fetchStats	- Fetching data from #cohort_inc_result
+2024-03-16 14:26:50	[Main thread]	DEBUG	CohortDiagnostics	fetchStats	- Fetching data from #cohort_inc_stats
+2024-03-16 14:26:52	[Main thread]	DEBUG	CohortDiagnostics	fetchStats	- Fetching data from #cohort_summary_stats
+2024-03-16 14:26:53	[Main thread]	INFO	Signals	createExposureCohorts	Counting sglt2i exposure cohorts
+2024-03-16 14:26:53	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2024-03-16 14:26:54	[Main thread]	FATAL	Signals	$<-	replacement has 1 row, data has 0
+2024-03-16 16:55:55	[Main thread]	INFO	Signals	assessPhenotypes	Starting assessPhenotypes() for Signals su-vs-su studies
+2024-03-16 16:55:55	[Main thread]	INFO	Signals	createExposureCohorts	Creating su exposure cohorts
+2024-03-16 16:55:55	[Main thread]	INFO	Signals	createExposureCohorts	- Populating table signals_study_su_cohort
+2024-03-16 16:55:55	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2024-03-16 16:55:55	[Main thread]	INFO	CohortDiagnostics	createCohortTable	Creating cohort table
+2024-03-16 16:55:55	[Main thread]	DEBUG	CohortDiagnostics	createCohortTable	Created table jmt_signals.dbo.signals_study_su_cohort
+2024-03-16 16:55:55	[Main thread]	DEBUG	CohortDiagnostics	getCohortsJsonAndSqlFromPackage	Executing on cohorts specified in package - Signals
+2024-03-16 16:56:03	[Main thread]	INFO	CohortDiagnostics	getCohortsJsonAndSql	Number of cohorts 308
+2024-03-16 16:56:03	[Main thread]	INFO	CohortDiagnostics	createTempInclusionStatsTables	Creating temporary inclusion statistics tables
+2024-03-16 16:56:03	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.565 secs
+2024-03-16 16:56:07	[Main thread]	INFO	DatabaseConnector	insertTable.default	Inserting data took 0.759 secs
+2024-03-16 16:56:07	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort chlorpropamide (Cohort id: 411100000)
+2024-03-16 16:56:07	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 411100000 SQL has inclusion rule statistics tables.

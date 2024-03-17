@@ -1,0 +1,30 @@
+Thread: Main
+Message:  replacement has 1 row, data has 0
+Level:  FATAL
+Time:  2024-03-16 14:26:54
+
+Stack trace:
+5: stop(sprintf(ngettext(N, "replacement has %d row, data has %d", "replacement has %d rows, data has %d"), N, nrows), domain = NA)
+4: CreateAllCohorts.R#86: `$<-.data.frame`(`*tmp*`, "databaseId", value = "Synpuf")
+3: CreateAllCohorts.R#86: `$<-`(`*tmp*`, "databaseId", value = "Synpuf")
+2: Assessment.R#75: createExposureCohorts(connectionDetails = connectionDetails, cdmDatabaseSchema = cdmDatabaseSchema, vocabularyDatabaseSchema = vocab
+1: Signals::assessPhenotypes(connectionDetails = connectionDetails, cdmDatabaseSchema = cdmDatabaseSchema, oracleTempSchema = oracleTempSchema, cohortDa
+
+R version:
+R version 4.2.1 (2022-06-23 ucrt)
+
+Platform:
+x86_64-w64-mingw32
+
+Attached base packages:
+- stats
+- graphics
+- grDevices
+- datasets
+- utils
+- methods
+- base
+
+Other attached packages:
+
+

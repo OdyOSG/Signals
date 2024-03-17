@@ -46,7 +46,6 @@ classNames = exposuresOfInterestTable %>%
 
 cohortsTable = NULL
 filePath = "inst/settings"
-
 for(cl in classNames){
   classFileName = sprintf("%sCohortsToCreate.csv", cl)
 

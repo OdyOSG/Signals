@@ -208,7 +208,25 @@
  "id":           2,
 "name": "efpeglenatide",
 "expression": {
- "items": [] 
+ "items": [
+ {
+ "concept": {
+ "CONCEPT_ID":    36851064,
+"CONCEPT_NAME": "EFPEGLENATIDE",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "OMOP5168681",
+"DOMAIN_ID": "Drug",
+"VOCABULARY_ID": "RxNorm Extension",
+"CONCEPT_CLASS_ID": "Ingredient" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+} 
+] 
 } 
 },
 {
@@ -2728,23 +2746,6 @@
  "items": [
  {
  "concept": {
- "CONCEPT_ID":    44816332,
-"CONCEPT_NAME": "albiglutide",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "1534763",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
  "CONCEPT_ID":    45774435,
 "CONCEPT_NAME": "dulaglutide",
 "STANDARD_CONCEPT": "S",
@@ -2820,6 +2821,40 @@
 "INVALID_REASON": "V",
 "INVALID_REASON_CAPTION": "Valid",
 "CONCEPT_CODE": "1991302",
+"DOMAIN_ID": "Drug",
+"VOCABULARY_ID": "RxNorm",
+"CONCEPT_CLASS_ID": "Ingredient" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID":    44816332,
+"CONCEPT_NAME": "albiglutide",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "1534763",
+"DOMAIN_ID": "Drug",
+"VOCABULARY_ID": "RxNorm",
+"CONCEPT_CLASS_ID": "Ingredient" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID":      779705,
+"CONCEPT_NAME": "tirzepatide",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "2601723",
 "DOMAIN_ID": "Drug",
 "VOCABULARY_ID": "RxNorm",
 "CONCEPT_CLASS_ID": "Ingredient" 
