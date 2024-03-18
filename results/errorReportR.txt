@@ -1,14 +1,29 @@
 Thread: Main
-Message:  replacement has 1 row, data has 0
+Message:  Error executing SQL:
+org.postgresql.util.PSQLException: An I/O error occurred while sending to the backend.
+An error report has been created at  C:/Users/Jeff Telford/Documents/Signals/errorReportSql.txt
 Level:  FATAL
-Time:  2024-03-16 14:26:54
+Time:  2024-03-18 08:48:46
 
 Stack trace:
-5: stop(sprintf(ngettext(N, "replacement has %d row, data has %d", "replacement has %d rows, data has %d"), N, nrows), domain = NA)
-4: CreateAllCohorts.R#86: `$<-.data.frame`(`*tmp*`, "databaseId", value = "Synpuf")
-3: CreateAllCohorts.R#86: `$<-`(`*tmp*`, "databaseId", value = "Synpuf")
-2: Assessment.R#75: createExposureCohorts(connectionDetails = connectionDetails, cdmDatabaseSchema = cdmDatabaseSchema, vocabularyDatabaseSchema = vocab
-1: Signals::assessPhenotypes(connectionDetails = connectionDetails, cdmDatabaseSchema = cdmDatabaseSchema, oracleTempSchema = oracleTempSchema, cohortDa
+13: (function (condition) 
+{
+    if (is(condition, "error")) {
+        log("FATAL", conditionMessage(condition), echoToConso
+12: signalCondition(cnd)
+11: signal_abort(cnd, .file)
+10: abort(paste("Error executing SQL:", message, paste("An error report has been created at ", fileName), sep = "\n"), ca
+9: .createErrorReport(dbms, err$message, sqlStatement, errorReportFile)
+8: value[[3]](cond)
+7: tryCatchOne(expr, names, parentenv, handlers[[1]])
+6: tryCatchList(expr, classes, parentenv, handlers)
+5: tryCatch({
+    startQuery <- Sys.time()
+    rowsAffected <- c(rowsAffected, lowLevelExecuteSql(connection, sqlStatement
+4: CohortConstruction.R#603: DatabaseConnector::executeSql(connection, sql)
+3: CreateAllCohorts.R#63: CohortDiagnostics::instantiateCohortSet(connectionDetails = connectionDetails, cdmDatabaseSche
+2: Assessment.R#75: createExposureCohorts(connectionDetails = connectionDetails, cdmDatabaseSchema = cdmDatabaseSchema, 
+1: Signals::assessPhenotypes(connectionDetails = connectionDetails, cdmDatabaseSchema = cdmDatabaseSchema, oracleTempSch
 
 R version:
 R version 4.2.1 (2022-06-23 ucrt)
@@ -26,5 +41,8 @@ Attached base packages:
 - base
 
 Other attached packages:
+- Signals (2.1.1)
+- DatabaseConnector (6.3.2)
+- dplyr (1.1.4)
 
 

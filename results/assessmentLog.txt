@@ -608,3 +608,31 @@
 2024-03-16 16:56:07	[Main thread]	INFO	DatabaseConnector	insertTable.default	Inserting data took 0.759 secs
 2024-03-16 16:56:07	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort chlorpropamide (Cohort id: 411100000)
 2024-03-16 16:56:07	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 411100000 SQL has inclusion rule statistics tables.
+2024-03-16 20:18:05	[Main thread]	INFO	Signals	assessPhenotypes	Starting assessPhenotypes() for Signals class-vs-class studies
+2024-03-16 20:18:05	[Main thread]	INFO	Signals	createExposureCohorts	Creating class exposure cohorts
+2024-03-16 20:18:05	[Main thread]	INFO	Signals	createExposureCohorts	- Populating table signals_study_class_cohort
+2024-03-16 20:18:05	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2024-03-16 20:18:06	[Main thread]	INFO	CohortDiagnostics	createCohortTable	Creating cohort table
+2024-03-16 20:18:06	[Main thread]	DEBUG	CohortDiagnostics	createCohortTable	Created table jmt_signals.dbo.signals_study_class_cohort
+2024-03-16 20:18:06	[Main thread]	DEBUG	CohortDiagnostics	getCohortsJsonAndSqlFromPackage	Executing on cohorts specified in package - Signals
+2024-03-16 20:18:11	[Main thread]	INFO	CohortDiagnostics	getCohortsJsonAndSql	Number of cohorts 176
+2024-03-16 20:18:11	[Main thread]	INFO	CohortDiagnostics	createTempInclusionStatsTables	Creating temporary inclusion statistics tables
+2024-03-16 20:18:12	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.575 secs
+2024-03-16 20:18:14	[Main thread]	INFO	DatabaseConnector	insertTable.default	Inserting data took 0.656 secs
+2024-03-16 20:18:14	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort DPP4I main (Cohort id: 101100000)
+2024-03-16 20:18:14	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 101100000 SQL has inclusion rule statistics tables.
+2024-03-17 13:50:18	[Main thread]	FATAL	DatabaseConnector	.createErrorReport	Error executing SQL: org.postgresql.util.PSQLException: An I/O error occurred while sending to the backend. An error report has been created at  C:/Users/Jeff Telford/Documents/Signals/errorReportSql.txt
+2024-03-17 13:50:53	[Main thread]	INFO	Signals	assessPhenotypes	Starting assessPhenotypes() for Signals class-vs-class studies
+2024-03-17 13:50:53	[Main thread]	INFO	Signals	createExposureCohorts	Creating class exposure cohorts
+2024-03-17 13:50:53	[Main thread]	INFO	Signals	createExposureCohorts	- Populating table signals_study_class_cohort
+2024-03-17 13:50:53	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2024-03-17 13:50:54	[Main thread]	INFO	CohortDiagnostics	createCohortTable	Creating cohort table
+2024-03-17 13:50:56	[Main thread]	DEBUG	CohortDiagnostics	createCohortTable	Created table jmt_signals.dbo.signals_study_class_cohort
+2024-03-17 13:50:56	[Main thread]	DEBUG	CohortDiagnostics	getCohortsJsonAndSqlFromPackage	Executing on cohorts specified in package - Signals
+2024-03-17 13:50:59	[Main thread]	INFO	CohortDiagnostics	getCohortsJsonAndSql	Number of cohorts 176
+2024-03-17 13:50:59	[Main thread]	INFO	CohortDiagnostics	createTempInclusionStatsTables	Creating temporary inclusion statistics tables
+2024-03-17 13:51:01	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 2.08 secs
+2024-03-17 13:51:08	[Main thread]	INFO	DatabaseConnector	insertTable.default	Inserting data took 0.613 secs
+2024-03-17 13:51:08	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort DPP4I main (Cohort id: 101100000)
+2024-03-17 13:51:08	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 101100000 SQL has inclusion rule statistics tables.
+2024-03-18 08:48:46	[Main thread]	FATAL	DatabaseConnector	.createErrorReport	Error executing SQL: org.postgresql.util.PSQLException: An I/O error occurred while sending to the backend. An error report has been created at  C:/Users/Jeff Telford/Documents/Signals/errorReportSql.txt

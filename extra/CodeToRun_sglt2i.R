@@ -8,7 +8,7 @@ install.packages('https://github.com/OHDSI/FeatureExtraction/archive/refs/tags/v
 install.packages('https://github.com/OHDSI/CohortMethod/archive/refs/tags/v5.2.1.tar.gz')
 install.packages('https://github.com/OHDSI/MethodEvaluation/archive/refs/tags/v2.3.0.tar.gz')
 install.packages('https://github.com/OHDSI/CohortGenerator/archive/refs/tags/v0.6.0.tar.gz')
-install.packages('https://github.com/OHDSI/CohortDiagnostics/archive/refs/tags/v3.2.5.tar.gz')
+install.packages('https://github.com/OHDSI/CohortDiagnostics/archive/refs/tags/v2.1.3.tar.gz')
 install.packages('https://github.com/OHDSI/CirceR/archive/refs/tags/v1.2.0.tar.gz')
 install.packages('https://github.com/OHDSI/MethodEvaluation/archive/refs/tags/v2.3.0.tar.gz')
 library(dplyr)
@@ -67,7 +67,7 @@ Signals::assessPhenotypes(connectionDetails = connectionDetails,
                  outputFolder = outputFolder,
                  tablePrefix = tablePrefix,
                  databaseId = databaseId,
-                 indicationId = 'sglt2i',
+            #   indicationId = 'su',
                  databaseName = databaseName,
                  databaseDescription = databaseDescription,
                  createExposureCohorts = TRUE,

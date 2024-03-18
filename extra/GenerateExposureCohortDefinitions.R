@@ -26,13 +26,13 @@ baseUrlWebApi <- keyring::key_get("baseUrl")
 
 # code to query the Atlas Web API to get the base cohort (based on pre-defined ATLAS cohort)
 # Make sure you download the right cohort
+#baseCohort = baseCohort_orig
+   baseCohort <- ROhdsiWebApi::getCohortDefinition(674, baseUrl = baseUrl)
+   baseCohortJson <- RJSONIO::toJSON(baseCohort$expression, indent = 2, digits = 50)
+   SqlRender::writeSql(baseCohortJson, targetFile = "inst/settings/baseCohort.json")
+   saveRDS(baseCohort, file = "inst/settings/baseCohort.rds")
 
- # baseCohort <- ROhdsiWebApi::getCohortDefinition(674, baseUrl = baseUrl)
- # baseCohortJson <- RJSONIO::toJSON(baseCohort$expression, indent = 2, digits = 50)
- # SqlRender::writeSql(baseCohortJson, targetFile = "inst/settings/baseCohort.json")
- # saveRDS(baseCohort, file = "inst/settings/baseCohort.rds")
-
-# Inclusion rules: Age == 1, Sex == 2, Race == 3, CVD == 4, Renal == 5, PriorMet == 6, NoMet == 7
+# Inclusion rules: Age == 1, Sex == 2, Race == 3, CVD == 4, obese == 5, PriorMet == 6, NoMet == 7
 
 baseCohort <- readRDS("inst/settings/baseCohort.rds")
 
@@ -44,52 +44,49 @@ permutations <- inner_join(permutations, exposuresOfInterestTable %>% select(coh
 
 makeName <- function(permutation) {
   paste0(permutation$shortName, ": ", permutation$tar, ", ", permutation$met, " prior met, ",
-         permutation$age, " age, ", permutation$sex, " sex, ", permutation$race, " race, ",
-         permutation$cvd, " cv risk, ", permutation$renal, " renal")
+         permutation$age, " age, ", permutation$sex, " sex, ", 
+         permutation$obese, " obese")
 }
 
 makeShortName <- function(permutation) {
   paste0(permutation$shortName,
          ifelse(permutation$age == "any" &
                   permutation$sex == "any" &
-                  permutation$race == "any" &
-                  permutation$cvd == "any" &
-                  permutation$renal == "any", " main", ""),
+                  permutation$obese == "any", " main", ""),
          ifelse(permutation$tar == "ot2", " ot2", ""),
          ifelse(permutation$met == "no", " no-met", ""),
          ifelse(permutation$age != "any", paste0(" ", permutation$age, "-age"), ""),
          ifelse(permutation$sex != "any", paste0(" ", permutation$sex), ""),
-         ifelse(permutation$race != "any", " black", ""),
-         ifelse(permutation$cvd != "any", paste0(" ", permutation$cvd, "-cvr"), ""),
-         ifelse(permutation$renal != "any", paste0(" ", permutation$renal, "-rdz"), ""))
+         ifelse(permutation$obese != "any", paste0(" ", permutation$obese, "-rdz"), ""))
 }
-
+cohort  = baseCohort_orig 
+permutation = permutations[1,] 
 permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
-
+  
   c1Id <- floor(permutation$comparator1Id / 10)
   c2Id <- floor(permutation$comparator2Id / 10)
   c3Id <- floor(permutation$comparator3Id / 10)
-
+  
   delta <- 0
-
+  
   # Remove unused alternative within-class
   if (ingredientLevel) {
-
+    
     targetId <- permutation$targetId
     classId <- floor(targetId / 10)
-
+    
     classSet <- cohort$expression$ConceptSets[[classId]]
     targetSet <- classSet
     excludeSet <- classSet
-
+    
     drugInfo <- exposuresOfInterestTable %>% filter(cohortId == targetId)
     name <- drugInfo %>% pull(name)
     conceptId <- drugInfo %>% pull(conceptId)
-
+    
     targetSet$name <- name
     excludeSet$name <- paste(excludeSet$name, "excluding", name)
     excludeSet$id <- 15
-
+    
     targetSet$expression$items <- plyr::compact(
       lapply(targetSet$expression$items, function(item) {
         if (item$concept$CONCEPT_ID == conceptId) {
@@ -98,7 +95,7 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
           NULL
         }
       }))
-
+    
     excludeSet$expression$items <- plyr::compact(
       lapply(excludeSet$expression$items, function(item) {
         if (item$concept$CONCEPT_ID != conceptId) {
@@ -107,30 +104,30 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
           NULL
         }
       }))
-
+    
     cohort$expression$ConceptSets[[classId]] <- targetSet
     cohort$expression$ConceptSets[[15]] <- excludeSet
-
+    
     tId <- classId
-
+    
   } else {
     cohort$expression$InclusionRules[[1]] <- NULL
     delta <- delta + 1
     cohort$expression$ConceptSets[[15]] <- NULL
     tId <- floor(permutation$targetId / 10)
   }
-
+  
   cohort$expression$PrimaryCriteria$CriteriaList[[1]]$DrugExposure$CodesetId <- tId
-
+  
   # cohort$expression$AdditionalCriteria$CriteriaList[[1]]$Criteria$DrugExposure$CodesetId <- c1Id
   # cohort$expression$AdditionalCriteria$CriteriaList[[2]]$Criteria$DrugExposure$CodesetId <- c2Id
   # cohort$expression$AdditionalCriteria$CriteriaList[[3]]$Criteria$DrugExposure$CodesetId <- c3Id
-
+  
   target <- 2 - delta - 1
   cohort$expression$InclusionRules[[target + tId]] <- NULL
   cohort$expression$EndStrategy$CustomEra[1] <- tId
   delta <- delta + 1
-
+  
   # AdditionalCriteria: [1,2,3] other drug classes
   # [4]: codesetId 12 (type 2 diabetes mellitus)
   # [5]: codesetId 11 (type 1 diabetes mellitus)
@@ -138,10 +135,10 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   # [7]: codesetId 5 (other anti-diabetes)
   # [8]: codesetId 15 (other drugs in class) if not null
   # end ...
-
-
+  
+  
   # Want to move: [1,2,3,7,8]
-
+  
   # moveList <- c(cohort$expression$AdditionalCriteria$CriteriaList[[1]],
   #               cohort$expression$AdditionalCriteria$CriteriaList[[2]],
   #               cohort$expression$AdditionalCriteria$CriteriaList[[3]],
@@ -154,17 +151,13 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   # cohort$expression$AdditionalCriteria$CriteriaList <- list(cohort$expression$AdditionalCriteria$CriteriaList[[4]],
   #                                                           cohort$expression$AdditionalCriteria$CriteriaList[[5]],
   #                                                           cohort$expression$AdditionalCriteria$CriteriaList[[6]])
-
+  
   age <- 7 - delta
   if (permutation$age == "younger") {
     cohort$expression$InclusionRules[[age]]$name <- "Lower age group"
     cohort$expression$InclusionRules[[age]]$description <- NULL
     cohort$expression$InclusionRules[[age]]$expression$DemographicCriteriaList[[1]]$Age$Op <- "lt"
     cohort$expression$InclusionRules[[age]]$expression$DemographicCriteriaList[[2]] <- NULL
-  } else if (permutation$age == "middle") {
-    cohort$expression$InclusionRules[[age]]$name <- "Middle age group"
-    cohort$expression$InclusionRules[[age]]$description <- NULL
-    cohort$expression$InclusionRules[[age]]$expression$DemographicCriteriaList[[1]]$Age$Op <- "gte"
     # cohort$expression$InclusionRules[[age]]$expression$DemographicCriteriaList[[2]]$Age$Op <- ""
   } else if (permutation$age == "older") {
     cohort$expression$InclusionRules[[age]]$name <- "Older age group"
@@ -177,7 +170,7 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   } else {
     stop("Unknown age type")
   }
-
+  
   sex <- 8 - delta
   if (permutation$sex == "female") {
     cohort$expression$InclusionRules[[sex]]$name <- "Female stratum"
@@ -195,62 +188,24 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   } else {
     stop("Unknown sex type")
   }
+  
 
-  race <- 9 - delta
-  if (permutation$race == "black") {
-    cohort$expression$InclusionRules[[race]]$name <- "Race stratum"
-    cohort$expression$InclusionRules[[race]]$description <- NULL
-  } else if (permutation$race == "any") {
-    cohort$expression$InclusionRules[[race]] <- NULL
-    delta <- delta + 1
-  } else {
-    stop("Unknown race type")
-  }
-
-  cvd <- 10 - delta
-  if (permutation$cvd == "low") {
-    cohort$expression$InclusionRules[[cvd]]$name <- "Low cardiovascular risk"
-    cohort$expression$InclusionRules[[cvd]]$description <- NULL
-    cohort$expression$InclusionRules[[cvd]]$expression$Type <- "ALL"
-
-    cohort$expression$InclusionRules[[cvd]]$expression$CriteriaList[[1]]$Occurrence$Type <- 0
-    cohort$expression$InclusionRules[[cvd]]$expression$CriteriaList[[1]]$Occurrence$Count <- 0
-
-    cohort$expression$InclusionRules[[cvd]]$expression$CriteriaList[[2]]$Occurrence$Type <- 0
-    cohort$expression$InclusionRules[[cvd]]$expression$CriteriaList[[2]]$Occurrence$Count <- 0
-  } else if (permutation$cvd == "higher") {
-    cohort$expression$InclusionRules[[cvd]]$name <- "Higher cardiovascular risk"
-    cohort$expression$InclusionRules[[cvd]]$description <- NULL
-    cohort$expression$InclusionRules[[cvd]]$expression$Type <- "ANY"
-
-    cohort$expression$InclusionRules[[cvd]]$expression$CriteriaList[[1]]$Occurrence$Type <- 2
-    cohort$expression$InclusionRules[[cvd]]$expression$CriteriaList[[1]]$Occurrence$Count <- 1
-
-    cohort$expression$InclusionRules[[cvd]]$expression$CriteriaList[[2]]$Occurrence$Type <- 2
-    cohort$expression$InclusionRules[[cvd]]$expression$CriteriaList[[2]]$Occurrence$Count <- 1
-  } else if (permutation$cvd == "any") {
-    cohort$expression$InclusionRules[[cvd]] <- NULL
+  obesity <- 11 - delta
+  if (permutation$obese == "without") {
+    cohort$expression$InclusionRules[[obesity]]$name <- "Without obesity "
+    cohort$expression$InclusionRules[[obesity]]$description <- NULL
+    cohort$expression$InclusionRules[[obesity]]$expression$CriteriaList[[1]]$Occurrence$Type <- 0
+    cohort$expression$InclusionRules[[obesity]]$expression$CriteriaList[[1]]$Occurrence$Count <- 0
+  } else if (permutation$obese == "with") {
+    cohort$expression$InclusionRules[[obesity]]$name <- "obesity"
+    cohort$expression$InclusionRules[[obesity]]$description <- NULL
+  } else if (permutation$obese == "any") {
+    cohort$expression$InclusionRules[[obesity]] <- NULL
     delta <- delta  + 1
   } else {
-    stop("Unknown CVD risk type")
+    stop("Unknown obesity type")
   }
-
-  renal <- 11 - delta
-  if (permutation$renal == "without") {
-    cohort$expression$InclusionRules[[renal]]$name <- "Without renal impairment"
-    cohort$expression$InclusionRules[[renal]]$description <- NULL
-    cohort$expression$InclusionRules[[renal]]$expression$CriteriaList[[1]]$Occurrence$Type <- 0
-    cohort$expression$InclusionRules[[renal]]$expression$CriteriaList[[1]]$Occurrence$Count <- 0
-  } else if (permutation$renal == "with") {
-    cohort$expression$InclusionRules[[renal]]$name <- "Renal impairment"
-    cohort$expression$InclusionRules[[renal]]$description <- NULL
-  } else if (permutation$renal == "any") {
-    cohort$expression$InclusionRules[[renal]] <- NULL
-    delta <- delta  + 1
-  } else {
-    stop("Unknown renal type")
-  }
-
+  
   met <- 12 - delta
   if (permutation$met == "with") {
     # Do nothing
@@ -270,20 +225,20 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   } else {
     stop("Unknown metformin type")
   }
-
+  
   insulin <- 13 - delta
   cohort$expression$InclusionRules[[insulin]]$description <- NULL
-
+  
   if (permutation$tar == "ot1") {
     cohort$expression$CensoringCriteria <- list()
   } else if (permutation$tar == "ot2") {
-
+    
     includedConcepts <- as.numeric(unlist(strsplit(exposuresOfInterestTable %>%
                                                      filter(cohortId == permutation$targetId) %>%
                                                      pull(includedConceptIds),
                                                    ";")))
     items <- cohort$expression$ConceptSets[[14]]$expression$items
-
+    
     tmp <-
       lapply(items, function(item) {
         if (item$concept$CONCEPT_ID %in% includedConcepts) {
@@ -296,7 +251,7 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   } else {
     stop("Unknown TAR")
   }
-
+  
   cohort$name <- makeName(permutation)
   # cohort$name <- paste0(cohort$name, " T: ", permutation$shortName, " CVD: ", permutation$cvd, " Age: ", permutation$age)
   return(cohort)
@@ -330,6 +285,7 @@ permutations <- permutations %>%
 
 permutations$atlasName <- makeShortName(permutations)
 
+
 # write class-level SQL and JSON files----
 for (i in 1:nrow(permutations)) {
   row <- permutations[i,]
@@ -348,12 +304,12 @@ classCohortsToCreate <- permutations %>%
 readr::write_csv(classCohortsToCreate, "inst/settings/classCohortsToCreate.csv")
 
 # Make classTcosOfInterest.csv ----
-makeTCOs <- function(tarId, metId, ageId, sexId, raceId, cvdId, renalId) {
+makeTCOs <- function(tarId, metId, ageId, sexId, obeseId) {
 
   baseTs <- permutations %>%
     filter(tar == tarId,
-           age == ageId, sex == sexId, race == raceId, cvd == cvdId,
-           renal == renalId, met == metId)
+           age == ageId, sex == sexId,
+           obese == obeseId, met == metId)
 
   tab <- as.data.frame(t(combn(baseTs$cohortId, m = 2)))
   names(tab) <- c("targetId", "comparatorId")
@@ -372,45 +328,40 @@ makeTCOs <- function(tarId, metId, ageId, sexId, raceId, cvdId, renalId) {
 }
 
 classTcos <- rbind(
-  # Order: tar, met, age, sex, race, cvd, renal
+  # Order: tar, met, age, sex, obese
   #
   # OT1
   # Main
-  makeTCOs("ot1", "with", "any", "any", "any", "any", "any"),
+  makeTCOs("ot1", "with", "any", "any",
+           "any"),
   # Age
-  makeTCOs("ot1", "with", "younger", "any", "any", "any", "any"),
-  makeTCOs("ot1", "with", "middle", "any", "any", "any", "any"),
-  makeTCOs("ot1", "with", "older", "any", "any", "any", "any"),
+  makeTCOs("ot1", "with", "younger", "any",  "any"),
+  makeTCOs("ot1", "with", "older", "any","any"),
   # Sex
-  makeTCOs("ot1", "with", "any", "female", "any", "any", "any"),
-  makeTCOs("ot1", "with", "any", "male", "any", "any", "any"),
+  makeTCOs("ot1", "with", "any", "female", "any"),
+  makeTCOs("ot1", "with", "any", "male", "any"),
   # Race
-  makeTCOs("ot1", "with", "any", "any", "black", "any", "any"),
+  makeTCOs("ot1", "with", "any", "any",  "any"),
   # CV risk
-  makeTCOs("ot1", "with", "any", "any", "any", "low", "any"),
-  makeTCOs("ot1", "with", "any", "any", "any", "higher", "any"),
-  # Renal dz
-  makeTCOs("ot1", "with", "any", "any", "any", "any", "without"),
-  makeTCOs("ot1", "with", "any", "any", "any", "any", "with"),
+  makeTCOs("ot1", "with", "any", "any",  "any"),
+  makeTCOs("ot1", "with", "any", "any","any"),
+  # obese dz
+  makeTCOs("ot1", "with", "any", "any",  "without"),
+  makeTCOs("ot1", "with", "any", "any", "with"),
   #
   # OT2
   # Main
-  makeTCOs("ot2", "with", "any", "any", "any", "any", "any"),
+  makeTCOs("ot2", "with", "any", "any","any"),
   # Age
-  makeTCOs("ot2", "with", "younger", "any", "any", "any", "any"),
-  makeTCOs("ot2", "with", "middle", "any", "any", "any", "any"),
-  makeTCOs("ot2", "with", "older", "any", "any", "any", "any"),
+  makeTCOs("ot2", "with", "younger", "any",  "any"),
+  makeTCOs("ot2", "with", "older", "any",  "any"),
   # Sex
-  makeTCOs("ot2", "with", "any", "female", "any", "any", "any"),
-  makeTCOs("ot2", "with", "any", "male", "any", "any", "any"),
-  # Race
-  makeTCOs("ot2", "with", "any", "any", "black", "any", "any"),
-  # CV risk
-  makeTCOs("ot2", "with", "any", "any", "any", "low", "any"),
-  makeTCOs("ot2", "with", "any", "any", "any", "higher", "any"),
-  # Renal dz
-  makeTCOs("ot2", "with", "any", "any", "any", "any", "without"),
-  makeTCOs("ot2", "with", "any", "any", "any", "any", "with")
+  makeTCOs("ot2", "with", "any", "female",  "any"),
+  makeTCOs("ot2", "with", "any", "male", "any"),
+
+  # obese dz
+  makeTCOs("ot2", "with", "any", "any","without"),
+  makeTCOs("ot2", "with", "any", "any", "with")
 )
 readr::write_csv(classTcos, "inst/settings/classTcosOfInterest.csv")
 
@@ -535,17 +486,13 @@ printCohortDefinitionFromNameAndJson(name = "canagliflozin main",
                                      json = permutationsForDrugs$json[1]) # change this to one GLP1RA name instead!
 printCohortDefinitionFromNameAndJson(name = "canagliflozin younger-age",
                                      json = permutationsForDrugs$json[2])
-printCohortDefinitionFromNameAndJson(name = "anagliflozin middle-age",
-                                     json = permutationsForDrugs$json[3])
-
 
 #make drug-level TCOs
-makeTCOsDrug <- function(tarId, metId, ageId, sexId, raceId, cvdId, renalId) {
+makeTCOsDrug <- function(tarId, metId, ageId, sexId, obeseId) {
 
   baseTs <- permutationsForDrugs %>%
     filter(tar == tarId,
-           age == ageId, sex == sexId, race == raceId, cvd == cvdId,
-           renal == renalId, met == metId)
+           age == ageId, sex == sexId, obese == obeseId, met == metId)
 
   tab <- as.data.frame(t(combn(baseTs$cohortId, m = 2)))
   names(tab) <- c("targetId", "comparatorId")
@@ -564,45 +511,33 @@ makeTCOsDrug <- function(tarId, metId, ageId, sexId, raceId, cvdId, renalId) {
 }
 
 drugTcos <- rbind(
-  # Order: tar, met, age, sex, race, cvd, renal
-  #
+  # Order: tar, met, age, sex, obese
   # OT1
   # Main
-  makeTCOsDrug("ot1", "with", "any", "any", "any", "any", "any"),
+  makeTCOsDrug("ot1", "with", "any", "any", "any"),
   # Age
-  makeTCOsDrug("ot1", "with", "younger", "any", "any", "any", "any"),
-  makeTCOsDrug("ot1", "with", "middle", "any", "any", "any", "any"),
-  makeTCOsDrug("ot1", "with", "older", "any", "any", "any", "any"),
+  makeTCOsDrug("ot1", "with", "younger", "any", "any"),
+  makeTCOsDrug("ot1", "with", "older", "any", "any"),
   # Sex
-  makeTCOsDrug("ot1", "with", "any", "female", "any", "any", "any"),
-  makeTCOsDrug("ot1", "with", "any", "male", "any", "any", "any"),
-  # Race
-  makeTCOsDrug("ot1", "with", "any", "any", "black", "any", "any"),
-  # CV risk
-  makeTCOsDrug("ot1", "with", "any", "any", "any", "low", "any"),
-  makeTCOsDrug("ot1", "with", "any", "any", "any", "higher", "any"),
-  # Renal dz
-  makeTCOsDrug("ot1", "with", "any", "any", "any", "any", "without"),
-  makeTCOsDrug("ot1", "with", "any", "any", "any", "any", "with"),
+  makeTCOsDrug("ot1", "with", "any", "female", "any"),
+  makeTCOsDrug("ot1", "with", "any", "male", "any"),
+  # obese dz
+  makeTCOsDrug("ot1", "with", "any", "any",  "without"),
+  makeTCOsDrug("ot1", "with", "any", "any",  "with"),
   #
   # OT2
   # Main
-  makeTCOsDrug("ot2", "with", "any", "any", "any", "any", "any"),
+  makeTCOsDrug("ot2", "with", "any", "any",  "any"),
   # Age
-  makeTCOsDrug("ot2", "with", "younger", "any", "any", "any", "any"),
-  makeTCOsDrug("ot2", "with", "middle", "any", "any", "any", "any"),
-  makeTCOsDrug("ot2", "with", "older", "any", "any", "any", "any"),
+  makeTCOsDrug("ot2", "with", "younger", "any",  "any"),
+  makeTCOsDrug("ot2", "with", "older", "any", "any"),
   # Sex
-  makeTCOsDrug("ot2", "with", "any", "female", "any", "any", "any"),
-  makeTCOsDrug("ot2", "with", "any", "male", "any", "any", "any"),
-  # Race
-  makeTCOsDrug("ot2", "with", "any", "any", "black", "any", "any"),
-  # CV risk
-  makeTCOsDrug("ot2", "with", "any", "any", "any", "low", "any"),
-  makeTCOsDrug("ot2", "with", "any", "any", "any", "higher", "any"),
-  # Renal dz
-  makeTCOsDrug("ot2", "with", "any", "any", "any", "any", "without"),
-  makeTCOsDrug("ot2", "with", "any", "any", "any", "any", "with")
+  makeTCOsDrug("ot2", "with", "any", "female",  "any"),
+  makeTCOsDrug("ot2", "with", "any", "male", "any"),
+
+  # obese dz
+  makeTCOsDrug("ot2", "with", "any", "any", "without"),
+  makeTCOsDrug("ot2", "with", "any", "any", "with")
 )
 
 # save TCOs 

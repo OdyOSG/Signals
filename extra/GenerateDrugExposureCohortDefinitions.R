@@ -219,33 +219,6 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
     stop("Unknown race type")
   }
 
-  cvd <- 10 - delta
-  if (permutation$cvd == "low") {
-    cohort$expression$InclusionRules[[cvd]]$name <- "Low cardiovascular risk"
-    cohort$expression$InclusionRules[[cvd]]$description <- NULL
-    cohort$expression$InclusionRules[[cvd]]$expression$Type <- "ALL"
-
-    cohort$expression$InclusionRules[[cvd]]$expression$CriteriaList[[1]]$Occurrence$Type <- 0
-    cohort$expression$InclusionRules[[cvd]]$expression$CriteriaList[[1]]$Occurrence$Count <- 0
-
-    cohort$expression$InclusionRules[[cvd]]$expression$CriteriaList[[2]]$Occurrence$Type <- 0
-    cohort$expression$InclusionRules[[cvd]]$expression$CriteriaList[[2]]$Occurrence$Count <- 0
-  } else if (permutation$cvd == "higher") {
-    cohort$expression$InclusionRules[[cvd]]$name <- "Higher cardiovascular risk"
-    cohort$expression$InclusionRules[[cvd]]$description <- NULL
-    cohort$expression$InclusionRules[[cvd]]$expression$Type <- "ANY"
-
-    cohort$expression$InclusionRules[[cvd]]$expression$CriteriaList[[1]]$Occurrence$Type <- 2
-    cohort$expression$InclusionRules[[cvd]]$expression$CriteriaList[[1]]$Occurrence$Count <- 1
-
-    cohort$expression$InclusionRules[[cvd]]$expression$CriteriaList[[2]]$Occurrence$Type <- 2
-    cohort$expression$InclusionRules[[cvd]]$expression$CriteriaList[[2]]$Occurrence$Count <- 1
-  } else if (permutation$cvd == "any") {
-    cohort$expression$InclusionRules[[cvd]] <- NULL
-    delta <- delta  + 1
-  } else {
-    stop("Unknown CVD risk type")
-  }
 
   renal <- 11 - delta
   if (permutation$renal == "without") {

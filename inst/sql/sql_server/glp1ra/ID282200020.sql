@@ -18,13 +18,7 @@ UNION  select c.concept_id
 ) C UNION ALL 
 SELECT 2 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (36851064)
-UNION  select c.concept_id
-  from @vocabulary_database_schema.CONCEPT c
-  join @vocabulary_database_schema.CONCEPT_ANCESTOR ca on c.concept_id = ca.descendant_concept_id
-  and ca.ancestor_concept_id in (36851064)
-  and c.invalid_reason is null
-
+  select concept_id from @vocabulary_database_schema.CONCEPT where 0=1
 ) I
 ) C UNION ALL 
 SELECT 3 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
@@ -150,12 +144,7 @@ UNION  select c.concept_id
 ) C UNION ALL 
 SELECT 13 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (4030518)
-UNION  select c.concept_id
-  from @vocabulary_database_schema.CONCEPT c
-  join @vocabulary_database_schema.CONCEPT_ANCESTOR ca on c.concept_id = ca.descendant_concept_id
-  and ca.ancestor_concept_id in (4030518)
-  and c.invalid_reason is null
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (3038553,36304833,3025315,4099154,3013762,3023166,3027492,4215968,4176962,44161830)
 
 ) I
 ) C UNION ALL 
@@ -172,11 +161,11 @@ UNION  select c.concept_id
 ) C UNION ALL 
 SELECT 15 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (45774435,1583722,40170911,44506754,793143,44816332,779705)
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (44816332,45774435,1583722,40170911,44506754,793143)
 UNION  select c.concept_id
   from @vocabulary_database_schema.CONCEPT c
   join @vocabulary_database_schema.CONCEPT_ANCESTOR ca on c.concept_id = ca.descendant_concept_id
-  and ca.ancestor_concept_id in (45774435,1583722,40170911,44506754,793143,44816332,779705)
+  and ca.ancestor_concept_id in (44816332,45774435,1583722,40170911,44506754,793143)
   and c.invalid_reason is null
 
 ) I
@@ -799,9 +788,44 @@ FROM
   FROM #qualified_events E
   INNER JOIN
   (
+    -- Begin Demographic Criteria
+SELECT 0 as index_id, e.person_id, e.event_id
+FROM #qualified_events E
+JOIN @cdm_database_schema.PERSON P ON P.PERSON_ID = E.PERSON_ID
+WHERE P.race_concept_id in (8516,38003598,38003599,38003600,38003601,38003602,38003603,38003604,38003605,38003606,38003607,38003608,38003609) AND P.race_concept_id in (8516,38003598,38003599,38003600,38003601,38003602,38003603,38003604,38003605,38003606,38003607,38003608,38003609)
+GROUP BY e.person_id, e.event_id
+-- End Demographic Criteria
+
+  ) CQ on E.person_id = CQ.person_id and E.event_id = CQ.event_id
+  GROUP BY E.person_id, E.event_id
+  HAVING COUNT(index_id) = 1
+) G
+-- End Criteria Group
+) AC on AC.person_id = pe.person_id AND AC.event_id = pe.event_id
+) Results
+;
+
+select 6 as inclusion_rule_id, person_id, event_id
+INTO #Inclusion_6
+FROM 
+(
+  select pe.person_id, pe.event_id
+  FROM #qualified_events pe
+  
+JOIN (
+-- Begin Criteria Group
+select 0 as index_id, person_id, event_id
+FROM
+(
+  select E.person_id, E.event_id 
+  FROM #qualified_events E
+  INNER JOIN
+  (
     -- Begin Correlated Criteria
-select 0 as index_id, cc.person_id, cc.event_id
-from (SELECT p.person_id, p.event_id 
+select 0 as index_id, p.person_id, p.event_id
+from #qualified_events p
+LEFT JOIN (
+SELECT p.person_id, p.event_id 
 FROM #qualified_events P
 JOIN (
   -- Begin Condition Occurrence Criteria
@@ -817,15 +841,17 @@ FROM
 
 -- End Condition Occurrence Criteria
 
-) A on A.person_id = P.person_id  AND A.START_DATE <= DATEADD(day,0,P.START_DATE) ) cc 
-GROUP BY cc.person_id, cc.event_id
-HAVING COUNT(cc.event_id) >= 1
+) A on A.person_id = P.person_id  AND A.START_DATE <= DATEADD(day,0,P.START_DATE) ) cc on p.person_id = cc.person_id and p.event_id = cc.event_id
+GROUP BY p.person_id, p.event_id
+HAVING COUNT(cc.event_id) = 0
 -- End Correlated Criteria
 
 UNION ALL
 -- Begin Correlated Criteria
-select 1 as index_id, cc.person_id, cc.event_id
-from (SELECT p.person_id, p.event_id 
+select 1 as index_id, p.person_id, p.event_id
+from #qualified_events p
+LEFT JOIN (
+SELECT p.person_id, p.event_id 
 FROM #qualified_events P
 JOIN (
   -- Begin Procedure Occurrence Criteria
@@ -841,22 +867,22 @@ JOIN #Codesets cs on (po.procedure_concept_id = cs.concept_id and cs.codeset_id 
 
 -- End Procedure Occurrence Criteria
 
-) A on A.person_id = P.person_id  AND A.START_DATE <= DATEADD(day,0,P.START_DATE) ) cc 
-GROUP BY cc.person_id, cc.event_id
-HAVING COUNT(cc.event_id) >= 1
+) A on A.person_id = P.person_id  AND A.START_DATE <= DATEADD(day,0,P.START_DATE) ) cc on p.person_id = cc.person_id and p.event_id = cc.event_id
+GROUP BY p.person_id, p.event_id
+HAVING COUNT(cc.event_id) = 0
 -- End Correlated Criteria
 
   ) CQ on E.person_id = CQ.person_id and E.event_id = CQ.event_id
   GROUP BY E.person_id, E.event_id
-  HAVING COUNT(index_id) > 0
+  HAVING COUNT(index_id) = 2
 ) G
 -- End Criteria Group
 ) AC on AC.person_id = pe.person_id AND AC.event_id = pe.event_id
 ) Results
 ;
 
-select 6 as inclusion_rule_id, person_id, event_id
-INTO #Inclusion_6
+select 7 as inclusion_rule_id, person_id, event_id
+INTO #Inclusion_7
 FROM 
 (
   select pe.person_id, pe.event_id
@@ -905,8 +931,8 @@ HAVING COUNT(cc.event_id) = 0
 ) Results
 ;
 
-select 7 as inclusion_rule_id, person_id, event_id
-INTO #Inclusion_7
+select 8 as inclusion_rule_id, person_id, event_id
+INTO #Inclusion_8
 FROM 
 (
   select pe.person_id, pe.event_id
@@ -997,7 +1023,9 @@ select inclusion_rule_id, person_id, event_id from #Inclusion_5
 UNION ALL
 select inclusion_rule_id, person_id, event_id from #Inclusion_6
 UNION ALL
-select inclusion_rule_id, person_id, event_id from #Inclusion_7) I;
+select inclusion_rule_id, person_id, event_id from #Inclusion_7
+UNION ALL
+select inclusion_rule_id, person_id, event_id from #Inclusion_8) I;
 TRUNCATE TABLE #Inclusion_0;
 DROP TABLE #Inclusion_0;
 
@@ -1022,6 +1050,9 @@ DROP TABLE #Inclusion_6;
 TRUNCATE TABLE #Inclusion_7;
 DROP TABLE #Inclusion_7;
 
+TRUNCATE TABLE #Inclusion_8;
+DROP TABLE #Inclusion_8;
+
 
 select event_id, person_id, start_date, end_date, op_start_date, op_end_date
 into #included_events
@@ -1036,7 +1067,7 @@ FROM (
   ) MG -- matching groups
 
   -- the matching group with all bits set ( POWER(2,# of inclusion rules) - 1 = inclusion_rule_mask
-  WHERE (MG.inclusion_rule_mask = POWER(cast(2 as bigint),8)-1)
+  WHERE (MG.inclusion_rule_mask = POWER(cast(2 as bigint),9)-1)
 
 ) Results
 WHERE Results.ordinal = 1
@@ -1261,7 +1292,7 @@ delete from @results_database_schema.cohort_censor_stats where cohort_definition
 select cast(rule_sequence as int) as rule_sequence
 into #inclusion_rules
 from (
-  SELECT CAST(0 as int) as rule_sequence UNION ALL SELECT CAST(1 as int) as rule_sequence UNION ALL SELECT CAST(2 as int) as rule_sequence UNION ALL SELECT CAST(3 as int) as rule_sequence UNION ALL SELECT CAST(4 as int) as rule_sequence UNION ALL SELECT CAST(5 as int) as rule_sequence UNION ALL SELECT CAST(6 as int) as rule_sequence UNION ALL SELECT CAST(7 as int) as rule_sequence
+  SELECT CAST(0 as int) as rule_sequence UNION ALL SELECT CAST(1 as int) as rule_sequence UNION ALL SELECT CAST(2 as int) as rule_sequence UNION ALL SELECT CAST(3 as int) as rule_sequence UNION ALL SELECT CAST(4 as int) as rule_sequence UNION ALL SELECT CAST(5 as int) as rule_sequence UNION ALL SELECT CAST(6 as int) as rule_sequence UNION ALL SELECT CAST(7 as int) as rule_sequence UNION ALL SELECT CAST(8 as int) as rule_sequence
 ) IR;
 
 
