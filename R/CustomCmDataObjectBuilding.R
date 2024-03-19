@@ -299,7 +299,7 @@ fetchAllDataFromServer <- function(connectionDetails,
 #'
 #' @export
 generateAllCohortMethodDataObjects <- function(outputFolder,
-                                               indicationId = "legendt2dm",
+                                               indicationId = "signals",
                                                useSample = FALSE,
                                                restrictToOt1 = FALSE,
                                                maxCores = 4) {

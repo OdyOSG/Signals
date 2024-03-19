@@ -1,10 +1,10 @@
 # R script for post-hoc management of the exposure summary file
 # on OPEN CLAIMS
 
-library(LegendT2dm)
+library(Signals)
 
 ## path for the ORIGINAL output folder (before staged execution)
-originalOutputFolder = "legendT2dmOutput/"
+originalOutputFolder = "signals/"
 
 ## set up the leading path for the staged execution folders (default is same as original output folder)
 outputFolderHeader = originalOutputFolder

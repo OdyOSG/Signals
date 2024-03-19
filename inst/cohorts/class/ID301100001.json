@@ -3364,7 +3364,7 @@
 } 
 },
 {
- "name": "Without obesity ",
+ "name": "obesity",
 "expression": {
  "Type": "ALL",
 "CriteriaList": [
@@ -3389,8 +3389,8 @@
 "RestrictVisit": false,
 "IgnoreObservationPeriod": true,
 "Occurrence": {
- "Type":             0,
-"Count":             0,
+ "Type":             2,
+"Count":             1,
 "IsDistinct": false 
 } 
 } 

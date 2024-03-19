@@ -39,7 +39,7 @@ cdmDatabaseSchema <- "cdm_531"
 
 # The name of the database schema and table where the study-specific cohorts will be instantiated:
 cohortDatabaseSchema <- "jmt_signals.dbo"
-tablePrefix <- "legendt2dm_study"
+tablePrefix <- "signals_study"
 
 # Some meta-information that will be used by the export function:
 databaseId <- "Synpuf"
@@ -56,6 +56,7 @@ Signals::assessPhenotypes(connectionDetails = connectionDetails,
                  cohortDatabaseSchema = cohortDatabaseSchema,
                  outputFolder = outputFolder,
                  tablePrefix = tablePrefix,
+                 #indicationId = 'glp1ra',
                  databaseId = databaseId,
                  databaseName = databaseName,
                  databaseDescription = databaseDescription,
@@ -65,16 +66,16 @@ Signals::assessPhenotypes(connectionDetails = connectionDetails,
                  runOutcomeCohortDiagnostics = TRUE)
 
 #uploadPhenotypeResults(cohort = "class",
-#                       outputFolder, privateKeyFileName = "s:/private.key", userName = "legendt2dm")
+#                       outputFolder, privateKeyFileName = "s:/private.key", userName = "signals")
 #uploadPhenotypeResults(cohort = "outcome",
-#                       outputFolder, privateKeyFileName = "s:/private.key", userName = "legendt2dm")
+#                       outputFolder, privateKeyFileName = "s:/private.key", userName = "signals")
 
 CohortDiagnostics::preMergeDiagnosticsFiles(dataFolder = file.path(outputFolder, "class/cohortDiagnosticsExport"))
-LegendT2dmCohortExplorer::launchCohortExplorer(cohorts = "class",
+SignalsCohortExplorer::launchCohortExplorer(cohorts = "class",
                                                dataFolder = file.path(outputFolder, "class/cohortDiagnosticsExport"))
 
 CohortDiagnostics::preMergeDiagnosticsFiles(dataFolder = file.path(outputFolder, "outcome/cohortDiagnosticsExport"))
-LegendT2dmCohortExplorer::launchCohortExplorer(cohorts = "outcome",
+SignalsCohortExplorer::launchCohortExplorer(cohorts = "outcome",
                                                dataFolder = file.path(outputFolder, "outcome/cohortDiagnosticsExport"))
 
 assessPropensityModels(connectionDetails = connectionDetails,
@@ -88,7 +89,7 @@ assessPropensityModels(connectionDetails = connectionDetails,
                        maxCores = maxCores)
 
 uploadPsAssessmentResults(cohort = "class",
-                          outputFolder, privateKeyFileName = "s:/private.key", userName = "legendt2dm")
+                          outputFolder, privateKeyFileName = "s:/private.key", userName = "signals")
 
 execute(connectionDetails = connectionDetails,
         cdmDatabaseSchema = cdmDatabaseSchema,

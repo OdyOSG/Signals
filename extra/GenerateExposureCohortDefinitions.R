@@ -27,10 +27,10 @@ baseUrlWebApi <- keyring::key_get("baseUrl")
 # code to query the Atlas Web API to get the base cohort (based on pre-defined ATLAS cohort)
 # Make sure you download the right cohort
 #baseCohort = baseCohort_orig
-   baseCohort <- ROhdsiWebApi::getCohortDefinition(674, baseUrl = baseUrl)
-   baseCohortJson <- RJSONIO::toJSON(baseCohort$expression, indent = 2, digits = 50)
-   SqlRender::writeSql(baseCohortJson, targetFile = "inst/settings/baseCohort.json")
-   saveRDS(baseCohort, file = "inst/settings/baseCohort.rds")
+#   baseCohort <- ROhdsiWebApi::getCohortDefinition(677, baseUrl = baseUrl)
+#   baseCohortJson <- RJSONIO::toJSON(baseCohort$expression, indent = 2, digits = 50)
+#   SqlRender::writeSql(baseCohortJson, targetFile = "inst/settings/baseCohort.json")
+#   saveRDS(baseCohort, file = "inst/settings/baseCohort.rds")
 
 # Inclusion rules: Age == 1, Sex == 2, Race == 3, CVD == 4, obese == 5, PriorMet == 6, NoMet == 7
 
@@ -57,10 +57,10 @@ makeShortName <- function(permutation) {
          ifelse(permutation$met == "no", " no-met", ""),
          ifelse(permutation$age != "any", paste0(" ", permutation$age, "-age"), ""),
          ifelse(permutation$sex != "any", paste0(" ", permutation$sex), ""),
-         ifelse(permutation$obese != "any", paste0(" ", permutation$obese, "-rdz"), ""))
+         ifelse(permutation$obese != "any", paste0(" ", permutation$obese, "-obe"), ""))
 }
-cohort  = baseCohort_orig 
-permutation = permutations[1,] 
+#cohort  = baseCohort_orig 
+#permutation = permutations[1,] 
 permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   
   c1Id <- floor(permutation$comparator1Id / 10)
@@ -257,6 +257,14 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   return(cohort)
 }
 
+
+test = unique(permutations)
+i = 1
+for (i in 1:nrow(permutations)){
+  print(i)
+  i=49
+  cohortDefinition <- permuteTC(baseCohort, permutations[i,])
+}
 allCohortsSql <-
   do.call("rbind",
           lapply(1:nrow(permutations), function(i) {
@@ -274,7 +282,6 @@ allCohortsJson <-
             cohortJson <- RJSONIO::toJSON(cohortDefinition$expression, indent = 2, digits = 12)
             return(cohortJson)
           }))
-
 
 
 permutations$json <- allCohortsJson
@@ -302,7 +309,11 @@ classCohortsToCreate <- permutations %>%
   select(atlasId, atlasName, cohortId, name)
 
 readr::write_csv(classCohortsToCreate, "inst/settings/classCohortsToCreate.csv")
-
+ # tarId = "ot1"
+ # metId = "with"
+ # ageId = "any"
+ # sexId = "any"
+ # obeseId = "any"
 # Make classTcosOfInterest.csv ----
 makeTCOs <- function(tarId, metId, ageId, sexId, obeseId) {
 
@@ -340,14 +351,8 @@ classTcos <- rbind(
   # Sex
   makeTCOs("ot1", "with", "any", "female", "any"),
   makeTCOs("ot1", "with", "any", "male", "any"),
-  # Race
-  makeTCOs("ot1", "with", "any", "any",  "any"),
-  # CV risk
-  makeTCOs("ot1", "with", "any", "any",  "any"),
-  makeTCOs("ot1", "with", "any", "any","any"),
   # obese dz
-  makeTCOs("ot1", "with", "any", "any",  "without"),
-  makeTCOs("ot1", "with", "any", "any", "with"),
+  makeTCOs("ot1", "with", "any", "any",  "with"),
   #
   # OT2
   # Main
@@ -360,7 +365,6 @@ classTcos <- rbind(
   makeTCOs("ot2", "with", "any", "male", "any"),
 
   # obese dz
-  makeTCOs("ot2", "with", "any", "any","without"),
   makeTCOs("ot2", "with", "any", "any", "with")
 )
 readr::write_csv(classTcos, "inst/settings/classTcosOfInterest.csv")
@@ -428,18 +432,15 @@ permutationsForDrugs$sql <-
                                                     generateStats = generateStats)
           }))
 
-cohortDefinition <- permuteTC(baseCohort, permutationsForDrugs[1,])
+ # cohortDefinition <- permuteTC(baseCohort, permutationsForDrugs[1,])
 
 # save SQL and JSON files under class name (e.g., "DPP4I") folder
 ## need to create the directory for this class first
-this.class = tolower(permutationsForDrugs[1,]$class)
-dir.create(file.path("inst/sql/sql_server", this.class))
-dir.create(file.path("inst/cohorts", this.class))
 
-classNames = unique(permutationsForDrugs$class)
-
-for (value in classNames){
-    class = value
+#value = unique(permutationsForDrugs$class)[4]
+for (value in unique(permutationsForDrugs$class)){
+    dir.create(file.path("inst/sql/sql_server", value))
+    dir.create(file.path("inst/cohorts", value))
     perutationsForClass = permutationsForDrugs[permutationsForDrugs$class == value,]
     for (i in 1:nrow(permutationsForDrugs)) {
       row <- permutationsForDrugs[i,]
@@ -509,46 +510,47 @@ makeTCOsDrug <- function(tarId, metId, ageId, sexId, obeseId) {
 
   return(tab)
 }
-
-drugTcos <- rbind(
-  # Order: tar, met, age, sex, obese
-  # OT1
-  # Main
-  makeTCOsDrug("ot1", "with", "any", "any", "any"),
-  # Age
-  makeTCOsDrug("ot1", "with", "younger", "any", "any"),
-  makeTCOsDrug("ot1", "with", "older", "any", "any"),
-  # Sex
-  makeTCOsDrug("ot1", "with", "any", "female", "any"),
-  makeTCOsDrug("ot1", "with", "any", "male", "any"),
-  # obese dz
-  makeTCOsDrug("ot1", "with", "any", "any",  "without"),
-  makeTCOsDrug("ot1", "with", "any", "any",  "with"),
-  #
-  # OT2
-  # Main
-  makeTCOsDrug("ot2", "with", "any", "any",  "any"),
-  # Age
-  makeTCOsDrug("ot2", "with", "younger", "any",  "any"),
-  makeTCOsDrug("ot2", "with", "older", "any", "any"),
-  # Sex
-  makeTCOsDrug("ot2", "with", "any", "female",  "any"),
-  makeTCOsDrug("ot2", "with", "any", "male", "any"),
-
-  # obese dz
-  makeTCOsDrug("ot2", "with", "any", "any", "without"),
-  makeTCOsDrug("ot2", "with", "any", "any", "with")
-)
-
-# save TCOs 
-for (x in 1:4){
+for (this.class in unique(permutationsForDrugs$class)){
+  permutationsForDrugsclass = permutationsForDrugs %>% filter(tolower(class) == this.class) 
+  drugTcos <- rbind(
+    # Order: tar, met, age, sex, obese
+    # OT1
+    # Main
+    makeTCOsDrug("ot1", "with", "any", "any", "any"),
+    # Age
+    makeTCOsDrug("ot1", "with", "younger", "any", "any"),
+    makeTCOsDrug("ot1", "with", "older", "any", "any"),
+    # Sex
+    makeTCOsDrug("ot1", "with", "any", "female", "any"),
+    makeTCOsDrug("ot1", "with", "any", "male", "any"),
+    # obese dz
+    makeTCOsDrug("ot1", "with", "any", "any",  "without"),
+    makeTCOsDrug("ot1", "with", "any", "any",  "with"),
+    #
+    # OT2
+    # Main
+    makeTCOsDrug("ot2", "with", "any", "any",  "any"),
+    # Age
+    makeTCOsDrug("ot2", "with", "younger", "any",  "any"),
+    makeTCOsDrug("ot2", "with", "older", "any", "any"),
+    # Sex
+    makeTCOsDrug("ot2", "with", "any", "female",  "any"),
+    makeTCOsDrug("ot2", "with", "any", "male", "any"),
   
-this.class = classNames[x]
-drugTcos$targetId = as.character(drugTcos$targetId)
-grepstring = paste0("^",x)
-drugs <- drugTcos[grepl(grepstring,drugTcos$targetId),]
-filePath = "inst/settings/"
-fileName = sprintf('%sTcosOfInterest.csv', this.class)
-
-readr::write_csv(drugTcos, file.path(filePath, fileName))
+    # obese dz
+    makeTCOsDrug("ot2", "with", "any", "any", "without"),
+    makeTCOsDrug("ot2", "with", "any", "any", "with")
+  )
+  
+  # save TCOs 
+  
+    
+  this.class = classNames[x]
+  drugTcos$targetId = as.character(drugTcos$targetId)
+  grepstring = paste0("^",x)
+  drugs <- drugTcos[grepl(grepstring,drugTcos$targetId),]
+  filePath = "inst/settings/"
+  fileName = sprintf('%sTcosOfInterest.csv', this.class)
+  
+  readr::write_csv(drugTcos, file.path(filePath, fileName))
 }

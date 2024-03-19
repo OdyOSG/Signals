@@ -16,7 +16,7 @@
 
 # Format and check code
 OhdsiRTools::formatRFolder()
-OhdsiRTools::checkUsagePackage("LegendT2dm")
+OhdsiRTools::checkUsagePackage("Signals")
 OhdsiRTools::updateCopyrightYearFolder()
 devtools::spell_check()
 
@@ -31,20 +31,20 @@ ROhdsiWebApi::insertCohortDefinitionSetInPackage(fileName = "inst/settings/Outco
                                                 insertTableSql = FALSE,
                                                 insertCohortCreationR = FALSE,
                                                 generateStats = FALSE,
-                                                packageName = "LegendT2dm")
+                                                packageName = "Signals")
 
 
 # # Create manual and vignette
-# unlink("extras/LegendT2dm")
-# shell("R CMD Rd2pdf ./ --output=extras/LegendT2dm")
+# unlink("extras/Signals")
+# shell("R CMD Rd2pdf ./ --output=extras/Signals")
 #
 # dir.create("inst/doc", recursive = TRUE)
-# rmarkdown::render("vignettes/UsingLegendT2dm.Rmd",
-#                   output_file = "../inst/doc/UsingLegendT2dm.pdf",
+# rmarkdown::render("vignettes/UsingSignals.Rmd",
+#                   output_file = "../inst/doc/UsingSignals.pdf",
 #                   rmarkdown::pdf_document(latex_engine = "pdflatex",
 #                                           toc = TRUE,
 #                                           number_sections = TRUE))
-# unlink("inst/doc/UsingLegendT2dm.tex")
+# unlink("inst/doc/UsingSignals.tex")
 #
 # pkgdown::build_site(preview = FALSE)
 # OhdsiRTools::fixHadesLogo()

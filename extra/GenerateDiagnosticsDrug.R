@@ -3,7 +3,7 @@
 library(dplyr)
 library(Signals)
 
-legendT2dmConnectionDetails <- DatabaseConnector::createConnectionDetails(
+signalsConnectionDetails <- DatabaseConnector::createConnectionDetails(
   dbms = "postgresql",
   server = paste(keyring::key_get("signalsServer"),
                  keyring::key_get("signalsDatabase"),
@@ -11,7 +11,7 @@ legendT2dmConnectionDetails <- DatabaseConnector::createConnectionDetails(
   user = keyring::key_get("signalsUser"),
   password = keyring::key_get("signalsPassword"))
 
-connection <- DatabaseConnector::connect(legendT2dmConnectionDetails)
+connection <- DatabaseConnector::connect(signalsConnectionDetails)
 
 # set indication Id here
 # doing this for all drug-v-drug
@@ -76,7 +76,7 @@ diagnosticsLitNoOc <- diagnosticsLit %>%
   filter(databaseId != "OPENCLAIMS")
 
 # (1) using LEGEND-HTN data-driven diagnostics rule
-doMetaAnalysis(legendT2dmConnectionDetails,
+doMetaAnalysis(signalsConnectionDetails,
                resultsDatabaseSchema = "signals_drug_results",
                maName = "Meta-analysis1",
                maExportFolder = "maHtn",
@@ -85,7 +85,7 @@ doMetaAnalysis(legendT2dmConnectionDetails,
                maxCores = 8)
 
 # (2) using literature-common rules of thumb
-doMetaAnalysis(legendT2dmConnectionDetails,
+doMetaAnalysis(signalsConnectionDetails,
                resultsDatabaseSchema = "signals_drug_results",
                maName = "Meta-analysis2",
                maExportFolder = "maLit",
@@ -94,7 +94,7 @@ doMetaAnalysis(legendT2dmConnectionDetails,
                maxCores = 8)
 
 # (3) exclude Open Claims
-doMetaAnalysis(legendT2dmConnectionDetails,
+doMetaAnalysis(signalsConnectionDetails,
                resultsDatabaseSchema = "signals_drug_results",
                maName = "Meta-analysis3",
                maExportFolder = "maLitNoOc",
@@ -102,7 +102,7 @@ doMetaAnalysis(legendT2dmConnectionDetails,
                indicationId = "drug",
                maxCores = 4)
 
-doMetaAnalysis(legendT2dmConnectionDetails,
+doMetaAnalysis(signalsConnectionDetails,
                resultsDatabaseSchema = "signals_drug_results",
                maName = "Meta-analysis0",
                maExportFolder = "maAll",

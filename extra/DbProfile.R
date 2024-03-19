@@ -1,7 +1,7 @@
 
 ## This script will do two things:
 
-### Run the necessary ACHILLES analyses to determine if a database has the requisite data for the LEGEND T2DM study
+### Run the necessary ACHILLES analyses to determine if a database has the requisite data for the Signals study
 ### Run the DQD for select quality checks to determine if the data is of high enough quality for the study
 
 ## This script also makes certain assumptions about your environment and your database
@@ -284,7 +284,7 @@ DataQualityDashboard::executeDqChecks(connectionDetails,
                                       writeToTable = FALSE,
                                       checkNames = c("plausibleValueHigh"),
                                       tablesToExclude = tablesToExclude,
-                                      conceptCheckThresholdLoc = "D:/ASSURE/dbProfile/dqdThresholds/OMOP_CDMv5.3.1_Concept_Level_Legend.csv",
+                                      conceptCheckThresholdLoc = "D:/ASSURE/dbProfile/dqdThresholds/OMOP_CDMv5.3.1_Concept_Level_Signals.csv",
                                       cdmVersion = "5.3.1"
                                       )
 

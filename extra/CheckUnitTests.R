@@ -1,7 +1,7 @@
 # Check unit-tests
 library(dplyr)
 
-outputFolder <- "d:/LegendT2dmOutput_mdcr3"
+outputFolder <- "d:/SignalsOutput_mdcr3"
 
 analysisSummary <- read.csv(file.path(outputFolder, "class", "analysisSummary.csv"))
 rbind(

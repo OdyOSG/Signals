@@ -1,4 +1,4 @@
-library(LegendT2dm)
+library(Signals)
 
 Sys.setenv(DATABASECONNECTOR_JAR_FOLDER="s:/DatabaseDrivers")
 
@@ -18,7 +18,7 @@ minCellCount <- 5
 oracleTempSchema <- NULL
 
 # The folder where the study intermediate and result files will be written:
-outputFolder <- "s:/LegendT2dmStudy"
+outputFolder <- "s:/SignalsStudy"
 
 # Details for connecting to the server:
 # See ?DatabaseConnector::createConnectionDetails for help
@@ -32,7 +32,7 @@ cdmDatabaseSchema <- "cdm_synpuf"
 
 # The name of the database schema and table where the study-specific cohorts will be instantiated:
 cohortDatabaseSchema <- "scratch.dbo"
-tablePrefix <- "legendt2dm_study"
+tablePrefix <- "signals_study"
 
 # Some meta-information that will be used by the export function:
 databaseId <- "Synpuf"
@@ -64,17 +64,17 @@ assessPhenotypes(connectionDetails = connectionDetails,
 
 ## upload diagnostics to the shared FTP
 uploadPhenotypeResults(cohort = indicationId,
-                       outputFolder, privateKeyFileName = "s:/private.key", userName = "legendt2dm")
+                       outputFolder, privateKeyFileName = "s:/private.key", userName = "signals")
 uploadPhenotypeResults(cohort = "outcome",
-                       outputFolder, privateKeyFileName = "s:/private.key", userName = "legendt2dm")
+                       outputFolder, privateKeyFileName = "s:/private.key", userName = "signals")
 
 ## inspect diagnostics locally
 CohortDiagnostics::preMergeDiagnosticsFiles(dataFolder = file.path(outputFolder, "drug/cohortDiagnosticsExport"))
-LegendT2dmCohortExplorer::launchCohortExplorer(cohorts = indicationId,
+SignalsCohortExplorer::launchCohortExplorer(cohorts = indicationId,
                                                dataFolder = file.path(outputFolder, "drug/cohortDiagnosticsExport"))
 
 CohortDiagnostics::preMergeDiagnosticsFiles(dataFolder = file.path(outputFolder, "outcome/cohortDiagnosticsExport"))
-LegendT2dmCohortExplorer::launchCohortExplorer(cohorts = "outcome",
+SignalsCohortExplorer::launchCohortExplorer(cohorts = "outcome",
                                                dataFolder = file.path(outputFolder, "outcome/cohortDiagnosticsExport"))
 
 ## propensity score models assessment
@@ -90,7 +90,7 @@ assessPropensityModels(connectionDetails = connectionDetails,
 
 ## upload PS assessment results
 uploadPsAssessmentResults(cohort = indicationId,
-                          outputFolder, privateKeyFileName = "s:/private.key", userName = "legendt2dm")
+                          outputFolder, privateKeyFileName = "s:/private.key", userName = "signals")
 
 
 # run CES for drug vs drug -----------------------------------------------------------

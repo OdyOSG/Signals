@@ -1,7 +1,6 @@
 # add a "diagnostics" table on the results database
 
-#schema = "legendt2dm_drug_results"
-schema = "legendt2dm_class_results"
+schema = "signals_class_results"
 
 connectionDetails <- DatabaseConnector::createConnectionDetails(
   dbms = "postgresql",
@@ -52,7 +51,7 @@ diagnostics = readRDS('extra/diagnostics.rds') %>%
              (maxAbsStdDiffMean < 0.15) &
              (minEquipoise > 0.25)
          ),
-         criteria = "legend-htn: mdrr < 4.0; max_sdm < 0.15; equipoise > 0.25") %>%
+         criteria = "signals-htn: mdrr < 4.0; max_sdm < 0.15; equipoise > 0.25") %>%
   mutate(pass = ifelse(!is.na(pass) && pass, 1, 0)) %>%
   select(-minBoundOnMdrr)
 

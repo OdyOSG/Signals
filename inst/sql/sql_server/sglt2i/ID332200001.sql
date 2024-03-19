@@ -156,11 +156,11 @@ SELECT 13 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ) C UNION ALL 
 SELECT 14 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (44816332,43013884,43526465,1594973,44785829,45774435,45774751,793293,1583722,1597756,1560171,19097821,1559684,40239216,40170911,44506754,40166035,793143,1580747,1502809,1502855,19122137)
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (44816332,43013884,43526465,1594973,44785829,45774435,793293,1583722,1597756,1560171,19097821,1559684,40239216,40170911,44506754,40166035,793143,1580747,1502809,1502855,19122137)
 UNION  select c.concept_id
   from @vocabulary_database_schema.CONCEPT c
   join @vocabulary_database_schema.CONCEPT_ANCESTOR ca on c.concept_id = ca.descendant_concept_id
-  and ca.ancestor_concept_id in (44816332,43013884,43526465,1594973,44785829,45774435,45774751,793293,1583722,1597756,1560171,19097821,1559684,40239216,40170911,44506754,40166035,793143,1580747,1502809,1502855,19122137)
+  and ca.ancestor_concept_id in (44816332,43013884,43526465,1594973,44785829,45774435,793293,1583722,1597756,1560171,19097821,1559684,40239216,40170911,44506754,40166035,793143,1580747,1502809,1502855,19122137)
   and c.invalid_reason is null
 
 ) I
@@ -904,10 +904,8 @@ FROM
   INNER JOIN
   (
     -- Begin Correlated Criteria
-select 0 as index_id, p.person_id, p.event_id
-from #qualified_events p
-LEFT JOIN (
-SELECT p.person_id, p.event_id 
+select 0 as index_id, cc.person_id, cc.event_id
+from (SELECT p.person_id, p.event_id 
 FROM #qualified_events P
 JOIN (
   -- Begin Condition Occurrence Criteria
@@ -923,9 +921,9 @@ FROM
 
 -- End Condition Occurrence Criteria
 
-) A on A.person_id = P.person_id  AND A.START_DATE <= DATEADD(day,0,P.START_DATE) ) cc on p.person_id = cc.person_id and p.event_id = cc.event_id
-GROUP BY p.person_id, p.event_id
-HAVING COUNT(cc.event_id) = 0
+) A on A.person_id = P.person_id  AND A.START_DATE <= DATEADD(day,0,P.START_DATE) ) cc 
+GROUP BY cc.person_id, cc.event_id
+HAVING COUNT(cc.event_id) >= 1
 -- End Correlated Criteria
 
   ) CQ on E.person_id = CQ.person_id and E.event_id = CQ.event_id

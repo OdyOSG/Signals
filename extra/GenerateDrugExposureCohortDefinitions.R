@@ -46,16 +46,12 @@ makeShortName <- function(permutation) {
   paste0(permutation$shortName,
          ifelse(permutation$age == "any" &
                   permutation$sex == "any" &
-                  permutation$race == "any" &
-                  permutation$cvd == "any" &
-                  permutation$renal == "any", " main", ""),
+                  permutation$obese == "any", " main", ""),
          ifelse(permutation$tar == "ot2", " ot2", ""),
          ifelse(permutation$met == "no", " no-met", ""),
          ifelse(permutation$age != "any", paste0(" ", permutation$age, "-age"), ""),
          ifelse(permutation$sex != "any", paste0(" ", permutation$sex), ""),
-         ifelse(permutation$race != "any", " black", ""),
-         ifelse(permutation$cvd != "any", paste0(" ", permutation$cvd, "-cvr"), ""),
-         ifelse(permutation$renal != "any", paste0(" ", permutation$renal, "-rdz"), ""))
+         ifelse(permutation$obese != "any", paste0(" ", permutation$obese, "-obe"), ""))
 }
 
 # function to create permute drug-level target-comparator pairs----
@@ -173,10 +169,6 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
     cohort$expression$InclusionRules[[age]]$description <- NULL
     cohort$expression$InclusionRules[[age]]$expression$DemographicCriteriaList[[1]]$Age$Op <- "lt"
     cohort$expression$InclusionRules[[age]]$expression$DemographicCriteriaList[[2]] <- NULL
-  } else if (permutation$age == "middle") {
-    cohort$expression$InclusionRules[[age]]$name <- "Middle age group"
-    cohort$expression$InclusionRules[[age]]$description <- NULL
-    cohort$expression$InclusionRules[[age]]$expression$DemographicCriteriaList[[1]]$Age$Op <- "gte"
     # cohort$expression$InclusionRules[[age]]$expression$DemographicCriteriaList[[2]]$Age$Op <- ""
   } else if (permutation$age == "older") {
     cohort$expression$InclusionRules[[age]]$name <- "Older age group"
@@ -189,7 +181,7 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   } else {
     stop("Unknown age type")
   }
-
+  
   sex <- 8 - delta
   if (permutation$sex == "female") {
     cohort$expression$InclusionRules[[sex]]$name <- "Female stratum"
@@ -207,35 +199,24 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   } else {
     stop("Unknown sex type")
   }
-
-  race <- 9 - delta
-  if (permutation$race == "black") {
-    cohort$expression$InclusionRules[[race]]$name <- "Race stratum"
-    cohort$expression$InclusionRules[[race]]$description <- NULL
-  } else if (permutation$race == "any") {
-    cohort$expression$InclusionRules[[race]] <- NULL
-    delta <- delta + 1
-  } else {
-    stop("Unknown race type")
-  }
-
-
-  renal <- 11 - delta
-  if (permutation$renal == "without") {
-    cohort$expression$InclusionRules[[renal]]$name <- "Without renal impairment"
-    cohort$expression$InclusionRules[[renal]]$description <- NULL
-    cohort$expression$InclusionRules[[renal]]$expression$CriteriaList[[1]]$Occurrence$Type <- 0
-    cohort$expression$InclusionRules[[renal]]$expression$CriteriaList[[1]]$Occurrence$Count <- 0
-  } else if (permutation$renal == "with") {
-    cohort$expression$InclusionRules[[renal]]$name <- "Renal impairment"
-    cohort$expression$InclusionRules[[renal]]$description <- NULL
-  } else if (permutation$renal == "any") {
-    cohort$expression$InclusionRules[[renal]] <- NULL
+  
+  
+  obesity <- 11 - delta
+  if (permutation$obese == "without") {
+    cohort$expression$InclusionRules[[obesity]]$name <- "Without obesity "
+    cohort$expression$InclusionRules[[obesity]]$description <- NULL
+    cohort$expression$InclusionRules[[obesity]]$expression$CriteriaList[[1]]$Occurrence$Type <- 0
+    cohort$expression$InclusionRules[[obesity]]$expression$CriteriaList[[1]]$Occurrence$Count <- 0
+  } else if (permutation$obese == "with") {
+    cohort$expression$InclusionRules[[obesity]]$name <- "obesity"
+    cohort$expression$InclusionRules[[obesity]]$description <- NULL
+  } else if (permutation$obese == "any") {
+    cohort$expression$InclusionRules[[obesity]] <- NULL
     delta <- delta  + 1
   } else {
-    stop("Unknown renal type")
+    stop("Unknown obesity type")
   }
-
+  
   met <- 12 - delta
   if (permutation$met == "with") {
     # Do nothing
@@ -255,7 +236,7 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   } else {
     stop("Unknown metformin type")
   }
-
+  
   insulin <- 13 - delta
   cohort$expression$InclusionRules[[insulin]]$description <- NULL
 
@@ -301,7 +282,8 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
 #classIds = c(40)
 
 # DEBUG: test with SGLT2i
-classIds = c(30)
+#classIds = c(30)
+classIds = c(10,20,30,40)
 
 # then create permutations for the desired drug class
 permutationsForDrugs <- lapply(classIds, createPermutationsForDrugs) %>%
@@ -328,40 +310,45 @@ permutationsForDrugs$sql <-
 
 # save SQL and JSON files under class name (e.g., "DPP4I") folder
 ## need to create the directory for this class first
-this.class = tolower(permutationsForDrugs[1,]$class)
-if(!dir.exists(file.path("inst/sql/sql_server", this.class))){
-  dir.create(file.path("inst/sql/sql_server", this.class))
-}
-if(!dir.exists(file.path("inst/cohorts", this.class))){
-  dir.create(file.path("inst/cohorts", this.class))
-}
-
-## and then save JSON and SQL files
-for (i in 1:nrow(permutationsForDrugs)) {
-  row <- permutationsForDrugs[i,]
-  sqlFileName <- file.path("inst/sql/sql_server", tolower(row$class), paste(row$name, "sql", sep = "."))
-  SqlRender::writeSql(row$sql, sqlFileName)
-  jsonFileName <- file.path("inst/cohorts", tolower(row$class), paste(row$name, "json", sep = "."))
-  SqlRender::writeSql(row$json, jsonFileName)
-}
-
 # save drug-level cohorts to [className]cohortsToCreate.csv file
-this.class = permutationsForDrugs$class[1] %>% tolower() # this line defines name of drug class
-permutationsForDrugs$atlasName <- makeShortName(permutationsForDrugs) # add `atlasName` as short cohort name
-drugCohortsToCreate <- permutationsForDrugs %>%
-  mutate(atlasId = cohortId,
-         name = sprintf('%s/%s',this.class,name)) %>%
-  select(atlasId, atlasName, cohortId, name) # creates the cohortsToCreate table
+# this line defines name of drug class
+# write the file as `[className]cohortsToCreate.csv`
 
-filePath = "inst/settings/"
-fileName = sprintf('%sCohortsToCreate.csv', this.class) # file path
-readr::write_csv(drugCohortsToCreate,
-                 file.path(filePath, fileName)) # write the file as `[className]cohortsToCreate.csv`
+for ( this.class in tolower(unique(permutationsForDrugs$class))){
+  permutationsForDrugsclass = permutationsForDrugs %>% filter(tolower(class) == this.class) 
+  
+  if(!dir.exists(file.path("inst/sql/sql_server", this.class))){
+    dir.create(file.path("inst/sql/sql_server", this.class))
+  }
+  if(!dir.exists(file.path("inst/cohorts", this.class))){
+    dir.create(file.path("inst/cohorts", this.class))
+  }
+  
+  ## and then save JSON and SQL files
+  for (i in 1:nrow(permutationsForDrugsclass)) {
+    row <- permutationsForDrugsclass[i,]
+    sqlFileName <- file.path("inst/sql/sql_server", tolower(row$class), paste(row$name, "sql", sep = "."))
+    SqlRender::writeSql(row$sql, sqlFileName)
+    jsonFileName <- file.path("inst/cohorts", tolower(row$class), paste(row$name, "json", sep = "."))
+    SqlRender::writeSql(row$json, jsonFileName)
+  }
+  permutationsForDrugsclass$atlasName <- makeShortName(permutationsForDrugsclass) # add `atlasName` as short cohort name
+  drugCohortsToCreate <- permutationsForDrugsclass %>%
+    mutate(atlasId = cohortId,
+           name = sprintf('%s/%s',this.class,name)) %>%
+    select(atlasId, atlasName, cohortId, name) # creates the cohortsToCreate table
+  
+  filePath = "inst/settings/"
+  fileName = sprintf('%sCohortsToCreate.csv', this.class) # file path
+  readr::write_csv(drugCohortsToCreate,
+                   file.path(filePath, fileName))
+}
+
 
 # check out some example cohort definitions
 ## PLEASE UPDATE INGREDIENT NAME FOR EACH DRUG-CLASS!
 ## (examples here are within the GLP1RA class)
-#permutationsForDrugs$atlasName <- makeShortName(permutationsForDrugs)
+permutationsForDrugs$atlasName <- makeShortName(permutationsForDrugs)
 printCohortDefinitionFromNameAndJson(name = "albiglutide main",
                                      json = permutationsForDrugs$json[1])
 printCohortDefinitionFromNameAndJson(name = "albiglutide younger-age",
@@ -376,79 +363,79 @@ printCohortDefinitionFromNameAndJson(name = "canagliflozin main ot2",
 
 # generate drug-level TCOs-----
 # function to create TCO triplets
-makeTCOsDrug <- function(tarId, metId, ageId, sexId, raceId, cvdId, renalId) {
+tarId = "ot1"
+metId = "with"
+ageId = "younger"
+sexId = "any"
+obeseId = "any"
 
-  baseTs <- permutationsForDrugs %>%
+makeTCOsDrug <- function(tarId, metId, ageId, sexId, obeseId) {
+  
+  baseTs <- permutationsForDrugsclass %>%
     filter(tar == tarId,
-           age == ageId, sex == sexId, race == raceId, cvd == cvdId,
-           renal == renalId, met == metId)
-
+           age == ageId, sex == sexId, 
+           obese == obeseId, met == metId)
+  
   tab <- as.data.frame(t(combn(baseTs$cohortId, m = 2)))
   names(tab) <- c("targetId", "comparatorId")
   tab$outcomeIds <- -1
   tab$excludedCovariateConceptIds <- NA
-
-  tab <- tab %>% inner_join(permutationsForDrugs %>% select(cohortId, atlasName) %>% rename(targetId = cohortId),
+  
+  tab <- tab %>% inner_join(permutationsForDrugsclass %>% select(cohortId, atlasName) %>% rename(targetId = cohortId),
                             by = "targetId") %>%
     rename(targetName = atlasName)
-
-  tab <- tab %>% inner_join(permutationsForDrugs %>% select(cohortId, atlasName) %>% rename(comparatorId = cohortId),
+  
+  tab <- tab %>% inner_join(permutationsForDrugsclass %>% select(cohortId, atlasName) %>% rename(comparatorId = cohortId),
                             by = "comparatorId") %>%
     rename(comparatorName = atlasName)
-
+  
   return(tab)
 }
+for (this.class in unique(permutationsForDrugs$class)){
+  permutationsForDrugsclass = permutationsForDrugs %>% filter(tolower(class) == tolower(this.class)) 
+  
+  print(nrow(permutationsForDrugsclass))
 
-# use the function to create all TCOs
-drugTcos <- rbind(
-  # Order: tar, met, age, sex, race, cvd, renal
-  #
-  # OT1
-  # Main
-  makeTCOsDrug("ot1", "with", "any", "any", "any", "any", "any"),
-  # Age
-  makeTCOsDrug("ot1", "with", "younger", "any", "any", "any", "any"),
-  makeTCOsDrug("ot1", "with", "middle", "any", "any", "any", "any"),
-  makeTCOsDrug("ot1", "with", "older", "any", "any", "any", "any"),
-  # Sex
-  makeTCOsDrug("ot1", "with", "any", "female", "any", "any", "any"),
-  makeTCOsDrug("ot1", "with", "any", "male", "any", "any", "any"),
-  # Race
-  makeTCOsDrug("ot1", "with", "any", "any", "black", "any", "any"),
-  # CV risk
-  makeTCOsDrug("ot1", "with", "any", "any", "any", "low", "any"),
-  makeTCOsDrug("ot1", "with", "any", "any", "any", "higher", "any"),
-  # Renal dz
-  makeTCOsDrug("ot1", "with", "any", "any", "any", "any", "without"),
-  makeTCOsDrug("ot1", "with", "any", "any", "any", "any", "with"),
-  #
-  # OT2
-  # Main
-  makeTCOsDrug("ot2", "with", "any", "any", "any", "any", "any"),
-  # Age
-  makeTCOsDrug("ot2", "with", "younger", "any", "any", "any", "any"),
-  makeTCOsDrug("ot2", "with", "middle", "any", "any", "any", "any"),
-  makeTCOsDrug("ot2", "with", "older", "any", "any", "any", "any"),
-  # Sex
-  makeTCOsDrug("ot2", "with", "any", "female", "any", "any", "any"),
-  makeTCOsDrug("ot2", "with", "any", "male", "any", "any", "any"),
-  # Race
-  makeTCOsDrug("ot2", "with", "any", "any", "black", "any", "any"),
-  # CV risk
-  makeTCOsDrug("ot2", "with", "any", "any", "any", "low", "any"),
-  makeTCOsDrug("ot2", "with", "any", "any", "any", "higher", "any"),
-  # Renal dz
-  makeTCOsDrug("ot2", "with", "any", "any", "any", "any", "without"),
-  makeTCOsDrug("ot2", "with", "any", "any", "any", "any", "with")
-)
+  # use the function to create all TCOs
+  rm(drugTcos)
+  drugTcos <- rbind(
+    # Order: tar, met, age, sex, race, cvd, renal
+    #
+    # OT1
+    # Main
+    makeTCOsDrug("ot1", "with", "any", "any",
+             "any"),
+    # Age
+    makeTCOsDrug("ot1", "with", "younger", "any",  "any"),
+    makeTCOsDrug("ot1", "with", "older", "any","any"),
+    # Sex
+    makeTCOsDrug("ot1", "with", "any", "female", "any"),
+    makeTCOsDrug("ot1", "with", "any", "male", "any"),
+    # obese dz
+    makeTCOsDrug("ot1", "with", "any", "any",  "with"),
+    #
+    # OT2
+    # Main
+    makeTCOsDrug("ot2", "with", "any", "any","any"),
+    # Age
+    makeTCOsDrug("ot2", "with", "younger", "any",  "any"),
+    makeTCOsDrug("ot2", "with", "older", "any",  "any"),
+    # Sex
+    makeTCOsDrug("ot2", "with", "any", "female",  "any"),
+    makeTCOsDrug("ot2", "with", "any", "male", "any"),
+    
+    # obese dz
+    makeTCOsDrug("ot2", "with", "any", "any", "with")
+  )
+  
+  
+  # save TCOs for the desired drug class
+  filePath = "inst/settings/"
+  fileName = sprintf('%sTcosOfInterest.csv', this.class) # file path
+  
+  readr::write_csv(drugTcos, file.path(filePath, fileName)) # save it
 
-
-# save TCOs for the desired drug class
-this.class = tolower(permutationsForDrugs$class[1])
-filePath = "inst/settings/"
-fileName = sprintf('%sTcosOfInterest.csv', this.class) # file path
-
-readr::write_csv(drugTcos, file.path(filePath, fileName)) # save it
+}
 
 
 

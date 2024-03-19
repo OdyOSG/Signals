@@ -7,17 +7,17 @@
 #
 #    DatabaseConnector::downloadJdbcDrivers(dbms = "postgresql")
 #
-# OHDSI shinydb legendt2dm read-only credentials
+# OHDSI shinydb signals read-only credentials
 appConnectionDetails <- DatabaseConnector::createConnectionDetails(
   dbms = "postgresql",
-  server = paste(keyring::key_get("legendt2dmServer"),
-                 keyring::key_get("legendt2dmDatabase"),
+  server = paste(keyring::key_get("signalsServer"),
+                 keyring::key_get("signalsDatabase"),
                  sep = "/"),
-  user = keyring::key_get("legendt2dmUser"),
-  password = keyring::key_get("legendt2dmPassword"))
+  user = keyring::key_get("signalsUser"),
+  password = keyring::key_get("signalsPassword"))
 
 CohortDiagnostics::launchDiagnosticsExplorer(connectionDetails = appConnectionDetails,
-                                      resultsDatabaseSchema = "legendt2dm_class_diagnostics")
+                                      resultsDatabaseSchema = "signals_class_diagnostics")
 
 CohortDiagnostics::launchDiagnosticsExplorer(connectionDetails = appConnectionDetails,
-                                      resultsDatabaseSchema = "legendt2dm_outcome_diagnostics")
+                                      resultsDatabaseSchema = "signals_outcome_diagnostics")

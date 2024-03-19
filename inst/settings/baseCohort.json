@@ -118,7 +118,7 @@
  "items": [
  {
  "concept": {
- "CONCEPT_ID":                                            43013884,
+ "CONCEPT_ID":                                            43013880,
 "CONCEPT_NAME": "alogliptin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -135,7 +135,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            40239216,
+ "CONCEPT_ID":                                            40239220,
 "CONCEPT_NAME": "linagliptin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -152,7 +152,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            40166035,
+ "CONCEPT_ID":                                            40166040,
 "CONCEPT_NAME": "saxagliptin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -186,7 +186,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            19122137,
+ "CONCEPT_ID":                                            19122140,
 "CONCEPT_NAME": "vildagliptin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -211,7 +211,7 @@
  "items": [
  {
  "concept": {
- "CONCEPT_ID":                                            44816332,
+ "CONCEPT_ID":                                            44816330,
 "CONCEPT_NAME": "albiglutide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -228,7 +228,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            45774435,
+ "CONCEPT_ID":                                            45774440,
 "CONCEPT_NAME": "dulaglutide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -262,7 +262,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            40170911,
+ "CONCEPT_ID":                                            40170910,
 "CONCEPT_NAME": "liraglutide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -279,7 +279,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            44506754,
+ "CONCEPT_ID":                                            44506750,
 "CONCEPT_NAME": "lixisenatide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -321,7 +321,7 @@
  "items": [
  {
  "concept": {
- "CONCEPT_ID":                                            43526465,
+ "CONCEPT_ID":                                            43526470,
 "CONCEPT_NAME": "canagliflozin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -338,7 +338,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            44785829,
+ "CONCEPT_ID":                                            44785830,
 "CONCEPT_NAME": "dapagliflozin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -355,7 +355,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            45774751,
+ "CONCEPT_ID":                                            45774750,
 "CONCEPT_NAME": "empagliflozin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -448,7 +448,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            19097821,
+ "CONCEPT_ID":                                            19097820,
 "CONCEPT_NAME": "gliquidone",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -575,7 +575,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            19033498,
+ "CONCEPT_ID":                                            19033500,
 "CONCEPT_NAME": "carbutamide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -592,7 +592,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            19001409,
+ "CONCEPT_ID":                                            19001410,
 "CONCEPT_NAME": "glibornuride",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -609,7 +609,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            19059796,
+ "CONCEPT_ID":                                            19059800,
 "CONCEPT_NAME": "gliclazide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -626,7 +626,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            19001441,
+ "CONCEPT_ID":                                            19001440,
 "CONCEPT_NAME": "glymidine",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1025,7 +1025,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            35602717,
+ "CONCEPT_ID":                                            35602720,
 "CONCEPT_NAME": "insulin degludec",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1042,7 +1042,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            21600713,
+ "CONCEPT_ID":                                            21600710,
 "CONCEPT_NAME": "INSULINS AND ANALOGUES",
 "STANDARD_CONCEPT": "C",
 "STANDARD_CONCEPT_CAPTION": "Classification",
@@ -1059,7 +1059,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            19078608,
+ "CONCEPT_ID":                                            19078610,
 "CONCEPT_NAME": "insulin, protamine zinc, beef-pork 100 UNT/ML Injectable Suspension",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1194,7 +1194,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            40484167,
+ "CONCEPT_ID":                                            40484170,
 "CONCEPT_NAME": "Arteriosclerosis of artery of extremity",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1245,7 +1245,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            40479625,
+ "CONCEPT_ID":                                            40479630,
 "CONCEPT_NAME": "Atherosclerosis of artery",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1262,7 +1262,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            40484541,
+ "CONCEPT_ID":                                            40484540,
 "CONCEPT_NAME": "Atherosclerosis of autologous vein bypass graft of limb",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1398,7 +1398,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            44782819,
+ "CONCEPT_ID":                                            44782820,
 "CONCEPT_NAME": "Chronic occlusion of artery of extremity",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1483,7 +1483,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            40480453,
+ "CONCEPT_ID":                                            40480450,
 "CONCEPT_NAME": "Disorder of vein of lower extremity",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1500,7 +1500,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            46272492,
+ "CONCEPT_ID":                                            46272490,
 "CONCEPT_NAME": "Dissection of artery",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1789,7 +1789,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            44782775,
+ "CONCEPT_ID":                                            44782780,
 "CONCEPT_NAME": "Peripheral vascular disease associated with another disorder",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -2441,7 +2441,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            36304833,
+ "CONCEPT_ID":                                            36304830,
 "CONCEPT_NAME": "Body mass index (BMI) [Ratio] Estimated",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -2574,23 +2574,6 @@
 "isExcluded": false,
 "includeDescendants": false,
 "includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":                                            44161830,
-"CONCEPT_NAME": "Piracetam 0.436 MG/MG Oral Solution [Piracetam Neuraxph] Box of 100",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "OMOP3038553",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm Extension",
-"CONCEPT_CLASS_ID": "Branded Drug Box" 
-},
-"isExcluded": false,
-"includeDescendants": false,
-"includeMapped": false 
 } 
 ] 
 } 
@@ -2602,7 +2585,7 @@
  "items": [
  {
  "concept": {
- "CONCEPT_ID":                                            44816332,
+ "CONCEPT_ID":                                            44816330,
 "CONCEPT_NAME": "albiglutide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -2619,7 +2602,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            43013884,
+ "CONCEPT_ID":                                            43013880,
 "CONCEPT_NAME": "alogliptin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -2636,7 +2619,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            43526465,
+ "CONCEPT_ID":                                            43526470,
 "CONCEPT_NAME": "canagliflozin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -2670,7 +2653,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            44785829,
+ "CONCEPT_ID":                                            44785830,
 "CONCEPT_NAME": "dapagliflozin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -2687,7 +2670,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            45774435,
+ "CONCEPT_ID":                                            45774440,
 "CONCEPT_NAME": "dulaglutide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -2704,7 +2687,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            45774751,
+ "CONCEPT_ID":                                            45774750,
 "CONCEPT_NAME": "empagliflozin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -2789,7 +2772,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            19097821,
+ "CONCEPT_ID":                                            19097820,
 "CONCEPT_NAME": "gliquidone",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -2823,7 +2806,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            40239216,
+ "CONCEPT_ID":                                            40239220,
 "CONCEPT_NAME": "linagliptin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -2840,7 +2823,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            40170911,
+ "CONCEPT_ID":                                            40170910,
 "CONCEPT_NAME": "liraglutide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -2857,7 +2840,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            44506754,
+ "CONCEPT_ID":                                            44506750,
 "CONCEPT_NAME": "lixisenatide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -2874,7 +2857,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            40166035,
+ "CONCEPT_ID":                                            40166040,
 "CONCEPT_NAME": "saxagliptin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -2959,7 +2942,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":                                            19122137,
+ "CONCEPT_ID":                                            19122140,
 "CONCEPT_NAME": "vildagliptin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -2982,6 +2965,336 @@
 "name": "Alternative within-class drugs",
 "expression": {
  "items": [] 
+} 
+},
+{
+ "id":                                                  65,
+"name": "BMI measurements",
+"expression": {
+ "items": [
+ {
+ "concept": {
+ "CONCEPT_ID":                                             3038553,
+"CONCEPT_NAME": "Body mass index (BMI) [Ratio]",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "39156-5",
+"DOMAIN_ID": "Measurement",
+"VOCABULARY_ID": "LOINC",
+"CONCEPT_CLASS_ID": "Clinical Observation" 
+},
+"isExcluded": false,
+"includeDescendants": false,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID":                                            36304830,
+"CONCEPT_NAME": "Body mass index (BMI) [Ratio] Estimated",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "89270-3",
+"DOMAIN_ID": "Measurement",
+"VOCABULARY_ID": "LOINC",
+"CONCEPT_CLASS_ID": "Clinical Observation" 
+},
+"isExcluded": false,
+"includeDescendants": false,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID":                                             3038553,
+"CONCEPT_NAME": "Body mass index (BMI) [Ratio]",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "39156-5",
+"DOMAIN_ID": "Measurement",
+"VOCABULARY_ID": "LOINC",
+"CONCEPT_CLASS_ID": "Clinical Observation" 
+},
+"isExcluded": false,
+"includeDescendants": false,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID":                                            36304830,
+"CONCEPT_NAME": "Body mass index (BMI) [Ratio] Estimated",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "89270-3",
+"DOMAIN_ID": "Measurement",
+"VOCABULARY_ID": "LOINC",
+"CONCEPT_CLASS_ID": "Clinical Observation" 
+},
+"isExcluded": false,
+"includeDescendants": false,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID":                                             3038553,
+"CONCEPT_NAME": "Body mass index (BMI) [Ratio]",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "39156-5",
+"DOMAIN_ID": "Measurement",
+"VOCABULARY_ID": "LOINC",
+"CONCEPT_CLASS_ID": "Clinical Observation" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID":                                            36304830,
+"CONCEPT_NAME": "Body mass index (BMI) [Ratio] Estimated",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "89270-3",
+"DOMAIN_ID": "Measurement",
+"VOCABULARY_ID": "LOINC",
+"CONCEPT_CLASS_ID": "Clinical Observation" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+} 
+] 
+} 
+},
+{
+ "id":                                                  66,
+"name": "Obesity Dx",
+"expression": {
+ "items": [
+ {
+ "concept": {
+ "CONCEPT_ID":                                             4060985,
+"CONCEPT_NAME": "Body mass index 30+ - obesity",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "162864005",
+"DOMAIN_ID": "Observation",
+"VOCABULARY_ID": "SNOMED",
+"CONCEPT_CLASS_ID": "Clinical Finding" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID":                                             4256640,
+"CONCEPT_NAME": "Body mass index 40+ - severely obese",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "408512008",
+"DOMAIN_ID": "Observation",
+"VOCABULARY_ID": "SNOMED",
+"CONCEPT_CLASS_ID": "Clinical Finding" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID":                                            45766200,
+"CONCEPT_NAME": "Lymphedema associated with obesity",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "703316004",
+"DOMAIN_ID": "Condition",
+"VOCABULARY_ID": "SNOMED",
+"CONCEPT_CLASS_ID": "Clinical Finding" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID":                                              433736,
+"CONCEPT_NAME": "Obesity",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "414916001",
+"DOMAIN_ID": "Condition",
+"VOCABULARY_ID": "SNOMED",
+"CONCEPT_CLASS_ID": "Clinical Finding" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID":                                             4176962,
+"CONCEPT_NAME": "Obesity associated disorder",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "363247006",
+"DOMAIN_ID": "Condition",
+"VOCABULARY_ID": "SNOMED",
+"CONCEPT_CLASS_ID": "Clinical Finding" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID":                                             4081038,
+"CONCEPT_NAME": "Pulmonary hypertension with extreme obesity",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "276792008",
+"DOMAIN_ID": "Condition",
+"VOCABULARY_ID": "SNOMED",
+"CONCEPT_CLASS_ID": "Clinical Finding" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+} 
+] 
+} 
+},
+{
+ "id":                                                  67,
+"name": "Body Weight",
+"expression": {
+ "items": [
+ {
+ "concept": {
+ "CONCEPT_ID":                                             3025315,
+"CONCEPT_NAME": "Body weight",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "29463-7",
+"DOMAIN_ID": "Measurement",
+"VOCABULARY_ID": "LOINC",
+"CONCEPT_CLASS_ID": "Clinical Observation" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID":                                             4099154,
+"CONCEPT_NAME": "Body weight",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "27113001",
+"DOMAIN_ID": "Measurement",
+"VOCABULARY_ID": "SNOMED",
+"CONCEPT_CLASS_ID": "Observable Entity" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID":                                             3013762,
+"CONCEPT_NAME": "Body weight Measured",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "3141-9",
+"DOMAIN_ID": "Measurement",
+"VOCABULARY_ID": "LOINC",
+"CONCEPT_CLASS_ID": "Clinical Observation" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID":                                             3027492,
+"CONCEPT_NAME": "Dry body weight Measured",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "8341-0",
+"DOMAIN_ID": "Measurement",
+"VOCABULARY_ID": "LOINC",
+"CONCEPT_CLASS_ID": "Clinical Observation" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID":                                             3023166,
+"CONCEPT_NAME": "Body weight Stated",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "3142-7",
+"DOMAIN_ID": "Measurement",
+"VOCABULARY_ID": "LOINC",
+"CONCEPT_CLASS_ID": "Clinical Observation" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID":                                             4264825,
+"CONCEPT_NAME": "Birth weight",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "364589006",
+"DOMAIN_ID": "Measurement",
+"VOCABULARY_ID": "SNOMED",
+"CONCEPT_CLASS_ID": "Observable Entity" 
+},
+"isExcluded": true,
+"includeDescendants": true,
+"includeMapped": false 
+} 
+] 
 } 
 } 
 ],
@@ -3209,7 +3522,7 @@
 } 
 },
 {
- "name": "Middle age group",
+ "name": "Young age group",
 "description": "Limit age",
 "expression": {
  "Type": "ALL",
@@ -3255,277 +3568,6 @@
 ] 
 } 
 ],
-"Groups": [] 
-} 
-},
-{
- "name": "Black race",
-"description": "Stratify race",
-"expression": {
- "Type": "ALL",
-"CriteriaList": [],
-"DemographicCriteriaList": [
- {
- "Race": [
- {
- "CONCEPT_ID":                                                8516,
-"CONCEPT_NAME": "Black or African American",
-"STANDARD_CONCEPT": null,
-"STANDARD_CONCEPT_CAPTION": "Unknown",
-"INVALID_REASON": null,
-"INVALID_REASON_CAPTION": "Unknown",
-"CONCEPT_CODE": "3",
-"DOMAIN_ID": "Race",
-"VOCABULARY_ID": "Race",
-"CONCEPT_CLASS_ID": null 
-},
-{
- "CONCEPT_ID":                                            38003598,
-"CONCEPT_NAME": "Black",
-"STANDARD_CONCEPT": null,
-"STANDARD_CONCEPT_CAPTION": "Unknown",
-"INVALID_REASON": null,
-"INVALID_REASON_CAPTION": "Unknown",
-"CONCEPT_CODE": "3.01",
-"DOMAIN_ID": "Race",
-"VOCABULARY_ID": "Race",
-"CONCEPT_CLASS_ID": null 
-},
-{
- "CONCEPT_ID":                                            38003599,
-"CONCEPT_NAME": "African American",
-"STANDARD_CONCEPT": null,
-"STANDARD_CONCEPT_CAPTION": "Unknown",
-"INVALID_REASON": null,
-"INVALID_REASON_CAPTION": "Unknown",
-"CONCEPT_CODE": "3.02",
-"DOMAIN_ID": "Race",
-"VOCABULARY_ID": "Race",
-"CONCEPT_CLASS_ID": null 
-},
-{
- "CONCEPT_ID":                                            38003600,
-"CONCEPT_NAME": "African",
-"STANDARD_CONCEPT": null,
-"STANDARD_CONCEPT_CAPTION": "Unknown",
-"INVALID_REASON": null,
-"INVALID_REASON_CAPTION": "Unknown",
-"CONCEPT_CODE": "3.03",
-"DOMAIN_ID": "Race",
-"VOCABULARY_ID": "Race",
-"CONCEPT_CLASS_ID": null 
-},
-{
- "CONCEPT_ID":                                            38003601,
-"CONCEPT_NAME": "Bahamian",
-"STANDARD_CONCEPT": null,
-"STANDARD_CONCEPT_CAPTION": "Unknown",
-"INVALID_REASON": null,
-"INVALID_REASON_CAPTION": "Unknown",
-"CONCEPT_CODE": "3.04",
-"DOMAIN_ID": "Race",
-"VOCABULARY_ID": "Race",
-"CONCEPT_CLASS_ID": null 
-},
-{
- "CONCEPT_ID":                                            38003602,
-"CONCEPT_NAME": "Barbadian",
-"STANDARD_CONCEPT": null,
-"STANDARD_CONCEPT_CAPTION": "Unknown",
-"INVALID_REASON": null,
-"INVALID_REASON_CAPTION": "Unknown",
-"CONCEPT_CODE": "3.05",
-"DOMAIN_ID": "Race",
-"VOCABULARY_ID": "Race",
-"CONCEPT_CLASS_ID": null 
-},
-{
- "CONCEPT_ID":                                            38003603,
-"CONCEPT_NAME": "Dominican",
-"STANDARD_CONCEPT": null,
-"STANDARD_CONCEPT_CAPTION": "Unknown",
-"INVALID_REASON": null,
-"INVALID_REASON_CAPTION": "Unknown",
-"CONCEPT_CODE": "3.06",
-"DOMAIN_ID": "Race",
-"VOCABULARY_ID": "Race",
-"CONCEPT_CLASS_ID": null 
-},
-{
- "CONCEPT_ID":                                            38003604,
-"CONCEPT_NAME": "Dominica Islander",
-"STANDARD_CONCEPT": null,
-"STANDARD_CONCEPT_CAPTION": "Unknown",
-"INVALID_REASON": null,
-"INVALID_REASON_CAPTION": "Unknown",
-"CONCEPT_CODE": "3.07",
-"DOMAIN_ID": "Race",
-"VOCABULARY_ID": "Race",
-"CONCEPT_CLASS_ID": null 
-},
-{
- "CONCEPT_ID":                                            38003605,
-"CONCEPT_NAME": "Haitian",
-"STANDARD_CONCEPT": null,
-"STANDARD_CONCEPT_CAPTION": "Unknown",
-"INVALID_REASON": null,
-"INVALID_REASON_CAPTION": "Unknown",
-"CONCEPT_CODE": "3.08",
-"DOMAIN_ID": "Race",
-"VOCABULARY_ID": "Race",
-"CONCEPT_CLASS_ID": null 
-},
-{
- "CONCEPT_ID":                                            38003606,
-"CONCEPT_NAME": "Jamaican",
-"STANDARD_CONCEPT": null,
-"STANDARD_CONCEPT_CAPTION": "Unknown",
-"INVALID_REASON": null,
-"INVALID_REASON_CAPTION": "Unknown",
-"CONCEPT_CODE": "3.09",
-"DOMAIN_ID": "Race",
-"VOCABULARY_ID": "Race",
-"CONCEPT_CLASS_ID": null 
-},
-{
- "CONCEPT_ID":                                            38003607,
-"CONCEPT_NAME": "Tobagoan",
-"STANDARD_CONCEPT": null,
-"STANDARD_CONCEPT_CAPTION": "Unknown",
-"INVALID_REASON": null,
-"INVALID_REASON_CAPTION": "Unknown",
-"CONCEPT_CODE": "3.10",
-"DOMAIN_ID": "Race",
-"VOCABULARY_ID": "Race",
-"CONCEPT_CLASS_ID": null 
-},
-{
- "CONCEPT_ID":                                            38003608,
-"CONCEPT_NAME": "Trinidadian",
-"STANDARD_CONCEPT": null,
-"STANDARD_CONCEPT_CAPTION": "Unknown",
-"INVALID_REASON": null,
-"INVALID_REASON_CAPTION": "Unknown",
-"CONCEPT_CODE": "3.11",
-"DOMAIN_ID": "Race",
-"VOCABULARY_ID": "Race",
-"CONCEPT_CLASS_ID": null 
-},
-{
- "CONCEPT_ID":                                            38003609,
-"CONCEPT_NAME": "West Indian",
-"STANDARD_CONCEPT": null,
-"STANDARD_CONCEPT_CAPTION": "Unknown",
-"INVALID_REASON": null,
-"INVALID_REASON_CAPTION": "Unknown",
-"CONCEPT_CODE": "3.12",
-"DOMAIN_ID": "Race",
-"VOCABULARY_ID": "Race",
-"CONCEPT_CLASS_ID": null 
-} 
-] 
-} 
-],
-"Groups": [] 
-} 
-},
-{
- "name": "Low cardiovascular risk",
-"description": "Identify patients at low cardiovascular risk (based on Ryan et al. 2018 Diabetes Obes Metab)",
-"expression": {
- "Type": "ALL",
-"CriteriaList": [
- {
- "Criteria": {
- "ConditionOccurrence": {
- "CodesetId":                                                   8,
-"ConditionTypeExclude": false 
-} 
-},
-"StartWindow": {
- "Start": {
- "Coeff":                                                  -1 
-},
-"End": {
- "Days":                                                   0,
-"Coeff":                                                   1 
-},
-"UseIndexEnd": false,
-"UseEventEnd": false 
-},
-"RestrictVisit": false,
-"IgnoreObservationPeriod": true,
-"Occurrence": {
- "Type":                                                   0,
-"Count":                                                   0,
-"IsDistinct": false 
-} 
-},
-{
- "Criteria": {
- "ProcedureOccurrence": {
- "CodesetId":                                                   9,
-"ProcedureTypeExclude": false 
-} 
-},
-"StartWindow": {
- "Start": {
- "Coeff":                                                  -1 
-},
-"End": {
- "Days":                                                   0,
-"Coeff":                                                   1 
-},
-"UseIndexEnd": false,
-"UseEventEnd": false 
-},
-"RestrictVisit": false,
-"IgnoreObservationPeriod": true,
-"Occurrence": {
- "Type":                                                   0,
-"Count":                                                   0,
-"IsDistinct": false 
-} 
-} 
-],
-"DemographicCriteriaList": [],
-"Groups": [] 
-} 
-},
-{
- "name": "Obesity",
-"description": "Identify patients with renal impairment",
-"expression": {
- "Type": "ALL",
-"CriteriaList": [
- {
- "Criteria": {
- "ConditionOccurrence": {
- "CodesetId":                                                  13,
-"ConditionTypeExclude": false 
-} 
-},
-"StartWindow": {
- "Start": {
- "Coeff":                                                  -1 
-},
-"End": {
- "Days":                                                   0,
-"Coeff":                                                   1 
-},
-"UseIndexEnd": false,
-"UseEventEnd": false 
-},
-"RestrictVisit": false,
-"IgnoreObservationPeriod": true,
-"Occurrence": {
- "Type":                                                   2,
-"Count":                                                   1,
-"IsDistinct": false 
-} 
-} 
-],
-"DemographicCriteriaList": [],
 "Groups": [] 
 } 
 },
@@ -3686,6 +3728,189 @@
 },
 "RestrictVisit": false,
 "IgnoreObservationPeriod": true,
+"Occurrence": {
+ "Type":                                                   0,
+"Count":                                                   0,
+"IsDistinct": false 
+} 
+} 
+],
+"DemographicCriteriaList": [],
+"Groups": [] 
+} 
+},
+{
+ "name": "Obesity (absent)",
+"expression": {
+ "Type": "ALL",
+"CriteriaList": [
+ {
+ "Criteria": {
+ "Measurement": {
+ "CodesetId":                                                  65,
+"MeasurementTypeExclude": false,
+"ValueAsNumber": {
+ "Value":                                                  30,
+"Op": "bt",
+"Extent":                                                  60 
+} 
+} 
+},
+"StartWindow": {
+ "Start": {
+ "Coeff":                                                  -1 
+},
+"End": {
+ "Days":                                                   1,
+"Coeff":                                                  -1 
+},
+"UseIndexEnd": false,
+"UseEventEnd": false 
+},
+"RestrictVisit": false,
+"IgnoreObservationPeriod": false,
+"Occurrence": {
+ "Type":                                                   0,
+"Count":                                                   0,
+"IsDistinct": false 
+} 
+},
+{
+ "Criteria": {
+ "ConditionOccurrence": {
+ "CodesetId":                                                  66,
+"ConditionTypeExclude": false 
+} 
+},
+"StartWindow": {
+ "Start": {
+ "Coeff":                                                  -1 
+},
+"End": {
+ "Days":                                                   1,
+"Coeff":                                                  -1 
+},
+"UseIndexEnd": false,
+"UseEventEnd": false 
+},
+"RestrictVisit": false,
+"IgnoreObservationPeriod": false,
+"Occurrence": {
+ "Type":                                                   0,
+"Count":                                                   0,
+"IsDistinct": false 
+} 
+},
+{
+ "Criteria": {
+ "Observation": {
+ "CodesetId":                                                  66,
+"ObservationTypeExclude": false 
+} 
+},
+"StartWindow": {
+ "Start": {
+ "Coeff":                                                  -1 
+},
+"End": {
+ "Days":                                                   1,
+"Coeff":                                                  -1 
+},
+"UseIndexEnd": false,
+"UseEventEnd": false 
+},
+"RestrictVisit": false,
+"IgnoreObservationPeriod": false,
+"Occurrence": {
+ "Type":                                                   0,
+"Count":                                                   0,
+"IsDistinct": false 
+} 
+},
+{
+ "Criteria": {
+ "Measurement": {
+ "CodesetId":                                                  67,
+"MeasurementTypeExclude": false,
+"ValueAsNumber": {
+ "Value":                                                 120,
+"Op": "bt",
+"Extent":                                                 200 
+},
+"Unit": [
+ {
+ "CONCEPT_ID":                                                9529,
+"CONCEPT_NAME": "kilogram",
+"STANDARD_CONCEPT": null,
+"STANDARD_CONCEPT_CAPTION": "Unknown",
+"INVALID_REASON": null,
+"INVALID_REASON_CAPTION": "Unknown",
+"CONCEPT_CODE": "kg",
+"DOMAIN_ID": "Unit",
+"VOCABULARY_ID": "UCUM",
+"CONCEPT_CLASS_ID": null 
+} 
+] 
+} 
+},
+"StartWindow": {
+ "Start": {
+ "Coeff":                                                  -1 
+},
+"End": {
+ "Days":                                                   1,
+"Coeff":                                                  -1 
+},
+"UseIndexEnd": false,
+"UseEventEnd": false 
+},
+"RestrictVisit": false,
+"IgnoreObservationPeriod": false,
+"Occurrence": {
+ "Type":                                                   0,
+"Count":                                                   0,
+"IsDistinct": false 
+} 
+},
+{
+ "Criteria": {
+ "Observation": {
+ "CodesetId":                                                  67,
+"ObservationTypeExclude": false,
+"ValueAsNumber": {
+ "Value":                                                 120,
+"Op": "bt",
+"Extent":                                                 200 
+},
+"Unit": [
+ {
+ "CONCEPT_ID":                                                9529,
+"CONCEPT_NAME": "kilogram",
+"STANDARD_CONCEPT": null,
+"STANDARD_CONCEPT_CAPTION": "Unknown",
+"INVALID_REASON": null,
+"INVALID_REASON_CAPTION": "Unknown",
+"CONCEPT_CODE": "kg",
+"DOMAIN_ID": "Unit",
+"VOCABULARY_ID": "UCUM",
+"CONCEPT_CLASS_ID": null 
+} 
+] 
+} 
+},
+"StartWindow": {
+ "Start": {
+ "Coeff":                                                  -1 
+},
+"End": {
+ "Days":                                                   1,
+"Coeff":                                                  -1 
+},
+"UseIndexEnd": false,
+"UseEventEnd": false 
+},
+"RestrictVisit": false,
+"IgnoreObservationPeriod": false,
 "Occurrence": {
  "Type":                                                   0,
 "Count":                                                   0,
