@@ -1,97 +1,289 @@
 atlasId,atlasName,cohortId,name
-101100000,DPP4I main,101100000,class/ID101100000
-201100000,GLP1RA main,201100000,class/ID201100000
-301100000,SGLT2I main,301100000,class/ID301100000
-401100000,SU main,401100000,class/ID401100000
-101110000,DPP4I younger-age,101110000,class/ID101110000
-201110000,GLP1RA younger-age,201110000,class/ID201110000
-301110000,SGLT2I younger-age,301110000,class/ID301110000
-401110000,SU younger-age,401110000,class/ID401110000
-101130000,DPP4I older-age,101130000,class/ID101130000
-201130000,GLP1RA older-age,201130000,class/ID201130000
-301130000,SGLT2I older-age,301130000,class/ID301130000
-401130000,SU older-age,401130000,class/ID401130000
-101101000,DPP4I female,101101000,class/ID101101000
-201101000,GLP1RA female,201101000,class/ID201101000
-301101000,SGLT2I female,301101000,class/ID301101000
-401101000,SU female,401101000,class/ID401101000
-101102000,DPP4I male,101102000,class/ID101102000
-201102000,GLP1RA male,201102000,class/ID201102000
-301102000,SGLT2I male,301102000,class/ID301102000
-401102000,SU male,401102000,class/ID401102000
-101100001,DPP4I with-obe,101100001,class/ID101100001
-201100001,GLP1RA with-obe,201100001,class/ID201100001
-301100001,SGLT2I with-obe,301100001,class/ID301100001
-401100001,SU with-obe,401100001,class/ID401100001
-102100000,DPP4I main ot2,102100000,class/ID102100000
-202100000,GLP1RA main ot2,202100000,class/ID202100000
-302100000,SGLT2I main ot2,302100000,class/ID302100000
-402100000,SU main ot2,402100000,class/ID402100000
-102110000,DPP4I ot2 younger-age,102110000,class/ID102110000
-202110000,GLP1RA ot2 younger-age,202110000,class/ID202110000
-302110000,SGLT2I ot2 younger-age,302110000,class/ID302110000
-402110000,SU ot2 younger-age,402110000,class/ID402110000
-102130000,DPP4I ot2 older-age,102130000,class/ID102130000
-202130000,GLP1RA ot2 older-age,202130000,class/ID202130000
-302130000,SGLT2I ot2 older-age,302130000,class/ID302130000
-402130000,SU ot2 older-age,402130000,class/ID402130000
-102101000,DPP4I ot2 female,102101000,class/ID102101000
-202101000,GLP1RA ot2 female,202101000,class/ID202101000
-302101000,SGLT2I ot2 female,302101000,class/ID302101000
-402101000,SU ot2 female,402101000,class/ID402101000
-102102000,DPP4I ot2 male,102102000,class/ID102102000
-202102000,GLP1RA ot2 male,202102000,class/ID202102000
-302102000,SGLT2I ot2 male,302102000,class/ID302102000
-402102000,SU ot2 male,402102000,class/ID402102000
-102100001,DPP4I ot2 with-obe,102100001,class/ID102100001
-202100001,GLP1RA ot2 with-obe,202100001,class/ID202100001
-302100001,SGLT2I ot2 with-obe,302100001,class/ID302100001
-402100001,SU ot2 with-obe,402100001,class/ID402100001
-101200000,DPP4I main no-met,101200000,class/ID101200000
-201200000,GLP1RA main no-met,201200000,class/ID201200000
-301200000,SGLT2I main no-met,301200000,class/ID301200000
-401200000,SU main no-met,401200000,class/ID401200000
-101210000,DPP4I no-met younger-age,101210000,class/ID101210000
-201210000,GLP1RA no-met younger-age,201210000,class/ID201210000
-301210000,SGLT2I no-met younger-age,301210000,class/ID301210000
-401210000,SU no-met younger-age,401210000,class/ID401210000
-101230000,DPP4I no-met older-age,101230000,class/ID101230000
-201230000,GLP1RA no-met older-age,201230000,class/ID201230000
-301230000,SGLT2I no-met older-age,301230000,class/ID301230000
-401230000,SU no-met older-age,401230000,class/ID401230000
-101201000,DPP4I no-met female,101201000,class/ID101201000
-201201000,GLP1RA no-met female,201201000,class/ID201201000
-301201000,SGLT2I no-met female,301201000,class/ID301201000
-401201000,SU no-met female,401201000,class/ID401201000
-101202000,DPP4I no-met male,101202000,class/ID101202000
-201202000,GLP1RA no-met male,201202000,class/ID201202000
-301202000,SGLT2I no-met male,301202000,class/ID301202000
-401202000,SU no-met male,401202000,class/ID401202000
-101200001,DPP4I no-met with-obe,101200001,class/ID101200001
-201200001,GLP1RA no-met with-obe,201200001,class/ID201200001
-301200001,SGLT2I no-met with-obe,301200001,class/ID301200001
-401200001,SU no-met with-obe,401200001,class/ID401200001
-102200000,DPP4I main ot2 no-met,102200000,class/ID102200000
-202200000,GLP1RA main ot2 no-met,202200000,class/ID202200000
-302200000,SGLT2I main ot2 no-met,302200000,class/ID302200000
-402200000,SU main ot2 no-met,402200000,class/ID402200000
-102210000,DPP4I ot2 no-met younger-age,102210000,class/ID102210000
-202210000,GLP1RA ot2 no-met younger-age,202210000,class/ID202210000
-302210000,SGLT2I ot2 no-met younger-age,302210000,class/ID302210000
-402210000,SU ot2 no-met younger-age,402210000,class/ID402210000
-102230000,DPP4I ot2 no-met older-age,102230000,class/ID102230000
-202230000,GLP1RA ot2 no-met older-age,202230000,class/ID202230000
-302230000,SGLT2I ot2 no-met older-age,302230000,class/ID302230000
-402230000,SU ot2 no-met older-age,402230000,class/ID402230000
-102201000,DPP4I ot2 no-met female,102201000,class/ID102201000
-202201000,GLP1RA ot2 no-met female,202201000,class/ID202201000
-302201000,SGLT2I ot2 no-met female,302201000,class/ID302201000
-402201000,SU ot2 no-met female,402201000,class/ID402201000
-102202000,DPP4I ot2 no-met male,102202000,class/ID102202000
-202202000,GLP1RA ot2 no-met male,202202000,class/ID202202000
-302202000,SGLT2I ot2 no-met male,302202000,class/ID302202000
-402202000,SU ot2 no-met male,402202000,class/ID402202000
-102200001,DPP4I ot2 no-met with-obe,102200001,class/ID102200001
-202200001,GLP1RA ot2 no-met with-obe,202200001,class/ID202200001
-302200001,SGLT2I ot2 no-met with-obe,302200001,class/ID302200001
-402200001,SU ot2 no-met with-obe,402200001,class/ID402200001
+1010000,DPP4I main no-met,1010000,class/ID1010000
+1010001,DPP4I no-met with-obe,1010001,class/ID1010001
+1010010,DPP4I no-met female,1010010,class/ID1010010
+1010020,DPP4I no-met male,1010020,class/ID1010020
+1010011,DPP4I no-met female with-obe,1010011,class/ID1010011
+1010021,DPP4I no-met male with-obe,1010021,class/ID1010021
+1010100,DPP4I no-met younger-age,1010100,class/ID1010100
+1010101,DPP4I no-met younger-age with-obe,1010101,class/ID1010101
+1010110,DPP4I no-met younger-age female,1010110,class/ID1010110
+1010120,DPP4I no-met younger-age male,1010120,class/ID1010120
+1010111,DPP4I no-met younger-age female with-obe,1010111,class/ID1010111
+1010121,DPP4I no-met younger-age male with-obe,1010121,class/ID1010121
+1010300,DPP4I no-met older-age,1010300,class/ID1010300
+1010301,DPP4I no-met older-age with-obe,1010301,class/ID1010301
+1010310,DPP4I no-met older-age female,1010310,class/ID1010310
+1010320,DPP4I no-met older-age male,1010320,class/ID1010320
+1010311,DPP4I no-met older-age female with-obe,1010311,class/ID1010311
+1010321,DPP4I no-met older-age male with-obe,1010321,class/ID1010321
+1020000,DPP4I main ot2 no-met,1020000,class/ID1020000
+1020001,DPP4I ot2 no-met with-obe,1020001,class/ID1020001
+1020010,DPP4I ot2 no-met female,1020010,class/ID1020010
+1020020,DPP4I ot2 no-met male,1020020,class/ID1020020
+1020011,DPP4I ot2 no-met female with-obe,1020011,class/ID1020011
+1020021,DPP4I ot2 no-met male with-obe,1020021,class/ID1020021
+1020100,DPP4I ot2 no-met younger-age,1020100,class/ID1020100
+1020101,DPP4I ot2 no-met younger-age with-obe,1020101,class/ID1020101
+1020110,DPP4I ot2 no-met younger-age female,1020110,class/ID1020110
+1020120,DPP4I ot2 no-met younger-age male,1020120,class/ID1020120
+1020111,DPP4I ot2 no-met younger-age female with-obe,1020111,class/ID1020111
+1020121,DPP4I ot2 no-met younger-age male with-obe,1020121,class/ID1020121
+1020300,DPP4I ot2 no-met older-age,1020300,class/ID1020300
+1020301,DPP4I ot2 no-met older-age with-obe,1020301,class/ID1020301
+1020310,DPP4I ot2 no-met older-age female,1020310,class/ID1020310
+1020320,DPP4I ot2 no-met older-age male,1020320,class/ID1020320
+1020311,DPP4I ot2 no-met older-age female with-obe,1020311,class/ID1020311
+1020321,DPP4I ot2 no-met older-age male with-obe,1020321,class/ID1020321
+1011000,DPP4I main,1011000,class/ID1011000
+1011001,DPP4I with-obe,1011001,class/ID1011001
+1011010,DPP4I female,1011010,class/ID1011010
+1011020,DPP4I male,1011020,class/ID1011020
+1011011,DPP4I female with-obe,1011011,class/ID1011011
+1011021,DPP4I male with-obe,1011021,class/ID1011021
+1011100,DPP4I younger-age,1011100,class/ID1011100
+1011101,DPP4I younger-age with-obe,1011101,class/ID1011101
+1011110,DPP4I younger-age female,1011110,class/ID1011110
+1011120,DPP4I younger-age male,1011120,class/ID1011120
+1011111,DPP4I younger-age female with-obe,1011111,class/ID1011111
+1011121,DPP4I younger-age male with-obe,1011121,class/ID1011121
+1011300,DPP4I older-age,1011300,class/ID1011300
+1011301,DPP4I older-age with-obe,1011301,class/ID1011301
+1011310,DPP4I older-age female,1011310,class/ID1011310
+1011320,DPP4I older-age male,1011320,class/ID1011320
+1011311,DPP4I older-age female with-obe,1011311,class/ID1011311
+1011321,DPP4I older-age male with-obe,1011321,class/ID1011321
+1021000,DPP4I main ot2,1021000,class/ID1021000
+1021001,DPP4I ot2 with-obe,1021001,class/ID1021001
+1021010,DPP4I ot2 female,1021010,class/ID1021010
+1021020,DPP4I ot2 male,1021020,class/ID1021020
+1021011,DPP4I ot2 female with-obe,1021011,class/ID1021011
+1021021,DPP4I ot2 male with-obe,1021021,class/ID1021021
+1021100,DPP4I ot2 younger-age,1021100,class/ID1021100
+1021101,DPP4I ot2 younger-age with-obe,1021101,class/ID1021101
+1021110,DPP4I ot2 younger-age female,1021110,class/ID1021110
+1021120,DPP4I ot2 younger-age male,1021120,class/ID1021120
+1021111,DPP4I ot2 younger-age female with-obe,1021111,class/ID1021111
+1021121,DPP4I ot2 younger-age male with-obe,1021121,class/ID1021121
+1021300,DPP4I ot2 older-age,1021300,class/ID1021300
+1021301,DPP4I ot2 older-age with-obe,1021301,class/ID1021301
+1021310,DPP4I ot2 older-age female,1021310,class/ID1021310
+1021320,DPP4I ot2 older-age male,1021320,class/ID1021320
+1021311,DPP4I ot2 older-age female with-obe,1021311,class/ID1021311
+1021321,DPP4I ot2 older-age male with-obe,1021321,class/ID1021321
+2010000,GLP1RA main no-met,2010000,class/ID2010000
+2010001,GLP1RA no-met with-obe,2010001,class/ID2010001
+2010010,GLP1RA no-met female,2010010,class/ID2010010
+2010020,GLP1RA no-met male,2010020,class/ID2010020
+2010011,GLP1RA no-met female with-obe,2010011,class/ID2010011
+2010021,GLP1RA no-met male with-obe,2010021,class/ID2010021
+2010100,GLP1RA no-met younger-age,2010100,class/ID2010100
+2010101,GLP1RA no-met younger-age with-obe,2010101,class/ID2010101
+2010110,GLP1RA no-met younger-age female,2010110,class/ID2010110
+2010120,GLP1RA no-met younger-age male,2010120,class/ID2010120
+2010111,GLP1RA no-met younger-age female with-obe,2010111,class/ID2010111
+2010121,GLP1RA no-met younger-age male with-obe,2010121,class/ID2010121
+2010300,GLP1RA no-met older-age,2010300,class/ID2010300
+2010301,GLP1RA no-met older-age with-obe,2010301,class/ID2010301
+2010310,GLP1RA no-met older-age female,2010310,class/ID2010310
+2010320,GLP1RA no-met older-age male,2010320,class/ID2010320
+2010311,GLP1RA no-met older-age female with-obe,2010311,class/ID2010311
+2010321,GLP1RA no-met older-age male with-obe,2010321,class/ID2010321
+2020000,GLP1RA main ot2 no-met,2020000,class/ID2020000
+2020001,GLP1RA ot2 no-met with-obe,2020001,class/ID2020001
+2020010,GLP1RA ot2 no-met female,2020010,class/ID2020010
+2020020,GLP1RA ot2 no-met male,2020020,class/ID2020020
+2020011,GLP1RA ot2 no-met female with-obe,2020011,class/ID2020011
+2020021,GLP1RA ot2 no-met male with-obe,2020021,class/ID2020021
+2020100,GLP1RA ot2 no-met younger-age,2020100,class/ID2020100
+2020101,GLP1RA ot2 no-met younger-age with-obe,2020101,class/ID2020101
+2020110,GLP1RA ot2 no-met younger-age female,2020110,class/ID2020110
+2020120,GLP1RA ot2 no-met younger-age male,2020120,class/ID2020120
+2020111,GLP1RA ot2 no-met younger-age female with-obe,2020111,class/ID2020111
+2020121,GLP1RA ot2 no-met younger-age male with-obe,2020121,class/ID2020121
+2020300,GLP1RA ot2 no-met older-age,2020300,class/ID2020300
+2020301,GLP1RA ot2 no-met older-age with-obe,2020301,class/ID2020301
+2020310,GLP1RA ot2 no-met older-age female,2020310,class/ID2020310
+2020320,GLP1RA ot2 no-met older-age male,2020320,class/ID2020320
+2020311,GLP1RA ot2 no-met older-age female with-obe,2020311,class/ID2020311
+2020321,GLP1RA ot2 no-met older-age male with-obe,2020321,class/ID2020321
+2011000,GLP1RA main,2011000,class/ID2011000
+2011001,GLP1RA with-obe,2011001,class/ID2011001
+2011010,GLP1RA female,2011010,class/ID2011010
+2011020,GLP1RA male,2011020,class/ID2011020
+2011011,GLP1RA female with-obe,2011011,class/ID2011011
+2011021,GLP1RA male with-obe,2011021,class/ID2011021
+2011100,GLP1RA younger-age,2011100,class/ID2011100
+2011101,GLP1RA younger-age with-obe,2011101,class/ID2011101
+2011110,GLP1RA younger-age female,2011110,class/ID2011110
+2011120,GLP1RA younger-age male,2011120,class/ID2011120
+2011111,GLP1RA younger-age female with-obe,2011111,class/ID2011111
+2011121,GLP1RA younger-age male with-obe,2011121,class/ID2011121
+2011300,GLP1RA older-age,2011300,class/ID2011300
+2011301,GLP1RA older-age with-obe,2011301,class/ID2011301
+2011310,GLP1RA older-age female,2011310,class/ID2011310
+2011320,GLP1RA older-age male,2011320,class/ID2011320
+2011311,GLP1RA older-age female with-obe,2011311,class/ID2011311
+2011321,GLP1RA older-age male with-obe,2011321,class/ID2011321
+2021000,GLP1RA main ot2,2021000,class/ID2021000
+2021001,GLP1RA ot2 with-obe,2021001,class/ID2021001
+2021010,GLP1RA ot2 female,2021010,class/ID2021010
+2021020,GLP1RA ot2 male,2021020,class/ID2021020
+2021011,GLP1RA ot2 female with-obe,2021011,class/ID2021011
+2021021,GLP1RA ot2 male with-obe,2021021,class/ID2021021
+2021100,GLP1RA ot2 younger-age,2021100,class/ID2021100
+2021101,GLP1RA ot2 younger-age with-obe,2021101,class/ID2021101
+2021110,GLP1RA ot2 younger-age female,2021110,class/ID2021110
+2021120,GLP1RA ot2 younger-age male,2021120,class/ID2021120
+2021111,GLP1RA ot2 younger-age female with-obe,2021111,class/ID2021111
+2021121,GLP1RA ot2 younger-age male with-obe,2021121,class/ID2021121
+2021300,GLP1RA ot2 older-age,2021300,class/ID2021300
+2021301,GLP1RA ot2 older-age with-obe,2021301,class/ID2021301
+2021310,GLP1RA ot2 older-age female,2021310,class/ID2021310
+2021320,GLP1RA ot2 older-age male,2021320,class/ID2021320
+2021311,GLP1RA ot2 older-age female with-obe,2021311,class/ID2021311
+2021321,GLP1RA ot2 older-age male with-obe,2021321,class/ID2021321
+3010000,SGLT2I main no-met,3010000,class/ID3010000
+3010001,SGLT2I no-met with-obe,3010001,class/ID3010001
+3010010,SGLT2I no-met female,3010010,class/ID3010010
+3010020,SGLT2I no-met male,3010020,class/ID3010020
+3010011,SGLT2I no-met female with-obe,3010011,class/ID3010011
+3010021,SGLT2I no-met male with-obe,3010021,class/ID3010021
+3010100,SGLT2I no-met younger-age,3010100,class/ID3010100
+3010101,SGLT2I no-met younger-age with-obe,3010101,class/ID3010101
+3010110,SGLT2I no-met younger-age female,3010110,class/ID3010110
+3010120,SGLT2I no-met younger-age male,3010120,class/ID3010120
+3010111,SGLT2I no-met younger-age female with-obe,3010111,class/ID3010111
+3010121,SGLT2I no-met younger-age male with-obe,3010121,class/ID3010121
+3010300,SGLT2I no-met older-age,3010300,class/ID3010300
+3010301,SGLT2I no-met older-age with-obe,3010301,class/ID3010301
+3010310,SGLT2I no-met older-age female,3010310,class/ID3010310
+3010320,SGLT2I no-met older-age male,3010320,class/ID3010320
+3010311,SGLT2I no-met older-age female with-obe,3010311,class/ID3010311
+3010321,SGLT2I no-met older-age male with-obe,3010321,class/ID3010321
+3020000,SGLT2I main ot2 no-met,3020000,class/ID3020000
+3020001,SGLT2I ot2 no-met with-obe,3020001,class/ID3020001
+3020010,SGLT2I ot2 no-met female,3020010,class/ID3020010
+3020020,SGLT2I ot2 no-met male,3020020,class/ID3020020
+3020011,SGLT2I ot2 no-met female with-obe,3020011,class/ID3020011
+3020021,SGLT2I ot2 no-met male with-obe,3020021,class/ID3020021
+3020100,SGLT2I ot2 no-met younger-age,3020100,class/ID3020100
+3020101,SGLT2I ot2 no-met younger-age with-obe,3020101,class/ID3020101
+3020110,SGLT2I ot2 no-met younger-age female,3020110,class/ID3020110
+3020120,SGLT2I ot2 no-met younger-age male,3020120,class/ID3020120
+3020111,SGLT2I ot2 no-met younger-age female with-obe,3020111,class/ID3020111
+3020121,SGLT2I ot2 no-met younger-age male with-obe,3020121,class/ID3020121
+3020300,SGLT2I ot2 no-met older-age,3020300,class/ID3020300
+3020301,SGLT2I ot2 no-met older-age with-obe,3020301,class/ID3020301
+3020310,SGLT2I ot2 no-met older-age female,3020310,class/ID3020310
+3020320,SGLT2I ot2 no-met older-age male,3020320,class/ID3020320
+3020311,SGLT2I ot2 no-met older-age female with-obe,3020311,class/ID3020311
+3020321,SGLT2I ot2 no-met older-age male with-obe,3020321,class/ID3020321
+3011000,SGLT2I main,3011000,class/ID3011000
+3011001,SGLT2I with-obe,3011001,class/ID3011001
+3011010,SGLT2I female,3011010,class/ID3011010
+3011020,SGLT2I male,3011020,class/ID3011020
+3011011,SGLT2I female with-obe,3011011,class/ID3011011
+3011021,SGLT2I male with-obe,3011021,class/ID3011021
+3011100,SGLT2I younger-age,3011100,class/ID3011100
+3011101,SGLT2I younger-age with-obe,3011101,class/ID3011101
+3011110,SGLT2I younger-age female,3011110,class/ID3011110
+3011120,SGLT2I younger-age male,3011120,class/ID3011120
+3011111,SGLT2I younger-age female with-obe,3011111,class/ID3011111
+3011121,SGLT2I younger-age male with-obe,3011121,class/ID3011121
+3011300,SGLT2I older-age,3011300,class/ID3011300
+3011301,SGLT2I older-age with-obe,3011301,class/ID3011301
+3011310,SGLT2I older-age female,3011310,class/ID3011310
+3011320,SGLT2I older-age male,3011320,class/ID3011320
+3011311,SGLT2I older-age female with-obe,3011311,class/ID3011311
+3011321,SGLT2I older-age male with-obe,3011321,class/ID3011321
+3021000,SGLT2I main ot2,3021000,class/ID3021000
+3021001,SGLT2I ot2 with-obe,3021001,class/ID3021001
+3021010,SGLT2I ot2 female,3021010,class/ID3021010
+3021020,SGLT2I ot2 male,3021020,class/ID3021020
+3021011,SGLT2I ot2 female with-obe,3021011,class/ID3021011
+3021021,SGLT2I ot2 male with-obe,3021021,class/ID3021021
+3021100,SGLT2I ot2 younger-age,3021100,class/ID3021100
+3021101,SGLT2I ot2 younger-age with-obe,3021101,class/ID3021101
+3021110,SGLT2I ot2 younger-age female,3021110,class/ID3021110
+3021120,SGLT2I ot2 younger-age male,3021120,class/ID3021120
+3021111,SGLT2I ot2 younger-age female with-obe,3021111,class/ID3021111
+3021121,SGLT2I ot2 younger-age male with-obe,3021121,class/ID3021121
+3021300,SGLT2I ot2 older-age,3021300,class/ID3021300
+3021301,SGLT2I ot2 older-age with-obe,3021301,class/ID3021301
+3021310,SGLT2I ot2 older-age female,3021310,class/ID3021310
+3021320,SGLT2I ot2 older-age male,3021320,class/ID3021320
+3021311,SGLT2I ot2 older-age female with-obe,3021311,class/ID3021311
+3021321,SGLT2I ot2 older-age male with-obe,3021321,class/ID3021321
+4010000,SU main no-met,4010000,class/ID4010000
+4010001,SU no-met with-obe,4010001,class/ID4010001
+4010010,SU no-met female,4010010,class/ID4010010
+4010020,SU no-met male,4010020,class/ID4010020
+4010011,SU no-met female with-obe,4010011,class/ID4010011
+4010021,SU no-met male with-obe,4010021,class/ID4010021
+4010100,SU no-met younger-age,4010100,class/ID4010100
+4010101,SU no-met younger-age with-obe,4010101,class/ID4010101
+4010110,SU no-met younger-age female,4010110,class/ID4010110
+4010120,SU no-met younger-age male,4010120,class/ID4010120
+4010111,SU no-met younger-age female with-obe,4010111,class/ID4010111
+4010121,SU no-met younger-age male with-obe,4010121,class/ID4010121
+4010300,SU no-met older-age,4010300,class/ID4010300
+4010301,SU no-met older-age with-obe,4010301,class/ID4010301
+4010310,SU no-met older-age female,4010310,class/ID4010310
+4010320,SU no-met older-age male,4010320,class/ID4010320
+4010311,SU no-met older-age female with-obe,4010311,class/ID4010311
+4010321,SU no-met older-age male with-obe,4010321,class/ID4010321
+4020000,SU main ot2 no-met,4020000,class/ID4020000
+4020001,SU ot2 no-met with-obe,4020001,class/ID4020001
+4020010,SU ot2 no-met female,4020010,class/ID4020010
+4020020,SU ot2 no-met male,4020020,class/ID4020020
+4020011,SU ot2 no-met female with-obe,4020011,class/ID4020011
+4020021,SU ot2 no-met male with-obe,4020021,class/ID4020021
+4020100,SU ot2 no-met younger-age,4020100,class/ID4020100
+4020101,SU ot2 no-met younger-age with-obe,4020101,class/ID4020101
+4020110,SU ot2 no-met younger-age female,4020110,class/ID4020110
+4020120,SU ot2 no-met younger-age male,4020120,class/ID4020120
+4020111,SU ot2 no-met younger-age female with-obe,4020111,class/ID4020111
+4020121,SU ot2 no-met younger-age male with-obe,4020121,class/ID4020121
+4020300,SU ot2 no-met older-age,4020300,class/ID4020300
+4020301,SU ot2 no-met older-age with-obe,4020301,class/ID4020301
+4020310,SU ot2 no-met older-age female,4020310,class/ID4020310
+4020320,SU ot2 no-met older-age male,4020320,class/ID4020320
+4020311,SU ot2 no-met older-age female with-obe,4020311,class/ID4020311
+4020321,SU ot2 no-met older-age male with-obe,4020321,class/ID4020321
+4011000,SU main,4011000,class/ID4011000
+4011001,SU with-obe,4011001,class/ID4011001
+4011010,SU female,4011010,class/ID4011010
+4011020,SU male,4011020,class/ID4011020
+4011011,SU female with-obe,4011011,class/ID4011011
+4011021,SU male with-obe,4011021,class/ID4011021
+4011100,SU younger-age,4011100,class/ID4011100
+4011101,SU younger-age with-obe,4011101,class/ID4011101
+4011110,SU younger-age female,4011110,class/ID4011110
+4011120,SU younger-age male,4011120,class/ID4011120
+4011111,SU younger-age female with-obe,4011111,class/ID4011111
+4011121,SU younger-age male with-obe,4011121,class/ID4011121
+4011300,SU older-age,4011300,class/ID4011300
+4011301,SU older-age with-obe,4011301,class/ID4011301
+4011310,SU older-age female,4011310,class/ID4011310
+4011320,SU older-age male,4011320,class/ID4011320
+4011311,SU older-age female with-obe,4011311,class/ID4011311
+4011321,SU older-age male with-obe,4011321,class/ID4011321
+4021000,SU main ot2,4021000,class/ID4021000
+4021001,SU ot2 with-obe,4021001,class/ID4021001
+4021010,SU ot2 female,4021010,class/ID4021010
+4021020,SU ot2 male,4021020,class/ID4021020
+4021011,SU ot2 female with-obe,4021011,class/ID4021011
+4021021,SU ot2 male with-obe,4021021,class/ID4021021
+4021100,SU ot2 younger-age,4021100,class/ID4021100
+4021101,SU ot2 younger-age with-obe,4021101,class/ID4021101
+4021110,SU ot2 younger-age female,4021110,class/ID4021110
+4021120,SU ot2 younger-age male,4021120,class/ID4021120
+4021111,SU ot2 younger-age female with-obe,4021111,class/ID4021111
+4021121,SU ot2 younger-age male with-obe,4021121,class/ID4021121
+4021300,SU ot2 older-age,4021300,class/ID4021300
+4021301,SU ot2 older-age with-obe,4021301,class/ID4021301
+4021310,SU ot2 older-age female,4021310,class/ID4021310
+4021320,SU ot2 older-age male,4021320,class/ID4021320
+4021311,SU ot2 older-age female with-obe,4021311,class/ID4021311
+4021321,SU ot2 older-age male with-obe,4021321,class/ID4021321

@@ -2355,7 +2355,7 @@
 } 
 },
 {
- "name": "Older age group",
+ "name": "Lower age group",
 "expression": {
  "Type": "ALL",
 "CriteriaList": [],
@@ -2363,7 +2363,7 @@
  {
  "Age": {
  "Value":            55,
-"Op": "gte" 
+"Op": "lt" 
 } 
 } 
 ],
@@ -2371,44 +2371,40 @@
 } 
 },
 {
- "name": "Prior metformin use",
+ "name": "Female stratum",
 "expression": {
- "Type": "ANY",
+ "Type": "ALL",
+"CriteriaList": [],
+"DemographicCriteriaList": [
+ {
+ "Gender": [
+ {
+ "CONCEPT_ID":          8532,
+"CONCEPT_NAME": "female",
+"STANDARD_CONCEPT": null,
+"STANDARD_CONCEPT_CAPTION": "Unknown",
+"INVALID_REASON": null,
+"INVALID_REASON_CAPTION": "Unknown",
+"CONCEPT_CODE": "F",
+"DOMAIN_ID": "Gender",
+"VOCABULARY_ID": "Gender",
+"CONCEPT_CLASS_ID": null 
+} 
+] 
+} 
+],
+"Groups": [] 
+} 
+},
+{
+ "name": "No prior metformin use",
+"expression": {
+ "Type": "ALL",
 "CriteriaList": [
  {
  "Criteria": {
  "DrugEra": {
- "CodesetId":             7,
-"EraLength": {
- "Value":            90,
-"Op": "gte" 
-} 
-} 
-},
-"StartWindow": {
- "Start": {
- "Coeff":            -1 
-},
-"End": {
- "Days":            90,
-"Coeff":            -1 
-},
-"UseIndexEnd": false,
-"UseEventEnd": false 
-},
-"RestrictVisit": false,
-"IgnoreObservationPeriod": true,
-"Occurrence": {
- "Type":             2,
-"Count":             1,
-"IsDistinct": false 
-} 
-},
-{
- "Criteria": {
- "DrugExposure": {
- "CodesetId":             7,
-"DrugTypeExclude": false 
+ "CodesetId":             7 
 } 
 },
 "StartWindow": {
@@ -2417,7 +2413,7 @@
 },
 "End": {
  "Days":             0,
-"Coeff":            -1 
+"Coeff":             1 
 },
 "UseIndexEnd": false,
 "UseEventEnd": false 
@@ -2425,8 +2421,8 @@
 "RestrictVisit": false,
 "IgnoreObservationPeriod": true,
 "Occurrence": {
- "Type":             2,
-"Count":             3,
+ "Type":             0,
+"Count":             0,
 "IsDistinct": false 
 } 
 } 

@@ -1730,3 +1730,384 @@
 2024-03-19 18:32:15	[Main thread]	INFO	CohortDiagnostics	getCohortsJsonAndSql	Number of cohorts 176
 2024-03-19 18:32:15	[Main thread]	INFO	CohortDiagnostics	createTempInclusionStatsTables	Creating temporary inclusion statistics tables
 2024-03-19 18:32:16	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.583 secs
+2024-03-20 14:38:57	[Main thread]	INFO	Signals	assessPhenotypes	Starting assessPhenotypes() for Signals su-vs-su studies
+2024-03-20 14:38:57	[Main thread]	INFO	Signals	createExposureCohorts	Creating su exposure cohorts
+2024-03-20 14:38:57	[Main thread]	INFO	Signals	createExposureCohorts	- Populating table signals_study_su_cohort
+2024-03-20 14:38:57	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2024-03-20 14:38:58	[Main thread]	INFO	CohortDiagnostics	createCohortTable	Creating cohort table
+2024-03-20 14:38:58	[Main thread]	DEBUG	CohortDiagnostics	createCohortTable	Created table jmt_signals.dbo.signals_study_su_cohort
+2024-03-20 14:38:58	[Main thread]	DEBUG	CohortDiagnostics	getCohortsJsonAndSqlFromPackage	Executing on cohorts specified in package - Signals
+2024-03-20 14:39:05	[Main thread]	INFO	CohortDiagnostics	getCohortsJsonAndSql	Number of cohorts 308
+2024-03-20 14:39:05	[Main thread]	INFO	CohortDiagnostics	createTempInclusionStatsTables	Creating temporary inclusion statistics tables
+2024-03-20 14:39:05	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.647 secs
+2024-03-20 14:39:10	[Main thread]	INFO	DatabaseConnector	insertTable.default	Inserting data took 0.888 secs
+2024-03-20 14:39:10	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort chlorpropamide (Cohort id: 411100000)
+2024-03-20 14:39:10	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 411100000 SQL has inclusion rule statistics tables.
+2024-03-21 08:28:48	[Main thread]	FATAL	DatabaseConnector	.createErrorReport	Error executing SQL: org.postgresql.util.PSQLException: An I/O error occurred while sending to the backend. An error report has been created at  C:/Users/Jeff Telford/Documents/Signals/errorReportSql.txt
+2024-03-21 15:23:22	[Main thread]	INFO	Signals	assessPhenotypes	Starting assessPhenotypes() for Signals glp1ra-vs-glp1ra studies
+2024-03-21 15:23:22	[Main thread]	INFO	Signals	createExposureCohorts	Creating glp1ra exposure cohorts
+2024-03-21 15:23:22	[Main thread]	INFO	Signals	createExposureCohorts	- Populating table signals_study_glp1ra_cohort
+2024-03-21 15:23:22	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2024-03-21 15:23:24	[Main thread]	INFO	CohortDiagnostics	createCohortTable	Creating cohort table
+2024-03-21 15:23:25	[Main thread]	DEBUG	CohortDiagnostics	createCohortTable	Created table jmt_signals.dbo.signals_study_glp1ra_cohort
+2024-03-21 15:23:25	[Main thread]	DEBUG	CohortDiagnostics	getCohortsJsonAndSqlFromPackage	Executing on cohorts specified in package - Signals
+2024-03-21 15:23:29	[Main thread]	INFO	CohortDiagnostics	getCohortsJsonAndSql	Number of cohorts 192
+2024-03-21 15:23:29	[Main thread]	INFO	CohortDiagnostics	createTempInclusionStatsTables	Creating temporary inclusion statistics tables
+2024-03-21 15:23:30	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.691 secs
+2024-03-21 15:23:37	[Main thread]	INFO	DatabaseConnector	insertTable.default	Inserting data took 0.58 secs
+2024-03-21 15:23:37	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide main (Cohort id: 211100000)
+2024-03-21 15:23:37	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 211100000 SQL has inclusion rule statistics tables.
+2024-03-21 15:24:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 50.6 secs
+2024-03-21 15:24:29	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide younger-age (Cohort id: 211110000)
+2024-03-21 15:24:29	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 211110000 SQL has inclusion rule statistics tables.
+2024-03-21 15:24:58	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 28.1 secs
+2024-03-21 15:24:58	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide older-age (Cohort id: 211130000)
+2024-03-21 15:24:59	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 211130000 SQL has inclusion rule statistics tables.
+2024-03-21 15:25:25	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.7 secs
+2024-03-21 15:25:25	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide female (Cohort id: 211101000)
+2024-03-21 15:25:26	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 211101000 SQL has inclusion rule statistics tables.
+2024-03-21 15:25:52	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.4 secs
+2024-03-21 15:25:52	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide male (Cohort id: 211102000)
+2024-03-21 15:25:52	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 211102000 SQL has inclusion rule statistics tables.
+2024-03-21 15:26:19	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.2 secs
+2024-03-21 15:26:19	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide with-obe (Cohort id: 211100001)
+2024-03-21 15:26:19	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 211100001 SQL has inclusion rule statistics tables.
+2024-03-21 15:26:46	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.5 secs
+2024-03-21 15:26:46	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide main ot2 (Cohort id: 212100000)
+2024-03-21 15:26:46	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 212100000 SQL has inclusion rule statistics tables.
+2024-03-21 15:27:12	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24 secs
+2024-03-21 15:27:12	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide ot2 younger-age (Cohort id: 212110000)
+2024-03-21 15:27:12	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 212110000 SQL has inclusion rule statistics tables.
+2024-03-21 15:27:38	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.1 secs
+2024-03-21 15:27:38	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide ot2 older-age (Cohort id: 212130000)
+2024-03-21 15:27:39	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 212130000 SQL has inclusion rule statistics tables.
+2024-03-21 15:28:08	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 28 secs
+2024-03-21 15:28:08	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide ot2 female (Cohort id: 212101000)
+2024-03-21 15:28:08	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 212101000 SQL has inclusion rule statistics tables.
+2024-03-21 15:28:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.8 secs
+2024-03-21 15:28:35	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide ot2 male (Cohort id: 212102000)
+2024-03-21 15:28:35	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 212102000 SQL has inclusion rule statistics tables.
+2024-03-21 15:29:05	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 28.2 secs
+2024-03-21 15:29:05	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide ot2 with-obe (Cohort id: 212100001)
+2024-03-21 15:29:05	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 212100001 SQL has inclusion rule statistics tables.
+2024-03-21 15:29:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.2 secs
+2024-03-21 15:29:31	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide main no-met (Cohort id: 211200000)
+2024-03-21 15:29:31	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 211200000 SQL has inclusion rule statistics tables.
+2024-03-21 15:29:57	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.9 secs
+2024-03-21 15:29:57	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide no-met younger-age (Cohort id: 211210000)
+2024-03-21 15:29:57	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 211210000 SQL has inclusion rule statistics tables.
+2024-03-21 15:30:23	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.4 secs
+2024-03-21 15:30:23	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide no-met older-age (Cohort id: 211230000)
+2024-03-21 15:30:23	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 211230000 SQL has inclusion rule statistics tables.
+2024-03-21 15:30:52	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 27.1 secs
+2024-03-21 15:30:52	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide no-met female (Cohort id: 211201000)
+2024-03-21 15:30:52	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 211201000 SQL has inclusion rule statistics tables.
+2024-03-21 15:31:19	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.7 secs
+2024-03-21 15:31:19	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide no-met male (Cohort id: 211202000)
+2024-03-21 15:31:19	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 211202000 SQL has inclusion rule statistics tables.
+2024-03-21 15:31:46	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.3 secs
+2024-03-21 15:31:46	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide no-met with-obe (Cohort id: 211200001)
+2024-03-21 15:31:46	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 211200001 SQL has inclusion rule statistics tables.
+2024-03-21 15:32:12	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.2 secs
+2024-03-21 15:32:12	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide main ot2 no-met (Cohort id: 212200000)
+2024-03-21 15:32:13	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 212200000 SQL has inclusion rule statistics tables.
+2024-03-21 15:32:39	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.1 secs
+2024-03-21 15:32:39	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide ot2 no-met younger-age (Cohort id: 212210000)
+2024-03-21 15:32:39	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 212210000 SQL has inclusion rule statistics tables.
+2024-03-21 15:33:05	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.9 secs
+2024-03-21 15:33:05	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide ot2 no-met older-age (Cohort id: 212230000)
+2024-03-21 15:33:05	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 212230000 SQL has inclusion rule statistics tables.
+2024-03-21 15:33:33	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 26 secs
+2024-03-21 15:33:33	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide ot2 no-met female (Cohort id: 212201000)
+2024-03-21 15:33:33	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 212201000 SQL has inclusion rule statistics tables.
+2024-03-21 15:34:01	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 26.3 secs
+2024-03-21 15:34:01	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide ot2 no-met male (Cohort id: 212202000)
+2024-03-21 15:34:01	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 212202000 SQL has inclusion rule statistics tables.
+2024-03-21 15:34:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 26.3 secs
+2024-03-21 15:34:28	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort albiglutide ot2 no-met with-obe (Cohort id: 212200001)
+2024-03-21 15:34:28	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 212200001 SQL has inclusion rule statistics tables.
+2024-03-21 15:34:57	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 27 secs
+2024-03-21 15:34:57	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide main (Cohort id: 221100000)
+2024-03-21 15:34:57	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 221100000 SQL has inclusion rule statistics tables.
+2024-03-21 15:35:23	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.4 secs
+2024-03-21 15:35:23	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide younger-age (Cohort id: 221110000)
+2024-03-21 15:35:23	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 221110000 SQL has inclusion rule statistics tables.
+2024-03-21 15:35:51	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.9 secs
+2024-03-21 15:35:51	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide older-age (Cohort id: 221130000)
+2024-03-21 15:35:51	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 221130000 SQL has inclusion rule statistics tables.
+2024-03-21 15:36:17	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.7 secs
+2024-03-21 15:36:17	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide female (Cohort id: 221101000)
+2024-03-21 15:36:17	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 221101000 SQL has inclusion rule statistics tables.
+2024-03-21 15:36:43	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.4 secs
+2024-03-21 15:36:43	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide male (Cohort id: 221102000)
+2024-03-21 15:36:43	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 221102000 SQL has inclusion rule statistics tables.
+2024-03-21 15:37:10	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.5 secs
+2024-03-21 15:37:10	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide with-obe (Cohort id: 221100001)
+2024-03-21 15:37:10	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 221100001 SQL has inclusion rule statistics tables.
+2024-03-21 15:37:36	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.3 secs
+2024-03-21 15:37:36	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide main ot2 (Cohort id: 222100000)
+2024-03-21 15:37:36	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 222100000 SQL has inclusion rule statistics tables.
+2024-03-21 15:38:02	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.2 secs
+2024-03-21 15:38:02	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide ot2 younger-age (Cohort id: 222110000)
+2024-03-21 15:38:02	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 222110000 SQL has inclusion rule statistics tables.
+2024-03-21 15:38:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 27 secs
+2024-03-21 15:38:31	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide ot2 older-age (Cohort id: 222130000)
+2024-03-21 15:38:31	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 222130000 SQL has inclusion rule statistics tables.
+2024-03-21 15:38:57	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.7 secs
+2024-03-21 15:38:57	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide ot2 female (Cohort id: 222101000)
+2024-03-21 15:38:57	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 222101000 SQL has inclusion rule statistics tables.
+2024-03-21 15:39:23	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.9 secs
+2024-03-21 15:39:23	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide ot2 male (Cohort id: 222102000)
+2024-03-21 15:39:23	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 222102000 SQL has inclusion rule statistics tables.
+2024-03-21 15:39:50	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.5 secs
+2024-03-21 15:39:50	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide ot2 with-obe (Cohort id: 222100001)
+2024-03-21 15:39:50	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 222100001 SQL has inclusion rule statistics tables.
+2024-03-21 15:40:18	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 26 secs
+2024-03-21 15:40:18	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide main no-met (Cohort id: 221200000)
+2024-03-21 15:40:18	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 221200000 SQL has inclusion rule statistics tables.
+2024-03-21 15:40:43	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.4 secs
+2024-03-21 15:40:43	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide no-met younger-age (Cohort id: 221210000)
+2024-03-21 15:40:43	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 221210000 SQL has inclusion rule statistics tables.
+2024-03-21 15:41:10	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.2 secs
+2024-03-21 15:41:10	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide no-met older-age (Cohort id: 221230000)
+2024-03-21 15:41:10	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 221230000 SQL has inclusion rule statistics tables.
+2024-03-21 15:41:39	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 27.6 secs
+2024-03-21 15:41:39	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide no-met female (Cohort id: 221201000)
+2024-03-21 15:41:39	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 221201000 SQL has inclusion rule statistics tables.
+2024-03-21 15:42:06	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.8 secs
+2024-03-21 15:42:06	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide no-met male (Cohort id: 221202000)
+2024-03-21 15:42:06	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 221202000 SQL has inclusion rule statistics tables.
+2024-03-21 15:42:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.1 secs
+2024-03-21 15:42:32	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide no-met with-obe (Cohort id: 221200001)
+2024-03-21 15:42:32	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 221200001 SQL has inclusion rule statistics tables.
+2024-03-21 15:43:00	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.7 secs
+2024-03-21 15:43:00	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide main ot2 no-met (Cohort id: 222200000)
+2024-03-21 15:43:00	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 222200000 SQL has inclusion rule statistics tables.
+2024-03-21 15:43:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.8 secs
+2024-03-21 15:43:27	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide ot2 no-met younger-age (Cohort id: 222210000)
+2024-03-21 15:43:27	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 222210000 SQL has inclusion rule statistics tables.
+2024-03-21 15:43:53	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.2 secs
+2024-03-21 15:43:53	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide ot2 no-met older-age (Cohort id: 222230000)
+2024-03-21 15:43:53	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 222230000 SQL has inclusion rule statistics tables.
+2024-03-21 15:44:21	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 26.4 secs
+2024-03-21 15:44:21	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide ot2 no-met female (Cohort id: 222201000)
+2024-03-21 15:44:21	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 222201000 SQL has inclusion rule statistics tables.
+2024-03-21 15:44:49	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 26.7 secs
+2024-03-21 15:44:49	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide ot2 no-met male (Cohort id: 222202000)
+2024-03-21 15:44:50	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 222202000 SQL has inclusion rule statistics tables.
+2024-03-21 15:45:17	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.9 secs
+2024-03-21 15:45:17	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort dulaglutide ot2 no-met with-obe (Cohort id: 222200001)
+2024-03-21 15:45:17	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 222200001 SQL has inclusion rule statistics tables.
+2024-03-21 15:45:43	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.3 secs
+2024-03-21 15:45:43	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide main (Cohort id: 231100000)
+2024-03-21 15:45:43	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 231100000 SQL has inclusion rule statistics tables.
+2024-03-21 15:46:09	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.6 secs
+2024-03-21 15:46:09	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide younger-age (Cohort id: 231110000)
+2024-03-21 15:46:09	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 231110000 SQL has inclusion rule statistics tables.
+2024-03-21 15:46:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.8 secs
+2024-03-21 15:46:35	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide older-age (Cohort id: 231130000)
+2024-03-21 15:46:35	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 231130000 SQL has inclusion rule statistics tables.
+2024-03-21 15:47:01	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.6 secs
+2024-03-21 15:47:01	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide female (Cohort id: 231101000)
+2024-03-21 15:47:01	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 231101000 SQL has inclusion rule statistics tables.
+2024-03-21 15:47:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25 secs
+2024-03-21 15:47:27	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide male (Cohort id: 231102000)
+2024-03-21 15:47:27	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 231102000 SQL has inclusion rule statistics tables.
+2024-03-21 15:47:56	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 27 secs
+2024-03-21 15:47:56	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide with-obe (Cohort id: 231100001)
+2024-03-21 15:47:56	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 231100001 SQL has inclusion rule statistics tables.
+2024-03-21 15:48:23	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 26.2 secs
+2024-03-21 15:48:23	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide main ot2 (Cohort id: 232100000)
+2024-03-21 15:48:23	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 232100000 SQL has inclusion rule statistics tables.
+2024-03-21 15:48:50	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.2 secs
+2024-03-21 15:48:50	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide ot2 younger-age (Cohort id: 232110000)
+2024-03-21 15:48:50	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 232110000 SQL has inclusion rule statistics tables.
+2024-03-21 15:49:16	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.7 secs
+2024-03-21 15:49:16	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide ot2 older-age (Cohort id: 232130000)
+2024-03-21 15:49:16	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 232130000 SQL has inclusion rule statistics tables.
+2024-03-21 15:49:42	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.9 secs
+2024-03-21 15:49:42	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide ot2 female (Cohort id: 232101000)
+2024-03-21 15:49:42	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 232101000 SQL has inclusion rule statistics tables.
+2024-03-21 15:50:08	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.8 secs
+2024-03-21 15:50:08	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide ot2 male (Cohort id: 232102000)
+2024-03-21 15:50:08	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 232102000 SQL has inclusion rule statistics tables.
+2024-03-21 15:50:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.1 secs
+2024-03-21 15:50:34	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide ot2 with-obe (Cohort id: 232100001)
+2024-03-21 15:50:34	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 232100001 SQL has inclusion rule statistics tables.
+2024-03-21 15:51:03	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 27.1 secs
+2024-03-21 15:51:03	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide main no-met (Cohort id: 231200000)
+2024-03-21 15:51:03	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 231200000 SQL has inclusion rule statistics tables.
+2024-03-21 15:51:29	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.5 secs
+2024-03-21 15:51:29	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide no-met younger-age (Cohort id: 231210000)
+2024-03-21 15:51:30	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 231210000 SQL has inclusion rule statistics tables.
+2024-03-21 15:51:56	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.7 secs
+2024-03-21 15:51:56	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide no-met older-age (Cohort id: 231230000)
+2024-03-21 15:51:56	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 231230000 SQL has inclusion rule statistics tables.
+2024-03-21 15:52:23	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.8 secs
+2024-03-21 15:52:23	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide no-met female (Cohort id: 231201000)
+2024-03-21 15:52:23	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 231201000 SQL has inclusion rule statistics tables.
+2024-03-21 15:52:49	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.8 secs
+2024-03-21 15:52:49	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide no-met male (Cohort id: 231202000)
+2024-03-21 15:52:49	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 231202000 SQL has inclusion rule statistics tables.
+2024-03-21 15:53:15	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.3 secs
+2024-03-21 15:53:15	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide no-met with-obe (Cohort id: 231200001)
+2024-03-21 15:53:15	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 231200001 SQL has inclusion rule statistics tables.
+2024-03-21 15:53:41	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.1 secs
+2024-03-21 15:53:41	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide main ot2 no-met (Cohort id: 232200000)
+2024-03-21 15:53:41	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 232200000 SQL has inclusion rule statistics tables.
+2024-03-21 15:54:07	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.9 secs
+2024-03-21 15:54:07	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide ot2 no-met younger-age (Cohort id: 232210000)
+2024-03-21 15:54:07	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 232210000 SQL has inclusion rule statistics tables.
+2024-03-21 15:54:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 23.9 secs
+2024-03-21 15:54:31	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide ot2 no-met older-age (Cohort id: 232230000)
+2024-03-21 15:54:31	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 232230000 SQL has inclusion rule statistics tables.
+2024-03-21 15:54:57	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.4 secs
+2024-03-21 15:54:57	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide ot2 no-met female (Cohort id: 232201000)
+2024-03-21 15:54:57	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 232201000 SQL has inclusion rule statistics tables.
+2024-03-21 15:55:24	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 26.6 secs
+2024-03-21 15:55:24	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide ot2 no-met male (Cohort id: 232202000)
+2024-03-21 15:55:24	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 232202000 SQL has inclusion rule statistics tables.
+2024-03-21 15:55:51	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 26.3 secs
+2024-03-21 15:55:51	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort exenatide ot2 no-met with-obe (Cohort id: 232200001)
+2024-03-21 15:55:51	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 232200001 SQL has inclusion rule statistics tables.
+2024-03-21 15:56:18	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.4 secs
+2024-03-21 15:56:18	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide main (Cohort id: 241100000)
+2024-03-21 15:56:18	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 241100000 SQL has inclusion rule statistics tables.
+2024-03-21 15:56:44	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.1 secs
+2024-03-21 15:56:44	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide younger-age (Cohort id: 241110000)
+2024-03-21 15:56:44	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 241110000 SQL has inclusion rule statistics tables.
+2024-03-21 15:57:09	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.8 secs
+2024-03-21 15:57:09	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide older-age (Cohort id: 241130000)
+2024-03-21 15:57:09	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 241130000 SQL has inclusion rule statistics tables.
+2024-03-21 15:57:35	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25 secs
+2024-03-21 15:57:35	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide female (Cohort id: 241101000)
+2024-03-21 15:57:35	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 241101000 SQL has inclusion rule statistics tables.
+2024-03-21 15:58:01	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25 secs
+2024-03-21 15:58:01	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide male (Cohort id: 241102000)
+2024-03-21 15:58:01	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 241102000 SQL has inclusion rule statistics tables.
+2024-03-21 15:58:27	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25 secs
+2024-03-21 15:58:27	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide with-obe (Cohort id: 241100001)
+2024-03-21 15:58:27	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 241100001 SQL has inclusion rule statistics tables.
+2024-03-21 15:58:55	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 26.7 secs
+2024-03-21 15:58:55	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide main ot2 (Cohort id: 242100000)
+2024-03-21 15:58:55	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 242100000 SQL has inclusion rule statistics tables.
+2024-03-21 15:59:23	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 27.5 secs
+2024-03-21 15:59:23	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide ot2 younger-age (Cohort id: 242110000)
+2024-03-21 15:59:23	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 242110000 SQL has inclusion rule statistics tables.
+2024-03-21 15:59:49	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.8 secs
+2024-03-21 15:59:49	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide ot2 older-age (Cohort id: 242130000)
+2024-03-21 15:59:49	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 242130000 SQL has inclusion rule statistics tables.
+2024-03-21 16:00:15	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25 secs
+2024-03-21 16:00:15	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide ot2 female (Cohort id: 242101000)
+2024-03-21 16:00:15	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 242101000 SQL has inclusion rule statistics tables.
+2024-03-21 16:00:41	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.2 secs
+2024-03-21 16:00:41	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide ot2 male (Cohort id: 242102000)
+2024-03-21 16:00:41	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 242102000 SQL has inclusion rule statistics tables.
+2024-03-21 16:01:07	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.1 secs
+2024-03-21 16:01:07	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide ot2 with-obe (Cohort id: 242100001)
+2024-03-21 16:01:07	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 242100001 SQL has inclusion rule statistics tables.
+2024-03-21 16:01:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 26.8 secs
+2024-03-21 16:01:34	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide main no-met (Cohort id: 241200000)
+2024-03-21 16:01:34	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 241200000 SQL has inclusion rule statistics tables.
+2024-03-21 16:02:01	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 26.3 secs
+2024-03-21 16:02:01	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide no-met younger-age (Cohort id: 241210000)
+2024-03-21 16:02:01	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 241210000 SQL has inclusion rule statistics tables.
+2024-03-21 16:02:28	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.5 secs
+2024-03-21 16:02:28	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide no-met older-age (Cohort id: 241230000)
+2024-03-21 16:02:28	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 241230000 SQL has inclusion rule statistics tables.
+2024-03-21 16:02:54	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.7 secs
+2024-03-21 16:02:54	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide no-met female (Cohort id: 241201000)
+2024-03-21 16:02:54	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 241201000 SQL has inclusion rule statistics tables.
+2024-03-21 16:03:20	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25 secs
+2024-03-21 16:03:20	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide no-met male (Cohort id: 241202000)
+2024-03-21 16:03:20	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 241202000 SQL has inclusion rule statistics tables.
+2024-03-21 16:03:46	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.9 secs
+2024-03-21 16:03:46	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide no-met with-obe (Cohort id: 241200001)
+2024-03-21 16:03:46	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 241200001 SQL has inclusion rule statistics tables.
+2024-03-21 16:04:12	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.2 secs
+2024-03-21 16:04:12	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide main ot2 no-met (Cohort id: 242200000)
+2024-03-21 16:04:12	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 242200000 SQL has inclusion rule statistics tables.
+2024-03-21 16:04:38	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.1 secs
+2024-03-21 16:04:38	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide ot2 no-met younger-age (Cohort id: 242210000)
+2024-03-21 16:04:38	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 242210000 SQL has inclusion rule statistics tables.
+2024-03-21 16:05:06	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 27 secs
+2024-03-21 16:05:06	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide ot2 no-met older-age (Cohort id: 242230000)
+2024-03-21 16:05:06	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 242230000 SQL has inclusion rule statistics tables.
+2024-03-21 16:05:32	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.4 secs
+2024-03-21 16:05:32	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide ot2 no-met female (Cohort id: 242201000)
+2024-03-21 16:05:32	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 242201000 SQL has inclusion rule statistics tables.
+2024-03-21 16:05:59	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.8 secs
+2024-03-21 16:05:59	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide ot2 no-met male (Cohort id: 242202000)
+2024-03-21 16:05:59	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 242202000 SQL has inclusion rule statistics tables.
+2024-03-21 16:06:25	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.1 secs
+2024-03-21 16:06:25	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort liraglutide ot2 no-met with-obe (Cohort id: 242200001)
+2024-03-21 16:06:25	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 242200001 SQL has inclusion rule statistics tables.
+2024-03-21 16:06:52	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 26.3 secs
+2024-03-21 16:06:52	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide main (Cohort id: 251100000)
+2024-03-21 16:06:52	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 251100000 SQL has inclusion rule statistics tables.
+2024-03-21 16:07:17	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.8 secs
+2024-03-21 16:07:17	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide younger-age (Cohort id: 251110000)
+2024-03-21 16:07:18	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 251110000 SQL has inclusion rule statistics tables.
+2024-03-21 16:07:44	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 26.1 secs
+2024-03-21 16:07:44	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide older-age (Cohort id: 251130000)
+2024-03-21 16:07:45	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 251130000 SQL has inclusion rule statistics tables.
+2024-03-21 16:08:12	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 26.3 secs
+2024-03-21 16:08:12	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide female (Cohort id: 251101000)
+2024-03-21 16:08:12	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 251101000 SQL has inclusion rule statistics tables.
+2024-03-21 16:08:38	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.5 secs
+2024-03-21 16:08:38	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide male (Cohort id: 251102000)
+2024-03-21 16:08:38	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 251102000 SQL has inclusion rule statistics tables.
+2024-03-21 16:09:05	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.9 secs
+2024-03-21 16:09:05	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide with-obe (Cohort id: 251100001)
+2024-03-21 16:09:05	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 251100001 SQL has inclusion rule statistics tables.
+2024-03-21 16:09:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.5 secs
+2024-03-21 16:09:31	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide main ot2 (Cohort id: 252100000)
+2024-03-21 16:09:31	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 252100000 SQL has inclusion rule statistics tables.
+2024-03-21 16:09:57	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25 secs
+2024-03-21 16:09:57	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide ot2 younger-age (Cohort id: 252110000)
+2024-03-21 16:09:57	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 252110000 SQL has inclusion rule statistics tables.
+2024-03-21 16:10:23	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.9 secs
+2024-03-21 16:10:23	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide ot2 older-age (Cohort id: 252130000)
+2024-03-21 16:10:23	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 252130000 SQL has inclusion rule statistics tables.
+2024-03-21 16:10:51	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 27.1 secs
+2024-03-21 16:10:51	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide ot2 female (Cohort id: 252101000)
+2024-03-21 16:10:51	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 252101000 SQL has inclusion rule statistics tables.
+2024-03-21 16:11:18	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.9 secs
+2024-03-21 16:11:18	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide ot2 male (Cohort id: 252102000)
+2024-03-21 16:11:18	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 252102000 SQL has inclusion rule statistics tables.
+2024-03-21 16:11:44	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.5 secs
+2024-03-21 16:11:44	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide ot2 with-obe (Cohort id: 252100001)
+2024-03-21 16:11:44	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 252100001 SQL has inclusion rule statistics tables.
+2024-03-21 16:12:10	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.2 secs
+2024-03-21 16:12:10	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide main no-met (Cohort id: 251200000)
+2024-03-21 16:12:10	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 251200000 SQL has inclusion rule statistics tables.
+2024-03-21 16:12:36	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.4 secs
+2024-03-21 16:12:36	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide no-met younger-age (Cohort id: 251210000)
+2024-03-21 16:12:36	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 251210000 SQL has inclusion rule statistics tables.
+2024-03-21 16:13:03	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.7 secs
+2024-03-21 16:13:03	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide no-met older-age (Cohort id: 251230000)
+2024-03-21 16:13:03	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 251230000 SQL has inclusion rule statistics tables.
+2024-03-21 16:13:31	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 26.9 secs
+2024-03-21 16:13:31	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide no-met female (Cohort id: 251201000)
+2024-03-21 16:13:31	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 251201000 SQL has inclusion rule statistics tables.
+2024-03-21 16:13:58	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 26.6 secs
+2024-03-21 16:13:58	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide no-met male (Cohort id: 251202000)
+2024-03-21 16:13:58	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 251202000 SQL has inclusion rule statistics tables.
+2024-03-21 16:14:24	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.6 secs
+2024-03-21 16:14:24	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide no-met with-obe (Cohort id: 251200001)
+2024-03-21 16:14:24	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 251200001 SQL has inclusion rule statistics tables.
+2024-03-21 16:14:51	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.3 secs
+2024-03-21 16:14:51	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide main ot2 no-met (Cohort id: 252200000)
+2024-03-21 16:14:51	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 252200000 SQL has inclusion rule statistics tables.
+2024-03-21 16:15:16	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 24.9 secs
+2024-03-21 16:15:16	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide ot2 no-met younger-age (Cohort id: 252210000)
+2024-03-21 16:15:16	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 252210000 SQL has inclusion rule statistics tables.
+2024-03-21 16:15:43	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.5 secs
+2024-03-21 16:15:43	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide ot2 no-met older-age (Cohort id: 252230000)
+2024-03-21 16:15:43	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 252230000 SQL has inclusion rule statistics tables.
+2024-03-21 16:16:09	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25 secs
+2024-03-21 16:16:09	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide ot2 no-met female (Cohort id: 252201000)
+2024-03-21 16:16:09	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 252201000 SQL has inclusion rule statistics tables.
+2024-03-21 16:16:36	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 25.5 secs
+2024-03-21 16:16:36	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort lixisenatide ot2 no-met male (Cohort id: 252202000)
+2024-03-21 16:16:36	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 252202000 SQL has inclusion rule statistics tables.
