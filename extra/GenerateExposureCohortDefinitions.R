@@ -5,16 +5,16 @@
 # Requires at input:
 #   classGeneratorList.csv
 #   ExposuresOfInterest.csv
-
-install.packages('https://github.com/OHDSI/ROhdsiWebApi/archive/refs/tags/v1.3.0.tar.gz')
-install.packages('https://github.com/OHDSI/FeatureExtraction/archive/refs/tags/v3.3.2.tar.gz')
-install.packages('https://github.com/OHDSI/CohortMethod/archive/refs/tags/v5.2.1.tar.gz')
-install.packages('https://github.com/OHDSI/MethodEvaluation/archive/refs/tags/v2.3.0.tar.gz')
-install.packages('https://github.com/OHDSI/CohortGenerator/archive/refs/tags/v0.6.0.tar.gz')
-install.packages('https://github.com/OHDSI/CohortDiagnostics/archive/refs/tags/v3.0.1.tar.gz')
-install.packages('https://github.com/OHDSI/CirceR/archive/refs/tags/v1.2.0.tar.gz')
-install.packages('https://github.com/OHDSI/MethodEvaluation/archive/refs/tags/v2.3.0.tar.gz')
-library(dplyr)
+# 
+# install.packages('https://github.com/OHDSI/ROhdsiWebApi/archive/refs/tags/v1.3.0.tar.gz')
+# install.packages('https://github.com/OHDSI/FeatureExtraction/archive/refs/tags/v3.3.2.tar.gz')
+# install.packages('https://github.com/OHDSI/CohortMethod/archive/refs/tags/v5.2.1.tar.gz')
+# install.packages('https://github.com/OHDSI/MethodEvaluation/archive/refs/tags/v2.3.0.tar.gz')
+# install.packages('https://github.com/OHDSI/CohortGenerator/archive/refs/tags/v0.6.0.tar.gz')
+# install.packages('https://github.com/OHDSI/CohortDiagnostics/archive/refs/tags/v3.0.1.tar.gz')
+# install.packages('https://github.com/OHDSI/CirceR/archive/refs/tags/v1.2.0.tar.gz')
+# install.packages('https://github.com/OHDSI/MethodEvaluation/archive/refs/tags/v2.3.0.tar.gz')
+# library(dplyr)
 library(Signals)
 
 
@@ -27,10 +27,10 @@ baseUrlWebApi <- keyring::key_get("baseUrl")
 # code to query the Atlas Web API to get the base cohort (based on pre-defined ATLAS cohort)
 # Make sure you download the right cohort
 #baseCohort = baseCohort_orig
-#   baseCohort <- ROhdsiWebApi::getCohortDefinition(677, baseUrl = baseUrl)
-#   baseCohortJson <- RJSONIO::toJSON(baseCohort$expression, indent = 2, digits = 50)
-#   SqlRender::writeSql(baseCohortJson, targetFile = "inst/settings/baseCohort.json")
-#   saveRDS(baseCohort, file = "inst/settings/baseCohort.rds")
+  # baseCohort <- ROhdsiWebApi::getCohortDefinition(677, baseUrl = baseUrl)
+  # baseCohortJson <- RJSONIO::toJSON(baseCohort$expression, indent = 2, digits = 50)
+  # SqlRender::writeSql(baseCohortJson, targetFile = "inst/settings/baseCohort.json")
+  # saveRDS(baseCohort, file = "inst/settings/baseCohort.rds")
 
 # Inclusion rules: Age == 1, Sex == 2, Race == 3, CVD == 4, obese == 5, PriorMet == 6, NoMet == 7
 
@@ -60,9 +60,11 @@ makeShortName <- function(permutation) {
          ifelse(permutation$obese != "any", paste0(" ", permutation$obese, "-obe"), ""))
 }
 #cohort  = baseCohort_orig 
-#permutation = permutations[1,] 
+
 permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   
+  permutation = permutations[9,] 
+  cohort = baseCohort
   c1Id <- floor(permutation$comparator1Id / 10)
   c2Id <- floor(permutation$comparator2Id / 10)
   c3Id <- floor(permutation$comparator3Id / 10)
@@ -157,13 +159,13 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
     cohort$expression$InclusionRules[[age]]$name <- "Lower age group"
     cohort$expression$InclusionRules[[age]]$description <- NULL
     cohort$expression$InclusionRules[[age]]$expression$DemographicCriteriaList[[1]]$Age$Op <- "lt"
-    cohort$expression$InclusionRules[[age]]$expression$DemographicCriteriaList[[2]] <- NULL
+    
     # cohort$expression$InclusionRules[[age]]$expression$DemographicCriteriaList[[2]]$Age$Op <- ""
   } else if (permutation$age == "older") {
     cohort$expression$InclusionRules[[age]]$name <- "Older age group"
     cohort$expression$InclusionRules[[age]]$description <- NULL
-    cohort$expression$InclusionRules[[age]]$expression$DemographicCriteriaList[[2]]$Age$Op <- "gte"
-    cohort$expression$InclusionRules[[age]]$expression$DemographicCriteriaList[[1]] <- NULL
+    cohort$expression$InclusionRules[[age]]$expression$DemographicCriteriaList[[1]]$Age$Op <- "gte"
+    
   } else if (permutation$age == "any") {
     cohort$expression$InclusionRules[[age]] <- NULL
     delta <- delta + 1
@@ -190,7 +192,7 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   }
   
 
-  obesity <- 11 - delta
+  obesity <- 12 - delta
   if (permutation$obese == "without") {
     cohort$expression$InclusionRules[[obesity]]$name <- "Without obesity "
     cohort$expression$InclusionRules[[obesity]]$description <- NULL
@@ -206,7 +208,7 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
     stop("Unknown obesity type")
   }
   
-  met <- 12 - delta
+  met <- 10 - delta
   if (permutation$met == "with") {
     # Do nothing
     cohort$expression$InclusionRules[[met]]$description <- NULL
@@ -226,7 +228,7 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
     stop("Unknown metformin type")
   }
   
-  insulin <- 13 - delta
+  insulin <- 12 - delta
   cohort$expression$InclusionRules[[insulin]]$description <- NULL
   
   if (permutation$tar == "ot1") {
@@ -257,14 +259,14 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   return(cohort)
 }
 
-
-test = unique(permutations)
-i = 1
-for (i in 1:nrow(permutations)){
-  print(i)
-  i=49
-  cohortDefinition <- permuteTC(baseCohort, permutations[i,])
-}
+# Testing, to be removed
+# test = unique(permutations)
+# i = nrow(permutations)
+# for (i in 1:9){
+#   print(i)
+# 
+#   cohortDefinition <- permuteTC(baseCohort, permutations[i,])
+# }
 allCohortsSql <-
   do.call("rbind",
           lapply(1:nrow(permutations), function(i) {
@@ -387,7 +389,7 @@ exposuresOfInterestTable <- readr::read_csv("inst/settings/ExposuresOfInterest.c
 #                             select(cohortId, shortName), by = c("targetId" = "cohortId"))
 
 # permutations <- permutations %>% filter(cohortId == 101100000)
-# classId <- 10
+ classId <- 10
 
 createPermutationsForDrugs <- function(classId){
   drugsForClass <- exposuresOfInterestTable %>% filter(cohortId > classId, cohortId < (classId + 10)) %>% mutate(classId = classId)
@@ -437,11 +439,12 @@ permutationsForDrugs$sql <-
 # save SQL and JSON files under class name (e.g., "DPP4I") folder
 ## need to create the directory for this class first
 
-#value = unique(permutationsForDrugs$class)[4]
-for (value in unique(permutationsForDrugs$class)){
-    dir.create(file.path("inst/sql/sql_server", value))
-    dir.create(file.path("inst/cohorts", value))
-    perutationsForClass = permutationsForDrugs[permutationsForDrugs$class == value,]
+value = tolower(unique(permutationsForDrugs$class)[1])
+perutationsForClass = permutationsForDrugs[tolower(permutationsForDrugs$class) == value,]
+for (value in tolower(unique(permutationsForDrugs$class))){
+    #if (!file.exists(file.path("inst/sql/sql_server", value))) {dir.create(file.path("instsql/sql_server", value))}
+    #if (!file.exists(file.path("inst/sql/cohorts", value))) {dir.create(file.path("inst/sql/cohorts", value))}
+    perutationsForClass = permutationsForDrugs[(permutationsForDrugs$class) == value,]
     for (i in 1:nrow(permutationsForDrugs)) {
       row <- permutationsForDrugs[i,]
       sqlFileName <- file.path("inst/sql/sql_server", tolower(row$class), paste(row$name, "sql", sep = "."))
@@ -454,7 +457,7 @@ for (value in unique(permutationsForDrugs$class)){
 # # sanity check --- inspect json and sql concept set IDs
 # cohortID = 2
 # conceptSetJson = CohortDiagnostics:::extractConceptSetsJsonFromCohortJson(permutationsForDrugs$json[cohortID])
-# conceptSetSql = CohortDiagnostics:::extractConceptSetsSqlFromCohortSql(permutationsForDrugs$sql[cohortID])
+# conceptSetSql = CohortDiagnostics:::extractConceptSetsSqlFromCohortSql(permutationsForDrugsc $sql[cohortID])
 
 # save drug-level cohorts to cohortsToCreate.csv file
 # only do this for DPP4I for now
@@ -488,10 +491,15 @@ printCohortDefinitionFromNameAndJson(name = "canagliflozin main",
 printCohortDefinitionFromNameAndJson(name = "canagliflozin younger-age",
                                      json = permutationsForDrugs$json[2])
 
+tarId   ="ot1"
+metId   ="with"
+ageId   ="any"
+sexId   ="any"
+obeseId ="any"
 #make drug-level TCOs
 makeTCOsDrug <- function(tarId, metId, ageId, sexId, obeseId) {
 
-  baseTs <- permutationsForDrugs %>%
+  baseTs <- permutationsForDrugsclass %>%
     filter(tar == tarId,
            age == ageId, sex == sexId, obese == obeseId, met == metId)
 
@@ -500,18 +508,18 @@ makeTCOsDrug <- function(tarId, metId, ageId, sexId, obeseId) {
   tab$outcomeIds <- -1
   tab$excludedCovariateConceptIds <- NA
 
-  tab <- tab %>% inner_join(permutationsForDrugs %>% select(cohortId, atlasName) %>% rename(targetId = cohortId),
+  tab <- tab %>% inner_join(permutationsForDrugsclass %>% select(cohortId, atlasName) %>% rename(targetId = cohortId),
                             by = "targetId") %>%
     rename(targetName = atlasName)
 
-  tab <- tab %>% inner_join(permutationsForDrugs %>% select(cohortId, atlasName) %>% rename(comparatorId = cohortId),
+  tab <- tab %>% inner_join(permutationsForDrugsclass %>% select(cohortId, atlasName) %>% rename(comparatorId = cohortId),
                             by = "comparatorId") %>%
     rename(comparatorName = atlasName)
 
   return(tab)
 }
 for (this.class in unique(permutationsForDrugs$class)){
-  permutationsForDrugsclass = permutationsForDrugs %>% filter(tolower(class) == this.class) 
+  permutationsForDrugsclass = permutationsForDrugs %>% filter(tolower(class) == tolower(this.class)) 
   drugTcos <- rbind(
     # Order: tar, met, age, sex, obese
     # OT1
@@ -524,7 +532,6 @@ for (this.class in unique(permutationsForDrugs$class)){
     makeTCOsDrug("ot1", "with", "any", "female", "any"),
     makeTCOsDrug("ot1", "with", "any", "male", "any"),
     # obese dz
-    makeTCOsDrug("ot1", "with", "any", "any",  "without"),
     makeTCOsDrug("ot1", "with", "any", "any",  "with"),
     #
     # OT2
@@ -538,16 +545,15 @@ for (this.class in unique(permutationsForDrugs$class)){
     makeTCOsDrug("ot2", "with", "any", "male", "any"),
   
     # obese dz
-    makeTCOsDrug("ot2", "with", "any", "any", "without"),
     makeTCOsDrug("ot2", "with", "any", "any", "with")
   )
   
   # save TCOs 
   
     
-  this.class = classNames[x]
+  
   drugTcos$targetId = as.character(drugTcos$targetId)
-  grepstring = paste0("^",x)
+  grepstring = paste0("^",this.class)
   drugs <- drugTcos[grepl(grepstring,drugTcos$targetId),]
   filePath = "inst/settings/"
   fileName = sprintf('%sTcosOfInterest.csv', this.class)

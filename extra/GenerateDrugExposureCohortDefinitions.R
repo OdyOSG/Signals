@@ -168,13 +168,13 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
     cohort$expression$InclusionRules[[age]]$name <- "Lower age group"
     cohort$expression$InclusionRules[[age]]$description <- NULL
     cohort$expression$InclusionRules[[age]]$expression$DemographicCriteriaList[[1]]$Age$Op <- "lt"
-    cohort$expression$InclusionRules[[age]]$expression$DemographicCriteriaList[[2]] <- NULL
+    
     # cohort$expression$InclusionRules[[age]]$expression$DemographicCriteriaList[[2]]$Age$Op <- ""
   } else if (permutation$age == "older") {
     cohort$expression$InclusionRules[[age]]$name <- "Older age group"
     cohort$expression$InclusionRules[[age]]$description <- NULL
-    cohort$expression$InclusionRules[[age]]$expression$DemographicCriteriaList[[2]]$Age$Op <- "gte"
-    cohort$expression$InclusionRules[[age]]$expression$DemographicCriteriaList[[1]] <- NULL
+    cohort$expression$InclusionRules[[age]]$expression$DemographicCriteriaList[[1]]$Age$Op <- "gte"
+    
   } else if (permutation$age == "any") {
     cohort$expression$InclusionRules[[age]] <- NULL
     delta <- delta + 1
@@ -201,7 +201,7 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   }
   
   
-  obesity <- 11 - delta
+  obesity <- 12 - delta
   if (permutation$obese == "without") {
     cohort$expression$InclusionRules[[obesity]]$name <- "Without obesity "
     cohort$expression$InclusionRules[[obesity]]$description <- NULL
@@ -217,7 +217,7 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
     stop("Unknown obesity type")
   }
   
-  met <- 12 - delta
+  met <- 10 - delta
   if (permutation$met == "with") {
     # Do nothing
     cohort$expression$InclusionRules[[met]]$description <- NULL
@@ -237,7 +237,7 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
     stop("Unknown metformin type")
   }
   
-  insulin <- 13 - delta
+  insulin <- 12 - delta
   cohort$expression$InclusionRules[[insulin]]$description <- NULL
 
   if (permutation$tar == "ot1") {
