@@ -16,19 +16,19 @@ makeShortName <- function(permutation) {
   paste0(permutation$shortName,
          ifelse(permutation$age == "any" &
                   permutation$sex == "any" &
-                  permutation$obese == "any", " main", ""),
+                  permutation$obesity == "any", " main", ""),
          ifelse(permutation$tar == "ot2", " ot2", ""),
          ifelse(permutation$met == "no", " no-met", ""),
          ifelse(permutation$age != "any", paste0(" ", permutation$age, "-age"), ""),
          ifelse(permutation$sex != "any", paste0(" ", permutation$sex), ""),
-         ifelse(permutation$obese != "any", paste0(" ", permutation$obese, "-obe"), ""))
+         ifelse(permutation$obesity != "any", paste0(" ", permutation$obesity, "-obe"), ""))
 }
 
 # start from drug-level permutations and exposures
 strata <- readr::read_csv("extra/classGeneratorList.csv")  %>%
   filter(targetId == 10) %>%
   mutate(stratumId = substring(cohortId, 3, 9)) %>%
-  select(stratumId, age, sex, obese, tar, met)
+  select(stratumId, age, sex, obesity, tar, met)
 
 exposuresOfInterestTable <- readr::read_csv("inst/settings/ExposuresOfInterest.csv")
 # permutations <- inner_join(permutations, exposuresOfInterestTable %>%

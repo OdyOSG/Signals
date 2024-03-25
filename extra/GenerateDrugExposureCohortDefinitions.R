@@ -46,12 +46,12 @@ makeShortName <- function(permutation) {
   paste0(permutation$shortName,
          ifelse(permutation$age == "any" &
                   permutation$sex == "any" &
-                  permutation$obese == "any", " main", ""),
+                  permutation$obesity == "any", " main", ""),
          ifelse(permutation$tar == "ot2", " ot2", ""),
          ifelse(permutation$met == "no", " no-met", ""),
          ifelse(permutation$age != "any", paste0(" ", permutation$age, "-age"), ""),
          ifelse(permutation$sex != "any", paste0(" ", permutation$sex), ""),
-         ifelse(permutation$obese != "any", paste0(" ", permutation$obese, "-obe"), ""))
+         ifelse(permutation$obesity != "any", paste0(" ", permutation$obesity, "-obe"), ""))
 }
 
 # function to create permute drug-level target-comparator pairs----
@@ -202,15 +202,15 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   
   
   obesity <- 12 - delta
-  if (permutation$obese == "without") {
+  if (permutation$obesity == "without") {
     cohort$expression$InclusionRules[[obesity]]$name <- "Without obesity "
     cohort$expression$InclusionRules[[obesity]]$description <- NULL
     cohort$expression$InclusionRules[[obesity]]$expression$CriteriaList[[1]]$Occurrence$Type <- 0
     cohort$expression$InclusionRules[[obesity]]$expression$CriteriaList[[1]]$Occurrence$Count <- 0
-  } else if (permutation$obese == "with") {
+  } else if (permutation$obesity == "with") {
     cohort$expression$InclusionRules[[obesity]]$name <- "obesity"
     cohort$expression$InclusionRules[[obesity]]$description <- NULL
-  } else if (permutation$obese == "any") {
+  } else if (permutation$obesity == "any") {
     cohort$expression$InclusionRules[[obesity]] <- NULL
     delta <- delta  + 1
   } else {
@@ -367,14 +367,14 @@ tarId = "ot1"
 metId = "with"
 ageId = "younger"
 sexId = "any"
-obeseId = "any"
+obesityId = "any"
 
-makeTCOsDrug <- function(tarId, metId, ageId, sexId, obeseId) {
+makeTCOsDrug <- function(tarId, metId, ageId, sexId, obesityId) {
   
   baseTs <- permutationsForDrugsclass %>%
     filter(tar == tarId,
            age == ageId, sex == sexId, 
-           obese == obeseId, met == metId)
+           obesity == obesityId, met == metId)
   
   tab <- as.data.frame(t(combn(baseTs$cohortId, m = 2)))
   names(tab) <- c("targetId", "comparatorId")
@@ -411,7 +411,7 @@ for (this.class in unique(permutationsForDrugs$class)){
     # Sex
     makeTCOsDrug("ot1", "with", "any", "female", "any"),
     makeTCOsDrug("ot1", "with", "any", "male", "any"),
-    # obese dz
+    # obesity dz
     makeTCOsDrug("ot1", "with", "any", "any",  "with"),
     #
     # OT2
@@ -424,7 +424,7 @@ for (this.class in unique(permutationsForDrugs$class)){
     makeTCOsDrug("ot2", "with", "any", "female",  "any"),
     makeTCOsDrug("ot2", "with", "any", "male", "any"),
     
-    # obese dz
+    # obesity dz
     makeTCOsDrug("ot2", "with", "any", "any", "with")
   )
   

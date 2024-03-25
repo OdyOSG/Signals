@@ -32,7 +32,7 @@ baseUrlWebApi <- keyring::key_get("baseUrl")
   # SqlRender::writeSql(baseCohortJson, targetFile = "inst/settings/baseCohort.json")
   # saveRDS(baseCohort, file = "inst/settings/baseCohort.rds")
 
-# Inclusion rules: Age == 1, Sex == 2, Race == 3, CVD == 4, obese == 5, PriorMet == 6, NoMet == 7
+# Inclusion rules: Age == 1, Sex == 2, Race == 3, CVD == 4, obesity == 5, PriorMet == 6, NoMet == 7
 
 baseCohort <- readRDS("inst/settings/baseCohort.rds")
 
@@ -45,25 +45,24 @@ permutations <- inner_join(permutations, exposuresOfInterestTable %>% select(coh
 makeName <- function(permutation) {
   paste0(permutation$shortName, ": ", permutation$tar, ", ", permutation$met, " prior met, ",
          permutation$age, " age, ", permutation$sex, " sex, ", 
-         permutation$obese, " obese")
+         permutation$obesity, " obesity")
 }
 
 makeShortName <- function(permutation) {
   paste0(permutation$shortName,
          ifelse(permutation$age == "any" &
                   permutation$sex == "any" &
-                  permutation$obese == "any", " main", ""),
+                  permutation$obesity == "any", " main", ""),
          ifelse(permutation$tar == "ot2", " ot2", ""),
          ifelse(permutation$met == "no", " no-met", ""),
          ifelse(permutation$age != "any", paste0(" ", permutation$age, "-age"), ""),
          ifelse(permutation$sex != "any", paste0(" ", permutation$sex), ""),
-         ifelse(permutation$obese != "any", paste0(" ", permutation$obese, "-obe"), ""))
+         ifelse(permutation$obesity != "any", paste0(" ", permutation$obesity, "-obe"), ""))
 }
 #cohort  = baseCohort_orig 
 
 permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   
-  permutation = permutations[9,] 
   cohort = baseCohort
   c1Id <- floor(permutation$comparator1Id / 10)
   c2Id <- floor(permutation$comparator2Id / 10)
@@ -193,15 +192,15 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   
 
   obesity <- 12 - delta
-  if (permutation$obese == "without") {
+  if (permutation$obesity == "without") {
     cohort$expression$InclusionRules[[obesity]]$name <- "Without obesity "
     cohort$expression$InclusionRules[[obesity]]$description <- NULL
     cohort$expression$InclusionRules[[obesity]]$expression$CriteriaList[[1]]$Occurrence$Type <- 0
     cohort$expression$InclusionRules[[obesity]]$expression$CriteriaList[[1]]$Occurrence$Count <- 0
-  } else if (permutation$obese == "with") {
+  } else if (permutation$obesity == "with") {
     cohort$expression$InclusionRules[[obesity]]$name <- "obesity"
     cohort$expression$InclusionRules[[obesity]]$description <- NULL
-  } else if (permutation$obese == "any") {
+  } else if (permutation$obesity == "any") {
     cohort$expression$InclusionRules[[obesity]] <- NULL
     delta <- delta  + 1
   } else {
@@ -259,14 +258,7 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   return(cohort)
 }
 
-# Testing, to be removed
-# test = unique(permutations)
-# i = nrow(permutations)
-# for (i in 1:9){
-#   print(i)
-# 
-#   cohortDefinition <- permuteTC(baseCohort, permutations[i,])
-# }
+
 allCohortsSql <-
   do.call("rbind",
           lapply(1:nrow(permutations), function(i) {
@@ -315,14 +307,14 @@ readr::write_csv(classCohortsToCreate, "inst/settings/classCohortsToCreate.csv")
  # metId = "with"
  # ageId = "any"
  # sexId = "any"
- # obeseId = "any"
+ # obesityId = "any"
 # Make classTcosOfInterest.csv ----
-makeTCOs <- function(tarId, metId, ageId, sexId, obeseId) {
+makeTCOs <- function(tarId, metId, ageId, sexId, obesityId) {
 
   baseTs <- permutations %>%
     filter(tar == tarId,
            age == ageId, sex == sexId,
-           obese == obeseId, met == metId)
+           obesity == obesityId, met == metId)
 
   tab <- as.data.frame(t(combn(baseTs$cohortId, m = 2)))
   names(tab) <- c("targetId", "comparatorId")
@@ -341,7 +333,7 @@ makeTCOs <- function(tarId, metId, ageId, sexId, obeseId) {
 }
 
 classTcos <- rbind(
-  # Order: tar, met, age, sex, obese
+  # Order: tar, met, age, sex, obesity
   #
   # OT1
   # Main
@@ -353,7 +345,7 @@ classTcos <- rbind(
   # Sex
   makeTCOs("ot1", "with", "any", "female", "any"),
   makeTCOs("ot1", "with", "any", "male", "any"),
-  # obese dz
+  # obesity dz
   makeTCOs("ot1", "with", "any", "any",  "with"),
   #
   # OT2
@@ -366,7 +358,7 @@ classTcos <- rbind(
   makeTCOs("ot2", "with", "any", "female",  "any"),
   makeTCOs("ot2", "with", "any", "male", "any"),
 
-  # obese dz
+  # obesity dz
   makeTCOs("ot2", "with", "any", "any", "with")
 )
 readr::write_csv(classTcos, "inst/settings/classTcosOfInterest.csv")
@@ -485,23 +477,23 @@ for (value in classNames){
 
 # check out some example cohort definitions
 # (updating ingredient name for each drug class)
-permutationsForDrugs$atlasName <- makeShortName(permutationsForDrugs)
-printCohortDefinitionFromNameAndJson(name = "canagliflozin main",
-                                     json = permutationsForDrugs$json[1]) # change this to one GLP1RA name instead!
-printCohortDefinitionFromNameAndJson(name = "canagliflozin younger-age",
-                                     json = permutationsForDrugs$json[2])
+# permutationsForDrugs$atlasName <- makeShortName(permutationsForDrugs)
+# printCohortDefinitionFromNameAndJson(name = "canagliflozin main",
+#                                      json = permutationsForDrugs$json[1]) # change this to one GLP1RA name instead!
+# printCohortDefinitionFromNameAndJson(name = "canagliflozin younger-age",
+#                                      json = permutationsForDrugs$json[2])
 
 tarId   ="ot1"
 metId   ="with"
 ageId   ="any"
 sexId   ="any"
-obeseId ="any"
+obesityId ="any"
 #make drug-level TCOs
-makeTCOsDrug <- function(tarId, metId, ageId, sexId, obeseId) {
+makeTCOsDrug <- function(tarId, metId, ageId, sexId, obesityId) {
 
   baseTs <- permutationsForDrugsclass %>%
     filter(tar == tarId,
-           age == ageId, sex == sexId, obese == obeseId, met == metId)
+           age == ageId, sex == sexId, obesity == obesityId, met == metId)
 
   tab <- as.data.frame(t(combn(baseTs$cohortId, m = 2)))
   names(tab) <- c("targetId", "comparatorId")
@@ -521,7 +513,7 @@ makeTCOsDrug <- function(tarId, metId, ageId, sexId, obeseId) {
 for (this.class in unique(permutationsForDrugs$class)){
   permutationsForDrugsclass = permutationsForDrugs %>% filter(tolower(class) == tolower(this.class)) 
   drugTcos <- rbind(
-    # Order: tar, met, age, sex, obese
+    # Order: tar, met, age, sex, obesity
     # OT1
     # Main
     makeTCOsDrug("ot1", "with", "any", "any", "any"),
@@ -531,8 +523,9 @@ for (this.class in unique(permutationsForDrugs$class)){
     # Sex
     makeTCOsDrug("ot1", "with", "any", "female", "any"),
     makeTCOsDrug("ot1", "with", "any", "male", "any"),
-    # obese dz
+    # obesity dz
     makeTCOsDrug("ot1", "with", "any", "any",  "with"),
+    makeTCOsDrug("ot1", "with", "any", "any", "without"),
     #
     # OT2
     # Main
@@ -544,8 +537,9 @@ for (this.class in unique(permutationsForDrugs$class)){
     makeTCOsDrug("ot2", "with", "any", "female",  "any"),
     makeTCOsDrug("ot2", "with", "any", "male", "any"),
   
-    # obese dz
-    makeTCOsDrug("ot2", "with", "any", "any", "with")
+    # obesity dz
+    makeTCOsDrug("ot2", "with", "any", "any", "with"),
+    makeTCOsDrug("ot2", "with", "any", "any", "without")
   )
   
   # save TCOs 
