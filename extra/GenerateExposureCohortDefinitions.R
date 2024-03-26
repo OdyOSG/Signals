@@ -27,10 +27,10 @@ baseUrlWebApi <- keyring::key_get("baseUrl")
 # code to query the Atlas Web API to get the base cohort (based on pre-defined ATLAS cohort)
 # Make sure you download the right cohort
 #baseCohort = baseCohort_orig
-  # baseCohort <- ROhdsiWebApi::getCohortDefinition(677, baseUrl = baseUrl)
-  # baseCohortJson <- RJSONIO::toJSON(baseCohort$expression, indent = 2, digits = 50)
-  # SqlRender::writeSql(baseCohortJson, targetFile = "inst/settings/baseCohort.json")
-  # saveRDS(baseCohort, file = "inst/settings/baseCohort.rds")
+   baseCohort <- ROhdsiWebApi::getCohortDefinition(677, baseUrl = baseUrl)
+   baseCohortJson <- RJSONIO::toJSON(baseCohort$expression, indent = 2, digits = 50)
+   SqlRender::writeSql(baseCohortJson, targetFile = "inst/settings/baseCohort.json")
+   saveRDS(baseCohort, file = "inst/settings/baseCohort.rds")
 
 # Inclusion rules: Age == 1, Sex == 2, Race == 3, CVD == 4, obesity == 5, PriorMet == 6, NoMet == 7
 

@@ -1,12 +1,12 @@
 library(Signals)
 
-Sys.setenv(DATABASECONNECTOR_JAR_FOLDER="s:/DatabaseDrivers")
+#Sys.setenv(DATABASECONNECTOR_JAR_FOLDER="s:/DatabaseDrivers")
 
 # Run-once: set-up your database driver
-DatabaseConnector::downloadJdbcDrivers(dbms = "postgresql")
+#DatabaseConnector::downloadJdbcDrivers(dbms = "postgresql")
 
 # Optional: specify where the temporary files (used by the Andromeda package) will be created:
-options(andromedaTempFolder = "s:/AndromedaTemp")
+options(andromedaTempFolder = "C:/AndromedaTemp")
 
 # Maximum number of cores to be used:
 maxCores <- min(4, parallel::detectCores()) # Or more depending on your hardware
@@ -18,20 +18,22 @@ minCellCount <- 5
 oracleTempSchema <- NULL
 
 # The folder where the study intermediate and result files will be written:
-outputFolder <- "s:/signalsStudy"
+outputFolder <- "results"
 
 # Details for connecting to the server:
 # See ?DatabaseConnector::createConnectionDetails for help
-connectionDetails <- DatabaseConnector::createConnectionDetails(dbms = "postgresql",
-                                                                server = "some.server.com/ohdsi",
-                                                                user = "joe",
-                                                                password = "secret")
-
+connectionDetails <- DatabaseConnector::createConnectionDetails(
+  dbms = "postgresql",
+  user = "ohdsi",
+  password = "ohdsi",
+  server = "testnode.arachnenetwork.com/synpuf_110k",
+  port = 5441
+)
 # The name of the database schema where the CDM data can be found:
-cdmDatabaseSchema <- "cdm_synpuf"
+cdmDatabaseSchema <- "cdm_531"
 
 # The name of the database schema and table where the study-specific cohorts will be instantiated:
-cohortDatabaseSchema <- "scratch.dbo"
+cohortDatabaseSchema <- "jmt_signals.dbo"
 tablePrefix <- "signals_study"
 
 # Some meta-information that will be used by the export function:
@@ -41,6 +43,7 @@ databaseDescription <- "Medicare Claims Synthetic Public Use Files (SynPUFs) wer
 
 # For some database platforms (e.g. Oracle): define a schema that can be used to emulate temp tables:
 options(sqlRenderTempEmulationSchema = NULL)
+
 
 # Feasibility assessment ---------------------------------------------------------
 ## exposure and outcome cohorts diagnostics

@@ -1,73 +1,73 @@
 targetId,comparatorId,outcomeIds,excludedCovariateConceptIds,targetName,comparatorName
-1011000,2011000,-1,NA,DPP4I main,GLP1RA main
-1011000,3011000,-1,NA,DPP4I main,SGLT2I main
-1011000,4011000,-1,NA,DPP4I main,SU main
-2011000,3011000,-1,NA,GLP1RA main,SGLT2I main
-2011000,4011000,-1,NA,GLP1RA main,SU main
-3011000,4011000,-1,NA,SGLT2I main,SU main
-1011100,2011100,-1,NA,DPP4I younger-age,GLP1RA younger-age
-1011100,3011100,-1,NA,DPP4I younger-age,SGLT2I younger-age
-1011100,4011100,-1,NA,DPP4I younger-age,SU younger-age
-2011100,3011100,-1,NA,GLP1RA younger-age,SGLT2I younger-age
-2011100,4011100,-1,NA,GLP1RA younger-age,SU younger-age
-3011100,4011100,-1,NA,SGLT2I younger-age,SU younger-age
-1011300,2011300,-1,NA,DPP4I older-age,GLP1RA older-age
-1011300,3011300,-1,NA,DPP4I older-age,SGLT2I older-age
-1011300,4011300,-1,NA,DPP4I older-age,SU older-age
-2011300,3011300,-1,NA,GLP1RA older-age,SGLT2I older-age
-2011300,4011300,-1,NA,GLP1RA older-age,SU older-age
-3011300,4011300,-1,NA,SGLT2I older-age,SU older-age
-1011010,2011010,-1,NA,DPP4I female,GLP1RA female
-1011010,3011010,-1,NA,DPP4I female,SGLT2I female
-1011010,4011010,-1,NA,DPP4I female,SU female
-2011010,3011010,-1,NA,GLP1RA female,SGLT2I female
-2011010,4011010,-1,NA,GLP1RA female,SU female
-3011010,4011010,-1,NA,SGLT2I female,SU female
-1011020,2011020,-1,NA,DPP4I male,GLP1RA male
-1011020,3011020,-1,NA,DPP4I male,SGLT2I male
-1011020,4011020,-1,NA,DPP4I male,SU male
-2011020,3011020,-1,NA,GLP1RA male,SGLT2I male
-2011020,4011020,-1,NA,GLP1RA male,SU male
-3011020,4011020,-1,NA,SGLT2I male,SU male
-1011001,2011001,-1,NA,DPP4I with-obe,GLP1RA with-obe
-1011001,3011001,-1,NA,DPP4I with-obe,SGLT2I with-obe
-1011001,4011001,-1,NA,DPP4I with-obe,SU with-obe
-2011001,3011001,-1,NA,GLP1RA with-obe,SGLT2I with-obe
-2011001,4011001,-1,NA,GLP1RA with-obe,SU with-obe
-3011001,4011001,-1,NA,SGLT2I with-obe,SU with-obe
-1021000,2021000,-1,NA,DPP4I main ot2,GLP1RA main ot2
-1021000,3021000,-1,NA,DPP4I main ot2,SGLT2I main ot2
-1021000,4021000,-1,NA,DPP4I main ot2,SU main ot2
-2021000,3021000,-1,NA,GLP1RA main ot2,SGLT2I main ot2
-2021000,4021000,-1,NA,GLP1RA main ot2,SU main ot2
-3021000,4021000,-1,NA,SGLT2I main ot2,SU main ot2
-1021100,2021100,-1,NA,DPP4I ot2 younger-age,GLP1RA ot2 younger-age
-1021100,3021100,-1,NA,DPP4I ot2 younger-age,SGLT2I ot2 younger-age
-1021100,4021100,-1,NA,DPP4I ot2 younger-age,SU ot2 younger-age
-2021100,3021100,-1,NA,GLP1RA ot2 younger-age,SGLT2I ot2 younger-age
-2021100,4021100,-1,NA,GLP1RA ot2 younger-age,SU ot2 younger-age
-3021100,4021100,-1,NA,SGLT2I ot2 younger-age,SU ot2 younger-age
-1021300,2021300,-1,NA,DPP4I ot2 older-age,GLP1RA ot2 older-age
-1021300,3021300,-1,NA,DPP4I ot2 older-age,SGLT2I ot2 older-age
-1021300,4021300,-1,NA,DPP4I ot2 older-age,SU ot2 older-age
-2021300,3021300,-1,NA,GLP1RA ot2 older-age,SGLT2I ot2 older-age
-2021300,4021300,-1,NA,GLP1RA ot2 older-age,SU ot2 older-age
-3021300,4021300,-1,NA,SGLT2I ot2 older-age,SU ot2 older-age
-1021010,2021010,-1,NA,DPP4I ot2 female,GLP1RA ot2 female
-1021010,3021010,-1,NA,DPP4I ot2 female,SGLT2I ot2 female
-1021010,4021010,-1,NA,DPP4I ot2 female,SU ot2 female
-2021010,3021010,-1,NA,GLP1RA ot2 female,SGLT2I ot2 female
-2021010,4021010,-1,NA,GLP1RA ot2 female,SU ot2 female
-3021010,4021010,-1,NA,SGLT2I ot2 female,SU ot2 female
-1021020,2021020,-1,NA,DPP4I ot2 male,GLP1RA ot2 male
-1021020,3021020,-1,NA,DPP4I ot2 male,SGLT2I ot2 male
-1021020,4021020,-1,NA,DPP4I ot2 male,SU ot2 male
-2021020,3021020,-1,NA,GLP1RA ot2 male,SGLT2I ot2 male
-2021020,4021020,-1,NA,GLP1RA ot2 male,SU ot2 male
-3021020,4021020,-1,NA,SGLT2I ot2 male,SU ot2 male
-1021001,2021001,-1,NA,DPP4I ot2 with-obe,GLP1RA ot2 with-obe
-1021001,3021001,-1,NA,DPP4I ot2 with-obe,SGLT2I ot2 with-obe
-1021001,4021001,-1,NA,DPP4I ot2 with-obe,SU ot2 with-obe
-2021001,3021001,-1,NA,GLP1RA ot2 with-obe,SGLT2I ot2 with-obe
-2021001,4021001,-1,NA,GLP1RA ot2 with-obe,SU ot2 with-obe
-3021001,4021001,-1,NA,SGLT2I ot2 with-obe,SU ot2 with-obe
+1010000,2010000,-1,NA,DPP4I main,GLP1RA main
+1010000,3010000,-1,NA,DPP4I main,SGLT2I main
+1010000,4010000,-1,NA,DPP4I main,SU main
+2010000,3010000,-1,NA,GLP1RA main,SGLT2I main
+2010000,4010000,-1,NA,GLP1RA main,SU main
+3010000,4010000,-1,NA,SGLT2I main,SU main
+1010100,2010100,-1,NA,DPP4I younger-age,GLP1RA younger-age
+1010100,3010100,-1,NA,DPP4I younger-age,SGLT2I younger-age
+1010100,4010100,-1,NA,DPP4I younger-age,SU younger-age
+2010100,3010100,-1,NA,GLP1RA younger-age,SGLT2I younger-age
+2010100,4010100,-1,NA,GLP1RA younger-age,SU younger-age
+3010100,4010100,-1,NA,SGLT2I younger-age,SU younger-age
+1010300,2010300,-1,NA,DPP4I older-age,GLP1RA older-age
+1010300,3010300,-1,NA,DPP4I older-age,SGLT2I older-age
+1010300,4010300,-1,NA,DPP4I older-age,SU older-age
+2010300,3010300,-1,NA,GLP1RA older-age,SGLT2I older-age
+2010300,4010300,-1,NA,GLP1RA older-age,SU older-age
+3010300,4010300,-1,NA,SGLT2I older-age,SU older-age
+1010010,2010010,-1,NA,DPP4I female,GLP1RA female
+1010010,3010010,-1,NA,DPP4I female,SGLT2I female
+1010010,4010010,-1,NA,DPP4I female,SU female
+2010010,3010010,-1,NA,GLP1RA female,SGLT2I female
+2010010,4010010,-1,NA,GLP1RA female,SU female
+3010010,4010010,-1,NA,SGLT2I female,SU female
+1010030,2010030,-1,NA,DPP4I male,GLP1RA male
+1010030,3010030,-1,NA,DPP4I male,SGLT2I male
+1010030,4010030,-1,NA,DPP4I male,SU male
+2010030,3010030,-1,NA,GLP1RA male,SGLT2I male
+2010030,4010030,-1,NA,GLP1RA male,SU male
+3010030,4010030,-1,NA,SGLT2I male,SU male
+1010002,2010002,-1,NA,DPP4I with-obe,GLP1RA with-obe
+1010002,3010002,-1,NA,DPP4I with-obe,SGLT2I with-obe
+1010002,4010002,-1,NA,DPP4I with-obe,SU with-obe
+2010002,3010002,-1,NA,GLP1RA with-obe,SGLT2I with-obe
+2010002,4010002,-1,NA,GLP1RA with-obe,SU with-obe
+3010002,4010002,-1,NA,SGLT2I with-obe,SU with-obe
+1020000,2020000,-1,NA,DPP4I main ot2,GLP1RA main ot2
+1020000,3020000,-1,NA,DPP4I main ot2,SGLT2I main ot2
+1020000,4020000,-1,NA,DPP4I main ot2,SU main ot2
+2020000,3020000,-1,NA,GLP1RA main ot2,SGLT2I main ot2
+2020000,4020000,-1,NA,GLP1RA main ot2,SU main ot2
+3020000,4020000,-1,NA,SGLT2I main ot2,SU main ot2
+1020100,2020100,-1,NA,DPP4I ot2 younger-age,GLP1RA ot2 younger-age
+1020100,3020100,-1,NA,DPP4I ot2 younger-age,SGLT2I ot2 younger-age
+1020100,4020100,-1,NA,DPP4I ot2 younger-age,SU ot2 younger-age
+2020100,3020100,-1,NA,GLP1RA ot2 younger-age,SGLT2I ot2 younger-age
+2020100,4020100,-1,NA,GLP1RA ot2 younger-age,SU ot2 younger-age
+3020100,4020100,-1,NA,SGLT2I ot2 younger-age,SU ot2 younger-age
+1020300,2020300,-1,NA,DPP4I ot2 older-age,GLP1RA ot2 older-age
+1020300,3020300,-1,NA,DPP4I ot2 older-age,SGLT2I ot2 older-age
+1020300,4020300,-1,NA,DPP4I ot2 older-age,SU ot2 older-age
+2020300,3020300,-1,NA,GLP1RA ot2 older-age,SGLT2I ot2 older-age
+2020300,4020300,-1,NA,GLP1RA ot2 older-age,SU ot2 older-age
+3020300,4020300,-1,NA,SGLT2I ot2 older-age,SU ot2 older-age
+1020010,2020010,-1,NA,DPP4I ot2 female,GLP1RA ot2 female
+1020010,3020010,-1,NA,DPP4I ot2 female,SGLT2I ot2 female
+1020010,4020010,-1,NA,DPP4I ot2 female,SU ot2 female
+2020010,3020010,-1,NA,GLP1RA ot2 female,SGLT2I ot2 female
+2020010,4020010,-1,NA,GLP1RA ot2 female,SU ot2 female
+3020010,4020010,-1,NA,SGLT2I ot2 female,SU ot2 female
+1020030,2020030,-1,NA,DPP4I ot2 male,GLP1RA ot2 male
+1020030,3020030,-1,NA,DPP4I ot2 male,SGLT2I ot2 male
+1020030,4020030,-1,NA,DPP4I ot2 male,SU ot2 male
+2020030,3020030,-1,NA,GLP1RA ot2 male,SGLT2I ot2 male
+2020030,4020030,-1,NA,GLP1RA ot2 male,SU ot2 male
+3020030,4020030,-1,NA,SGLT2I ot2 male,SU ot2 male
+1020002,2020002,-1,NA,DPP4I ot2 with-obe,GLP1RA ot2 with-obe
+1020002,3020002,-1,NA,DPP4I ot2 with-obe,SGLT2I ot2 with-obe
+1020002,4020002,-1,NA,DPP4I ot2 with-obe,SU ot2 with-obe
+2020002,3020002,-1,NA,GLP1RA ot2 with-obe,SGLT2I ot2 with-obe
+2020002,4020002,-1,NA,GLP1RA ot2 with-obe,SU ot2 with-obe
+3020002,4020002,-1,NA,SGLT2I ot2 with-obe,SU ot2 with-obe

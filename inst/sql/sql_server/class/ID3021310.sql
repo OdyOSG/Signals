@@ -741,7 +741,7 @@ FROM
 SELECT 0 as index_id, e.person_id, e.event_id
 FROM #qualified_events E
 JOIN @cdm_database_schema.PERSON P ON P.PERSON_ID = E.PERSON_ID
-WHERE YEAR(E.start_date) - P.year_of_birth < 55
+WHERE YEAR(E.start_date) - P.year_of_birth >= 55
 GROUP BY e.person_id, e.event_id
 -- End Demographic Criteria
 
@@ -774,7 +774,7 @@ FROM
 SELECT 0 as index_id, e.person_id, e.event_id
 FROM #qualified_events E
 JOIN @cdm_database_schema.PERSON P ON P.PERSON_ID = E.PERSON_ID
-WHERE P.gender_concept_id in (8532)
+WHERE P.gender_concept_id in (8507)
 GROUP BY e.person_id, e.event_id
 -- End Demographic Criteria
 

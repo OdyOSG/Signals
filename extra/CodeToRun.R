@@ -49,6 +49,7 @@ databaseDescription <- "Medicare Claims Synthetic Public Use Files (SynPUFs) wer
 # For some database platforms (e.g. Oracle): define a schema that can be used to emulate temp tables:
 options(sqlRenderTempEmulationSchema = NULL)
 
+
 # Feasibility assessment ---------------------------------------------------------
 Signals::assessPhenotypes(connectionDetails = connectionDetails,
                  cdmDatabaseSchema = cdmDatabaseSchema,
@@ -56,7 +57,6 @@ Signals::assessPhenotypes(connectionDetails = connectionDetails,
                  cohortDatabaseSchema = cohortDatabaseSchema,
                  outputFolder = outputFolder,
                  tablePrefix = tablePrefix,
-                 indicationId = 'glp1ra',
                  databaseId = databaseId,
                  databaseName = databaseName,
                  databaseDescription = databaseDescription,

@@ -1976,13 +1976,6 @@
 } 
 },
 {
- "id":            15,
-"name": "Alternative within-class drugs",
-"expression": {
- "items": [] 
-} 
-},
-{
  "id":            65,
 "name": "BMI measurements",
 "expression": {
@@ -2093,39 +2086,22 @@
 } 
 },
 {
- "id":            67,
-"name": "Body Weight",
+ "id":            66,
+"name": "Obesity Dx",
 "expression": {
  "items": [
  {
  "concept": {
- "CONCEPT_ID":       3025315,
-"CONCEPT_NAME": "Body weight",
+ "CONCEPT_ID":       4060985,
+"CONCEPT_NAME": "Body mass index 30+ - obesity",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
 "INVALID_REASON": "V",
 "INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "29463-7",
-"DOMAIN_ID": "Measurement",
-"VOCABULARY_ID": "LOINC",
-"CONCEPT_CLASS_ID": "Clinical Observation" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":       4099154,
-"CONCEPT_NAME": "Body weight",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "27113001",
-"DOMAIN_ID": "Measurement",
+"CONCEPT_CODE": "162864005",
+"DOMAIN_ID": "Observation",
 "VOCABULARY_ID": "SNOMED",
-"CONCEPT_CLASS_ID": "Observable Entity" 
+"CONCEPT_CLASS_ID": "Clinical Finding" 
 },
 "isExcluded": false,
 "includeDescendants": true,
@@ -2133,69 +2109,86 @@
 },
 {
  "concept": {
- "CONCEPT_ID":       3013762,
-"CONCEPT_NAME": "Body weight Measured",
+ "CONCEPT_ID":       4256640,
+"CONCEPT_NAME": "Body mass index 40+ - severely obese",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
 "INVALID_REASON": "V",
 "INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "3141-9",
-"DOMAIN_ID": "Measurement",
-"VOCABULARY_ID": "LOINC",
-"CONCEPT_CLASS_ID": "Clinical Observation" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":       3027492,
-"CONCEPT_NAME": "Dry body weight Measured",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "8341-0",
-"DOMAIN_ID": "Measurement",
-"VOCABULARY_ID": "LOINC",
-"CONCEPT_CLASS_ID": "Clinical Observation" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":       3023166,
-"CONCEPT_NAME": "Body weight Stated",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "3142-7",
-"DOMAIN_ID": "Measurement",
-"VOCABULARY_ID": "LOINC",
-"CONCEPT_CLASS_ID": "Clinical Observation" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":       4264825,
-"CONCEPT_NAME": "Birth weight",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "364589006",
-"DOMAIN_ID": "Measurement",
+"CONCEPT_CODE": "408512008",
+"DOMAIN_ID": "Observation",
 "VOCABULARY_ID": "SNOMED",
-"CONCEPT_CLASS_ID": "Observable Entity" 
+"CONCEPT_CLASS_ID": "Clinical Finding" 
 },
-"isExcluded": true,
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID":      45766200,
+"CONCEPT_NAME": "Lymphedema associated with obesity",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "703316004",
+"DOMAIN_ID": "Condition",
+"VOCABULARY_ID": "SNOMED",
+"CONCEPT_CLASS_ID": "Clinical Finding" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID":        433736,
+"CONCEPT_NAME": "Obesity",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "414916001",
+"DOMAIN_ID": "Condition",
+"VOCABULARY_ID": "SNOMED",
+"CONCEPT_CLASS_ID": "Clinical Finding" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID":       4176962,
+"CONCEPT_NAME": "Obesity associated disorder",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "363247006",
+"DOMAIN_ID": "Condition",
+"VOCABULARY_ID": "SNOMED",
+"CONCEPT_CLASS_ID": "Clinical Finding" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID":       4081038,
+"CONCEPT_NAME": "Pulmonary hypertension with extreme obesity",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "276792008",
+"DOMAIN_ID": "Condition",
+"VOCABULARY_ID": "SNOMED",
+"CONCEPT_CLASS_ID": "Clinical Finding" 
+},
+"isExcluded": false,
 "includeDescendants": true,
 "includeMapped": false 
 } 
@@ -2355,7 +2348,7 @@
 } 
 },
 {
- "name": "Lower age group",
+ "name": "Older age group",
 "expression": {
  "Type": "ALL",
 "CriteriaList": [],
@@ -2363,7 +2356,7 @@
  {
  "Age": {
  "Value":            55,
-"Op": "lt" 
+"Op": "gte" 
 } 
 } 
 ],
@@ -2371,40 +2364,44 @@
 } 
 },
 {
- "name": "Female stratum",
+ "name": "Prior metformin use",
 "expression": {
- "Type": "ALL",
-"CriteriaList": [],
-"DemographicCriteriaList": [
- {
- "Gender": [
- {
- "CONCEPT_ID":          8532,
-"CONCEPT_NAME": "female",
-"STANDARD_CONCEPT": null,
-"STANDARD_CONCEPT_CAPTION": "Unknown",
-"INVALID_REASON": null,
-"INVALID_REASON_CAPTION": "Unknown",
-"CONCEPT_CODE": "F",
-"DOMAIN_ID": "Gender",
-"VOCABULARY_ID": "Gender",
-"CONCEPT_CLASS_ID": null 
-} 
-] 
-} 
-],
-"Groups": [] 
-} 
-},
-{
- "name": "No prior metformin use",
-"expression": {
- "Type": "ALL",
+ "Type": "ANY",
 "CriteriaList": [
  {
  "Criteria": {
  "DrugEra": {
- "CodesetId":             7 
+ "CodesetId":             7,
+"EraLength": {
+ "Value":            90,
+"Op": "gte" 
+} 
+} 
+},
+"StartWindow": {
+ "Start": {
+ "Coeff":            -1 
+},
+"End": {
+ "Days":            90,
+"Coeff":            -1 
+},
+"UseIndexEnd": false,
+"UseEventEnd": false 
+},
+"RestrictVisit": false,
+"IgnoreObservationPeriod": true,
+"Occurrence": {
+ "Type":             2,
+"Count":             1,
+"IsDistinct": false 
+} 
+},
+{
+ "Criteria": {
+ "DrugExposure": {
+ "CodesetId":             7,
+"DrugTypeExclude": false 
 } 
 },
 "StartWindow": {
@@ -2413,7 +2410,7 @@
 },
 "End": {
  "Days":             0,
-"Coeff":             1 
+"Coeff":            -1 
 },
 "UseIndexEnd": false,
 "UseEventEnd": false 
@@ -2421,8 +2418,8 @@
 "RestrictVisit": false,
 "IgnoreObservationPeriod": true,
 "Occurrence": {
- "Type":             0,
-"Count":             0,
+ "Type":             2,
+"Count":             3,
 "IsDistinct": false 
 } 
 } 
@@ -2504,7 +2501,29 @@
 "Offset":             0 
 } 
 },
-"CensoringCriteria": [],
+"CensoringCriteria": [
+ {
+ "DrugExposure": {
+ "CodesetId":            14,
+"DrugTypeExclude": false 
+} 
+},
+{
+ "DrugExposure": {
+ "CodesetId":             5,
+"DrugTypeExclude": false 
+} 
+},
+{
+ "DrugEra": {
+ "CodesetId":             6,
+"EraLength": {
+ "Value":            30,
+"Op": "gt" 
+} 
+} 
+} 
+],
 "CollapseSettings": {
  "CollapseType": "ERA",
 "EraPad":             0 

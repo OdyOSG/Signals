@@ -1,29 +1,19 @@
 Thread: Main
-Message:  Error executing SQL:
-org.postgresql.util.PSQLException: An I/O error occurred while sending to the backend.
-An error report has been created at  C:/Users/Jeff Telford/Documents/Signals/errorReportSql.txt
+Message:  replacement has 1 row, data has 0
 Level:  FATAL
-Time:  2024-03-21 08:28:48
+Time:  2024-03-26 12:53:48
 
 Stack trace:
-13: (function (condition) 
+7: h(simpleError(msg, call))
+6: .handleSimpleError(function (condition) 
 {
     if (is(condition, "error")) {
-        log("FATAL", conditionMessage(condition), echoToConso
-12: signalCondition(cnd)
-11: signal_abort(cnd, .file)
-10: abort(paste("Error executing SQL:", message, paste("An error report has been created at ", fileName), sep = "\n"), ca
-9: .createErrorReport(dbms, err$message, sqlStatement, errorReportFile)
-8: value[[3]](cond)
-7: tryCatchOne(expr, names, parentenv, handlers[[1]])
-6: tryCatchList(expr, classes, parentenv, handlers)
-5: tryCatch({
-    startQuery <- Sys.time()
-    rowsAffected <- c(rowsAffected, lowLevelExecuteSql(connection, sqlStatement
-4: CohortConstruction.R#603: DatabaseConnector::executeSql(connection, sql)
-3: CreateAllCohorts.R#63: CohortDiagnostics::instantiateCohortSet(connectionDetails = connectionDetails, cdmDatabaseSche
-2: Assessment.R#75: createExposureCohorts(connectionDetails = connectionDetails, cdmDatabaseSchema = cdmDatabaseSchema, 
-1: Signals::assessPhenotypes(connectionDetails = connectionDetails, cdmDatabaseSchema = cdmDatabaseSchema, oracleTempSch
+        log("FATAL", conditionMessage(condition), 
+5: stop(sprintf(ngettext(N, "replacement has %d row, data has %d", "replacement has %d rows, data has %d"), N, nrows), domain =
+4: CreateAllCohorts.R#86: `$<-.data.frame`(`*tmp*`, "databaseId", value = "Synpuf")
+3: CreateAllCohorts.R#86: `$<-`(`*tmp*`, "databaseId", value = "Synpuf")
+2: Assessment.R#75: createExposureCohorts(connectionDetails = connectionDetails, cdmDatabaseSchema = cdmDatabaseSchema, vocabul
+1: assessPhenotypes(connectionDetails = connectionDetails, cdmDatabaseSchema = cdmDatabaseSchema, oracleTempSchema = oracleTemp
 
 R version:
 R version 4.2.1 (2022-06-23 ucrt)
@@ -41,12 +31,7 @@ Attached base packages:
 - base
 
 Other attached packages:
-- rjson (0.2.21)
-- RJSONIO (1.3-1.9)
-- readr (2.1.5)
-- ROhdsiWebApi (1.3.3)
 - Signals (2.1.1)
 - DatabaseConnector (6.3.2)
-- dplyr (1.1.4)
 
 

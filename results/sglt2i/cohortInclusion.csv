@@ -1,1393 +1,881 @@
 cohortDefinitionId,ruleSequence,name
-311100000,0,No prior with-in class exposure
-311100000,1,No prior DPP4 inhibitor exposure
-311100000,2,No prior GLP-1 receptor agonist exposure
-311100000,3,No prior SU exposure
-311100000,4,No prior other anti-diabetic exposure
-311100000,5,Prior metformin use
-311100000,6,No prior insulin use or combo initiation
-311110000,0,No prior with-in class exposure
-311110000,1,No prior DPP4 inhibitor exposure
-311110000,2,No prior GLP-1 receptor agonist exposure
-311110000,3,No prior SU exposure
-311110000,4,No prior other anti-diabetic exposure
-311110000,5,Lower age group
-311110000,6,Prior metformin use
-311110000,7,No prior insulin use or combo initiation
-311120000,0,No prior with-in class exposure
-311120000,1,No prior DPP4 inhibitor exposure
-311120000,2,No prior GLP-1 receptor agonist exposure
-311120000,3,No prior SU exposure
-311120000,4,No prior other anti-diabetic exposure
-311120000,5,Middle age group
-311120000,6,Prior metformin use
-311120000,7,No prior insulin use or combo initiation
-311130000,0,No prior with-in class exposure
-311130000,1,No prior DPP4 inhibitor exposure
-311130000,2,No prior GLP-1 receptor agonist exposure
-311130000,3,No prior SU exposure
-311130000,4,No prior other anti-diabetic exposure
-311130000,5,Older age group
-311130000,6,Prior metformin use
-311130000,7,No prior insulin use or combo initiation
-311100010,0,No prior with-in class exposure
-311100010,1,No prior DPP4 inhibitor exposure
-311100010,2,No prior GLP-1 receptor agonist exposure
-311100010,3,No prior SU exposure
-311100010,4,No prior other anti-diabetic exposure
-311100010,5,Low cardiovascular risk
-311100010,6,Prior metformin use
-311100010,7,No prior insulin use or combo initiation
-311100020,0,No prior with-in class exposure
-311100020,1,No prior DPP4 inhibitor exposure
-311100020,2,No prior GLP-1 receptor agonist exposure
-311100020,3,No prior SU exposure
-311100020,4,No prior other anti-diabetic exposure
-311100020,5,Higher cardiovascular risk
-311100020,6,Prior metformin use
-311100020,7,No prior insulin use or combo initiation
-311101000,0,No prior with-in class exposure
-311101000,1,No prior DPP4 inhibitor exposure
-311101000,2,No prior GLP-1 receptor agonist exposure
-311101000,3,No prior SU exposure
-311101000,4,No prior other anti-diabetic exposure
-311101000,5,Female stratum
-311101000,6,Prior metformin use
-311101000,7,No prior insulin use or combo initiation
-311102000,0,No prior with-in class exposure
-311102000,1,No prior DPP4 inhibitor exposure
-311102000,2,No prior GLP-1 receptor agonist exposure
-311102000,3,No prior SU exposure
-311102000,4,No prior other anti-diabetic exposure
-311102000,5,Male stratum
-311102000,6,Prior metformin use
-311102000,7,No prior insulin use or combo initiation
-311100100,0,No prior with-in class exposure
-311100100,1,No prior DPP4 inhibitor exposure
-311100100,2,No prior GLP-1 receptor agonist exposure
-311100100,3,No prior SU exposure
-311100100,4,No prior other anti-diabetic exposure
-311100100,5,Race stratum
-311100100,6,Prior metformin use
-311100100,7,No prior insulin use or combo initiation
-311100001,0,No prior with-in class exposure
-311100001,1,No prior DPP4 inhibitor exposure
-311100001,2,No prior GLP-1 receptor agonist exposure
-311100001,3,No prior SU exposure
-311100001,4,No prior other anti-diabetic exposure
-311100001,5,Without renal impairment
-311100001,6,Prior metformin use
-311100001,7,No prior insulin use or combo initiation
-311100002,0,No prior with-in class exposure
-311100002,1,No prior DPP4 inhibitor exposure
-311100002,2,No prior GLP-1 receptor agonist exposure
-311100002,3,No prior SU exposure
-311100002,4,No prior other anti-diabetic exposure
-311100002,5,Renal impairment
-311100002,6,Prior metformin use
-311100002,7,No prior insulin use or combo initiation
-312100000,0,No prior with-in class exposure
-312100000,1,No prior DPP4 inhibitor exposure
-312100000,2,No prior GLP-1 receptor agonist exposure
-312100000,3,No prior SU exposure
-312100000,4,No prior other anti-diabetic exposure
-312100000,5,Prior metformin use
-312100000,6,No prior insulin use or combo initiation
-312110000,0,No prior with-in class exposure
-312110000,1,No prior DPP4 inhibitor exposure
-312110000,2,No prior GLP-1 receptor agonist exposure
-312110000,3,No prior SU exposure
-312110000,4,No prior other anti-diabetic exposure
-312110000,5,Lower age group
-312110000,6,Prior metformin use
-312110000,7,No prior insulin use or combo initiation
-312120000,0,No prior with-in class exposure
-312120000,1,No prior DPP4 inhibitor exposure
-312120000,2,No prior GLP-1 receptor agonist exposure
-312120000,3,No prior SU exposure
-312120000,4,No prior other anti-diabetic exposure
-312120000,5,Middle age group
-312120000,6,Prior metformin use
-312120000,7,No prior insulin use or combo initiation
-312130000,0,No prior with-in class exposure
-312130000,1,No prior DPP4 inhibitor exposure
-312130000,2,No prior GLP-1 receptor agonist exposure
-312130000,3,No prior SU exposure
-312130000,4,No prior other anti-diabetic exposure
-312130000,5,Older age group
-312130000,6,Prior metformin use
-312130000,7,No prior insulin use or combo initiation
-312100010,0,No prior with-in class exposure
-312100010,1,No prior DPP4 inhibitor exposure
-312100010,2,No prior GLP-1 receptor agonist exposure
-312100010,3,No prior SU exposure
-312100010,4,No prior other anti-diabetic exposure
-312100010,5,Low cardiovascular risk
-312100010,6,Prior metformin use
-312100010,7,No prior insulin use or combo initiation
-312100020,0,No prior with-in class exposure
-312100020,1,No prior DPP4 inhibitor exposure
-312100020,2,No prior GLP-1 receptor agonist exposure
-312100020,3,No prior SU exposure
-312100020,4,No prior other anti-diabetic exposure
-312100020,5,Higher cardiovascular risk
-312100020,6,Prior metformin use
-312100020,7,No prior insulin use or combo initiation
-312101000,0,No prior with-in class exposure
-312101000,1,No prior DPP4 inhibitor exposure
-312101000,2,No prior GLP-1 receptor agonist exposure
-312101000,3,No prior SU exposure
-312101000,4,No prior other anti-diabetic exposure
-312101000,5,Female stratum
-312101000,6,Prior metformin use
-312101000,7,No prior insulin use or combo initiation
-312102000,0,No prior with-in class exposure
-312102000,1,No prior DPP4 inhibitor exposure
-312102000,2,No prior GLP-1 receptor agonist exposure
-312102000,3,No prior SU exposure
-312102000,4,No prior other anti-diabetic exposure
-312102000,5,Male stratum
-312102000,6,Prior metformin use
-312102000,7,No prior insulin use or combo initiation
-312100100,0,No prior with-in class exposure
-312100100,1,No prior DPP4 inhibitor exposure
-312100100,2,No prior GLP-1 receptor agonist exposure
-312100100,3,No prior SU exposure
-312100100,4,No prior other anti-diabetic exposure
-312100100,5,Race stratum
-312100100,6,Prior metformin use
-312100100,7,No prior insulin use or combo initiation
-312100001,0,No prior with-in class exposure
-312100001,1,No prior DPP4 inhibitor exposure
-312100001,2,No prior GLP-1 receptor agonist exposure
-312100001,3,No prior SU exposure
-312100001,4,No prior other anti-diabetic exposure
-312100001,5,Without renal impairment
-312100001,6,Prior metformin use
-312100001,7,No prior insulin use or combo initiation
-312100002,0,No prior with-in class exposure
-312100002,1,No prior DPP4 inhibitor exposure
-312100002,2,No prior GLP-1 receptor agonist exposure
-312100002,3,No prior SU exposure
-312100002,4,No prior other anti-diabetic exposure
-312100002,5,Renal impairment
-312100002,6,Prior metformin use
-312100002,7,No prior insulin use or combo initiation
-311200000,0,No prior with-in class exposure
-311200000,1,No prior DPP4 inhibitor exposure
-311200000,2,No prior GLP-1 receptor agonist exposure
-311200000,3,No prior SU exposure
-311200000,4,No prior other anti-diabetic exposure
-311200000,5,No prior metformin use
-311200000,6,No prior insulin use or combo initiation
-311210000,0,No prior with-in class exposure
-311210000,1,No prior DPP4 inhibitor exposure
-311210000,2,No prior GLP-1 receptor agonist exposure
-311210000,3,No prior SU exposure
-311210000,4,No prior other anti-diabetic exposure
-311210000,5,Lower age group
-311210000,6,No prior metformin use
-311210000,7,No prior insulin use or combo initiation
-311220000,0,No prior with-in class exposure
-311220000,1,No prior DPP4 inhibitor exposure
-311220000,2,No prior GLP-1 receptor agonist exposure
-311220000,3,No prior SU exposure
-311220000,4,No prior other anti-diabetic exposure
-311220000,5,Middle age group
-311220000,6,No prior metformin use
-311220000,7,No prior insulin use or combo initiation
-311230000,0,No prior with-in class exposure
-311230000,1,No prior DPP4 inhibitor exposure
-311230000,2,No prior GLP-1 receptor agonist exposure
-311230000,3,No prior SU exposure
-311230000,4,No prior other anti-diabetic exposure
-311230000,5,Older age group
-311230000,6,No prior metformin use
-311230000,7,No prior insulin use or combo initiation
-311200010,0,No prior with-in class exposure
-311200010,1,No prior DPP4 inhibitor exposure
-311200010,2,No prior GLP-1 receptor agonist exposure
-311200010,3,No prior SU exposure
-311200010,4,No prior other anti-diabetic exposure
-311200010,5,Low cardiovascular risk
-311200010,6,No prior metformin use
-311200010,7,No prior insulin use or combo initiation
-311200020,0,No prior with-in class exposure
-311200020,1,No prior DPP4 inhibitor exposure
-311200020,2,No prior GLP-1 receptor agonist exposure
-311200020,3,No prior SU exposure
-311200020,4,No prior other anti-diabetic exposure
-311200020,5,Higher cardiovascular risk
-311200020,6,No prior metformin use
-311200020,7,No prior insulin use or combo initiation
-311201000,0,No prior with-in class exposure
-311201000,1,No prior DPP4 inhibitor exposure
-311201000,2,No prior GLP-1 receptor agonist exposure
-311201000,3,No prior SU exposure
-311201000,4,No prior other anti-diabetic exposure
-311201000,5,Female stratum
-311201000,6,No prior metformin use
-311201000,7,No prior insulin use or combo initiation
-311202000,0,No prior with-in class exposure
-311202000,1,No prior DPP4 inhibitor exposure
-311202000,2,No prior GLP-1 receptor agonist exposure
-311202000,3,No prior SU exposure
-311202000,4,No prior other anti-diabetic exposure
-311202000,5,Male stratum
-311202000,6,No prior metformin use
-311202000,7,No prior insulin use or combo initiation
-311200100,0,No prior with-in class exposure
-311200100,1,No prior DPP4 inhibitor exposure
-311200100,2,No prior GLP-1 receptor agonist exposure
-311200100,3,No prior SU exposure
-311200100,4,No prior other anti-diabetic exposure
-311200100,5,Race stratum
-311200100,6,No prior metformin use
-311200100,7,No prior insulin use or combo initiation
-311200001,0,No prior with-in class exposure
-311200001,1,No prior DPP4 inhibitor exposure
-311200001,2,No prior GLP-1 receptor agonist exposure
-311200001,3,No prior SU exposure
-311200001,4,No prior other anti-diabetic exposure
-311200001,5,Without renal impairment
-311200001,6,No prior metformin use
-311200001,7,No prior insulin use or combo initiation
-311200002,0,No prior with-in class exposure
-311200002,1,No prior DPP4 inhibitor exposure
-311200002,2,No prior GLP-1 receptor agonist exposure
-311200002,3,No prior SU exposure
-311200002,4,No prior other anti-diabetic exposure
-311200002,5,Renal impairment
-311200002,6,No prior metformin use
-311200002,7,No prior insulin use or combo initiation
-312200000,0,No prior with-in class exposure
-312200000,1,No prior DPP4 inhibitor exposure
-312200000,2,No prior GLP-1 receptor agonist exposure
-312200000,3,No prior SU exposure
-312200000,4,No prior other anti-diabetic exposure
-312200000,5,No prior metformin use
-312200000,6,No prior insulin use or combo initiation
-312210000,0,No prior with-in class exposure
-312210000,1,No prior DPP4 inhibitor exposure
-312210000,2,No prior GLP-1 receptor agonist exposure
-312210000,3,No prior SU exposure
-312210000,4,No prior other anti-diabetic exposure
-312210000,5,Lower age group
-312210000,6,No prior metformin use
-312210000,7,No prior insulin use or combo initiation
-312220000,0,No prior with-in class exposure
-312220000,1,No prior DPP4 inhibitor exposure
-312220000,2,No prior GLP-1 receptor agonist exposure
-312220000,3,No prior SU exposure
-312220000,4,No prior other anti-diabetic exposure
-312220000,5,Middle age group
-312220000,6,No prior metformin use
-312220000,7,No prior insulin use or combo initiation
-312230000,0,No prior with-in class exposure
-312230000,1,No prior DPP4 inhibitor exposure
-312230000,2,No prior GLP-1 receptor agonist exposure
-312230000,3,No prior SU exposure
-312230000,4,No prior other anti-diabetic exposure
-312230000,5,Older age group
-312230000,6,No prior metformin use
-312230000,7,No prior insulin use or combo initiation
-312200010,0,No prior with-in class exposure
-312200010,1,No prior DPP4 inhibitor exposure
-312200010,2,No prior GLP-1 receptor agonist exposure
-312200010,3,No prior SU exposure
-312200010,4,No prior other anti-diabetic exposure
-312200010,5,Low cardiovascular risk
-312200010,6,No prior metformin use
-312200010,7,No prior insulin use or combo initiation
-312200020,0,No prior with-in class exposure
-312200020,1,No prior DPP4 inhibitor exposure
-312200020,2,No prior GLP-1 receptor agonist exposure
-312200020,3,No prior SU exposure
-312200020,4,No prior other anti-diabetic exposure
-312200020,5,Higher cardiovascular risk
-312200020,6,No prior metformin use
-312200020,7,No prior insulin use or combo initiation
-312201000,0,No prior with-in class exposure
-312201000,1,No prior DPP4 inhibitor exposure
-312201000,2,No prior GLP-1 receptor agonist exposure
-312201000,3,No prior SU exposure
-312201000,4,No prior other anti-diabetic exposure
-312201000,5,Female stratum
-312201000,6,No prior metformin use
-312201000,7,No prior insulin use or combo initiation
-312202000,0,No prior with-in class exposure
-312202000,1,No prior DPP4 inhibitor exposure
-312202000,2,No prior GLP-1 receptor agonist exposure
-312202000,3,No prior SU exposure
-312202000,4,No prior other anti-diabetic exposure
-312202000,5,Male stratum
-312202000,6,No prior metformin use
-312202000,7,No prior insulin use or combo initiation
-312200100,0,No prior with-in class exposure
-312200100,1,No prior DPP4 inhibitor exposure
-312200100,2,No prior GLP-1 receptor agonist exposure
-312200100,3,No prior SU exposure
-312200100,4,No prior other anti-diabetic exposure
-312200100,5,Race stratum
-312200100,6,No prior metformin use
-312200100,7,No prior insulin use or combo initiation
-312200001,0,No prior with-in class exposure
-312200001,1,No prior DPP4 inhibitor exposure
-312200001,2,No prior GLP-1 receptor agonist exposure
-312200001,3,No prior SU exposure
-312200001,4,No prior other anti-diabetic exposure
-312200001,5,Without renal impairment
-312200001,6,No prior metformin use
-312200001,7,No prior insulin use or combo initiation
-312200002,0,No prior with-in class exposure
-312200002,1,No prior DPP4 inhibitor exposure
-312200002,2,No prior GLP-1 receptor agonist exposure
-312200002,3,No prior SU exposure
-312200002,4,No prior other anti-diabetic exposure
-312200002,5,Renal impairment
-312200002,6,No prior metformin use
-312200002,7,No prior insulin use or combo initiation
-321100000,0,No prior with-in class exposure
-321100000,1,No prior DPP4 inhibitor exposure
-321100000,2,No prior GLP-1 receptor agonist exposure
-321100000,3,No prior SU exposure
-321100000,4,No prior other anti-diabetic exposure
-321100000,5,Prior metformin use
-321100000,6,No prior insulin use or combo initiation
-321110000,0,No prior with-in class exposure
-321110000,1,No prior DPP4 inhibitor exposure
-321110000,2,No prior GLP-1 receptor agonist exposure
-321110000,3,No prior SU exposure
-321110000,4,No prior other anti-diabetic exposure
-321110000,5,Lower age group
-321110000,6,Prior metformin use
-321110000,7,No prior insulin use or combo initiation
-321120000,0,No prior with-in class exposure
-321120000,1,No prior DPP4 inhibitor exposure
-321120000,2,No prior GLP-1 receptor agonist exposure
-321120000,3,No prior SU exposure
-321120000,4,No prior other anti-diabetic exposure
-321120000,5,Middle age group
-321120000,6,Prior metformin use
-321120000,7,No prior insulin use or combo initiation
-321130000,0,No prior with-in class exposure
-321130000,1,No prior DPP4 inhibitor exposure
-321130000,2,No prior GLP-1 receptor agonist exposure
-321130000,3,No prior SU exposure
-321130000,4,No prior other anti-diabetic exposure
-321130000,5,Older age group
-321130000,6,Prior metformin use
-321130000,7,No prior insulin use or combo initiation
-321100010,0,No prior with-in class exposure
-321100010,1,No prior DPP4 inhibitor exposure
-321100010,2,No prior GLP-1 receptor agonist exposure
-321100010,3,No prior SU exposure
-321100010,4,No prior other anti-diabetic exposure
-321100010,5,Low cardiovascular risk
-321100010,6,Prior metformin use
-321100010,7,No prior insulin use or combo initiation
-321100020,0,No prior with-in class exposure
-321100020,1,No prior DPP4 inhibitor exposure
-321100020,2,No prior GLP-1 receptor agonist exposure
-321100020,3,No prior SU exposure
-321100020,4,No prior other anti-diabetic exposure
-321100020,5,Higher cardiovascular risk
-321100020,6,Prior metformin use
-321100020,7,No prior insulin use or combo initiation
-321101000,0,No prior with-in class exposure
-321101000,1,No prior DPP4 inhibitor exposure
-321101000,2,No prior GLP-1 receptor agonist exposure
-321101000,3,No prior SU exposure
-321101000,4,No prior other anti-diabetic exposure
-321101000,5,Female stratum
-321101000,6,Prior metformin use
-321101000,7,No prior insulin use or combo initiation
-321102000,0,No prior with-in class exposure
-321102000,1,No prior DPP4 inhibitor exposure
-321102000,2,No prior GLP-1 receptor agonist exposure
-321102000,3,No prior SU exposure
-321102000,4,No prior other anti-diabetic exposure
-321102000,5,Male stratum
-321102000,6,Prior metformin use
-321102000,7,No prior insulin use or combo initiation
-321100100,0,No prior with-in class exposure
-321100100,1,No prior DPP4 inhibitor exposure
-321100100,2,No prior GLP-1 receptor agonist exposure
-321100100,3,No prior SU exposure
-321100100,4,No prior other anti-diabetic exposure
-321100100,5,Race stratum
-321100100,6,Prior metformin use
-321100100,7,No prior insulin use or combo initiation
-321100001,0,No prior with-in class exposure
-321100001,1,No prior DPP4 inhibitor exposure
-321100001,2,No prior GLP-1 receptor agonist exposure
-321100001,3,No prior SU exposure
-321100001,4,No prior other anti-diabetic exposure
-321100001,5,Without renal impairment
-321100001,6,Prior metformin use
-321100001,7,No prior insulin use or combo initiation
-321100002,0,No prior with-in class exposure
-321100002,1,No prior DPP4 inhibitor exposure
-321100002,2,No prior GLP-1 receptor agonist exposure
-321100002,3,No prior SU exposure
-321100002,4,No prior other anti-diabetic exposure
-321100002,5,Renal impairment
-321100002,6,Prior metformin use
-321100002,7,No prior insulin use or combo initiation
-322100000,0,No prior with-in class exposure
-322100000,1,No prior DPP4 inhibitor exposure
-322100000,2,No prior GLP-1 receptor agonist exposure
-322100000,3,No prior SU exposure
-322100000,4,No prior other anti-diabetic exposure
-322100000,5,Prior metformin use
-322100000,6,No prior insulin use or combo initiation
-322110000,0,No prior with-in class exposure
-322110000,1,No prior DPP4 inhibitor exposure
-322110000,2,No prior GLP-1 receptor agonist exposure
-322110000,3,No prior SU exposure
-322110000,4,No prior other anti-diabetic exposure
-322110000,5,Lower age group
-322110000,6,Prior metformin use
-322110000,7,No prior insulin use or combo initiation
-322120000,0,No prior with-in class exposure
-322120000,1,No prior DPP4 inhibitor exposure
-322120000,2,No prior GLP-1 receptor agonist exposure
-322120000,3,No prior SU exposure
-322120000,4,No prior other anti-diabetic exposure
-322120000,5,Middle age group
-322120000,6,Prior metformin use
-322120000,7,No prior insulin use or combo initiation
-322130000,0,No prior with-in class exposure
-322130000,1,No prior DPP4 inhibitor exposure
-322130000,2,No prior GLP-1 receptor agonist exposure
-322130000,3,No prior SU exposure
-322130000,4,No prior other anti-diabetic exposure
-322130000,5,Older age group
-322130000,6,Prior metformin use
-322130000,7,No prior insulin use or combo initiation
-322100010,0,No prior with-in class exposure
-322100010,1,No prior DPP4 inhibitor exposure
-322100010,2,No prior GLP-1 receptor agonist exposure
-322100010,3,No prior SU exposure
-322100010,4,No prior other anti-diabetic exposure
-322100010,5,Low cardiovascular risk
-322100010,6,Prior metformin use
-322100010,7,No prior insulin use or combo initiation
-322100020,0,No prior with-in class exposure
-322100020,1,No prior DPP4 inhibitor exposure
-322100020,2,No prior GLP-1 receptor agonist exposure
-322100020,3,No prior SU exposure
-322100020,4,No prior other anti-diabetic exposure
-322100020,5,Higher cardiovascular risk
-322100020,6,Prior metformin use
-322100020,7,No prior insulin use or combo initiation
-322101000,0,No prior with-in class exposure
-322101000,1,No prior DPP4 inhibitor exposure
-322101000,2,No prior GLP-1 receptor agonist exposure
-322101000,3,No prior SU exposure
-322101000,4,No prior other anti-diabetic exposure
-322101000,5,Female stratum
-322101000,6,Prior metformin use
-322101000,7,No prior insulin use or combo initiation
-322102000,0,No prior with-in class exposure
-322102000,1,No prior DPP4 inhibitor exposure
-322102000,2,No prior GLP-1 receptor agonist exposure
-322102000,3,No prior SU exposure
-322102000,4,No prior other anti-diabetic exposure
-322102000,5,Male stratum
-322102000,6,Prior metformin use
-322102000,7,No prior insulin use or combo initiation
-322100100,0,No prior with-in class exposure
-322100100,1,No prior DPP4 inhibitor exposure
-322100100,2,No prior GLP-1 receptor agonist exposure
-322100100,3,No prior SU exposure
-322100100,4,No prior other anti-diabetic exposure
-322100100,5,Race stratum
-322100100,6,Prior metformin use
-322100100,7,No prior insulin use or combo initiation
-322100001,0,No prior with-in class exposure
-322100001,1,No prior DPP4 inhibitor exposure
-322100001,2,No prior GLP-1 receptor agonist exposure
-322100001,3,No prior SU exposure
-322100001,4,No prior other anti-diabetic exposure
-322100001,5,Without renal impairment
-322100001,6,Prior metformin use
-322100001,7,No prior insulin use or combo initiation
-322100002,0,No prior with-in class exposure
-322100002,1,No prior DPP4 inhibitor exposure
-322100002,2,No prior GLP-1 receptor agonist exposure
-322100002,3,No prior SU exposure
-322100002,4,No prior other anti-diabetic exposure
-322100002,5,Renal impairment
-322100002,6,Prior metformin use
-322100002,7,No prior insulin use or combo initiation
-321200000,0,No prior with-in class exposure
-321200000,1,No prior DPP4 inhibitor exposure
-321200000,2,No prior GLP-1 receptor agonist exposure
-321200000,3,No prior SU exposure
-321200000,4,No prior other anti-diabetic exposure
-321200000,5,No prior metformin use
-321200000,6,No prior insulin use or combo initiation
-321210000,0,No prior with-in class exposure
-321210000,1,No prior DPP4 inhibitor exposure
-321210000,2,No prior GLP-1 receptor agonist exposure
-321210000,3,No prior SU exposure
-321210000,4,No prior other anti-diabetic exposure
-321210000,5,Lower age group
-321210000,6,No prior metformin use
-321210000,7,No prior insulin use or combo initiation
-321220000,0,No prior with-in class exposure
-321220000,1,No prior DPP4 inhibitor exposure
-321220000,2,No prior GLP-1 receptor agonist exposure
-321220000,3,No prior SU exposure
-321220000,4,No prior other anti-diabetic exposure
-321220000,5,Middle age group
-321220000,6,No prior metformin use
-321220000,7,No prior insulin use or combo initiation
-321230000,0,No prior with-in class exposure
-321230000,1,No prior DPP4 inhibitor exposure
-321230000,2,No prior GLP-1 receptor agonist exposure
-321230000,3,No prior SU exposure
-321230000,4,No prior other anti-diabetic exposure
-321230000,5,Older age group
-321230000,6,No prior metformin use
-321230000,7,No prior insulin use or combo initiation
-321200010,0,No prior with-in class exposure
-321200010,1,No prior DPP4 inhibitor exposure
-321200010,2,No prior GLP-1 receptor agonist exposure
-321200010,3,No prior SU exposure
-321200010,4,No prior other anti-diabetic exposure
-321200010,5,Low cardiovascular risk
-321200010,6,No prior metformin use
-321200010,7,No prior insulin use or combo initiation
-321200020,0,No prior with-in class exposure
-321200020,1,No prior DPP4 inhibitor exposure
-321200020,2,No prior GLP-1 receptor agonist exposure
-321200020,3,No prior SU exposure
-321200020,4,No prior other anti-diabetic exposure
-321200020,5,Higher cardiovascular risk
-321200020,6,No prior metformin use
-321200020,7,No prior insulin use or combo initiation
-321201000,0,No prior with-in class exposure
-321201000,1,No prior DPP4 inhibitor exposure
-321201000,2,No prior GLP-1 receptor agonist exposure
-321201000,3,No prior SU exposure
-321201000,4,No prior other anti-diabetic exposure
-321201000,5,Female stratum
-321201000,6,No prior metformin use
-321201000,7,No prior insulin use or combo initiation
-321202000,0,No prior with-in class exposure
-321202000,1,No prior DPP4 inhibitor exposure
-321202000,2,No prior GLP-1 receptor agonist exposure
-321202000,3,No prior SU exposure
-321202000,4,No prior other anti-diabetic exposure
-321202000,5,Male stratum
-321202000,6,No prior metformin use
-321202000,7,No prior insulin use or combo initiation
-321200100,0,No prior with-in class exposure
-321200100,1,No prior DPP4 inhibitor exposure
-321200100,2,No prior GLP-1 receptor agonist exposure
-321200100,3,No prior SU exposure
-321200100,4,No prior other anti-diabetic exposure
-321200100,5,Race stratum
-321200100,6,No prior metformin use
-321200100,7,No prior insulin use or combo initiation
-321200001,0,No prior with-in class exposure
-321200001,1,No prior DPP4 inhibitor exposure
-321200001,2,No prior GLP-1 receptor agonist exposure
-321200001,3,No prior SU exposure
-321200001,4,No prior other anti-diabetic exposure
-321200001,5,Without renal impairment
-321200001,6,No prior metformin use
-321200001,7,No prior insulin use or combo initiation
-321200002,0,No prior with-in class exposure
-321200002,1,No prior DPP4 inhibitor exposure
-321200002,2,No prior GLP-1 receptor agonist exposure
-321200002,3,No prior SU exposure
-321200002,4,No prior other anti-diabetic exposure
-321200002,5,Renal impairment
-321200002,6,No prior metformin use
-321200002,7,No prior insulin use or combo initiation
-322200000,0,No prior with-in class exposure
-322200000,1,No prior DPP4 inhibitor exposure
-322200000,2,No prior GLP-1 receptor agonist exposure
-322200000,3,No prior SU exposure
-322200000,4,No prior other anti-diabetic exposure
-322200000,5,No prior metformin use
-322200000,6,No prior insulin use or combo initiation
-322210000,0,No prior with-in class exposure
-322210000,1,No prior DPP4 inhibitor exposure
-322210000,2,No prior GLP-1 receptor agonist exposure
-322210000,3,No prior SU exposure
-322210000,4,No prior other anti-diabetic exposure
-322210000,5,Lower age group
-322210000,6,No prior metformin use
-322210000,7,No prior insulin use or combo initiation
-322220000,0,No prior with-in class exposure
-322220000,1,No prior DPP4 inhibitor exposure
-322220000,2,No prior GLP-1 receptor agonist exposure
-322220000,3,No prior SU exposure
-322220000,4,No prior other anti-diabetic exposure
-322220000,5,Middle age group
-322220000,6,No prior metformin use
-322220000,7,No prior insulin use or combo initiation
-322230000,0,No prior with-in class exposure
-322230000,1,No prior DPP4 inhibitor exposure
-322230000,2,No prior GLP-1 receptor agonist exposure
-322230000,3,No prior SU exposure
-322230000,4,No prior other anti-diabetic exposure
-322230000,5,Older age group
-322230000,6,No prior metformin use
-322230000,7,No prior insulin use or combo initiation
-322200010,0,No prior with-in class exposure
-322200010,1,No prior DPP4 inhibitor exposure
-322200010,2,No prior GLP-1 receptor agonist exposure
-322200010,3,No prior SU exposure
-322200010,4,No prior other anti-diabetic exposure
-322200010,5,Low cardiovascular risk
-322200010,6,No prior metformin use
-322200010,7,No prior insulin use or combo initiation
-322200020,0,No prior with-in class exposure
-322200020,1,No prior DPP4 inhibitor exposure
-322200020,2,No prior GLP-1 receptor agonist exposure
-322200020,3,No prior SU exposure
-322200020,4,No prior other anti-diabetic exposure
-322200020,5,Higher cardiovascular risk
-322200020,6,No prior metformin use
-322200020,7,No prior insulin use or combo initiation
-322201000,0,No prior with-in class exposure
-322201000,1,No prior DPP4 inhibitor exposure
-322201000,2,No prior GLP-1 receptor agonist exposure
-322201000,3,No prior SU exposure
-322201000,4,No prior other anti-diabetic exposure
-322201000,5,Female stratum
-322201000,6,No prior metformin use
-322201000,7,No prior insulin use or combo initiation
-322202000,0,No prior with-in class exposure
-322202000,1,No prior DPP4 inhibitor exposure
-322202000,2,No prior GLP-1 receptor agonist exposure
-322202000,3,No prior SU exposure
-322202000,4,No prior other anti-diabetic exposure
-322202000,5,Male stratum
-322202000,6,No prior metformin use
-322202000,7,No prior insulin use or combo initiation
-322200100,0,No prior with-in class exposure
-322200100,1,No prior DPP4 inhibitor exposure
-322200100,2,No prior GLP-1 receptor agonist exposure
-322200100,3,No prior SU exposure
-322200100,4,No prior other anti-diabetic exposure
-322200100,5,Race stratum
-322200100,6,No prior metformin use
-322200100,7,No prior insulin use or combo initiation
-322200001,0,No prior with-in class exposure
-322200001,1,No prior DPP4 inhibitor exposure
-322200001,2,No prior GLP-1 receptor agonist exposure
-322200001,3,No prior SU exposure
-322200001,4,No prior other anti-diabetic exposure
-322200001,5,Without renal impairment
-322200001,6,No prior metformin use
-322200001,7,No prior insulin use or combo initiation
-322200002,0,No prior with-in class exposure
-322200002,1,No prior DPP4 inhibitor exposure
-322200002,2,No prior GLP-1 receptor agonist exposure
-322200002,3,No prior SU exposure
-322200002,4,No prior other anti-diabetic exposure
-322200002,5,Renal impairment
-322200002,6,No prior metformin use
-322200002,7,No prior insulin use or combo initiation
-331100000,0,No prior with-in class exposure
-331100000,1,No prior DPP4 inhibitor exposure
-331100000,2,No prior GLP-1 receptor agonist exposure
-331100000,3,No prior SU exposure
-331100000,4,No prior other anti-diabetic exposure
-331100000,5,Prior metformin use
-331100000,6,No prior insulin use or combo initiation
-331110000,0,No prior with-in class exposure
-331110000,1,No prior DPP4 inhibitor exposure
-331110000,2,No prior GLP-1 receptor agonist exposure
-331110000,3,No prior SU exposure
-331110000,4,No prior other anti-diabetic exposure
-331110000,5,Lower age group
-331110000,6,Prior metformin use
-331110000,7,No prior insulin use or combo initiation
-331120000,0,No prior with-in class exposure
-331120000,1,No prior DPP4 inhibitor exposure
-331120000,2,No prior GLP-1 receptor agonist exposure
-331120000,3,No prior SU exposure
-331120000,4,No prior other anti-diabetic exposure
-331120000,5,Middle age group
-331120000,6,Prior metformin use
-331120000,7,No prior insulin use or combo initiation
-331130000,0,No prior with-in class exposure
-331130000,1,No prior DPP4 inhibitor exposure
-331130000,2,No prior GLP-1 receptor agonist exposure
-331130000,3,No prior SU exposure
-331130000,4,No prior other anti-diabetic exposure
-331130000,5,Older age group
-331130000,6,Prior metformin use
-331130000,7,No prior insulin use or combo initiation
-331100010,0,No prior with-in class exposure
-331100010,1,No prior DPP4 inhibitor exposure
-331100010,2,No prior GLP-1 receptor agonist exposure
-331100010,3,No prior SU exposure
-331100010,4,No prior other anti-diabetic exposure
-331100010,5,Low cardiovascular risk
-331100010,6,Prior metformin use
-331100010,7,No prior insulin use or combo initiation
-331100020,0,No prior with-in class exposure
-331100020,1,No prior DPP4 inhibitor exposure
-331100020,2,No prior GLP-1 receptor agonist exposure
-331100020,3,No prior SU exposure
-331100020,4,No prior other anti-diabetic exposure
-331100020,5,Higher cardiovascular risk
-331100020,6,Prior metformin use
-331100020,7,No prior insulin use or combo initiation
-331101000,0,No prior with-in class exposure
-331101000,1,No prior DPP4 inhibitor exposure
-331101000,2,No prior GLP-1 receptor agonist exposure
-331101000,3,No prior SU exposure
-331101000,4,No prior other anti-diabetic exposure
-331101000,5,Female stratum
-331101000,6,Prior metformin use
-331101000,7,No prior insulin use or combo initiation
-331102000,0,No prior with-in class exposure
-331102000,1,No prior DPP4 inhibitor exposure
-331102000,2,No prior GLP-1 receptor agonist exposure
-331102000,3,No prior SU exposure
-331102000,4,No prior other anti-diabetic exposure
-331102000,5,Male stratum
-331102000,6,Prior metformin use
-331102000,7,No prior insulin use or combo initiation
-331100100,0,No prior with-in class exposure
-331100100,1,No prior DPP4 inhibitor exposure
-331100100,2,No prior GLP-1 receptor agonist exposure
-331100100,3,No prior SU exposure
-331100100,4,No prior other anti-diabetic exposure
-331100100,5,Race stratum
-331100100,6,Prior metformin use
-331100100,7,No prior insulin use or combo initiation
-331100001,0,No prior with-in class exposure
-331100001,1,No prior DPP4 inhibitor exposure
-331100001,2,No prior GLP-1 receptor agonist exposure
-331100001,3,No prior SU exposure
-331100001,4,No prior other anti-diabetic exposure
-331100001,5,Without renal impairment
-331100001,6,Prior metformin use
-331100001,7,No prior insulin use or combo initiation
-331100002,0,No prior with-in class exposure
-331100002,1,No prior DPP4 inhibitor exposure
-331100002,2,No prior GLP-1 receptor agonist exposure
-331100002,3,No prior SU exposure
-331100002,4,No prior other anti-diabetic exposure
-331100002,5,Renal impairment
-331100002,6,Prior metformin use
-331100002,7,No prior insulin use or combo initiation
-332100000,0,No prior with-in class exposure
-332100000,1,No prior DPP4 inhibitor exposure
-332100000,2,No prior GLP-1 receptor agonist exposure
-332100000,3,No prior SU exposure
-332100000,4,No prior other anti-diabetic exposure
-332100000,5,Prior metformin use
-332100000,6,No prior insulin use or combo initiation
-332110000,0,No prior with-in class exposure
-332110000,1,No prior DPP4 inhibitor exposure
-332110000,2,No prior GLP-1 receptor agonist exposure
-332110000,3,No prior SU exposure
-332110000,4,No prior other anti-diabetic exposure
-332110000,5,Lower age group
-332110000,6,Prior metformin use
-332110000,7,No prior insulin use or combo initiation
-332120000,0,No prior with-in class exposure
-332120000,1,No prior DPP4 inhibitor exposure
-332120000,2,No prior GLP-1 receptor agonist exposure
-332120000,3,No prior SU exposure
-332120000,4,No prior other anti-diabetic exposure
-332120000,5,Middle age group
-332120000,6,Prior metformin use
-332120000,7,No prior insulin use or combo initiation
-332130000,0,No prior with-in class exposure
-332130000,1,No prior DPP4 inhibitor exposure
-332130000,2,No prior GLP-1 receptor agonist exposure
-332130000,3,No prior SU exposure
-332130000,4,No prior other anti-diabetic exposure
-332130000,5,Older age group
-332130000,6,Prior metformin use
-332130000,7,No prior insulin use or combo initiation
-332100010,0,No prior with-in class exposure
-332100010,1,No prior DPP4 inhibitor exposure
-332100010,2,No prior GLP-1 receptor agonist exposure
-332100010,3,No prior SU exposure
-332100010,4,No prior other anti-diabetic exposure
-332100010,5,Low cardiovascular risk
-332100010,6,Prior metformin use
-332100010,7,No prior insulin use or combo initiation
-332100020,0,No prior with-in class exposure
-332100020,1,No prior DPP4 inhibitor exposure
-332100020,2,No prior GLP-1 receptor agonist exposure
-332100020,3,No prior SU exposure
-332100020,4,No prior other anti-diabetic exposure
-332100020,5,Higher cardiovascular risk
-332100020,6,Prior metformin use
-332100020,7,No prior insulin use or combo initiation
-332101000,0,No prior with-in class exposure
-332101000,1,No prior DPP4 inhibitor exposure
-332101000,2,No prior GLP-1 receptor agonist exposure
-332101000,3,No prior SU exposure
-332101000,4,No prior other anti-diabetic exposure
-332101000,5,Female stratum
-332101000,6,Prior metformin use
-332101000,7,No prior insulin use or combo initiation
-332102000,0,No prior with-in class exposure
-332102000,1,No prior DPP4 inhibitor exposure
-332102000,2,No prior GLP-1 receptor agonist exposure
-332102000,3,No prior SU exposure
-332102000,4,No prior other anti-diabetic exposure
-332102000,5,Male stratum
-332102000,6,Prior metformin use
-332102000,7,No prior insulin use or combo initiation
-332100100,0,No prior with-in class exposure
-332100100,1,No prior DPP4 inhibitor exposure
-332100100,2,No prior GLP-1 receptor agonist exposure
-332100100,3,No prior SU exposure
-332100100,4,No prior other anti-diabetic exposure
-332100100,5,Race stratum
-332100100,6,Prior metformin use
-332100100,7,No prior insulin use or combo initiation
-332100001,0,No prior with-in class exposure
-332100001,1,No prior DPP4 inhibitor exposure
-332100001,2,No prior GLP-1 receptor agonist exposure
-332100001,3,No prior SU exposure
-332100001,4,No prior other anti-diabetic exposure
-332100001,5,Without renal impairment
-332100001,6,Prior metformin use
-332100001,7,No prior insulin use or combo initiation
-332100002,0,No prior with-in class exposure
-332100002,1,No prior DPP4 inhibitor exposure
-332100002,2,No prior GLP-1 receptor agonist exposure
-332100002,3,No prior SU exposure
-332100002,4,No prior other anti-diabetic exposure
-332100002,5,Renal impairment
-332100002,6,Prior metformin use
-332100002,7,No prior insulin use or combo initiation
-331200000,0,No prior with-in class exposure
-331200000,1,No prior DPP4 inhibitor exposure
-331200000,2,No prior GLP-1 receptor agonist exposure
-331200000,3,No prior SU exposure
-331200000,4,No prior other anti-diabetic exposure
-331200000,5,No prior metformin use
-331200000,6,No prior insulin use or combo initiation
-331210000,0,No prior with-in class exposure
-331210000,1,No prior DPP4 inhibitor exposure
-331210000,2,No prior GLP-1 receptor agonist exposure
-331210000,3,No prior SU exposure
-331210000,4,No prior other anti-diabetic exposure
-331210000,5,Lower age group
-331210000,6,No prior metformin use
-331210000,7,No prior insulin use or combo initiation
-331220000,0,No prior with-in class exposure
-331220000,1,No prior DPP4 inhibitor exposure
-331220000,2,No prior GLP-1 receptor agonist exposure
-331220000,3,No prior SU exposure
-331220000,4,No prior other anti-diabetic exposure
-331220000,5,Middle age group
-331220000,6,No prior metformin use
-331220000,7,No prior insulin use or combo initiation
-331230000,0,No prior with-in class exposure
-331230000,1,No prior DPP4 inhibitor exposure
-331230000,2,No prior GLP-1 receptor agonist exposure
-331230000,3,No prior SU exposure
-331230000,4,No prior other anti-diabetic exposure
-331230000,5,Older age group
-331230000,6,No prior metformin use
-331230000,7,No prior insulin use or combo initiation
-331200010,0,No prior with-in class exposure
-331200010,1,No prior DPP4 inhibitor exposure
-331200010,2,No prior GLP-1 receptor agonist exposure
-331200010,3,No prior SU exposure
-331200010,4,No prior other anti-diabetic exposure
-331200010,5,Low cardiovascular risk
-331200010,6,No prior metformin use
-331200010,7,No prior insulin use or combo initiation
-331200020,0,No prior with-in class exposure
-331200020,1,No prior DPP4 inhibitor exposure
-331200020,2,No prior GLP-1 receptor agonist exposure
-331200020,3,No prior SU exposure
-331200020,4,No prior other anti-diabetic exposure
-331200020,5,Higher cardiovascular risk
-331200020,6,No prior metformin use
-331200020,7,No prior insulin use or combo initiation
-331201000,0,No prior with-in class exposure
-331201000,1,No prior DPP4 inhibitor exposure
-331201000,2,No prior GLP-1 receptor agonist exposure
-331201000,3,No prior SU exposure
-331201000,4,No prior other anti-diabetic exposure
-331201000,5,Female stratum
-331201000,6,No prior metformin use
-331201000,7,No prior insulin use or combo initiation
-331202000,0,No prior with-in class exposure
-331202000,1,No prior DPP4 inhibitor exposure
-331202000,2,No prior GLP-1 receptor agonist exposure
-331202000,3,No prior SU exposure
-331202000,4,No prior other anti-diabetic exposure
-331202000,5,Male stratum
-331202000,6,No prior metformin use
-331202000,7,No prior insulin use or combo initiation
-331200100,0,No prior with-in class exposure
-331200100,1,No prior DPP4 inhibitor exposure
-331200100,2,No prior GLP-1 receptor agonist exposure
-331200100,3,No prior SU exposure
-331200100,4,No prior other anti-diabetic exposure
-331200100,5,Race stratum
-331200100,6,No prior metformin use
-331200100,7,No prior insulin use or combo initiation
-331200001,0,No prior with-in class exposure
-331200001,1,No prior DPP4 inhibitor exposure
-331200001,2,No prior GLP-1 receptor agonist exposure
-331200001,3,No prior SU exposure
-331200001,4,No prior other anti-diabetic exposure
-331200001,5,Without renal impairment
-331200001,6,No prior metformin use
-331200001,7,No prior insulin use or combo initiation
-331200002,0,No prior with-in class exposure
-331200002,1,No prior DPP4 inhibitor exposure
-331200002,2,No prior GLP-1 receptor agonist exposure
-331200002,3,No prior SU exposure
-331200002,4,No prior other anti-diabetic exposure
-331200002,5,Renal impairment
-331200002,6,No prior metformin use
-331200002,7,No prior insulin use or combo initiation
-332200000,0,No prior with-in class exposure
-332200000,1,No prior DPP4 inhibitor exposure
-332200000,2,No prior GLP-1 receptor agonist exposure
-332200000,3,No prior SU exposure
-332200000,4,No prior other anti-diabetic exposure
-332200000,5,No prior metformin use
-332200000,6,No prior insulin use or combo initiation
-332210000,0,No prior with-in class exposure
-332210000,1,No prior DPP4 inhibitor exposure
-332210000,2,No prior GLP-1 receptor agonist exposure
-332210000,3,No prior SU exposure
-332210000,4,No prior other anti-diabetic exposure
-332210000,5,Lower age group
-332210000,6,No prior metformin use
-332210000,7,No prior insulin use or combo initiation
-332220000,0,No prior with-in class exposure
-332220000,1,No prior DPP4 inhibitor exposure
-332220000,2,No prior GLP-1 receptor agonist exposure
-332220000,3,No prior SU exposure
-332220000,4,No prior other anti-diabetic exposure
-332220000,5,Middle age group
-332220000,6,No prior metformin use
-332220000,7,No prior insulin use or combo initiation
-332230000,0,No prior with-in class exposure
-332230000,1,No prior DPP4 inhibitor exposure
-332230000,2,No prior GLP-1 receptor agonist exposure
-332230000,3,No prior SU exposure
-332230000,4,No prior other anti-diabetic exposure
-332230000,5,Older age group
-332230000,6,No prior metformin use
-332230000,7,No prior insulin use or combo initiation
-332200010,0,No prior with-in class exposure
-332200010,1,No prior DPP4 inhibitor exposure
-332200010,2,No prior GLP-1 receptor agonist exposure
-332200010,3,No prior SU exposure
-332200010,4,No prior other anti-diabetic exposure
-332200010,5,Low cardiovascular risk
-332200010,6,No prior metformin use
-332200010,7,No prior insulin use or combo initiation
-332200020,0,No prior with-in class exposure
-332200020,1,No prior DPP4 inhibitor exposure
-332200020,2,No prior GLP-1 receptor agonist exposure
-332200020,3,No prior SU exposure
-332200020,4,No prior other anti-diabetic exposure
-332200020,5,Higher cardiovascular risk
-332200020,6,No prior metformin use
-332200020,7,No prior insulin use or combo initiation
-332201000,0,No prior with-in class exposure
-332201000,1,No prior DPP4 inhibitor exposure
-332201000,2,No prior GLP-1 receptor agonist exposure
-332201000,3,No prior SU exposure
-332201000,4,No prior other anti-diabetic exposure
-332201000,5,Female stratum
-332201000,6,No prior metformin use
-332201000,7,No prior insulin use or combo initiation
-332202000,0,No prior with-in class exposure
-332202000,1,No prior DPP4 inhibitor exposure
-332202000,2,No prior GLP-1 receptor agonist exposure
-332202000,3,No prior SU exposure
-332202000,4,No prior other anti-diabetic exposure
-332202000,5,Male stratum
-332202000,6,No prior metformin use
-332202000,7,No prior insulin use or combo initiation
-332200100,0,No prior with-in class exposure
-332200100,1,No prior DPP4 inhibitor exposure
-332200100,2,No prior GLP-1 receptor agonist exposure
-332200100,3,No prior SU exposure
-332200100,4,No prior other anti-diabetic exposure
-332200100,5,Race stratum
-332200100,6,No prior metformin use
-332200100,7,No prior insulin use or combo initiation
-332200001,0,No prior with-in class exposure
-332200001,1,No prior DPP4 inhibitor exposure
-332200001,2,No prior GLP-1 receptor agonist exposure
-332200001,3,No prior SU exposure
-332200001,4,No prior other anti-diabetic exposure
-332200001,5,Without renal impairment
-332200001,6,No prior metformin use
-332200001,7,No prior insulin use or combo initiation
-332200002,0,No prior with-in class exposure
-332200002,1,No prior DPP4 inhibitor exposure
-332200002,2,No prior GLP-1 receptor agonist exposure
-332200002,3,No prior SU exposure
-332200002,4,No prior other anti-diabetic exposure
-332200002,5,Renal impairment
-332200002,6,No prior metformin use
-332200002,7,No prior insulin use or combo initiation
-341100000,0,No prior with-in class exposure
-341100000,1,No prior DPP4 inhibitor exposure
-341100000,2,No prior GLP-1 receptor agonist exposure
-341100000,3,No prior SU exposure
-341100000,4,No prior other anti-diabetic exposure
-341100000,5,Prior metformin use
-341100000,6,No prior insulin use or combo initiation
-341110000,0,No prior with-in class exposure
-341110000,1,No prior DPP4 inhibitor exposure
-341110000,2,No prior GLP-1 receptor agonist exposure
-341110000,3,No prior SU exposure
-341110000,4,No prior other anti-diabetic exposure
-341110000,5,Lower age group
-341110000,6,Prior metformin use
-341110000,7,No prior insulin use or combo initiation
-341120000,0,No prior with-in class exposure
-341120000,1,No prior DPP4 inhibitor exposure
-341120000,2,No prior GLP-1 receptor agonist exposure
-341120000,3,No prior SU exposure
-341120000,4,No prior other anti-diabetic exposure
-341120000,5,Middle age group
-341120000,6,Prior metformin use
-341120000,7,No prior insulin use or combo initiation
-341130000,0,No prior with-in class exposure
-341130000,1,No prior DPP4 inhibitor exposure
-341130000,2,No prior GLP-1 receptor agonist exposure
-341130000,3,No prior SU exposure
-341130000,4,No prior other anti-diabetic exposure
-341130000,5,Older age group
-341130000,6,Prior metformin use
-341130000,7,No prior insulin use or combo initiation
-341100010,0,No prior with-in class exposure
-341100010,1,No prior DPP4 inhibitor exposure
-341100010,2,No prior GLP-1 receptor agonist exposure
-341100010,3,No prior SU exposure
-341100010,4,No prior other anti-diabetic exposure
-341100010,5,Low cardiovascular risk
-341100010,6,Prior metformin use
-341100010,7,No prior insulin use or combo initiation
-341100020,0,No prior with-in class exposure
-341100020,1,No prior DPP4 inhibitor exposure
-341100020,2,No prior GLP-1 receptor agonist exposure
-341100020,3,No prior SU exposure
-341100020,4,No prior other anti-diabetic exposure
-341100020,5,Higher cardiovascular risk
-341100020,6,Prior metformin use
-341100020,7,No prior insulin use or combo initiation
-341101000,0,No prior with-in class exposure
-341101000,1,No prior DPP4 inhibitor exposure
-341101000,2,No prior GLP-1 receptor agonist exposure
-341101000,3,No prior SU exposure
-341101000,4,No prior other anti-diabetic exposure
-341101000,5,Female stratum
-341101000,6,Prior metformin use
-341101000,7,No prior insulin use or combo initiation
-341102000,0,No prior with-in class exposure
-341102000,1,No prior DPP4 inhibitor exposure
-341102000,2,No prior GLP-1 receptor agonist exposure
-341102000,3,No prior SU exposure
-341102000,4,No prior other anti-diabetic exposure
-341102000,5,Male stratum
-341102000,6,Prior metformin use
-341102000,7,No prior insulin use or combo initiation
-341100100,0,No prior with-in class exposure
-341100100,1,No prior DPP4 inhibitor exposure
-341100100,2,No prior GLP-1 receptor agonist exposure
-341100100,3,No prior SU exposure
-341100100,4,No prior other anti-diabetic exposure
-341100100,5,Race stratum
-341100100,6,Prior metformin use
-341100100,7,No prior insulin use or combo initiation
-341100001,0,No prior with-in class exposure
-341100001,1,No prior DPP4 inhibitor exposure
-341100001,2,No prior GLP-1 receptor agonist exposure
-341100001,3,No prior SU exposure
-341100001,4,No prior other anti-diabetic exposure
-341100001,5,Without renal impairment
-341100001,6,Prior metformin use
-341100001,7,No prior insulin use or combo initiation
-341100002,0,No prior with-in class exposure
-341100002,1,No prior DPP4 inhibitor exposure
-341100002,2,No prior GLP-1 receptor agonist exposure
-341100002,3,No prior SU exposure
-341100002,4,No prior other anti-diabetic exposure
-341100002,5,Renal impairment
-341100002,6,Prior metformin use
-341100002,7,No prior insulin use or combo initiation
-342100000,0,No prior with-in class exposure
-342100000,1,No prior DPP4 inhibitor exposure
-342100000,2,No prior GLP-1 receptor agonist exposure
-342100000,3,No prior SU exposure
-342100000,4,No prior other anti-diabetic exposure
-342100000,5,Prior metformin use
-342100000,6,No prior insulin use or combo initiation
-342110000,0,No prior with-in class exposure
-342110000,1,No prior DPP4 inhibitor exposure
-342110000,2,No prior GLP-1 receptor agonist exposure
-342110000,3,No prior SU exposure
-342110000,4,No prior other anti-diabetic exposure
-342110000,5,Lower age group
-342110000,6,Prior metformin use
-342110000,7,No prior insulin use or combo initiation
-342120000,0,No prior with-in class exposure
-342120000,1,No prior DPP4 inhibitor exposure
-342120000,2,No prior GLP-1 receptor agonist exposure
-342120000,3,No prior SU exposure
-342120000,4,No prior other anti-diabetic exposure
-342120000,5,Middle age group
-342120000,6,Prior metformin use
-342120000,7,No prior insulin use or combo initiation
-342130000,0,No prior with-in class exposure
-342130000,1,No prior DPP4 inhibitor exposure
-342130000,2,No prior GLP-1 receptor agonist exposure
-342130000,3,No prior SU exposure
-342130000,4,No prior other anti-diabetic exposure
-342130000,5,Older age group
-342130000,6,Prior metformin use
-342130000,7,No prior insulin use or combo initiation
-342100010,0,No prior with-in class exposure
-342100010,1,No prior DPP4 inhibitor exposure
-342100010,2,No prior GLP-1 receptor agonist exposure
-342100010,3,No prior SU exposure
-342100010,4,No prior other anti-diabetic exposure
-342100010,5,Low cardiovascular risk
-342100010,6,Prior metformin use
-342100010,7,No prior insulin use or combo initiation
-342100020,0,No prior with-in class exposure
-342100020,1,No prior DPP4 inhibitor exposure
-342100020,2,No prior GLP-1 receptor agonist exposure
-342100020,3,No prior SU exposure
-342100020,4,No prior other anti-diabetic exposure
-342100020,5,Higher cardiovascular risk
-342100020,6,Prior metformin use
-342100020,7,No prior insulin use or combo initiation
-342101000,0,No prior with-in class exposure
-342101000,1,No prior DPP4 inhibitor exposure
-342101000,2,No prior GLP-1 receptor agonist exposure
-342101000,3,No prior SU exposure
-342101000,4,No prior other anti-diabetic exposure
-342101000,5,Female stratum
-342101000,6,Prior metformin use
-342101000,7,No prior insulin use or combo initiation
-342102000,0,No prior with-in class exposure
-342102000,1,No prior DPP4 inhibitor exposure
-342102000,2,No prior GLP-1 receptor agonist exposure
-342102000,3,No prior SU exposure
-342102000,4,No prior other anti-diabetic exposure
-342102000,5,Male stratum
-342102000,6,Prior metformin use
-342102000,7,No prior insulin use or combo initiation
-342100100,0,No prior with-in class exposure
-342100100,1,No prior DPP4 inhibitor exposure
-342100100,2,No prior GLP-1 receptor agonist exposure
-342100100,3,No prior SU exposure
-342100100,4,No prior other anti-diabetic exposure
-342100100,5,Race stratum
-342100100,6,Prior metformin use
-342100100,7,No prior insulin use or combo initiation
-342100001,0,No prior with-in class exposure
-342100001,1,No prior DPP4 inhibitor exposure
-342100001,2,No prior GLP-1 receptor agonist exposure
-342100001,3,No prior SU exposure
-342100001,4,No prior other anti-diabetic exposure
-342100001,5,Without renal impairment
-342100001,6,Prior metformin use
-342100001,7,No prior insulin use or combo initiation
-342100002,0,No prior with-in class exposure
-342100002,1,No prior DPP4 inhibitor exposure
-342100002,2,No prior GLP-1 receptor agonist exposure
-342100002,3,No prior SU exposure
-342100002,4,No prior other anti-diabetic exposure
-342100002,5,Renal impairment
-342100002,6,Prior metformin use
-342100002,7,No prior insulin use or combo initiation
-341200000,0,No prior with-in class exposure
-341200000,1,No prior DPP4 inhibitor exposure
-341200000,2,No prior GLP-1 receptor agonist exposure
-341200000,3,No prior SU exposure
-341200000,4,No prior other anti-diabetic exposure
-341200000,5,No prior metformin use
-341200000,6,No prior insulin use or combo initiation
-341210000,0,No prior with-in class exposure
-341210000,1,No prior DPP4 inhibitor exposure
-341210000,2,No prior GLP-1 receptor agonist exposure
-341210000,3,No prior SU exposure
-341210000,4,No prior other anti-diabetic exposure
-341210000,5,Lower age group
-341210000,6,No prior metformin use
-341210000,7,No prior insulin use or combo initiation
-341220000,0,No prior with-in class exposure
-341220000,1,No prior DPP4 inhibitor exposure
-341220000,2,No prior GLP-1 receptor agonist exposure
-341220000,3,No prior SU exposure
-341220000,4,No prior other anti-diabetic exposure
-341220000,5,Middle age group
-341220000,6,No prior metformin use
-341220000,7,No prior insulin use or combo initiation
-341230000,0,No prior with-in class exposure
-341230000,1,No prior DPP4 inhibitor exposure
-341230000,2,No prior GLP-1 receptor agonist exposure
-341230000,3,No prior SU exposure
-341230000,4,No prior other anti-diabetic exposure
-341230000,5,Older age group
-341230000,6,No prior metformin use
-341230000,7,No prior insulin use or combo initiation
-341200010,0,No prior with-in class exposure
-341200010,1,No prior DPP4 inhibitor exposure
-341200010,2,No prior GLP-1 receptor agonist exposure
-341200010,3,No prior SU exposure
-341200010,4,No prior other anti-diabetic exposure
-341200010,5,Low cardiovascular risk
-341200010,6,No prior metformin use
-341200010,7,No prior insulin use or combo initiation
-341200020,0,No prior with-in class exposure
-341200020,1,No prior DPP4 inhibitor exposure
-341200020,2,No prior GLP-1 receptor agonist exposure
-341200020,3,No prior SU exposure
-341200020,4,No prior other anti-diabetic exposure
-341200020,5,Higher cardiovascular risk
-341200020,6,No prior metformin use
-341200020,7,No prior insulin use or combo initiation
-341201000,0,No prior with-in class exposure
-341201000,1,No prior DPP4 inhibitor exposure
-341201000,2,No prior GLP-1 receptor agonist exposure
-341201000,3,No prior SU exposure
-341201000,4,No prior other anti-diabetic exposure
-341201000,5,Female stratum
-341201000,6,No prior metformin use
-341201000,7,No prior insulin use or combo initiation
-341202000,0,No prior with-in class exposure
-341202000,1,No prior DPP4 inhibitor exposure
-341202000,2,No prior GLP-1 receptor agonist exposure
-341202000,3,No prior SU exposure
-341202000,4,No prior other anti-diabetic exposure
-341202000,5,Male stratum
-341202000,6,No prior metformin use
-341202000,7,No prior insulin use or combo initiation
-341200100,0,No prior with-in class exposure
-341200100,1,No prior DPP4 inhibitor exposure
-341200100,2,No prior GLP-1 receptor agonist exposure
-341200100,3,No prior SU exposure
-341200100,4,No prior other anti-diabetic exposure
-341200100,5,Race stratum
-341200100,6,No prior metformin use
-341200100,7,No prior insulin use or combo initiation
-341200001,0,No prior with-in class exposure
-341200001,1,No prior DPP4 inhibitor exposure
-341200001,2,No prior GLP-1 receptor agonist exposure
-341200001,3,No prior SU exposure
-341200001,4,No prior other anti-diabetic exposure
-341200001,5,Without renal impairment
-341200001,6,No prior metformin use
-341200001,7,No prior insulin use or combo initiation
-341200002,0,No prior with-in class exposure
-341200002,1,No prior DPP4 inhibitor exposure
-341200002,2,No prior GLP-1 receptor agonist exposure
-341200002,3,No prior SU exposure
-341200002,4,No prior other anti-diabetic exposure
-341200002,5,Renal impairment
-341200002,6,No prior metformin use
-341200002,7,No prior insulin use or combo initiation
-342200000,0,No prior with-in class exposure
-342200000,1,No prior DPP4 inhibitor exposure
-342200000,2,No prior GLP-1 receptor agonist exposure
-342200000,3,No prior SU exposure
-342200000,4,No prior other anti-diabetic exposure
-342200000,5,No prior metformin use
-342200000,6,No prior insulin use or combo initiation
-342210000,0,No prior with-in class exposure
-342210000,1,No prior DPP4 inhibitor exposure
-342210000,2,No prior GLP-1 receptor agonist exposure
-342210000,3,No prior SU exposure
-342210000,4,No prior other anti-diabetic exposure
-342210000,5,Lower age group
-342210000,6,No prior metformin use
-342210000,7,No prior insulin use or combo initiation
-342220000,0,No prior with-in class exposure
-342220000,1,No prior DPP4 inhibitor exposure
-342220000,2,No prior GLP-1 receptor agonist exposure
-342220000,3,No prior SU exposure
-342220000,4,No prior other anti-diabetic exposure
-342220000,5,Middle age group
-342220000,6,No prior metformin use
-342220000,7,No prior insulin use or combo initiation
-342230000,0,No prior with-in class exposure
-342230000,1,No prior DPP4 inhibitor exposure
-342230000,2,No prior GLP-1 receptor agonist exposure
-342230000,3,No prior SU exposure
-342230000,4,No prior other anti-diabetic exposure
-342230000,5,Older age group
-342230000,6,No prior metformin use
-342230000,7,No prior insulin use or combo initiation
-342200010,0,No prior with-in class exposure
-342200010,1,No prior DPP4 inhibitor exposure
-342200010,2,No prior GLP-1 receptor agonist exposure
-342200010,3,No prior SU exposure
-342200010,4,No prior other anti-diabetic exposure
-342200010,5,Low cardiovascular risk
-342200010,6,No prior metformin use
-342200010,7,No prior insulin use or combo initiation
-342200020,0,No prior with-in class exposure
-342200020,1,No prior DPP4 inhibitor exposure
-342200020,2,No prior GLP-1 receptor agonist exposure
-342200020,3,No prior SU exposure
-342200020,4,No prior other anti-diabetic exposure
-342200020,5,Higher cardiovascular risk
-342200020,6,No prior metformin use
-342200020,7,No prior insulin use or combo initiation
-342201000,0,No prior with-in class exposure
-342201000,1,No prior DPP4 inhibitor exposure
-342201000,2,No prior GLP-1 receptor agonist exposure
-342201000,3,No prior SU exposure
-342201000,4,No prior other anti-diabetic exposure
-342201000,5,Female stratum
-342201000,6,No prior metformin use
-342201000,7,No prior insulin use or combo initiation
-342202000,0,No prior with-in class exposure
-342202000,1,No prior DPP4 inhibitor exposure
-342202000,2,No prior GLP-1 receptor agonist exposure
-342202000,3,No prior SU exposure
-342202000,4,No prior other anti-diabetic exposure
-342202000,5,Male stratum
-342202000,6,No prior metformin use
-342202000,7,No prior insulin use or combo initiation
-342200100,0,No prior with-in class exposure
-342200100,1,No prior DPP4 inhibitor exposure
-342200100,2,No prior GLP-1 receptor agonist exposure
-342200100,3,No prior SU exposure
-342200100,4,No prior other anti-diabetic exposure
-342200100,5,Race stratum
-342200100,6,No prior metformin use
-342200100,7,No prior insulin use or combo initiation
-342200001,0,No prior with-in class exposure
-342200001,1,No prior DPP4 inhibitor exposure
-342200001,2,No prior GLP-1 receptor agonist exposure
-342200001,3,No prior SU exposure
-342200001,4,No prior other anti-diabetic exposure
-342200001,5,Without renal impairment
-342200001,6,No prior metformin use
-342200001,7,No prior insulin use or combo initiation
-342200002,0,No prior with-in class exposure
-342200002,1,No prior DPP4 inhibitor exposure
-342200002,2,No prior GLP-1 receptor agonist exposure
-342200002,3,No prior SU exposure
-342200002,4,No prior other anti-diabetic exposure
-342200002,5,Renal impairment
-342200002,6,No prior metformin use
-342200002,7,No prior insulin use or combo initiation
+3110000,0,No prior with-in class exposure
+3110000,1,No prior DPP4 inhibitor exposure
+3110000,2,No prior GLP-1 receptor agonist exposure
+3110000,3,No prior SU exposure
+3110000,4,No prior other anti-diabetic exposure
+3110000,5,Prior metformin use
+3110000,6,No prior insulin use or combo initiation
+3110001,0,No prior with-in class exposure
+3110001,1,No prior DPP4 inhibitor exposure
+3110001,2,No prior GLP-1 receptor agonist exposure
+3110001,3,No prior SU exposure
+3110001,4,No prior other anti-diabetic exposure
+3110001,5,Prior metformin use
+3110001,6,No prior metformin use
+3110001,7,Without obesity
+3110002,0,No prior with-in class exposure
+3110002,1,No prior DPP4 inhibitor exposure
+3110002,2,No prior GLP-1 receptor agonist exposure
+3110002,3,No prior SU exposure
+3110002,4,No prior other anti-diabetic exposure
+3110002,5,Prior metformin use
+3110002,6,No prior metformin use
+3110002,7,with obesity
+3110010,0,No prior with-in class exposure
+3110010,1,No prior DPP4 inhibitor exposure
+3110010,2,No prior GLP-1 receptor agonist exposure
+3110010,3,No prior SU exposure
+3110010,4,No prior other anti-diabetic exposure
+3110010,5,Female stratum
+3110010,6,Prior metformin use
+3110010,7,No prior insulin use or combo initiation
+3110030,0,No prior with-in class exposure
+3110030,1,No prior DPP4 inhibitor exposure
+3110030,2,No prior GLP-1 receptor agonist exposure
+3110030,3,No prior SU exposure
+3110030,4,No prior other anti-diabetic exposure
+3110030,5,Male stratum
+3110030,6,Prior metformin use
+3110030,7,No prior insulin use or combo initiation
+3110100,0,No prior with-in class exposure
+3110100,1,No prior DPP4 inhibitor exposure
+3110100,2,No prior GLP-1 receptor agonist exposure
+3110100,3,No prior SU exposure
+3110100,4,No prior other anti-diabetic exposure
+3110100,5,Lower age group
+3110100,6,Prior metformin use
+3110100,7,No prior insulin use or combo initiation
+3110300,0,No prior with-in class exposure
+3110300,1,No prior DPP4 inhibitor exposure
+3110300,2,No prior GLP-1 receptor agonist exposure
+3110300,3,No prior SU exposure
+3110300,4,No prior other anti-diabetic exposure
+3110300,5,Young age group
+3110300,6,Prior metformin use
+3110300,7,No prior insulin use or combo initiation
+3111000,0,No prior with-in class exposure
+3111000,1,No prior DPP4 inhibitor exposure
+3111000,2,No prior GLP-1 receptor agonist exposure
+3111000,3,No prior SU exposure
+3111000,4,No prior other anti-diabetic exposure
+3111000,5,No prior metformin use
+3111000,6,No prior insulin use or combo initiation
+3111001,0,No prior with-in class exposure
+3111001,1,No prior DPP4 inhibitor exposure
+3111001,2,No prior GLP-1 receptor agonist exposure
+3111001,3,No prior SU exposure
+3111001,4,No prior other anti-diabetic exposure
+3111001,5,Prior metformin use
+3111001,6,No prior insulin use or combo initiation
+3111001,7,Without obesity
+3111002,0,No prior with-in class exposure
+3111002,1,No prior DPP4 inhibitor exposure
+3111002,2,No prior GLP-1 receptor agonist exposure
+3111002,3,No prior SU exposure
+3111002,4,No prior other anti-diabetic exposure
+3111002,5,Prior metformin use
+3111002,6,No prior insulin use or combo initiation
+3111002,7,with obesity
+3111010,0,No prior with-in class exposure
+3111010,1,No prior DPP4 inhibitor exposure
+3111010,2,No prior GLP-1 receptor agonist exposure
+3111010,3,No prior SU exposure
+3111010,4,No prior other anti-diabetic exposure
+3111010,5,Female stratum
+3111010,6,No prior metformin use
+3111010,7,No prior insulin use or combo initiation
+3111030,0,No prior with-in class exposure
+3111030,1,No prior DPP4 inhibitor exposure
+3111030,2,No prior GLP-1 receptor agonist exposure
+3111030,3,No prior SU exposure
+3111030,4,No prior other anti-diabetic exposure
+3111030,5,Male stratum
+3111030,6,No prior metformin use
+3111030,7,No prior insulin use or combo initiation
+3111100,0,No prior with-in class exposure
+3111100,1,No prior DPP4 inhibitor exposure
+3111100,2,No prior GLP-1 receptor agonist exposure
+3111100,3,No prior SU exposure
+3111100,4,No prior other anti-diabetic exposure
+3111100,5,Lower age group
+3111100,6,No prior metformin use
+3111100,7,No prior insulin use or combo initiation
+3111300,0,No prior with-in class exposure
+3111300,1,No prior DPP4 inhibitor exposure
+3111300,2,No prior GLP-1 receptor agonist exposure
+3111300,3,No prior SU exposure
+3111300,4,No prior other anti-diabetic exposure
+3111300,5,Young age group
+3111300,6,No prior metformin use
+3111300,7,No prior insulin use or combo initiation
+3120000,0,No prior with-in class exposure
+3120000,1,No prior DPP4 inhibitor exposure
+3120000,2,No prior GLP-1 receptor agonist exposure
+3120000,3,No prior SU exposure
+3120000,4,No prior other anti-diabetic exposure
+3120000,5,Prior metformin use
+3120000,6,No prior insulin use or combo initiation
+3120001,0,No prior with-in class exposure
+3120001,1,No prior DPP4 inhibitor exposure
+3120001,2,No prior GLP-1 receptor agonist exposure
+3120001,3,No prior SU exposure
+3120001,4,No prior other anti-diabetic exposure
+3120001,5,Prior metformin use
+3120001,6,No prior metformin use
+3120001,7,Without obesity
+3120002,0,No prior with-in class exposure
+3120002,1,No prior DPP4 inhibitor exposure
+3120002,2,No prior GLP-1 receptor agonist exposure
+3120002,3,No prior SU exposure
+3120002,4,No prior other anti-diabetic exposure
+3120002,5,Prior metformin use
+3120002,6,No prior metformin use
+3120002,7,with obesity
+3120010,0,No prior with-in class exposure
+3120010,1,No prior DPP4 inhibitor exposure
+3120010,2,No prior GLP-1 receptor agonist exposure
+3120010,3,No prior SU exposure
+3120010,4,No prior other anti-diabetic exposure
+3120010,5,Female stratum
+3120010,6,Prior metformin use
+3120010,7,No prior insulin use or combo initiation
+3120030,0,No prior with-in class exposure
+3120030,1,No prior DPP4 inhibitor exposure
+3120030,2,No prior GLP-1 receptor agonist exposure
+3120030,3,No prior SU exposure
+3120030,4,No prior other anti-diabetic exposure
+3120030,5,Male stratum
+3120030,6,Prior metformin use
+3120030,7,No prior insulin use or combo initiation
+3120100,0,No prior with-in class exposure
+3120100,1,No prior DPP4 inhibitor exposure
+3120100,2,No prior GLP-1 receptor agonist exposure
+3120100,3,No prior SU exposure
+3120100,4,No prior other anti-diabetic exposure
+3120100,5,Lower age group
+3120100,6,Prior metformin use
+3120100,7,No prior insulin use or combo initiation
+3120300,0,No prior with-in class exposure
+3120300,1,No prior DPP4 inhibitor exposure
+3120300,2,No prior GLP-1 receptor agonist exposure
+3120300,3,No prior SU exposure
+3120300,4,No prior other anti-diabetic exposure
+3120300,5,Young age group
+3120300,6,Prior metformin use
+3120300,7,No prior insulin use or combo initiation
+3121000,0,No prior with-in class exposure
+3121000,1,No prior DPP4 inhibitor exposure
+3121000,2,No prior GLP-1 receptor agonist exposure
+3121000,3,No prior SU exposure
+3121000,4,No prior other anti-diabetic exposure
+3121000,5,No prior metformin use
+3121000,6,No prior insulin use or combo initiation
+3121001,0,No prior with-in class exposure
+3121001,1,No prior DPP4 inhibitor exposure
+3121001,2,No prior GLP-1 receptor agonist exposure
+3121001,3,No prior SU exposure
+3121001,4,No prior other anti-diabetic exposure
+3121001,5,Prior metformin use
+3121001,6,No prior insulin use or combo initiation
+3121001,7,Without obesity
+3121002,0,No prior with-in class exposure
+3121002,1,No prior DPP4 inhibitor exposure
+3121002,2,No prior GLP-1 receptor agonist exposure
+3121002,3,No prior SU exposure
+3121002,4,No prior other anti-diabetic exposure
+3121002,5,Prior metformin use
+3121002,6,No prior insulin use or combo initiation
+3121002,7,with obesity
+3121010,0,No prior with-in class exposure
+3121010,1,No prior DPP4 inhibitor exposure
+3121010,2,No prior GLP-1 receptor agonist exposure
+3121010,3,No prior SU exposure
+3121010,4,No prior other anti-diabetic exposure
+3121010,5,Female stratum
+3121010,6,No prior metformin use
+3121010,7,No prior insulin use or combo initiation
+3121030,0,No prior with-in class exposure
+3121030,1,No prior DPP4 inhibitor exposure
+3121030,2,No prior GLP-1 receptor agonist exposure
+3121030,3,No prior SU exposure
+3121030,4,No prior other anti-diabetic exposure
+3121030,5,Male stratum
+3121030,6,No prior metformin use
+3121030,7,No prior insulin use or combo initiation
+3121100,0,No prior with-in class exposure
+3121100,1,No prior DPP4 inhibitor exposure
+3121100,2,No prior GLP-1 receptor agonist exposure
+3121100,3,No prior SU exposure
+3121100,4,No prior other anti-diabetic exposure
+3121100,5,Lower age group
+3121100,6,No prior metformin use
+3121100,7,No prior insulin use or combo initiation
+3121300,0,No prior with-in class exposure
+3121300,1,No prior DPP4 inhibitor exposure
+3121300,2,No prior GLP-1 receptor agonist exposure
+3121300,3,No prior SU exposure
+3121300,4,No prior other anti-diabetic exposure
+3121300,5,Young age group
+3121300,6,No prior metformin use
+3121300,7,No prior insulin use or combo initiation
+3210000,0,No prior with-in class exposure
+3210000,1,No prior DPP4 inhibitor exposure
+3210000,2,No prior GLP-1 receptor agonist exposure
+3210000,3,No prior SU exposure
+3210000,4,No prior other anti-diabetic exposure
+3210000,5,Prior metformin use
+3210000,6,No prior insulin use or combo initiation
+3210001,0,No prior with-in class exposure
+3210001,1,No prior DPP4 inhibitor exposure
+3210001,2,No prior GLP-1 receptor agonist exposure
+3210001,3,No prior SU exposure
+3210001,4,No prior other anti-diabetic exposure
+3210001,5,Prior metformin use
+3210001,6,No prior metformin use
+3210001,7,Without obesity
+3210002,0,No prior with-in class exposure
+3210002,1,No prior DPP4 inhibitor exposure
+3210002,2,No prior GLP-1 receptor agonist exposure
+3210002,3,No prior SU exposure
+3210002,4,No prior other anti-diabetic exposure
+3210002,5,Prior metformin use
+3210002,6,No prior metformin use
+3210002,7,with obesity
+3210010,0,No prior with-in class exposure
+3210010,1,No prior DPP4 inhibitor exposure
+3210010,2,No prior GLP-1 receptor agonist exposure
+3210010,3,No prior SU exposure
+3210010,4,No prior other anti-diabetic exposure
+3210010,5,Female stratum
+3210010,6,Prior metformin use
+3210010,7,No prior insulin use or combo initiation
+3210030,0,No prior with-in class exposure
+3210030,1,No prior DPP4 inhibitor exposure
+3210030,2,No prior GLP-1 receptor agonist exposure
+3210030,3,No prior SU exposure
+3210030,4,No prior other anti-diabetic exposure
+3210030,5,Male stratum
+3210030,6,Prior metformin use
+3210030,7,No prior insulin use or combo initiation
+3210100,0,No prior with-in class exposure
+3210100,1,No prior DPP4 inhibitor exposure
+3210100,2,No prior GLP-1 receptor agonist exposure
+3210100,3,No prior SU exposure
+3210100,4,No prior other anti-diabetic exposure
+3210100,5,Lower age group
+3210100,6,Prior metformin use
+3210100,7,No prior insulin use or combo initiation
+3210300,0,No prior with-in class exposure
+3210300,1,No prior DPP4 inhibitor exposure
+3210300,2,No prior GLP-1 receptor agonist exposure
+3210300,3,No prior SU exposure
+3210300,4,No prior other anti-diabetic exposure
+3210300,5,Young age group
+3210300,6,Prior metformin use
+3210300,7,No prior insulin use or combo initiation
+3211000,0,No prior with-in class exposure
+3211000,1,No prior DPP4 inhibitor exposure
+3211000,2,No prior GLP-1 receptor agonist exposure
+3211000,3,No prior SU exposure
+3211000,4,No prior other anti-diabetic exposure
+3211000,5,No prior metformin use
+3211000,6,No prior insulin use or combo initiation
+3211001,0,No prior with-in class exposure
+3211001,1,No prior DPP4 inhibitor exposure
+3211001,2,No prior GLP-1 receptor agonist exposure
+3211001,3,No prior SU exposure
+3211001,4,No prior other anti-diabetic exposure
+3211001,5,Prior metformin use
+3211001,6,No prior insulin use or combo initiation
+3211001,7,Without obesity
+3211002,0,No prior with-in class exposure
+3211002,1,No prior DPP4 inhibitor exposure
+3211002,2,No prior GLP-1 receptor agonist exposure
+3211002,3,No prior SU exposure
+3211002,4,No prior other anti-diabetic exposure
+3211002,5,Prior metformin use
+3211002,6,No prior insulin use or combo initiation
+3211002,7,with obesity
+3211010,0,No prior with-in class exposure
+3211010,1,No prior DPP4 inhibitor exposure
+3211010,2,No prior GLP-1 receptor agonist exposure
+3211010,3,No prior SU exposure
+3211010,4,No prior other anti-diabetic exposure
+3211010,5,Female stratum
+3211010,6,No prior metformin use
+3211010,7,No prior insulin use or combo initiation
+3211030,0,No prior with-in class exposure
+3211030,1,No prior DPP4 inhibitor exposure
+3211030,2,No prior GLP-1 receptor agonist exposure
+3211030,3,No prior SU exposure
+3211030,4,No prior other anti-diabetic exposure
+3211030,5,Male stratum
+3211030,6,No prior metformin use
+3211030,7,No prior insulin use or combo initiation
+3211100,0,No prior with-in class exposure
+3211100,1,No prior DPP4 inhibitor exposure
+3211100,2,No prior GLP-1 receptor agonist exposure
+3211100,3,No prior SU exposure
+3211100,4,No prior other anti-diabetic exposure
+3211100,5,Lower age group
+3211100,6,No prior metformin use
+3211100,7,No prior insulin use or combo initiation
+3211300,0,No prior with-in class exposure
+3211300,1,No prior DPP4 inhibitor exposure
+3211300,2,No prior GLP-1 receptor agonist exposure
+3211300,3,No prior SU exposure
+3211300,4,No prior other anti-diabetic exposure
+3211300,5,Young age group
+3211300,6,No prior metformin use
+3211300,7,No prior insulin use or combo initiation
+3220000,0,No prior with-in class exposure
+3220000,1,No prior DPP4 inhibitor exposure
+3220000,2,No prior GLP-1 receptor agonist exposure
+3220000,3,No prior SU exposure
+3220000,4,No prior other anti-diabetic exposure
+3220000,5,Prior metformin use
+3220000,6,No prior insulin use or combo initiation
+3220001,0,No prior with-in class exposure
+3220001,1,No prior DPP4 inhibitor exposure
+3220001,2,No prior GLP-1 receptor agonist exposure
+3220001,3,No prior SU exposure
+3220001,4,No prior other anti-diabetic exposure
+3220001,5,Prior metformin use
+3220001,6,No prior metformin use
+3220001,7,Without obesity
+3220002,0,No prior with-in class exposure
+3220002,1,No prior DPP4 inhibitor exposure
+3220002,2,No prior GLP-1 receptor agonist exposure
+3220002,3,No prior SU exposure
+3220002,4,No prior other anti-diabetic exposure
+3220002,5,Prior metformin use
+3220002,6,No prior metformin use
+3220002,7,with obesity
+3220010,0,No prior with-in class exposure
+3220010,1,No prior DPP4 inhibitor exposure
+3220010,2,No prior GLP-1 receptor agonist exposure
+3220010,3,No prior SU exposure
+3220010,4,No prior other anti-diabetic exposure
+3220010,5,Female stratum
+3220010,6,Prior metformin use
+3220010,7,No prior insulin use or combo initiation
+3220030,0,No prior with-in class exposure
+3220030,1,No prior DPP4 inhibitor exposure
+3220030,2,No prior GLP-1 receptor agonist exposure
+3220030,3,No prior SU exposure
+3220030,4,No prior other anti-diabetic exposure
+3220030,5,Male stratum
+3220030,6,Prior metformin use
+3220030,7,No prior insulin use or combo initiation
+3220100,0,No prior with-in class exposure
+3220100,1,No prior DPP4 inhibitor exposure
+3220100,2,No prior GLP-1 receptor agonist exposure
+3220100,3,No prior SU exposure
+3220100,4,No prior other anti-diabetic exposure
+3220100,5,Lower age group
+3220100,6,Prior metformin use
+3220100,7,No prior insulin use or combo initiation
+3220300,0,No prior with-in class exposure
+3220300,1,No prior DPP4 inhibitor exposure
+3220300,2,No prior GLP-1 receptor agonist exposure
+3220300,3,No prior SU exposure
+3220300,4,No prior other anti-diabetic exposure
+3220300,5,Young age group
+3220300,6,Prior metformin use
+3220300,7,No prior insulin use or combo initiation
+3221000,0,No prior with-in class exposure
+3221000,1,No prior DPP4 inhibitor exposure
+3221000,2,No prior GLP-1 receptor agonist exposure
+3221000,3,No prior SU exposure
+3221000,4,No prior other anti-diabetic exposure
+3221000,5,No prior metformin use
+3221000,6,No prior insulin use or combo initiation
+3221001,0,No prior with-in class exposure
+3221001,1,No prior DPP4 inhibitor exposure
+3221001,2,No prior GLP-1 receptor agonist exposure
+3221001,3,No prior SU exposure
+3221001,4,No prior other anti-diabetic exposure
+3221001,5,Prior metformin use
+3221001,6,No prior insulin use or combo initiation
+3221001,7,Without obesity
+3221002,0,No prior with-in class exposure
+3221002,1,No prior DPP4 inhibitor exposure
+3221002,2,No prior GLP-1 receptor agonist exposure
+3221002,3,No prior SU exposure
+3221002,4,No prior other anti-diabetic exposure
+3221002,5,Prior metformin use
+3221002,6,No prior insulin use or combo initiation
+3221002,7,with obesity
+3221010,0,No prior with-in class exposure
+3221010,1,No prior DPP4 inhibitor exposure
+3221010,2,No prior GLP-1 receptor agonist exposure
+3221010,3,No prior SU exposure
+3221010,4,No prior other anti-diabetic exposure
+3221010,5,Female stratum
+3221010,6,No prior metformin use
+3221010,7,No prior insulin use or combo initiation
+3221030,0,No prior with-in class exposure
+3221030,1,No prior DPP4 inhibitor exposure
+3221030,2,No prior GLP-1 receptor agonist exposure
+3221030,3,No prior SU exposure
+3221030,4,No prior other anti-diabetic exposure
+3221030,5,Male stratum
+3221030,6,No prior metformin use
+3221030,7,No prior insulin use or combo initiation
+3221100,0,No prior with-in class exposure
+3221100,1,No prior DPP4 inhibitor exposure
+3221100,2,No prior GLP-1 receptor agonist exposure
+3221100,3,No prior SU exposure
+3221100,4,No prior other anti-diabetic exposure
+3221100,5,Lower age group
+3221100,6,No prior metformin use
+3221100,7,No prior insulin use or combo initiation
+3221300,0,No prior with-in class exposure
+3221300,1,No prior DPP4 inhibitor exposure
+3221300,2,No prior GLP-1 receptor agonist exposure
+3221300,3,No prior SU exposure
+3221300,4,No prior other anti-diabetic exposure
+3221300,5,Young age group
+3221300,6,No prior metformin use
+3221300,7,No prior insulin use or combo initiation
+3310000,0,No prior with-in class exposure
+3310000,1,No prior DPP4 inhibitor exposure
+3310000,2,No prior GLP-1 receptor agonist exposure
+3310000,3,No prior SU exposure
+3310000,4,No prior other anti-diabetic exposure
+3310000,5,Prior metformin use
+3310000,6,No prior insulin use or combo initiation
+3310001,0,No prior with-in class exposure
+3310001,1,No prior DPP4 inhibitor exposure
+3310001,2,No prior GLP-1 receptor agonist exposure
+3310001,3,No prior SU exposure
+3310001,4,No prior other anti-diabetic exposure
+3310001,5,Prior metformin use
+3310001,6,No prior metformin use
+3310001,7,Without obesity
+3310002,0,No prior with-in class exposure
+3310002,1,No prior DPP4 inhibitor exposure
+3310002,2,No prior GLP-1 receptor agonist exposure
+3310002,3,No prior SU exposure
+3310002,4,No prior other anti-diabetic exposure
+3310002,5,Prior metformin use
+3310002,6,No prior metformin use
+3310002,7,with obesity
+3310010,0,No prior with-in class exposure
+3310010,1,No prior DPP4 inhibitor exposure
+3310010,2,No prior GLP-1 receptor agonist exposure
+3310010,3,No prior SU exposure
+3310010,4,No prior other anti-diabetic exposure
+3310010,5,Female stratum
+3310010,6,Prior metformin use
+3310010,7,No prior insulin use or combo initiation
+3310030,0,No prior with-in class exposure
+3310030,1,No prior DPP4 inhibitor exposure
+3310030,2,No prior GLP-1 receptor agonist exposure
+3310030,3,No prior SU exposure
+3310030,4,No prior other anti-diabetic exposure
+3310030,5,Male stratum
+3310030,6,Prior metformin use
+3310030,7,No prior insulin use or combo initiation
+3310100,0,No prior with-in class exposure
+3310100,1,No prior DPP4 inhibitor exposure
+3310100,2,No prior GLP-1 receptor agonist exposure
+3310100,3,No prior SU exposure
+3310100,4,No prior other anti-diabetic exposure
+3310100,5,Lower age group
+3310100,6,Prior metformin use
+3310100,7,No prior insulin use or combo initiation
+3310300,0,No prior with-in class exposure
+3310300,1,No prior DPP4 inhibitor exposure
+3310300,2,No prior GLP-1 receptor agonist exposure
+3310300,3,No prior SU exposure
+3310300,4,No prior other anti-diabetic exposure
+3310300,5,Young age group
+3310300,6,Prior metformin use
+3310300,7,No prior insulin use or combo initiation
+3311000,0,No prior with-in class exposure
+3311000,1,No prior DPP4 inhibitor exposure
+3311000,2,No prior GLP-1 receptor agonist exposure
+3311000,3,No prior SU exposure
+3311000,4,No prior other anti-diabetic exposure
+3311000,5,No prior metformin use
+3311000,6,No prior insulin use or combo initiation
+3311001,0,No prior with-in class exposure
+3311001,1,No prior DPP4 inhibitor exposure
+3311001,2,No prior GLP-1 receptor agonist exposure
+3311001,3,No prior SU exposure
+3311001,4,No prior other anti-diabetic exposure
+3311001,5,Prior metformin use
+3311001,6,No prior insulin use or combo initiation
+3311001,7,Without obesity
+3311002,0,No prior with-in class exposure
+3311002,1,No prior DPP4 inhibitor exposure
+3311002,2,No prior GLP-1 receptor agonist exposure
+3311002,3,No prior SU exposure
+3311002,4,No prior other anti-diabetic exposure
+3311002,5,Prior metformin use
+3311002,6,No prior insulin use or combo initiation
+3311002,7,with obesity
+3311010,0,No prior with-in class exposure
+3311010,1,No prior DPP4 inhibitor exposure
+3311010,2,No prior GLP-1 receptor agonist exposure
+3311010,3,No prior SU exposure
+3311010,4,No prior other anti-diabetic exposure
+3311010,5,Female stratum
+3311010,6,No prior metformin use
+3311010,7,No prior insulin use or combo initiation
+3311030,0,No prior with-in class exposure
+3311030,1,No prior DPP4 inhibitor exposure
+3311030,2,No prior GLP-1 receptor agonist exposure
+3311030,3,No prior SU exposure
+3311030,4,No prior other anti-diabetic exposure
+3311030,5,Male stratum
+3311030,6,No prior metformin use
+3311030,7,No prior insulin use or combo initiation
+3311100,0,No prior with-in class exposure
+3311100,1,No prior DPP4 inhibitor exposure
+3311100,2,No prior GLP-1 receptor agonist exposure
+3311100,3,No prior SU exposure
+3311100,4,No prior other anti-diabetic exposure
+3311100,5,Lower age group
+3311100,6,No prior metformin use
+3311100,7,No prior insulin use or combo initiation
+3311300,0,No prior with-in class exposure
+3311300,1,No prior DPP4 inhibitor exposure
+3311300,2,No prior GLP-1 receptor agonist exposure
+3311300,3,No prior SU exposure
+3311300,4,No prior other anti-diabetic exposure
+3311300,5,Young age group
+3311300,6,No prior metformin use
+3311300,7,No prior insulin use or combo initiation
+3320000,0,No prior with-in class exposure
+3320000,1,No prior DPP4 inhibitor exposure
+3320000,2,No prior GLP-1 receptor agonist exposure
+3320000,3,No prior SU exposure
+3320000,4,No prior other anti-diabetic exposure
+3320000,5,Prior metformin use
+3320000,6,No prior insulin use or combo initiation
+3320001,0,No prior with-in class exposure
+3320001,1,No prior DPP4 inhibitor exposure
+3320001,2,No prior GLP-1 receptor agonist exposure
+3320001,3,No prior SU exposure
+3320001,4,No prior other anti-diabetic exposure
+3320001,5,Prior metformin use
+3320001,6,No prior metformin use
+3320001,7,Without obesity
+3320002,0,No prior with-in class exposure
+3320002,1,No prior DPP4 inhibitor exposure
+3320002,2,No prior GLP-1 receptor agonist exposure
+3320002,3,No prior SU exposure
+3320002,4,No prior other anti-diabetic exposure
+3320002,5,Prior metformin use
+3320002,6,No prior metformin use
+3320002,7,with obesity
+3320010,0,No prior with-in class exposure
+3320010,1,No prior DPP4 inhibitor exposure
+3320010,2,No prior GLP-1 receptor agonist exposure
+3320010,3,No prior SU exposure
+3320010,4,No prior other anti-diabetic exposure
+3320010,5,Female stratum
+3320010,6,Prior metformin use
+3320010,7,No prior insulin use or combo initiation
+3320030,0,No prior with-in class exposure
+3320030,1,No prior DPP4 inhibitor exposure
+3320030,2,No prior GLP-1 receptor agonist exposure
+3320030,3,No prior SU exposure
+3320030,4,No prior other anti-diabetic exposure
+3320030,5,Male stratum
+3320030,6,Prior metformin use
+3320030,7,No prior insulin use or combo initiation
+3320100,0,No prior with-in class exposure
+3320100,1,No prior DPP4 inhibitor exposure
+3320100,2,No prior GLP-1 receptor agonist exposure
+3320100,3,No prior SU exposure
+3320100,4,No prior other anti-diabetic exposure
+3320100,5,Lower age group
+3320100,6,Prior metformin use
+3320100,7,No prior insulin use or combo initiation
+3320300,0,No prior with-in class exposure
+3320300,1,No prior DPP4 inhibitor exposure
+3320300,2,No prior GLP-1 receptor agonist exposure
+3320300,3,No prior SU exposure
+3320300,4,No prior other anti-diabetic exposure
+3320300,5,Young age group
+3320300,6,Prior metformin use
+3320300,7,No prior insulin use or combo initiation
+3321000,0,No prior with-in class exposure
+3321000,1,No prior DPP4 inhibitor exposure
+3321000,2,No prior GLP-1 receptor agonist exposure
+3321000,3,No prior SU exposure
+3321000,4,No prior other anti-diabetic exposure
+3321000,5,No prior metformin use
+3321000,6,No prior insulin use or combo initiation
+3321001,0,No prior with-in class exposure
+3321001,1,No prior DPP4 inhibitor exposure
+3321001,2,No prior GLP-1 receptor agonist exposure
+3321001,3,No prior SU exposure
+3321001,4,No prior other anti-diabetic exposure
+3321001,5,Prior metformin use
+3321001,6,No prior insulin use or combo initiation
+3321001,7,Without obesity
+3321002,0,No prior with-in class exposure
+3321002,1,No prior DPP4 inhibitor exposure
+3321002,2,No prior GLP-1 receptor agonist exposure
+3321002,3,No prior SU exposure
+3321002,4,No prior other anti-diabetic exposure
+3321002,5,Prior metformin use
+3321002,6,No prior insulin use or combo initiation
+3321002,7,with obesity
+3321010,0,No prior with-in class exposure
+3321010,1,No prior DPP4 inhibitor exposure
+3321010,2,No prior GLP-1 receptor agonist exposure
+3321010,3,No prior SU exposure
+3321010,4,No prior other anti-diabetic exposure
+3321010,5,Female stratum
+3321010,6,No prior metformin use
+3321010,7,No prior insulin use or combo initiation
+3321030,0,No prior with-in class exposure
+3321030,1,No prior DPP4 inhibitor exposure
+3321030,2,No prior GLP-1 receptor agonist exposure
+3321030,3,No prior SU exposure
+3321030,4,No prior other anti-diabetic exposure
+3321030,5,Male stratum
+3321030,6,No prior metformin use
+3321030,7,No prior insulin use or combo initiation
+3321100,0,No prior with-in class exposure
+3321100,1,No prior DPP4 inhibitor exposure
+3321100,2,No prior GLP-1 receptor agonist exposure
+3321100,3,No prior SU exposure
+3321100,4,No prior other anti-diabetic exposure
+3321100,5,Lower age group
+3321100,6,No prior metformin use
+3321100,7,No prior insulin use or combo initiation
+3321300,0,No prior with-in class exposure
+3321300,1,No prior DPP4 inhibitor exposure
+3321300,2,No prior GLP-1 receptor agonist exposure
+3321300,3,No prior SU exposure
+3321300,4,No prior other anti-diabetic exposure
+3321300,5,Young age group
+3321300,6,No prior metformin use
+3321300,7,No prior insulin use or combo initiation
+3410000,0,No prior with-in class exposure
+3410000,1,No prior DPP4 inhibitor exposure
+3410000,2,No prior GLP-1 receptor agonist exposure
+3410000,3,No prior SU exposure
+3410000,4,No prior other anti-diabetic exposure
+3410000,5,Prior metformin use
+3410000,6,No prior insulin use or combo initiation
+3410001,0,No prior with-in class exposure
+3410001,1,No prior DPP4 inhibitor exposure
+3410001,2,No prior GLP-1 receptor agonist exposure
+3410001,3,No prior SU exposure
+3410001,4,No prior other anti-diabetic exposure
+3410001,5,Prior metformin use
+3410001,6,No prior metformin use
+3410001,7,Without obesity
+3410002,0,No prior with-in class exposure
+3410002,1,No prior DPP4 inhibitor exposure
+3410002,2,No prior GLP-1 receptor agonist exposure
+3410002,3,No prior SU exposure
+3410002,4,No prior other anti-diabetic exposure
+3410002,5,Prior metformin use
+3410002,6,No prior metformin use
+3410002,7,with obesity
+3410010,0,No prior with-in class exposure
+3410010,1,No prior DPP4 inhibitor exposure
+3410010,2,No prior GLP-1 receptor agonist exposure
+3410010,3,No prior SU exposure
+3410010,4,No prior other anti-diabetic exposure
+3410010,5,Female stratum
+3410010,6,Prior metformin use
+3410010,7,No prior insulin use or combo initiation
+3410030,0,No prior with-in class exposure
+3410030,1,No prior DPP4 inhibitor exposure
+3410030,2,No prior GLP-1 receptor agonist exposure
+3410030,3,No prior SU exposure
+3410030,4,No prior other anti-diabetic exposure
+3410030,5,Male stratum
+3410030,6,Prior metformin use
+3410030,7,No prior insulin use or combo initiation
+3410100,0,No prior with-in class exposure
+3410100,1,No prior DPP4 inhibitor exposure
+3410100,2,No prior GLP-1 receptor agonist exposure
+3410100,3,No prior SU exposure
+3410100,4,No prior other anti-diabetic exposure
+3410100,5,Lower age group
+3410100,6,Prior metformin use
+3410100,7,No prior insulin use or combo initiation
+3410300,0,No prior with-in class exposure
+3410300,1,No prior DPP4 inhibitor exposure
+3410300,2,No prior GLP-1 receptor agonist exposure
+3410300,3,No prior SU exposure
+3410300,4,No prior other anti-diabetic exposure
+3410300,5,Young age group
+3410300,6,Prior metformin use
+3410300,7,No prior insulin use or combo initiation
+3411000,0,No prior with-in class exposure
+3411000,1,No prior DPP4 inhibitor exposure
+3411000,2,No prior GLP-1 receptor agonist exposure
+3411000,3,No prior SU exposure
+3411000,4,No prior other anti-diabetic exposure
+3411000,5,No prior metformin use
+3411000,6,No prior insulin use or combo initiation
+3411001,0,No prior with-in class exposure
+3411001,1,No prior DPP4 inhibitor exposure
+3411001,2,No prior GLP-1 receptor agonist exposure
+3411001,3,No prior SU exposure
+3411001,4,No prior other anti-diabetic exposure
+3411001,5,Prior metformin use
+3411001,6,No prior insulin use or combo initiation
+3411001,7,Without obesity
+3411002,0,No prior with-in class exposure
+3411002,1,No prior DPP4 inhibitor exposure
+3411002,2,No prior GLP-1 receptor agonist exposure
+3411002,3,No prior SU exposure
+3411002,4,No prior other anti-diabetic exposure
+3411002,5,Prior metformin use
+3411002,6,No prior insulin use or combo initiation
+3411002,7,with obesity
+3411010,0,No prior with-in class exposure
+3411010,1,No prior DPP4 inhibitor exposure
+3411010,2,No prior GLP-1 receptor agonist exposure
+3411010,3,No prior SU exposure
+3411010,4,No prior other anti-diabetic exposure
+3411010,5,Female stratum
+3411010,6,No prior metformin use
+3411010,7,No prior insulin use or combo initiation
+3411030,0,No prior with-in class exposure
+3411030,1,No prior DPP4 inhibitor exposure
+3411030,2,No prior GLP-1 receptor agonist exposure
+3411030,3,No prior SU exposure
+3411030,4,No prior other anti-diabetic exposure
+3411030,5,Male stratum
+3411030,6,No prior metformin use
+3411030,7,No prior insulin use or combo initiation
+3411100,0,No prior with-in class exposure
+3411100,1,No prior DPP4 inhibitor exposure
+3411100,2,No prior GLP-1 receptor agonist exposure
+3411100,3,No prior SU exposure
+3411100,4,No prior other anti-diabetic exposure
+3411100,5,Lower age group
+3411100,6,No prior metformin use
+3411100,7,No prior insulin use or combo initiation
+3411300,0,No prior with-in class exposure
+3411300,1,No prior DPP4 inhibitor exposure
+3411300,2,No prior GLP-1 receptor agonist exposure
+3411300,3,No prior SU exposure
+3411300,4,No prior other anti-diabetic exposure
+3411300,5,Young age group
+3411300,6,No prior metformin use
+3411300,7,No prior insulin use or combo initiation
+3420000,0,No prior with-in class exposure
+3420000,1,No prior DPP4 inhibitor exposure
+3420000,2,No prior GLP-1 receptor agonist exposure
+3420000,3,No prior SU exposure
+3420000,4,No prior other anti-diabetic exposure
+3420000,5,Prior metformin use
+3420000,6,No prior insulin use or combo initiation
+3420001,0,No prior with-in class exposure
+3420001,1,No prior DPP4 inhibitor exposure
+3420001,2,No prior GLP-1 receptor agonist exposure
+3420001,3,No prior SU exposure
+3420001,4,No prior other anti-diabetic exposure
+3420001,5,Prior metformin use
+3420001,6,No prior metformin use
+3420001,7,Without obesity
+3420002,0,No prior with-in class exposure
+3420002,1,No prior DPP4 inhibitor exposure
+3420002,2,No prior GLP-1 receptor agonist exposure
+3420002,3,No prior SU exposure
+3420002,4,No prior other anti-diabetic exposure
+3420002,5,Prior metformin use
+3420002,6,No prior metformin use
+3420002,7,with obesity
+3420010,0,No prior with-in class exposure
+3420010,1,No prior DPP4 inhibitor exposure
+3420010,2,No prior GLP-1 receptor agonist exposure
+3420010,3,No prior SU exposure
+3420010,4,No prior other anti-diabetic exposure
+3420010,5,Female stratum
+3420010,6,Prior metformin use
+3420010,7,No prior insulin use or combo initiation
+3420030,0,No prior with-in class exposure
+3420030,1,No prior DPP4 inhibitor exposure
+3420030,2,No prior GLP-1 receptor agonist exposure
+3420030,3,No prior SU exposure
+3420030,4,No prior other anti-diabetic exposure
+3420030,5,Male stratum
+3420030,6,Prior metformin use
+3420030,7,No prior insulin use or combo initiation
+3420100,0,No prior with-in class exposure
+3420100,1,No prior DPP4 inhibitor exposure
+3420100,2,No prior GLP-1 receptor agonist exposure
+3420100,3,No prior SU exposure
+3420100,4,No prior other anti-diabetic exposure
+3420100,5,Lower age group
+3420100,6,Prior metformin use
+3420100,7,No prior insulin use or combo initiation
+3420300,0,No prior with-in class exposure
+3420300,1,No prior DPP4 inhibitor exposure
+3420300,2,No prior GLP-1 receptor agonist exposure
+3420300,3,No prior SU exposure
+3420300,4,No prior other anti-diabetic exposure
+3420300,5,Young age group
+3420300,6,Prior metformin use
+3420300,7,No prior insulin use or combo initiation
+3421000,0,No prior with-in class exposure
+3421000,1,No prior DPP4 inhibitor exposure
+3421000,2,No prior GLP-1 receptor agonist exposure
+3421000,3,No prior SU exposure
+3421000,4,No prior other anti-diabetic exposure
+3421000,5,No prior metformin use
+3421000,6,No prior insulin use or combo initiation
+3421001,0,No prior with-in class exposure
+3421001,1,No prior DPP4 inhibitor exposure
+3421001,2,No prior GLP-1 receptor agonist exposure
+3421001,3,No prior SU exposure
+3421001,4,No prior other anti-diabetic exposure
+3421001,5,Prior metformin use
+3421001,6,No prior insulin use or combo initiation
+3421001,7,Without obesity
+3421002,0,No prior with-in class exposure
+3421002,1,No prior DPP4 inhibitor exposure
+3421002,2,No prior GLP-1 receptor agonist exposure
+3421002,3,No prior SU exposure
+3421002,4,No prior other anti-diabetic exposure
+3421002,5,Prior metformin use
+3421002,6,No prior insulin use or combo initiation
+3421002,7,with obesity
+3421010,0,No prior with-in class exposure
+3421010,1,No prior DPP4 inhibitor exposure
+3421010,2,No prior GLP-1 receptor agonist exposure
+3421010,3,No prior SU exposure
+3421010,4,No prior other anti-diabetic exposure
+3421010,5,Female stratum
+3421010,6,No prior metformin use
+3421010,7,No prior insulin use or combo initiation
+3421030,0,No prior with-in class exposure
+3421030,1,No prior DPP4 inhibitor exposure
+3421030,2,No prior GLP-1 receptor agonist exposure
+3421030,3,No prior SU exposure
+3421030,4,No prior other anti-diabetic exposure
+3421030,5,Male stratum
+3421030,6,No prior metformin use
+3421030,7,No prior insulin use or combo initiation
+3421100,0,No prior with-in class exposure
+3421100,1,No prior DPP4 inhibitor exposure
+3421100,2,No prior GLP-1 receptor agonist exposure
+3421100,3,No prior SU exposure
+3421100,4,No prior other anti-diabetic exposure
+3421100,5,Lower age group
+3421100,6,No prior metformin use
+3421100,7,No prior insulin use or combo initiation
+3421300,0,No prior with-in class exposure
+3421300,1,No prior DPP4 inhibitor exposure
+3421300,2,No prior GLP-1 receptor agonist exposure
+3421300,3,No prior SU exposure
+3421300,4,No prior other anti-diabetic exposure
+3421300,5,Young age group
+3421300,6,No prior metformin use
+3421300,7,No prior insulin use or combo initiation

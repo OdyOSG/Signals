@@ -1976,13 +1976,6 @@
 } 
 },
 {
- "id":                                                  15,
-"name": "Alternative within-class drugs",
-"expression": {
- "items": [] 
-} 
-},
-{
  "id":                                                  65,
 "name": "BMI measurements",
 "expression": {
@@ -2328,8 +2321,7 @@
  {
  "Criteria": {
  "DrugExposure": {
- "CodesetId":                                                  15,
-"DrugTypeExclude": false 
+ "DrugTypeExclude": false 
 } 
 },
 "StartWindow": {

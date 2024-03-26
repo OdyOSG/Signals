@@ -18,20 +18,24 @@ minCellCount <- 5
 oracleTempSchema <- NULL
 
 # The folder where the study intermediate and result files will be written:
-outputFolder <- "s:/SignalsStudy"
+outputFolder <- "results"
 
 # Details for connecting to the server:
 # See ?DatabaseConnector::createConnectionDetails for help
-connectionDetails <- DatabaseConnector::createConnectionDetails(dbms = "postgresql",
-                                                                server = "some.server.com/ohdsi",
-                                                                user = "joe",
-                                                                password = "secret")
+connectionDetails <- DatabaseConnector::createConnectionDetails(
+  dbms = "postgresql",
+  user = "ohdsi",
+  password = "ohdsi",
+  server = "testnode.arachnenetwork.com/synpuf_110k",
+  port = 5441
+)
+
 
 # The name of the database schema where the CDM data can be found:
-cdmDatabaseSchema <- "cdm_synpuf"
+cdmDatabaseSchema <- "cdm_531"
 
 # The name of the database schema and table where the study-specific cohorts will be instantiated:
-cohortDatabaseSchema <- "scratch.dbo"
+cohortDatabaseSchema <- "jmt_signals.dbo"
 tablePrefix <- "signals_study"
 
 # Some meta-information that will be used by the export function:
