@@ -2674,3 +2674,16 @@
 2024-03-26 16:21:34	[Main thread]	INFO	CohortDiagnostics	getCohortsJsonAndSql	Number of cohorts 112
 2024-03-26 16:21:34	[Main thread]	INFO	CohortDiagnostics	createTempInclusionStatsTables	Creating temporary inclusion statistics tables
 2024-03-26 16:21:34	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.547 secs
+2024-03-26 16:49:54	[Main thread]	INFO	Signals	assessPhenotypes	Starting assessPhenotypes() for Signals class-vs-class studies
+2024-03-26 16:49:54	[Main thread]	INFO	Signals	createExposureCohorts	Creating class exposure cohorts
+2024-03-26 16:49:54	[Main thread]	INFO	Signals	createExposureCohorts	- Populating table signals_study_class_cohort
+2024-03-26 16:49:54	[Main thread]	INFO	DatabaseConnector	connectPostgreSql	Connecting using PostgreSQL driver
+2024-03-26 16:49:54	[Main thread]	INFO	CohortDiagnostics	createCohortTable	Creating cohort table
+2024-03-26 16:49:55	[Main thread]	DEBUG	CohortDiagnostics	createCohortTable	Created table jmt_signals.dbo.signals_study_class_cohort
+2024-03-26 16:49:55	[Main thread]	DEBUG	CohortDiagnostics	getCohortsJsonAndSqlFromPackage	Executing on cohorts specified in package - Signals
+2024-03-26 16:49:55	[Main thread]	INFO	CohortDiagnostics	getCohortsJsonAndSql	Number of cohorts 112
+2024-03-26 16:49:55	[Main thread]	INFO	CohortDiagnostics	createTempInclusionStatsTables	Creating temporary inclusion statistics tables
+2024-03-26 16:49:56	[Main thread]	INFO	DatabaseConnector	executeSql	Executing SQL took 0.472 secs
+2024-03-26 16:49:57	[Main thread]	INFO	DatabaseConnector	insertTable.default	Inserting data took 0.335 secs
+2024-03-26 16:49:57	[Main thread]	INFO	CohortDiagnostics	instantiateCohortSet	Instantiation cohort DPP4I main (Cohort id: 1010000)
+2024-03-26 16:49:57	[Main thread]	DEBUG	CohortDiagnostics	instantiateCohortSet	Cohort id 1010000 SQL has inclusion rule statistics tables.
