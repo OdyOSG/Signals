@@ -1,19 +1,23 @@
 Thread: Main
-Message:  replacement has 1 row, data has 0
+Message:  invalid 'nchars' argument
 Level:  FATAL
-Time:  2024-03-26 12:53:48
+Time:  2024-03-27 15:30:02
 
 Stack trace:
-7: h(simpleError(msg, call))
-6: .handleSimpleError(function (condition) 
+11: h(simpleError(msg, call))
+10: .handleSimpleError(function (condition) 
 {
     if (is(condition, "error")) {
-        log("FATAL", conditionMessage(condition), 
-5: stop(sprintf(ngettext(N, "replacement has %d row, data has %d", "replacement has %d rows, data has %d"), N, nrows), domain =
-4: CreateAllCohorts.R#86: `$<-.data.frame`(`*tmp*`, "databaseId", value = "Synpuf")
-3: CreateAllCohorts.R#86: `$<-`(`*tmp*`, "databaseId", value = "Synpuf")
-2: Assessment.R#75: createExposureCohorts(connectionDetails = connectionDetails, cdmDatabaseSchema = cdmDatabaseSchema, vocabul
-1: assessPhenotypes(connectionDetails = connectionDetails, cdmDatabaseSchema = cdmDatabaseSchema, oracleTempSchema = oracleTemp
+        log("FATAL", conditionMessage(condition), echoToConsole = FALS
+9: CohortConstruction.R#131: readChar(pathToSql, file.info(pathToSql)$size)
+8: FUN(X[[i]], ...)
+7: lapply(X = X, FUN = FUN, ...)
+6: CohortConstruction.R#134: sapply(cohorts$name, getSql)
+5: CohortConstruction.R#232: getCohortsJsonAndSqlFromPackage(packageName = packageName, cohortToCreateFile = cohortToCreateFile, cohortIds = cohort
+4: CohortConstruction.R#520: getCohortsJsonAndSql(packageName = packageName, cohortToCreateFile = cohortToCreateFile, baseUrl = baseUrl, cohortSetR
+3: CreateAllCohorts.R#63: CohortDiagnostics::instantiateCohortSet(connectionDetails = connectionDetails, cdmDatabaseSchema = cdmDatabaseSchema, voc
+2: Assessment.R#75: createExposureCohorts(connectionDetails = connectionDetails, cdmDatabaseSchema = cdmDatabaseSchema, vocabularyDatabaseSchema = 
+1: assessPhenotypes(connectionDetails = connectionDetails, cdmDatabaseSchema = cdmDatabaseSchema, oracleTempSchema = oracleTempSchema, cohortDataba
 
 R version:
 R version 4.2.1 (2022-06-23 ucrt)
