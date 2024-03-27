@@ -11,8 +11,8 @@
 } 
 ],
 "ObservationWindow": {
- "PriorDays":         365,
-"PostDays":           0 
+ "PriorDays": 365,
+"PostDays": 0 
 },
 "PrimaryCriteriaLimit": {
  "Type": "First" 
@@ -24,17 +24,17 @@
  {
  "Criteria": {
  "ConditionOccurrence": {
- "CodesetId":          12,
+ "CodesetId": 12,
 "ConditionTypeExclude": false 
 } 
 },
 "StartWindow": {
  "Start": {
- "Coeff":          -1 
+ "Coeff": -1 
 },
 "End": {
- "Days":           0,
-"Coeff":           1 
+ "Days": 0,
+"Coeff": 1 
 },
 "UseIndexEnd": false,
 "UseEventEnd": false 
@@ -42,25 +42,25 @@
 "RestrictVisit": false,
 "IgnoreObservationPeriod": true,
 "Occurrence": {
- "Type":           2,
-"Count":           1,
+ "Type": 2,
+"Count": 1,
 "IsDistinct": false 
 } 
 },
 {
  "Criteria": {
  "ConditionOccurrence": {
- "CodesetId":          11,
+ "CodesetId": 11,
 "ConditionTypeExclude": false 
 } 
 },
 "StartWindow": {
  "Start": {
- "Coeff":          -1 
+ "Coeff": -1 
 },
 "End": {
- "Days":           0,
-"Coeff":           1 
+ "Days": 0,
+"Coeff": 1 
 },
 "UseIndexEnd": false,
 "UseEventEnd": false 
@@ -68,25 +68,25 @@
 "RestrictVisit": false,
 "IgnoreObservationPeriod": true,
 "Occurrence": {
- "Type":           0,
-"Count":           0,
+ "Type": 0,
+"Count": 0,
 "IsDistinct": false 
 } 
 },
 {
  "Criteria": {
  "ConditionOccurrence": {
- "CodesetId":          10,
+ "CodesetId": 10,
 "ConditionTypeExclude": false 
 } 
 },
 "StartWindow": {
  "Start": {
- "Coeff":          -1 
+ "Coeff": -1 
 },
 "End": {
- "Days":           0,
-"Coeff":           1 
+ "Days": 0,
+"Coeff": 1 
 },
 "UseIndexEnd": false,
 "UseEventEnd": false 
@@ -94,8 +94,8 @@
 "RestrictVisit": false,
 "IgnoreObservationPeriod": true,
 "Occurrence": {
- "Type":           0,
-"Count":           0,
+ "Type": 0,
+"Count": 0,
 "IsDistinct": false 
 } 
 } 
@@ -103,7 +103,7 @@
 "DemographicCriteriaList": [
  {
  "Age": {
- "Value":          18,
+ "Value": 18,
 "Op": "gte" 
 } 
 } 
@@ -112,13 +112,13 @@
 },
 "ConceptSets": [
  {
- "id":           1,
+ "id": 1,
 "name": "DPP4 inhibitors",
 "expression": {
  "items": [
  {
  "concept": {
- "CONCEPT_ID":    43013884,
+ "CONCEPT_ID": 43013884,
 "CONCEPT_NAME": "alogliptin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -135,7 +135,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    40239216,
+ "CONCEPT_ID": 40239216,
 "CONCEPT_NAME": "Linagliptin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -152,7 +152,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    40166035,
+ "CONCEPT_ID": 40166035,
 "CONCEPT_NAME": "saxagliptin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -169,7 +169,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1580747,
+ "CONCEPT_ID": 1580747,
 "CONCEPT_NAME": "sitagliptin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -186,7 +186,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    19122137,
+ "CONCEPT_ID": 19122137,
 "CONCEPT_NAME": "vildagliptin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -205,13 +205,13 @@
 } 
 },
 {
- "id":           2,
+ "id": 2,
 "name": "albiglutide",
 "expression": {
  "items": [
  {
  "concept": {
- "CONCEPT_ID":    44816332,
+ "CONCEPT_ID": 44816332,
 "CONCEPT_NAME": "albiglutide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -230,13 +230,13 @@
 } 
 },
 {
- "id":           3,
+ "id": 3,
 "name": "SGLT2 inhibitors",
 "expression": {
  "items": [
  {
  "concept": {
- "CONCEPT_ID":    43526465,
+ "CONCEPT_ID": 43526465,
 "CONCEPT_NAME": "canagliflozin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -253,7 +253,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    44785829,
+ "CONCEPT_ID": 44785829,
 "CONCEPT_NAME": "dapagliflozin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -270,7 +270,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    45774751,
+ "CONCEPT_ID": 45774751,
 "CONCEPT_NAME": "empagliflozin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -287,7 +287,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":      793293,
+ "CONCEPT_ID": 793293,
 "CONCEPT_NAME": "ertugliflozin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -306,13 +306,13 @@
 } 
 },
 {
- "id":           4,
+ "id": 4,
 "name": "Sulfonylureas",
 "expression": {
  "items": [
  {
  "concept": {
- "CONCEPT_ID":     1594973,
+ "CONCEPT_ID": 1594973,
 "CONCEPT_NAME": "Chlorpropamide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -329,7 +329,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1597756,
+ "CONCEPT_ID": 1597756,
 "CONCEPT_NAME": "glimepiride",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -346,7 +346,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1560171,
+ "CONCEPT_ID": 1560171,
 "CONCEPT_NAME": "Glipizide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -363,7 +363,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    19097821,
+ "CONCEPT_ID": 19097821,
 "CONCEPT_NAME": "gliquidone",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -380,7 +380,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1559684,
+ "CONCEPT_ID": 1559684,
 "CONCEPT_NAME": "Glyburide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -397,7 +397,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1502809,
+ "CONCEPT_ID": 1502809,
 "CONCEPT_NAME": "Tolazamide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -414,7 +414,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1502855,
+ "CONCEPT_ID": 1502855,
 "CONCEPT_NAME": "Tolbutamide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -433,13 +433,13 @@
 } 
 },
 {
- "id":           5,
+ "id": 5,
 "name": "Other anti-diabetics",
 "expression": {
  "items": [
  {
  "concept": {
- "CONCEPT_ID":     1529331,
+ "CONCEPT_ID": 1529331,
 "CONCEPT_NAME": "acarbose",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -456,7 +456,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1530014,
+ "CONCEPT_ID": 1530014,
 "CONCEPT_NAME": "acetohexamide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -473,7 +473,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":      730548,
+ "CONCEPT_ID": 730548,
 "CONCEPT_NAME": "bromocriptine",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -490,7 +490,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    19033500,
+ "CONCEPT_ID": 19033500,
 "CONCEPT_NAME": "carbutamide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -507,7 +507,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    19001410,
+ "CONCEPT_ID": 19001410,
 "CONCEPT_NAME": "glibornuride",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -524,7 +524,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    19059800,
+ "CONCEPT_ID": 19059800,
 "CONCEPT_NAME": "gliclazide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -541,7 +541,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    19001440,
+ "CONCEPT_ID": 19001440,
 "CONCEPT_NAME": "glymidine",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -558,7 +558,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1510202,
+ "CONCEPT_ID": 1510202,
 "CONCEPT_NAME": "miglitol",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -575,7 +575,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1502826,
+ "CONCEPT_ID": 1502826,
 "CONCEPT_NAME": "nateglinide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -592,7 +592,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1525215,
+ "CONCEPT_ID": 1525215,
 "CONCEPT_NAME": "pioglitazone",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -609,7 +609,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1516766,
+ "CONCEPT_ID": 1516766,
 "CONCEPT_NAME": "repaglinide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -626,7 +626,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1547504,
+ "CONCEPT_ID": 1547504,
 "CONCEPT_NAME": "rosiglitazone",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -643,7 +643,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1515249,
+ "CONCEPT_ID": 1515249,
 "CONCEPT_NAME": "troglitazone",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -662,13 +662,13 @@
 } 
 },
 {
- "id":           6,
+ "id": 6,
 "name": "Insulin",
 "expression": {
  "items": [
  {
  "concept": {
- "CONCEPT_ID":     1596977,
+ "CONCEPT_ID": 1596977,
 "CONCEPT_NAME": "insulin, regular, human",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -685,7 +685,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1550023,
+ "CONCEPT_ID": 1550023,
 "CONCEPT_NAME": "insulin lispro",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -702,7 +702,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1567198,
+ "CONCEPT_ID": 1567198,
 "CONCEPT_NAME": "insulin aspart, human",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -719,7 +719,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1502905,
+ "CONCEPT_ID": 1502905,
 "CONCEPT_NAME": "insulin glargine",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -736,7 +736,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1513876,
+ "CONCEPT_ID": 1513876,
 "CONCEPT_NAME": "insulin lispro protamine, human",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -753,7 +753,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1531601,
+ "CONCEPT_ID": 1531601,
 "CONCEPT_NAME": "insulin aspart protamine, human",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -770,7 +770,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1586346,
+ "CONCEPT_ID": 1586346,
 "CONCEPT_NAME": "insulin, regular, pork",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -787,7 +787,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1544838,
+ "CONCEPT_ID": 1544838,
 "CONCEPT_NAME": "insulin glulisine, human",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -804,7 +804,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1516976,
+ "CONCEPT_ID": 1516976,
 "CONCEPT_NAME": "insulin detemir",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -821,7 +821,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1590165,
+ "CONCEPT_ID": 1590165,
 "CONCEPT_NAME": "insulin, regular, beef-pork",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -838,7 +838,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1513849,
+ "CONCEPT_ID": 1513849,
 "CONCEPT_NAME": "lente insulin, human",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -855,7 +855,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1562586,
+ "CONCEPT_ID": 1562586,
 "CONCEPT_NAME": "lente insulin, pork",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -872,7 +872,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1588986,
+ "CONCEPT_ID": 1588986,
 "CONCEPT_NAME": "insulin human, rDNA origin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -889,7 +889,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1513843,
+ "CONCEPT_ID": 1513843,
 "CONCEPT_NAME": "lente insulin, beef-pork",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -906,7 +906,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1586369,
+ "CONCEPT_ID": 1586369,
 "CONCEPT_NAME": "ultralente insulin, human",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -923,7 +923,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    35605670,
+ "CONCEPT_ID": 35605670,
 "CONCEPT_NAME": "insulin argine",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -940,7 +940,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    35602720,
+ "CONCEPT_ID": 35602720,
 "CONCEPT_NAME": "insulin degludec",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -957,7 +957,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    21600710,
+ "CONCEPT_ID": 21600710,
 "CONCEPT_NAME": "INSULINS AND ANALOGUES",
 "STANDARD_CONCEPT": "C",
 "STANDARD_CONCEPT_CAPTION": "Classification",
@@ -974,7 +974,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    19078610,
+ "CONCEPT_ID": 19078610,
 "CONCEPT_NAME": "insulin, protamine zinc, beef-pork 100 UNT/ML Injectable Suspension",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -993,13 +993,13 @@
 } 
 },
 {
- "id":           7,
+ "id": 7,
 "name": "Metformin",
 "expression": {
  "items": [
  {
  "concept": {
- "CONCEPT_ID":     1503297,
+ "CONCEPT_ID": 1503297,
 "CONCEPT_NAME": "metformin",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1018,13 +1018,13 @@
 } 
 },
 {
- "id":          10,
+ "id": 10,
 "name": "Secondary diabetes mellitus",
 "expression": {
  "items": [
  {
  "concept": {
- "CONCEPT_ID":      195771,
+ "CONCEPT_ID": 195771,
 "CONCEPT_NAME": "Secondary diabetes mellitus",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1043,13 +1043,13 @@
 } 
 },
 {
- "id":          11,
+ "id": 11,
 "name": "Type 1 diabetes mellitus",
 "expression": {
  "items": [
  {
  "concept": {
- "CONCEPT_ID":      201254,
+ "CONCEPT_ID": 201254,
 "CONCEPT_NAME": "Type 1 diabetes mellitus",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1066,7 +1066,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":      435216,
+ "CONCEPT_ID": 435216,
 "CONCEPT_NAME": "Disorder due to type 1 diabetes mellitus",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1083,7 +1083,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":      200687,
+ "CONCEPT_ID": 200687,
 "CONCEPT_NAME": "Renal disorder due to type 1 diabetes mellitus",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1100,7 +1100,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":      377821,
+ "CONCEPT_ID": 377821,
 "CONCEPT_NAME": "Disorder of nervous system due to type 1 diabetes mellitus",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1117,7 +1117,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":      318712,
+ "CONCEPT_ID": 318712,
 "CONCEPT_NAME": "Peripheral circulatory disorder due to type 1 diabetes mellitus",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1136,13 +1136,13 @@
 } 
 },
 {
- "id":          12,
+ "id": 12,
 "name": "Type 2 diabetes mellitus",
 "expression": {
  "items": [
  {
  "concept": {
- "CONCEPT_ID":      201826,
+ "CONCEPT_ID": 201826,
 "CONCEPT_NAME": "Type 2 diabetes mellitus",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1159,7 +1159,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":      443734,
+ "CONCEPT_ID": 443734,
 "CONCEPT_NAME": "Ketoacidosis due to type 2 diabetes mellitus",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1176,7 +1176,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":      443767,
+ "CONCEPT_ID": 443767,
 "CONCEPT_NAME": "Disorder of eye due to diabetes mellitus",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1193,7 +1193,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":      192279,
+ "CONCEPT_ID": 192279,
 "CONCEPT_NAME": "Disorder of kidney due to diabetes mellitus",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1210,7 +1210,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":      443735,
+ "CONCEPT_ID": 443735,
 "CONCEPT_NAME": "Coma due to diabetes mellitus",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1227,7 +1227,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":      376065,
+ "CONCEPT_ID": 376065,
 "CONCEPT_NAME": "Disorder of nervous system due to type 2 diabetes mellitus",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1244,7 +1244,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":      443729,
+ "CONCEPT_ID": 443729,
 "CONCEPT_NAME": "Peripheral circulatory disorder due to type 2 diabetes mellitus",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1261,7 +1261,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":      443732,
+ "CONCEPT_ID": 443732,
 "CONCEPT_NAME": "Disorder due to type 2 diabetes mellitus",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1280,13 +1280,13 @@
 } 
 },
 {
- "id":          13,
+ "id": 13,
 "name": "Obesity",
 "expression": {
  "items": [
  {
  "concept": {
- "CONCEPT_ID":     3038553,
+ "CONCEPT_ID": 3038553,
 "CONCEPT_NAME": "Body mass index (BMI) [Ratio]",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1303,7 +1303,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    36304830,
+ "CONCEPT_ID": 36304830,
 "CONCEPT_NAME": "Body mass index (BMI) [Ratio] Estimated",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1320,7 +1320,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     3025315,
+ "CONCEPT_ID": 3025315,
 "CONCEPT_NAME": "Body weight",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1337,7 +1337,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     4099154,
+ "CONCEPT_ID": 4099154,
 "CONCEPT_NAME": "Body weight",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1354,7 +1354,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     3013762,
+ "CONCEPT_ID": 3013762,
 "CONCEPT_NAME": "Body weight Measured",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1371,7 +1371,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     3023166,
+ "CONCEPT_ID": 3023166,
 "CONCEPT_NAME": "Body weight Stated",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1388,7 +1388,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     3027492,
+ "CONCEPT_ID": 3027492,
 "CONCEPT_NAME": "Dry body weight Measured",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1405,7 +1405,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     4215968,
+ "CONCEPT_ID": 4215968,
 "CONCEPT_NAME": "Obese",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1422,7 +1422,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     4176962,
+ "CONCEPT_ID": 4176962,
 "CONCEPT_NAME": "Obesity associated disorder",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1441,98 +1441,13 @@
 } 
 },
 {
- "id":          14,
-"name": "All alternative target exposures",
+ "id":          17,
+"name": "GLP-1 receptor agonists excluding albiglutide",
 "expression": {
  "items": [
  {
  "concept": {
- "CONCEPT_ID":    43013884,
-"CONCEPT_NAME": "alogliptin",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "1368001",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":    40239216,
-"CONCEPT_NAME": "linagliptin",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "1100699",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":    40166035,
-"CONCEPT_NAME": "saxagliptin",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "857974",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":     1580747,
-"CONCEPT_NAME": "sitagliptin",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "593411",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":    19122137,
-"CONCEPT_NAME": "vildagliptin",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "596554",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":    45774435,
+ "CONCEPT_ID": 45774435,
 "CONCEPT_NAME": "dulaglutide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1549,7 +1464,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1583722,
+ "CONCEPT_ID": 1583722,
 "CONCEPT_NAME": "exenatide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1566,7 +1481,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    40170911,
+ "CONCEPT_ID": 40170911,
 "CONCEPT_NAME": "liraglutide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1583,7 +1498,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    44506754,
+ "CONCEPT_ID": 44506754,
 "CONCEPT_NAME": "lixisenatide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1600,7 +1515,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":      793143,
+ "CONCEPT_ID": 793143,
 "CONCEPT_NAME": "semaglutide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1617,24 +1532,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    44816332,
-"CONCEPT_NAME": "albiglutide",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "1534763",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":      779705,
+ "CONCEPT_ID": 779705,
 "CONCEPT_NAME": "tirzepatide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1651,7 +1549,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    36851064,
+ "CONCEPT_ID": 36851064,
 "CONCEPT_NAME": "EFPEGLENATIDE",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1665,282 +1563,27 @@
 "isExcluded": false,
 "includeDescendants": true,
 "includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":    43526465,
-"CONCEPT_NAME": "canagliflozin",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "1373458",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":    44785829,
-"CONCEPT_NAME": "dapagliflozin",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "1488564",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":    45774751,
-"CONCEPT_NAME": "empagliflozin",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "1545653",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":      793293,
-"CONCEPT_NAME": "ertugliflozin",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "1992672",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":     1594973,
-"CONCEPT_NAME": "chlorpropamide",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "2404",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":     1597756,
-"CONCEPT_NAME": "glimepiride",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "25789",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":     1560171,
-"CONCEPT_NAME": "glipizide",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "4821",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":    19097821,
-"CONCEPT_NAME": "gliquidone",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "25793",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":     1559684,
-"CONCEPT_NAME": "glyburide",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "4815",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":     1502809,
-"CONCEPT_NAME": "tolazamide",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "10633",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":     1502855,
-"CONCEPT_NAME": "tolbutamide",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "10635",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
-},
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
 } 
 ] 
 } 
 },
 {
- "id":          65,
-"name": "BMI measurements",
+ "id":          17,
+"name": "GLP-1 receptor agonists excluding albiglutide",
 "expression": {
  "items": [
  {
  "concept": {
- "CONCEPT_ID":     3038553,
-"CONCEPT_NAME": "Body mass index (BMI) [Ratio]",
+ "CONCEPT_ID": 45774435,
+"CONCEPT_NAME": "dulaglutide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
 "INVALID_REASON": "V",
 "INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "39156-5",
-"DOMAIN_ID": "Measurement",
-"VOCABULARY_ID": "LOINC",
-"CONCEPT_CLASS_ID": "Clinical Observation" 
-},
-"isExcluded": false,
-"includeDescendants": false,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":    36304830,
-"CONCEPT_NAME": "Body mass index (BMI) [Ratio] Estimated",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "89270-3",
-"DOMAIN_ID": "Measurement",
-"VOCABULARY_ID": "LOINC",
-"CONCEPT_CLASS_ID": "Clinical Observation" 
-},
-"isExcluded": false,
-"includeDescendants": false,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":     3038553,
-"CONCEPT_NAME": "Body mass index (BMI) [Ratio]",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "39156-5",
-"DOMAIN_ID": "Measurement",
-"VOCABULARY_ID": "LOINC",
-"CONCEPT_CLASS_ID": "Clinical Observation" 
-},
-"isExcluded": false,
-"includeDescendants": false,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":    36304830,
-"CONCEPT_NAME": "Body mass index (BMI) [Ratio] Estimated",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "89270-3",
-"DOMAIN_ID": "Measurement",
-"VOCABULARY_ID": "LOINC",
-"CONCEPT_CLASS_ID": "Clinical Observation" 
-},
-"isExcluded": false,
-"includeDescendants": false,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":     3038553,
-"CONCEPT_NAME": "Body mass index (BMI) [Ratio]",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "39156-5",
-"DOMAIN_ID": "Measurement",
-"VOCABULARY_ID": "LOINC",
-"CONCEPT_CLASS_ID": "Clinical Observation" 
+"CONCEPT_CODE": "1551291",
+"DOMAIN_ID": "Drug",
+"VOCABULARY_ID": "RxNorm",
+"CONCEPT_CLASS_ID": "Ingredient" 
 },
 "isExcluded": false,
 "includeDescendants": true,
@@ -1948,16 +1591,101 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    36304830,
-"CONCEPT_NAME": "Body mass index (BMI) [Ratio] Estimated",
+ "CONCEPT_ID": 1583722,
+"CONCEPT_NAME": "exenatide",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
 "INVALID_REASON": "V",
 "INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "89270-3",
-"DOMAIN_ID": "Measurement",
-"VOCABULARY_ID": "LOINC",
-"CONCEPT_CLASS_ID": "Clinical Observation" 
+"CONCEPT_CODE": "60548",
+"DOMAIN_ID": "Drug",
+"VOCABULARY_ID": "RxNorm",
+"CONCEPT_CLASS_ID": "Ingredient" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID": 40170911,
+"CONCEPT_NAME": "liraglutide",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "475968",
+"DOMAIN_ID": "Drug",
+"VOCABULARY_ID": "RxNorm",
+"CONCEPT_CLASS_ID": "Ingredient" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID": 44506754,
+"CONCEPT_NAME": "lixisenatide",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "1440051",
+"DOMAIN_ID": "Drug",
+"VOCABULARY_ID": "RxNorm",
+"CONCEPT_CLASS_ID": "Ingredient" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID": 793143,
+"CONCEPT_NAME": "semaglutide",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "1991302",
+"DOMAIN_ID": "Drug",
+"VOCABULARY_ID": "RxNorm",
+"CONCEPT_CLASS_ID": "Ingredient" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID": 779705,
+"CONCEPT_NAME": "tirzepatide",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "2601723",
+"DOMAIN_ID": "Drug",
+"VOCABULARY_ID": "RxNorm",
+"CONCEPT_CLASS_ID": "Ingredient" 
+},
+"isExcluded": false,
+"includeDescendants": true,
+"includeMapped": false 
+},
+{
+ "concept": {
+ "CONCEPT_ID": 36851064,
+"CONCEPT_NAME": "EFPEGLENATIDE",
+"STANDARD_CONCEPT": "S",
+"STANDARD_CONCEPT_CAPTION": "Standard",
+"INVALID_REASON": "V",
+"INVALID_REASON_CAPTION": "Valid",
+"CONCEPT_CODE": "OMOP5168681",
+"DOMAIN_ID": "Drug",
+"VOCABULARY_ID": "RxNorm Extension",
+"CONCEPT_CLASS_ID": "Ingredient" 
 },
 "isExcluded": false,
 "includeDescendants": true,
@@ -1967,13 +1695,13 @@
 } 
 },
 {
- "id":          66,
+ "id": 66,
 "name": "Obesity Dx",
 "expression": {
  "items": [
  {
  "concept": {
- "CONCEPT_ID":     4060985,
+ "CONCEPT_ID": 4060985,
 "CONCEPT_NAME": "Body mass index 30+ - obesity",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -1990,7 +1718,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     4256640,
+ "CONCEPT_ID": 4256640,
 "CONCEPT_NAME": "Body mass index 40+ - severely obese",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -2007,7 +1735,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    45766200,
+ "CONCEPT_ID": 45766200,
 "CONCEPT_NAME": "Lymphedema associated with obesity",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -2024,7 +1752,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":      433736,
+ "CONCEPT_ID": 433736,
 "CONCEPT_NAME": "Obesity",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -2041,7 +1769,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     4176962,
+ "CONCEPT_ID": 4176962,
 "CONCEPT_NAME": "Obesity associated disorder",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -2058,7 +1786,7 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     4081038,
+ "CONCEPT_ID": 4081038,
 "CONCEPT_NAME": "Pulmonary hypertension with extreme obesity",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
@@ -2077,22 +1805,22 @@
 } 
 },
 {
- "id":          15,
-"name": "GLP-1 receptor agonists excluding albiglutide",
+ "id": 67,
+"name": "Body Weight",
 "expression": {
  "items": [
  {
  "concept": {
- "CONCEPT_ID":    45774435,
-"CONCEPT_NAME": "dulaglutide",
+ "CONCEPT_ID": 3025315,
+"CONCEPT_NAME": "Body weight",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
 "INVALID_REASON": "V",
 "INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "1551291",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
+"CONCEPT_CODE": "29463-7",
+"DOMAIN_ID": "Measurement",
+"VOCABULARY_ID": "LOINC",
+"CONCEPT_CLASS_ID": "Clinical Observation" 
 },
 "isExcluded": false,
 "includeDescendants": true,
@@ -2100,16 +1828,16 @@
 },
 {
  "concept": {
- "CONCEPT_ID":     1583722,
-"CONCEPT_NAME": "exenatide",
+ "CONCEPT_ID": 4099154,
+"CONCEPT_NAME": "Body weight",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
 "INVALID_REASON": "V",
 "INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "60548",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
+"CONCEPT_CODE": "27113001",
+"DOMAIN_ID": "Measurement",
+"VOCABULARY_ID": "SNOMED",
+"CONCEPT_CLASS_ID": "Observable Entity" 
 },
 "isExcluded": false,
 "includeDescendants": true,
@@ -2117,16 +1845,16 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    40170911,
-"CONCEPT_NAME": "liraglutide",
+ "CONCEPT_ID": 3013762,
+"CONCEPT_NAME": "Body weight Measured",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
 "INVALID_REASON": "V",
 "INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "475968",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
+"CONCEPT_CODE": "3141-9",
+"DOMAIN_ID": "Measurement",
+"VOCABULARY_ID": "LOINC",
+"CONCEPT_CLASS_ID": "Clinical Observation" 
 },
 "isExcluded": false,
 "includeDescendants": true,
@@ -2134,16 +1862,16 @@
 },
 {
  "concept": {
- "CONCEPT_ID":    44506754,
-"CONCEPT_NAME": "lixisenatide",
+ "CONCEPT_ID": 3027492,
+"CONCEPT_NAME": "Dry body weight Measured",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
 "INVALID_REASON": "V",
 "INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "1440051",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
+"CONCEPT_CODE": "8341-0",
+"DOMAIN_ID": "Measurement",
+"VOCABULARY_ID": "LOINC",
+"CONCEPT_CLASS_ID": "Clinical Observation" 
 },
 "isExcluded": false,
 "includeDescendants": true,
@@ -2151,16 +1879,16 @@
 },
 {
  "concept": {
- "CONCEPT_ID":      793143,
-"CONCEPT_NAME": "semaglutide",
+ "CONCEPT_ID": 3023166,
+"CONCEPT_NAME": "Body weight Stated",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
 "INVALID_REASON": "V",
 "INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "1991302",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
+"CONCEPT_CODE": "3142-7",
+"DOMAIN_ID": "Measurement",
+"VOCABULARY_ID": "LOINC",
+"CONCEPT_CLASS_ID": "Clinical Observation" 
 },
 "isExcluded": false,
 "includeDescendants": true,
@@ -2168,35 +1896,18 @@
 },
 {
  "concept": {
- "CONCEPT_ID":      779705,
-"CONCEPT_NAME": "tirzepatide",
+ "CONCEPT_ID": 4264825,
+"CONCEPT_NAME": "Birth weight",
 "STANDARD_CONCEPT": "S",
 "STANDARD_CONCEPT_CAPTION": "Standard",
 "INVALID_REASON": "V",
 "INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "2601723",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm",
-"CONCEPT_CLASS_ID": "Ingredient" 
+"CONCEPT_CODE": "364589006",
+"DOMAIN_ID": "Measurement",
+"VOCABULARY_ID": "SNOMED",
+"CONCEPT_CLASS_ID": "Observable Entity" 
 },
-"isExcluded": false,
-"includeDescendants": true,
-"includeMapped": false 
-},
-{
- "concept": {
- "CONCEPT_ID":    36851064,
-"CONCEPT_NAME": "EFPEGLENATIDE",
-"STANDARD_CONCEPT": "S",
-"STANDARD_CONCEPT_CAPTION": "Standard",
-"INVALID_REASON": "V",
-"INVALID_REASON_CAPTION": "Valid",
-"CONCEPT_CODE": "OMOP5168681",
-"DOMAIN_ID": "Drug",
-"VOCABULARY_ID": "RxNorm Extension",
-"CONCEPT_CLASS_ID": "Ingredient" 
-},
-"isExcluded": false,
+"isExcluded": true,
 "includeDescendants": true,
 "includeMapped": false 
 } 
@@ -2219,16 +1930,17 @@
  {
  "Criteria": {
  "DrugExposure": {
- "DrugTypeExclude": false 
+ "DrugTypeExclude": false,
+"CodesetId":          17 
 } 
 },
 "StartWindow": {
  "Start": {
- "Coeff":          -1 
+ "Coeff": -1 
 },
 "End": {
- "Days":           0,
-"Coeff":          -1 
+ "Days": 0,
+"Coeff": -1 
 },
 "UseIndexEnd": false,
 "UseEventEnd": false 
@@ -2236,8 +1948,8 @@
 "RestrictVisit": false,
 "IgnoreObservationPeriod": true,
 "Occurrence": {
- "Type":           0,
-"Count":           0,
+ "Type": 0,
+"Count": 0,
 "IsDistinct": false 
 } 
 } 
@@ -2254,17 +1966,17 @@
  {
  "Criteria": {
  "DrugExposure": {
- "CodesetId":           1,
+ "CodesetId": 1,
 "DrugTypeExclude": false 
 } 
 },
 "StartWindow": {
  "Start": {
- "Coeff":          -1 
+ "Coeff": -1 
 },
 "End": {
- "Days":           0,
-"Coeff":          -1 
+ "Days": 0,
+"Coeff": -1 
 },
 "UseIndexEnd": false,
 "UseEventEnd": false 
@@ -2272,8 +1984,8 @@
 "RestrictVisit": false,
 "IgnoreObservationPeriod": true,
 "Occurrence": {
- "Type":           0,
-"Count":           0,
+ "Type": 0,
+"Count": 0,
 "IsDistinct": false 
 } 
 } 
@@ -2290,17 +2002,17 @@
  {
  "Criteria": {
  "DrugExposure": {
- "CodesetId":           3,
+ "CodesetId": 3,
 "DrugTypeExclude": false 
 } 
 },
 "StartWindow": {
  "Start": {
- "Coeff":          -1 
+ "Coeff": -1 
 },
 "End": {
- "Days":           0,
-"Coeff":          -1 
+ "Days": 0,
+"Coeff": -1 
 },
 "UseIndexEnd": false,
 "UseEventEnd": false 
@@ -2308,8 +2020,8 @@
 "RestrictVisit": false,
 "IgnoreObservationPeriod": true,
 "Occurrence": {
- "Type":           0,
-"Count":           0,
+ "Type": 0,
+"Count": 0,
 "IsDistinct": false 
 } 
 } 
@@ -2326,17 +2038,17 @@
  {
  "Criteria": {
  "DrugExposure": {
- "CodesetId":           4,
+ "CodesetId": 4,
 "DrugTypeExclude": false 
 } 
 },
 "StartWindow": {
  "Start": {
- "Coeff":          -1 
+ "Coeff": -1 
 },
 "End": {
- "Days":           0,
-"Coeff":          -1 
+ "Days": 0,
+"Coeff": -1 
 },
 "UseIndexEnd": false,
 "UseEventEnd": false 
@@ -2344,8 +2056,8 @@
 "RestrictVisit": false,
 "IgnoreObservationPeriod": true,
 "Occurrence": {
- "Type":           0,
-"Count":           0,
+ "Type": 0,
+"Count": 0,
 "IsDistinct": false 
 } 
 } 
@@ -2362,17 +2074,17 @@
  {
  "Criteria": {
  "DrugExposure": {
- "CodesetId":           5,
+ "CodesetId": 5,
 "DrugTypeExclude": false 
 } 
 },
 "StartWindow": {
  "Start": {
- "Coeff":          -1 
+ "Coeff": -1 
 },
 "End": {
- "Days":           0,
-"Coeff":          -1 
+ "Days": 0,
+"Coeff": -1 
 },
 "UseIndexEnd": false,
 "UseEventEnd": false 
@@ -2380,8 +2092,8 @@
 "RestrictVisit": false,
 "IgnoreObservationPeriod": true,
 "Occurrence": {
- "Type":           0,
-"Count":           0,
+ "Type": 0,
+"Count": 0,
 "IsDistinct": false 
 } 
 } 
@@ -2424,20 +2136,20 @@
  {
  "Criteria": {
  "DrugEra": {
- "CodesetId":           7,
+ "CodesetId": 7,
 "EraLength": {
- "Value":          90,
+ "Value": 90,
 "Op": "gte" 
 } 
 } 
 },
 "StartWindow": {
  "Start": {
- "Coeff":          -1 
+ "Coeff": -1 
 },
 "End": {
- "Days":          90,
-"Coeff":          -1 
+ "Days": 90,
+"Coeff": -1 
 },
 "UseIndexEnd": false,
 "UseEventEnd": false 
@@ -2445,25 +2157,25 @@
 "RestrictVisit": false,
 "IgnoreObservationPeriod": true,
 "Occurrence": {
- "Type":           2,
-"Count":           1,
+ "Type": 2,
+"Count": 1,
 "IsDistinct": false 
 } 
 },
 {
  "Criteria": {
  "DrugExposure": {
- "CodesetId":           7,
+ "CodesetId": 7,
 "DrugTypeExclude": false 
 } 
 },
 "StartWindow": {
  "Start": {
- "Coeff":          -1 
+ "Coeff": -1 
 },
 "End": {
- "Days":           0,
-"Coeff":          -1 
+ "Days": 0,
+"Coeff": -1 
 },
 "UseIndexEnd": false,
 "UseEventEnd": false 
@@ -2471,8 +2183,8 @@
 "RestrictVisit": false,
 "IgnoreObservationPeriod": true,
 "Occurrence": {
- "Type":           2,
-"Count":           3,
+ "Type": 2,
+"Count": 3,
 "IsDistinct": false 
 } 
 } 
@@ -2483,26 +2195,27 @@
 },
 {
  "name": "No prior insulin use or combo initiation",
+"description": "Proxy for < 30 days drug era anytime before index and no combination use on index",
 "expression": {
  "Type": "ALL",
 "CriteriaList": [
  {
  "Criteria": {
  "DrugEra": {
- "CodesetId":           6,
+ "CodesetId": 6,
 "EraLength": {
- "Value":          30,
+ "Value": 30,
 "Op": "gt" 
 } 
 } 
 },
 "StartWindow": {
  "Start": {
- "Coeff":          -1 
+ "Coeff": -1 
 },
 "End": {
- "Days":          30,
-"Coeff":          -1 
+ "Days": 30,
+"Coeff": -1 
 },
 "UseIndexEnd": false,
 "UseEventEnd": false 
@@ -2510,25 +2223,25 @@
 "RestrictVisit": false,
 "IgnoreObservationPeriod": true,
 "Occurrence": {
- "Type":           0,
-"Count":           0,
+ "Type": 0,
+"Count": 0,
 "IsDistinct": false 
 } 
 },
 {
  "Criteria": {
  "DrugEra": {
- "CodesetId":           6 
+ "CodesetId": 6 
 } 
 },
 "StartWindow": {
  "Start": {
- "Days":          30,
-"Coeff":          -1 
+ "Days": 30,
+"Coeff": -1 
 },
 "End": {
- "Days":           0,
-"Coeff":           1 
+ "Days": 0,
+"Coeff": 1 
 },
 "UseIndexEnd": false,
 "UseEventEnd": false 
@@ -2536,8 +2249,8 @@
 "RestrictVisit": false,
 "IgnoreObservationPeriod": true,
 "Occurrence": {
- "Type":           0,
-"Count":           0,
+ "Type": 0,
+"Count": 0,
 "IsDistinct": false 
 } 
 } 
@@ -2550,28 +2263,28 @@
 "EndStrategy": {
  "CustomEra": {
  "DrugCodesetId":           2,
-"GapDays":          30,
-"Offset":           0 
+"GapDays": 30,
+"Offset": 0 
 } 
 },
 "CensoringCriteria": [
  {
  "DrugExposure": {
- "CodesetId":          14,
+ "CodesetId": 14,
 "DrugTypeExclude": false 
 } 
 },
 {
  "DrugExposure": {
- "CodesetId":           5,
+ "CodesetId": 5,
 "DrugTypeExclude": false 
 } 
 },
 {
  "DrugEra": {
- "CodesetId":           6,
+ "CodesetId": 6,
 "EraLength": {
- "Value":          30,
+ "Value": 30,
 "Op": "gt" 
 } 
 } 
@@ -2579,7 +2292,8 @@
 ],
 "CollapseSettings": {
  "CollapseType": "ERA",
-"EraPad":           0 
+"EraPad": 0 
 },
-"CensorWindow": {} 
+"CensorWindow": {},
+"name": "albiglutide: ot2, with prior met, any age, male sex, any obesity" 
 }
