@@ -1,225 +1,225 @@
 atlasId,atlasName,cohortId,name
-2110000,albiglutide main,2110000,glp1ra/ID2110000
-2110001,albiglutide without-obesity,2110001,glp1ra/ID2110001
-2110002,albiglutide with-obesity,2110002,glp1ra/ID2110002
-2110010,albiglutide female,2110010,glp1ra/ID2110010
-2110030,albiglutide male,2110030,glp1ra/ID2110030
-2110100,albiglutide younger-age,2110100,glp1ra/ID2110100
-2110300,albiglutide older-age,2110300,glp1ra/ID2110300
-2111000,albiglutide main no-met,2111000,glp1ra/ID2111000
-2111001,albiglutide no-met without-obesity,2111001,glp1ra/ID2111001
-2111002,albiglutide no-met with-obesity,2111002,glp1ra/ID2111002
-2111010,albiglutide no-met female,2111010,glp1ra/ID2111010
-2111030,albiglutide no-met male,2111030,glp1ra/ID2111030
-2111100,albiglutide no-met younger-age,2111100,glp1ra/ID2111100
-2111300,albiglutide no-met older-age,2111300,glp1ra/ID2111300
-2120000,albiglutide main ot2,2120000,glp1ra/ID2120000
-2120001,albiglutide ot2 without-obesity,2120001,glp1ra/ID2120001
-2120002,albiglutide ot2 with-obesity,2120002,glp1ra/ID2120002
-2120010,albiglutide ot2 female,2120010,glp1ra/ID2120010
-2120030,albiglutide ot2 male,2120030,glp1ra/ID2120030
-2120100,albiglutide ot2 younger-age,2120100,glp1ra/ID2120100
-2120300,albiglutide ot2 older-age,2120300,glp1ra/ID2120300
-2121000,albiglutide main ot2 no-met,2121000,glp1ra/ID2121000
-2121001,albiglutide ot2 no-met without-obesity,2121001,glp1ra/ID2121001
-2121002,albiglutide ot2 no-met with-obesity,2121002,glp1ra/ID2121002
-2121010,albiglutide ot2 no-met female,2121010,glp1ra/ID2121010
-2121030,albiglutide ot2 no-met male,2121030,glp1ra/ID2121030
-2121100,albiglutide ot2 no-met younger-age,2121100,glp1ra/ID2121100
-2121300,albiglutide ot2 no-met older-age,2121300,glp1ra/ID2121300
-2210000,dulaglutide main,2210000,glp1ra/ID2210000
-2210001,dulaglutide without-obesity,2210001,glp1ra/ID2210001
-2210002,dulaglutide with-obesity,2210002,glp1ra/ID2210002
-2210010,dulaglutide female,2210010,glp1ra/ID2210010
-2210030,dulaglutide male,2210030,glp1ra/ID2210030
-2210100,dulaglutide younger-age,2210100,glp1ra/ID2210100
-2210300,dulaglutide older-age,2210300,glp1ra/ID2210300
-2211000,dulaglutide main no-met,2211000,glp1ra/ID2211000
-2211001,dulaglutide no-met without-obesity,2211001,glp1ra/ID2211001
-2211002,dulaglutide no-met with-obesity,2211002,glp1ra/ID2211002
-2211010,dulaglutide no-met female,2211010,glp1ra/ID2211010
-2211030,dulaglutide no-met male,2211030,glp1ra/ID2211030
-2211100,dulaglutide no-met younger-age,2211100,glp1ra/ID2211100
-2211300,dulaglutide no-met older-age,2211300,glp1ra/ID2211300
-2220000,dulaglutide main ot2,2220000,glp1ra/ID2220000
-2220001,dulaglutide ot2 without-obesity,2220001,glp1ra/ID2220001
-2220002,dulaglutide ot2 with-obesity,2220002,glp1ra/ID2220002
-2220010,dulaglutide ot2 female,2220010,glp1ra/ID2220010
-2220030,dulaglutide ot2 male,2220030,glp1ra/ID2220030
-2220100,dulaglutide ot2 younger-age,2220100,glp1ra/ID2220100
-2220300,dulaglutide ot2 older-age,2220300,glp1ra/ID2220300
-2221000,dulaglutide main ot2 no-met,2221000,glp1ra/ID2221000
-2221001,dulaglutide ot2 no-met without-obesity,2221001,glp1ra/ID2221001
-2221002,dulaglutide ot2 no-met with-obesity,2221002,glp1ra/ID2221002
-2221010,dulaglutide ot2 no-met female,2221010,glp1ra/ID2221010
-2221030,dulaglutide ot2 no-met male,2221030,glp1ra/ID2221030
-2221100,dulaglutide ot2 no-met younger-age,2221100,glp1ra/ID2221100
-2221300,dulaglutide ot2 no-met older-age,2221300,glp1ra/ID2221300
-2310000,exenatide main,2310000,glp1ra/ID2310000
-2310001,exenatide without-obesity,2310001,glp1ra/ID2310001
-2310002,exenatide with-obesity,2310002,glp1ra/ID2310002
-2310010,exenatide female,2310010,glp1ra/ID2310010
-2310030,exenatide male,2310030,glp1ra/ID2310030
-2310100,exenatide younger-age,2310100,glp1ra/ID2310100
-2310300,exenatide older-age,2310300,glp1ra/ID2310300
-2311000,exenatide main no-met,2311000,glp1ra/ID2311000
-2311001,exenatide no-met without-obesity,2311001,glp1ra/ID2311001
-2311002,exenatide no-met with-obesity,2311002,glp1ra/ID2311002
-2311010,exenatide no-met female,2311010,glp1ra/ID2311010
-2311030,exenatide no-met male,2311030,glp1ra/ID2311030
-2311100,exenatide no-met younger-age,2311100,glp1ra/ID2311100
-2311300,exenatide no-met older-age,2311300,glp1ra/ID2311300
-2320000,exenatide main ot2,2320000,glp1ra/ID2320000
-2320001,exenatide ot2 without-obesity,2320001,glp1ra/ID2320001
-2320002,exenatide ot2 with-obesity,2320002,glp1ra/ID2320002
-2320010,exenatide ot2 female,2320010,glp1ra/ID2320010
-2320030,exenatide ot2 male,2320030,glp1ra/ID2320030
-2320100,exenatide ot2 younger-age,2320100,glp1ra/ID2320100
-2320300,exenatide ot2 older-age,2320300,glp1ra/ID2320300
-2321000,exenatide main ot2 no-met,2321000,glp1ra/ID2321000
-2321001,exenatide ot2 no-met without-obesity,2321001,glp1ra/ID2321001
-2321002,exenatide ot2 no-met with-obesity,2321002,glp1ra/ID2321002
-2321010,exenatide ot2 no-met female,2321010,glp1ra/ID2321010
-2321030,exenatide ot2 no-met male,2321030,glp1ra/ID2321030
-2321100,exenatide ot2 no-met younger-age,2321100,glp1ra/ID2321100
-2321300,exenatide ot2 no-met older-age,2321300,glp1ra/ID2321300
-2410000,liraglutide main,2410000,glp1ra/ID2410000
-2410001,liraglutide without-obesity,2410001,glp1ra/ID2410001
-2410002,liraglutide with-obesity,2410002,glp1ra/ID2410002
-2410010,liraglutide female,2410010,glp1ra/ID2410010
-2410030,liraglutide male,2410030,glp1ra/ID2410030
-2410100,liraglutide younger-age,2410100,glp1ra/ID2410100
-2410300,liraglutide older-age,2410300,glp1ra/ID2410300
-2411000,liraglutide main no-met,2411000,glp1ra/ID2411000
-2411001,liraglutide no-met without-obesity,2411001,glp1ra/ID2411001
-2411002,liraglutide no-met with-obesity,2411002,glp1ra/ID2411002
-2411010,liraglutide no-met female,2411010,glp1ra/ID2411010
-2411030,liraglutide no-met male,2411030,glp1ra/ID2411030
-2411100,liraglutide no-met younger-age,2411100,glp1ra/ID2411100
-2411300,liraglutide no-met older-age,2411300,glp1ra/ID2411300
-2420000,liraglutide main ot2,2420000,glp1ra/ID2420000
-2420001,liraglutide ot2 without-obesity,2420001,glp1ra/ID2420001
-2420002,liraglutide ot2 with-obesity,2420002,glp1ra/ID2420002
-2420010,liraglutide ot2 female,2420010,glp1ra/ID2420010
-2420030,liraglutide ot2 male,2420030,glp1ra/ID2420030
-2420100,liraglutide ot2 younger-age,2420100,glp1ra/ID2420100
-2420300,liraglutide ot2 older-age,2420300,glp1ra/ID2420300
-2421000,liraglutide main ot2 no-met,2421000,glp1ra/ID2421000
-2421001,liraglutide ot2 no-met without-obesity,2421001,glp1ra/ID2421001
-2421002,liraglutide ot2 no-met with-obesity,2421002,glp1ra/ID2421002
-2421010,liraglutide ot2 no-met female,2421010,glp1ra/ID2421010
-2421030,liraglutide ot2 no-met male,2421030,glp1ra/ID2421030
-2421100,liraglutide ot2 no-met younger-age,2421100,glp1ra/ID2421100
-2421300,liraglutide ot2 no-met older-age,2421300,glp1ra/ID2421300
-2510000,lixisenatide main,2510000,glp1ra/ID2510000
-2510001,lixisenatide without-obesity,2510001,glp1ra/ID2510001
-2510002,lixisenatide with-obesity,2510002,glp1ra/ID2510002
-2510010,lixisenatide female,2510010,glp1ra/ID2510010
-2510030,lixisenatide male,2510030,glp1ra/ID2510030
-2510100,lixisenatide younger-age,2510100,glp1ra/ID2510100
-2510300,lixisenatide older-age,2510300,glp1ra/ID2510300
-2511000,lixisenatide main no-met,2511000,glp1ra/ID2511000
-2511001,lixisenatide no-met without-obesity,2511001,glp1ra/ID2511001
-2511002,lixisenatide no-met with-obesity,2511002,glp1ra/ID2511002
-2511010,lixisenatide no-met female,2511010,glp1ra/ID2511010
-2511030,lixisenatide no-met male,2511030,glp1ra/ID2511030
-2511100,lixisenatide no-met younger-age,2511100,glp1ra/ID2511100
-2511300,lixisenatide no-met older-age,2511300,glp1ra/ID2511300
-2520000,lixisenatide main ot2,2520000,glp1ra/ID2520000
-2520001,lixisenatide ot2 without-obesity,2520001,glp1ra/ID2520001
-2520002,lixisenatide ot2 with-obesity,2520002,glp1ra/ID2520002
-2520010,lixisenatide ot2 female,2520010,glp1ra/ID2520010
-2520030,lixisenatide ot2 male,2520030,glp1ra/ID2520030
-2520100,lixisenatide ot2 younger-age,2520100,glp1ra/ID2520100
-2520300,lixisenatide ot2 older-age,2520300,glp1ra/ID2520300
-2521000,lixisenatide main ot2 no-met,2521000,glp1ra/ID2521000
-2521001,lixisenatide ot2 no-met without-obesity,2521001,glp1ra/ID2521001
-2521002,lixisenatide ot2 no-met with-obesity,2521002,glp1ra/ID2521002
-2521010,lixisenatide ot2 no-met female,2521010,glp1ra/ID2521010
-2521030,lixisenatide ot2 no-met male,2521030,glp1ra/ID2521030
-2521100,lixisenatide ot2 no-met younger-age,2521100,glp1ra/ID2521100
-2521300,lixisenatide ot2 no-met older-age,2521300,glp1ra/ID2521300
-2610000,semaglutide main,2610000,glp1ra/ID2610000
-2610001,semaglutide without-obesity,2610001,glp1ra/ID2610001
-2610002,semaglutide with-obesity,2610002,glp1ra/ID2610002
-2610010,semaglutide female,2610010,glp1ra/ID2610010
-2610030,semaglutide male,2610030,glp1ra/ID2610030
-2610100,semaglutide younger-age,2610100,glp1ra/ID2610100
-2610300,semaglutide older-age,2610300,glp1ra/ID2610300
-2611000,semaglutide main no-met,2611000,glp1ra/ID2611000
-2611001,semaglutide no-met without-obesity,2611001,glp1ra/ID2611001
-2611002,semaglutide no-met with-obesity,2611002,glp1ra/ID2611002
-2611010,semaglutide no-met female,2611010,glp1ra/ID2611010
-2611030,semaglutide no-met male,2611030,glp1ra/ID2611030
-2611100,semaglutide no-met younger-age,2611100,glp1ra/ID2611100
-2611300,semaglutide no-met older-age,2611300,glp1ra/ID2611300
-2620000,semaglutide main ot2,2620000,glp1ra/ID2620000
-2620001,semaglutide ot2 without-obesity,2620001,glp1ra/ID2620001
-2620002,semaglutide ot2 with-obesity,2620002,glp1ra/ID2620002
-2620010,semaglutide ot2 female,2620010,glp1ra/ID2620010
-2620030,semaglutide ot2 male,2620030,glp1ra/ID2620030
-2620100,semaglutide ot2 younger-age,2620100,glp1ra/ID2620100
-2620300,semaglutide ot2 older-age,2620300,glp1ra/ID2620300
-2621000,semaglutide main ot2 no-met,2621000,glp1ra/ID2621000
-2621001,semaglutide ot2 no-met without-obesity,2621001,glp1ra/ID2621001
-2621002,semaglutide ot2 no-met with-obesity,2621002,glp1ra/ID2621002
-2621010,semaglutide ot2 no-met female,2621010,glp1ra/ID2621010
-2621030,semaglutide ot2 no-met male,2621030,glp1ra/ID2621030
-2621100,semaglutide ot2 no-met younger-age,2621100,glp1ra/ID2621100
-2621300,semaglutide ot2 no-met older-age,2621300,glp1ra/ID2621300
-2710000,tirzepatide main,2710000,glp1ra/ID2710000
-2710001,tirzepatide without-obesity,2710001,glp1ra/ID2710001
-2710002,tirzepatide with-obesity,2710002,glp1ra/ID2710002
-2710010,tirzepatide female,2710010,glp1ra/ID2710010
-2710030,tirzepatide male,2710030,glp1ra/ID2710030
-2710100,tirzepatide younger-age,2710100,glp1ra/ID2710100
-2710300,tirzepatide older-age,2710300,glp1ra/ID2710300
-2711000,tirzepatide main no-met,2711000,glp1ra/ID2711000
-2711001,tirzepatide no-met without-obesity,2711001,glp1ra/ID2711001
-2711002,tirzepatide no-met with-obesity,2711002,glp1ra/ID2711002
-2711010,tirzepatide no-met female,2711010,glp1ra/ID2711010
-2711030,tirzepatide no-met male,2711030,glp1ra/ID2711030
-2711100,tirzepatide no-met younger-age,2711100,glp1ra/ID2711100
-2711300,tirzepatide no-met older-age,2711300,glp1ra/ID2711300
-2720000,tirzepatide main ot2,2720000,glp1ra/ID2720000
-2720001,tirzepatide ot2 without-obesity,2720001,glp1ra/ID2720001
-2720002,tirzepatide ot2 with-obesity,2720002,glp1ra/ID2720002
-2720010,tirzepatide ot2 female,2720010,glp1ra/ID2720010
-2720030,tirzepatide ot2 male,2720030,glp1ra/ID2720030
-2720100,tirzepatide ot2 younger-age,2720100,glp1ra/ID2720100
-2720300,tirzepatide ot2 older-age,2720300,glp1ra/ID2720300
-2721000,tirzepatide main ot2 no-met,2721000,glp1ra/ID2721000
-2721001,tirzepatide ot2 no-met without-obesity,2721001,glp1ra/ID2721001
-2721002,tirzepatide ot2 no-met with-obesity,2721002,glp1ra/ID2721002
-2721010,tirzepatide ot2 no-met female,2721010,glp1ra/ID2721010
-2721030,tirzepatide ot2 no-met male,2721030,glp1ra/ID2721030
-2721100,tirzepatide ot2 no-met younger-age,2721100,glp1ra/ID2721100
-2721300,tirzepatide ot2 no-met older-age,2721300,glp1ra/ID2721300
-2810000,efpeglenatide main,2810000,glp1ra/ID2810000
-2810001,efpeglenatide without-obesity,2810001,glp1ra/ID2810001
-2810002,efpeglenatide with-obesity,2810002,glp1ra/ID2810002
-2810010,efpeglenatide female,2810010,glp1ra/ID2810010
-2810030,efpeglenatide male,2810030,glp1ra/ID2810030
-2810100,efpeglenatide younger-age,2810100,glp1ra/ID2810100
-2810300,efpeglenatide older-age,2810300,glp1ra/ID2810300
-2811000,efpeglenatide main no-met,2811000,glp1ra/ID2811000
-2811001,efpeglenatide no-met without-obesity,2811001,glp1ra/ID2811001
-2811002,efpeglenatide no-met with-obesity,2811002,glp1ra/ID2811002
-2811010,efpeglenatide no-met female,2811010,glp1ra/ID2811010
-2811030,efpeglenatide no-met male,2811030,glp1ra/ID2811030
-2811100,efpeglenatide no-met younger-age,2811100,glp1ra/ID2811100
-2811300,efpeglenatide no-met older-age,2811300,glp1ra/ID2811300
-2820000,efpeglenatide main ot2,2820000,glp1ra/ID2820000
-2820001,efpeglenatide ot2 without-obesity,2820001,glp1ra/ID2820001
-2820002,efpeglenatide ot2 with-obesity,2820002,glp1ra/ID2820002
-2820010,efpeglenatide ot2 female,2820010,glp1ra/ID2820010
-2820030,efpeglenatide ot2 male,2820030,glp1ra/ID2820030
-2820100,efpeglenatide ot2 younger-age,2820100,glp1ra/ID2820100
-2820300,efpeglenatide ot2 older-age,2820300,glp1ra/ID2820300
-2821000,efpeglenatide main ot2 no-met,2821000,glp1ra/ID2821000
-2821001,efpeglenatide ot2 no-met without-obesity,2821001,glp1ra/ID2821001
-2821002,efpeglenatide ot2 no-met with-obesity,2821002,glp1ra/ID2821002
-2821010,efpeglenatide ot2 no-met female,2821010,glp1ra/ID2821010
-2821030,efpeglenatide ot2 no-met male,2821030,glp1ra/ID2821030
-2821100,efpeglenatide ot2 no-met younger-age,2821100,glp1ra/ID2821100
-2821300,efpeglenatide ot2 no-met older-age,2821300,glp1ra/ID2821300
+2110000,albiglutide,2110000,GLP1RA/ID2110000
+2110001,albiglutide,2110001,GLP1RA/ID2110001
+2110002,albiglutide,2110002,GLP1RA/ID2110002
+2110010,albiglutide,2110010,GLP1RA/ID2110010
+2110030,albiglutide,2110030,GLP1RA/ID2110030
+2110100,albiglutide,2110100,GLP1RA/ID2110100
+2110300,albiglutide,2110300,GLP1RA/ID2110300
+2111000,albiglutide,2111000,GLP1RA/ID2111000
+2111001,albiglutide,2111001,GLP1RA/ID2111001
+2111002,albiglutide,2111002,GLP1RA/ID2111002
+2111010,albiglutide,2111010,GLP1RA/ID2111010
+2111030,albiglutide,2111030,GLP1RA/ID2111030
+2111100,albiglutide,2111100,GLP1RA/ID2111100
+2111300,albiglutide,2111300,GLP1RA/ID2111300
+2120000,albiglutide,2120000,GLP1RA/ID2120000
+2120001,albiglutide,2120001,GLP1RA/ID2120001
+2120002,albiglutide,2120002,GLP1RA/ID2120002
+2120010,albiglutide,2120010,GLP1RA/ID2120010
+2120030,albiglutide,2120030,GLP1RA/ID2120030
+2120100,albiglutide,2120100,GLP1RA/ID2120100
+2120300,albiglutide,2120300,GLP1RA/ID2120300
+2121000,albiglutide,2121000,GLP1RA/ID2121000
+2121001,albiglutide,2121001,GLP1RA/ID2121001
+2121002,albiglutide,2121002,GLP1RA/ID2121002
+2121010,albiglutide,2121010,GLP1RA/ID2121010
+2121030,albiglutide,2121030,GLP1RA/ID2121030
+2121100,albiglutide,2121100,GLP1RA/ID2121100
+2121300,albiglutide,2121300,GLP1RA/ID2121300
+2210000,dulaglutide,2210000,GLP1RA/ID2210000
+2210001,dulaglutide,2210001,GLP1RA/ID2210001
+2210002,dulaglutide,2210002,GLP1RA/ID2210002
+2210010,dulaglutide,2210010,GLP1RA/ID2210010
+2210030,dulaglutide,2210030,GLP1RA/ID2210030
+2210100,dulaglutide,2210100,GLP1RA/ID2210100
+2210300,dulaglutide,2210300,GLP1RA/ID2210300
+2211000,dulaglutide,2211000,GLP1RA/ID2211000
+2211001,dulaglutide,2211001,GLP1RA/ID2211001
+2211002,dulaglutide,2211002,GLP1RA/ID2211002
+2211010,dulaglutide,2211010,GLP1RA/ID2211010
+2211030,dulaglutide,2211030,GLP1RA/ID2211030
+2211100,dulaglutide,2211100,GLP1RA/ID2211100
+2211300,dulaglutide,2211300,GLP1RA/ID2211300
+2220000,dulaglutide,2220000,GLP1RA/ID2220000
+2220001,dulaglutide,2220001,GLP1RA/ID2220001
+2220002,dulaglutide,2220002,GLP1RA/ID2220002
+2220010,dulaglutide,2220010,GLP1RA/ID2220010
+2220030,dulaglutide,2220030,GLP1RA/ID2220030
+2220100,dulaglutide,2220100,GLP1RA/ID2220100
+2220300,dulaglutide,2220300,GLP1RA/ID2220300
+2221000,dulaglutide,2221000,GLP1RA/ID2221000
+2221001,dulaglutide,2221001,GLP1RA/ID2221001
+2221002,dulaglutide,2221002,GLP1RA/ID2221002
+2221010,dulaglutide,2221010,GLP1RA/ID2221010
+2221030,dulaglutide,2221030,GLP1RA/ID2221030
+2221100,dulaglutide,2221100,GLP1RA/ID2221100
+2221300,dulaglutide,2221300,GLP1RA/ID2221300
+2310000,exenatide,2310000,GLP1RA/ID2310000
+2310001,exenatide,2310001,GLP1RA/ID2310001
+2310002,exenatide,2310002,GLP1RA/ID2310002
+2310010,exenatide,2310010,GLP1RA/ID2310010
+2310030,exenatide,2310030,GLP1RA/ID2310030
+2310100,exenatide,2310100,GLP1RA/ID2310100
+2310300,exenatide,2310300,GLP1RA/ID2310300
+2311000,exenatide,2311000,GLP1RA/ID2311000
+2311001,exenatide,2311001,GLP1RA/ID2311001
+2311002,exenatide,2311002,GLP1RA/ID2311002
+2311010,exenatide,2311010,GLP1RA/ID2311010
+2311030,exenatide,2311030,GLP1RA/ID2311030
+2311100,exenatide,2311100,GLP1RA/ID2311100
+2311300,exenatide,2311300,GLP1RA/ID2311300
+2320000,exenatide,2320000,GLP1RA/ID2320000
+2320001,exenatide,2320001,GLP1RA/ID2320001
+2320002,exenatide,2320002,GLP1RA/ID2320002
+2320010,exenatide,2320010,GLP1RA/ID2320010
+2320030,exenatide,2320030,GLP1RA/ID2320030
+2320100,exenatide,2320100,GLP1RA/ID2320100
+2320300,exenatide,2320300,GLP1RA/ID2320300
+2321000,exenatide,2321000,GLP1RA/ID2321000
+2321001,exenatide,2321001,GLP1RA/ID2321001
+2321002,exenatide,2321002,GLP1RA/ID2321002
+2321010,exenatide,2321010,GLP1RA/ID2321010
+2321030,exenatide,2321030,GLP1RA/ID2321030
+2321100,exenatide,2321100,GLP1RA/ID2321100
+2321300,exenatide,2321300,GLP1RA/ID2321300
+2410000,liraglutide,2410000,GLP1RA/ID2410000
+2410001,liraglutide,2410001,GLP1RA/ID2410001
+2410002,liraglutide,2410002,GLP1RA/ID2410002
+2410010,liraglutide,2410010,GLP1RA/ID2410010
+2410030,liraglutide,2410030,GLP1RA/ID2410030
+2410100,liraglutide,2410100,GLP1RA/ID2410100
+2410300,liraglutide,2410300,GLP1RA/ID2410300
+2411000,liraglutide,2411000,GLP1RA/ID2411000
+2411001,liraglutide,2411001,GLP1RA/ID2411001
+2411002,liraglutide,2411002,GLP1RA/ID2411002
+2411010,liraglutide,2411010,GLP1RA/ID2411010
+2411030,liraglutide,2411030,GLP1RA/ID2411030
+2411100,liraglutide,2411100,GLP1RA/ID2411100
+2411300,liraglutide,2411300,GLP1RA/ID2411300
+2420000,liraglutide,2420000,GLP1RA/ID2420000
+2420001,liraglutide,2420001,GLP1RA/ID2420001
+2420002,liraglutide,2420002,GLP1RA/ID2420002
+2420010,liraglutide,2420010,GLP1RA/ID2420010
+2420030,liraglutide,2420030,GLP1RA/ID2420030
+2420100,liraglutide,2420100,GLP1RA/ID2420100
+2420300,liraglutide,2420300,GLP1RA/ID2420300
+2421000,liraglutide,2421000,GLP1RA/ID2421000
+2421001,liraglutide,2421001,GLP1RA/ID2421001
+2421002,liraglutide,2421002,GLP1RA/ID2421002
+2421010,liraglutide,2421010,GLP1RA/ID2421010
+2421030,liraglutide,2421030,GLP1RA/ID2421030
+2421100,liraglutide,2421100,GLP1RA/ID2421100
+2421300,liraglutide,2421300,GLP1RA/ID2421300
+2510000,lixisenatide,2510000,GLP1RA/ID2510000
+2510001,lixisenatide,2510001,GLP1RA/ID2510001
+2510002,lixisenatide,2510002,GLP1RA/ID2510002
+2510010,lixisenatide,2510010,GLP1RA/ID2510010
+2510030,lixisenatide,2510030,GLP1RA/ID2510030
+2510100,lixisenatide,2510100,GLP1RA/ID2510100
+2510300,lixisenatide,2510300,GLP1RA/ID2510300
+2511000,lixisenatide,2511000,GLP1RA/ID2511000
+2511001,lixisenatide,2511001,GLP1RA/ID2511001
+2511002,lixisenatide,2511002,GLP1RA/ID2511002
+2511010,lixisenatide,2511010,GLP1RA/ID2511010
+2511030,lixisenatide,2511030,GLP1RA/ID2511030
+2511100,lixisenatide,2511100,GLP1RA/ID2511100
+2511300,lixisenatide,2511300,GLP1RA/ID2511300
+2520000,lixisenatide,2520000,GLP1RA/ID2520000
+2520001,lixisenatide,2520001,GLP1RA/ID2520001
+2520002,lixisenatide,2520002,GLP1RA/ID2520002
+2520010,lixisenatide,2520010,GLP1RA/ID2520010
+2520030,lixisenatide,2520030,GLP1RA/ID2520030
+2520100,lixisenatide,2520100,GLP1RA/ID2520100
+2520300,lixisenatide,2520300,GLP1RA/ID2520300
+2521000,lixisenatide,2521000,GLP1RA/ID2521000
+2521001,lixisenatide,2521001,GLP1RA/ID2521001
+2521002,lixisenatide,2521002,GLP1RA/ID2521002
+2521010,lixisenatide,2521010,GLP1RA/ID2521010
+2521030,lixisenatide,2521030,GLP1RA/ID2521030
+2521100,lixisenatide,2521100,GLP1RA/ID2521100
+2521300,lixisenatide,2521300,GLP1RA/ID2521300
+2610000,semaglutide,2610000,GLP1RA/ID2610000
+2610001,semaglutide,2610001,GLP1RA/ID2610001
+2610002,semaglutide,2610002,GLP1RA/ID2610002
+2610010,semaglutide,2610010,GLP1RA/ID2610010
+2610030,semaglutide,2610030,GLP1RA/ID2610030
+2610100,semaglutide,2610100,GLP1RA/ID2610100
+2610300,semaglutide,2610300,GLP1RA/ID2610300
+2611000,semaglutide,2611000,GLP1RA/ID2611000
+2611001,semaglutide,2611001,GLP1RA/ID2611001
+2611002,semaglutide,2611002,GLP1RA/ID2611002
+2611010,semaglutide,2611010,GLP1RA/ID2611010
+2611030,semaglutide,2611030,GLP1RA/ID2611030
+2611100,semaglutide,2611100,GLP1RA/ID2611100
+2611300,semaglutide,2611300,GLP1RA/ID2611300
+2620000,semaglutide,2620000,GLP1RA/ID2620000
+2620001,semaglutide,2620001,GLP1RA/ID2620001
+2620002,semaglutide,2620002,GLP1RA/ID2620002
+2620010,semaglutide,2620010,GLP1RA/ID2620010
+2620030,semaglutide,2620030,GLP1RA/ID2620030
+2620100,semaglutide,2620100,GLP1RA/ID2620100
+2620300,semaglutide,2620300,GLP1RA/ID2620300
+2621000,semaglutide,2621000,GLP1RA/ID2621000
+2621001,semaglutide,2621001,GLP1RA/ID2621001
+2621002,semaglutide,2621002,GLP1RA/ID2621002
+2621010,semaglutide,2621010,GLP1RA/ID2621010
+2621030,semaglutide,2621030,GLP1RA/ID2621030
+2621100,semaglutide,2621100,GLP1RA/ID2621100
+2621300,semaglutide,2621300,GLP1RA/ID2621300
+2710000,tirzepatide,2710000,GLP1RA/ID2710000
+2710001,tirzepatide,2710001,GLP1RA/ID2710001
+2710002,tirzepatide,2710002,GLP1RA/ID2710002
+2710010,tirzepatide,2710010,GLP1RA/ID2710010
+2710030,tirzepatide,2710030,GLP1RA/ID2710030
+2710100,tirzepatide,2710100,GLP1RA/ID2710100
+2710300,tirzepatide,2710300,GLP1RA/ID2710300
+2711000,tirzepatide,2711000,GLP1RA/ID2711000
+2711001,tirzepatide,2711001,GLP1RA/ID2711001
+2711002,tirzepatide,2711002,GLP1RA/ID2711002
+2711010,tirzepatide,2711010,GLP1RA/ID2711010
+2711030,tirzepatide,2711030,GLP1RA/ID2711030
+2711100,tirzepatide,2711100,GLP1RA/ID2711100
+2711300,tirzepatide,2711300,GLP1RA/ID2711300
+2720000,tirzepatide,2720000,GLP1RA/ID2720000
+2720001,tirzepatide,2720001,GLP1RA/ID2720001
+2720002,tirzepatide,2720002,GLP1RA/ID2720002
+2720010,tirzepatide,2720010,GLP1RA/ID2720010
+2720030,tirzepatide,2720030,GLP1RA/ID2720030
+2720100,tirzepatide,2720100,GLP1RA/ID2720100
+2720300,tirzepatide,2720300,GLP1RA/ID2720300
+2721000,tirzepatide,2721000,GLP1RA/ID2721000
+2721001,tirzepatide,2721001,GLP1RA/ID2721001
+2721002,tirzepatide,2721002,GLP1RA/ID2721002
+2721010,tirzepatide,2721010,GLP1RA/ID2721010
+2721030,tirzepatide,2721030,GLP1RA/ID2721030
+2721100,tirzepatide,2721100,GLP1RA/ID2721100
+2721300,tirzepatide,2721300,GLP1RA/ID2721300
+2810000,efpeglenatide,2810000,GLP1RA/ID2810000
+2810001,efpeglenatide,2810001,GLP1RA/ID2810001
+2810002,efpeglenatide,2810002,GLP1RA/ID2810002
+2810010,efpeglenatide,2810010,GLP1RA/ID2810010
+2810030,efpeglenatide,2810030,GLP1RA/ID2810030
+2810100,efpeglenatide,2810100,GLP1RA/ID2810100
+2810300,efpeglenatide,2810300,GLP1RA/ID2810300
+2811000,efpeglenatide,2811000,GLP1RA/ID2811000
+2811001,efpeglenatide,2811001,GLP1RA/ID2811001
+2811002,efpeglenatide,2811002,GLP1RA/ID2811002
+2811010,efpeglenatide,2811010,GLP1RA/ID2811010
+2811030,efpeglenatide,2811030,GLP1RA/ID2811030
+2811100,efpeglenatide,2811100,GLP1RA/ID2811100
+2811300,efpeglenatide,2811300,GLP1RA/ID2811300
+2820000,efpeglenatide,2820000,GLP1RA/ID2820000
+2820001,efpeglenatide,2820001,GLP1RA/ID2820001
+2820002,efpeglenatide,2820002,GLP1RA/ID2820002
+2820010,efpeglenatide,2820010,GLP1RA/ID2820010
+2820030,efpeglenatide,2820030,GLP1RA/ID2820030
+2820100,efpeglenatide,2820100,GLP1RA/ID2820100
+2820300,efpeglenatide,2820300,GLP1RA/ID2820300
+2821000,efpeglenatide,2821000,GLP1RA/ID2821000
+2821001,efpeglenatide,2821001,GLP1RA/ID2821001
+2821002,efpeglenatide,2821002,GLP1RA/ID2821002
+2821010,efpeglenatide,2821010,GLP1RA/ID2821010
+2821030,efpeglenatide,2821030,GLP1RA/ID2821030
+2821100,efpeglenatide,2821100,GLP1RA/ID2821100
+2821300,efpeglenatide,2821300,GLP1RA/ID2821300
