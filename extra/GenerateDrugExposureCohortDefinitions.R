@@ -58,13 +58,16 @@ createPermutationsForDrugs <- function(classId){
     mutate(cohortId = as.integer(sub(paste0("^",classId), targetId, cohortId))) %>%
     mutate(name = paste0("ID", as.integer(cohortId)))
 }
-
+cohort = baseCohort
+permutation = permutationsForDrugs[1,] 
+ingredientLevel = TRUE
 # another function to actually permute the target-comparator pairs----
 permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   c1Id <- floor(permutation$comparator1Id / 10)
   c2Id <- floor(permutation$comparator2Id / 10)
   c3Id <- floor(permutation$comparator3Id / 10)
   delta <- 0
+  cohort$ConceptSets[[17]] <- cohort$ConceptSets[[12]]
 
   if (ingredientLevel) {
 
@@ -228,8 +231,7 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
                                                      filter(cohortId == permutation$targetId) %>%
                                                      pull(includedConceptIds),
                                                    ";")))
-    items <- cohort$ConceptSets[[14]]$expression$items
-
+    items <- cohort$ConceptSets[[17]]$expression$items
     tmp <-
       lapply(items, function(item) {
         if (item$concept$CONCEPT_ID %in% includedConcepts) {
@@ -238,7 +240,7 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
           item
         }
       })
-    cohort$ConceptSets[[14]]$expression$items <- plyr::compact(tmp)
+    cohort$ConceptSets[[17]]$expression$items <- plyr::compact(tmp)
   } else {
     stop("Unknown TAR")
   }
@@ -260,7 +262,7 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
 #classIds = c(40)
 
 # DEBUG: test with SGLT2i
-classIds = c(40)
+classIds = c(10)
 
 # then create permutations for the desired drug class
 permutationsForDrugs <- lapply(classIds, createPermutationsForDrugs) %>%
@@ -275,6 +277,13 @@ permutationsForDrugs$json <-
             cohortJson <- RJSONIO::toJSON(cohortDefinition, indent = 2, digits = 10)
             return(cohortJson)
           }))
+
+generateOptions <- CirceR::createGenerateOptions(generateStats = TRUE)
+
+# Build the SQL query from the cohort definition
+cohortSql <- CirceR::buildCohortQuery(cohortJson, generateOptions)
+
+
 permutationsForDrugs$sql <-
   do.call("rbind",
           lapply(1:nrow(permutationsForDrugs), function(i) {

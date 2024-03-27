@@ -17,30 +17,23 @@
 # library(dplyr)
 library(Signals)
 
-
-# set ATLAS web API link
-baseUrl = "https://atlas.odysseusinc.com/WebAPI"
-
-keyring::key_set_with_value('baseUrl', password = baseUrl)
-baseUrlWebApi <- keyring::key_get("baseUrl")
-
-# code to query the Atlas Web API to get the base cohort (based on pre-defined ATLAS cohort)
-# Make sure you download the right cohort
-#baseCohort = baseCohort_orig
-   baseCohort <- ROhdsiWebApi::getCohortDefinition(677, baseUrl = baseUrl)
-   baseCohortJson <- RJSONIO::toJSON(baseCohort$expression, indent = 2, digits = 50)
-   SqlRender::writeSql(baseCohortJson, targetFile = "inst/settings/baseCohort.json")
-   saveRDS(baseCohort, file = "inst/settings/baseCohort.rds")
-
-# Inclusion rules: Age == 1, Sex == 2, Race == 3, CVD == 4, obesity == 5, PriorMet == 6, NoMet == 7
-
-baseCohort <- readRDS("inst/settings/baseCohort.rds")
-
-generateStats <- TRUE
-
+baseCohort <- jsonlite::read_json("inst/settings/baseCohort.json")
+# start from drug-level permutations and exposures
+# permutations <- read.csv("extra/classGeneratorList.csv")
+# exposuresOfInterestTable <- readr::read_csv("inst/settings/ExposuresOfInterest.csv")
+## DEBUG: fill in `includedConceptIds` for drug-level exposure cohorts
 permutations <- readr::read_csv("extra/classGeneratorList.csv")
 exposuresOfInterestTable <- readr::read_csv("inst/settings/ExposuresOfInterest.csv")
 permutations <- inner_join(permutations, exposuresOfInterestTable %>% select(cohortId, shortName), by = c("targetId" = "cohortId"))
+# helper function to create cohort names
+makeName <- function(permutation) {
+  paste0(permutation$shortName, ": ",
+         permutation$tar, ", ",
+         permutation$met, " prior met, ",
+         permutation$age, " age, ",
+         permutation$sex, " sex, ",
+         permutation$obesity, " obesity")
+}
 
 makeName <- function(permutation) {
   paste0(permutation$shortName, ": ", permutation$tar, ", ", permutation$met, " prior met, ",
@@ -60,53 +53,19 @@ makeShortName <- function(permutation) {
          ifelse(permutation$obesity != "any", paste0(" ", permutation$obesity, "-obe"), ""))
 }
 #cohort  = baseCohort_orig 
-
+cohort = baseCohort
+ingredientLevel = TRUE
 permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   c1Id <- floor(permutation$comparator1Id / 10)
   c2Id <- floor(permutation$comparator2Id / 10)
   c3Id <- floor(permutation$comparator3Id / 10)
   delta <- 0
+  cohort$ConceptSets[[11]] <- cohort$ConceptSets[[12]]
+  cohort$InclusionRules[[1]] <- NULL
+  delta <- delta + 1
+  #cohort$ConceptSets[[13]] <- NULL
+  tId <- floor(permutation$targetId / 10)
   
-  if (ingredientLevel) {
-    
-    targetId <- permutation$targetId
-    classId <- floor(targetId / 10)
-    classSet <- cohort$ConceptSets[[classId]]
-    targetSet <- classSet
-    excludeSet <- classSet
-    drugInfo <- exposuresOfInterestTable %>% filter(cohortId == targetId)
-    name <- drugInfo %>% pull(name)
-    conceptId <- drugInfo %>% pull(conceptId)
-    targetSet$name <- name
-    excludeSet$name <- paste(excludeSet$name, "excluding", name)
-    excludeSet$id <- 17
-    targetSet$expression$items <- plyr::compact(
-      lapply(targetSet$expression$items, function(item) {
-        if (item$concept$CONCEPT_ID == conceptId) {
-          item
-        } else {
-          NULL
-        }
-      }))
-    excludeSet$expression$items <- plyr::compact(
-      lapply(excludeSet$expression$items, function(item) {
-        if (item$concept$CONCEPT_ID != conceptId) {
-          item
-        } else {
-          NULL
-        }
-      }))
-    cohort$ConceptSets[[classId]] <- targetSet
-    cohort$ConceptSets[[12]] <- excludeSet
-    cohort$ConceptSets[[13]] <- excludeSet
-    tId <- classId
-    cohort$InclusionRules[[1]]$expression$CriteriaList[[1]]$Criteria$DrugExposure$CodesetId <- 17
-  } else {
-    cohort$InclusionRules[[1]] <- NULL
-    delta <- delta + 1
-    cohort$ConceptSets[[15]] <- NULL
-    tId <- floor(permutation$targetId / 10)
-  }
   cohort$PrimaryCriteria$CriteriaList[[1]]$DrugExposure$CodesetId <- tId
   target <- 2 - delta - 1
   cohort$InclusionRules[[target + tId]] <- NULL
@@ -224,13 +183,13 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   if (permutation$tar == "ot1") {
     cohort$CensoringCriteria <- list()
   } else if (permutation$tar == "ot2") {
-    
     includedConcepts <- as.numeric(unlist(strsplit(exposuresOfInterestTable %>%
                                                      filter(cohortId == permutation$targetId) %>%
                                                      pull(includedConceptIds),
                                                    ";")))
-    items <- cohort$ConceptSets[[14]]$expression$items
-    
+    # print(includedConcepts)
+    # print(length(cohort$ConceptSets[[15]]$expression$items))
+    items <- cohort$ConceptSets[[11]]$expression$items
     tmp <-
       lapply(items, function(item) {
         if (item$concept$CONCEPT_ID %in% includedConcepts) {
@@ -239,7 +198,9 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
           item
         }
       })
-    cohort$ConceptSets[[14]]$expression$items <- plyr::compact(tmp)
+    cohort$ConceptSets[[11]]$expression$items <- plyr::compact(tmp)
+    cohort$ConceptSets[[11]]$id <- 14
+
   } else {
     stop("Unknown TAR")
   }
@@ -247,25 +208,28 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   return(cohort)
 }
 
+allCohortsJson <-
+  do.call("rbind",
+          lapply(1:nrow(permutations), function(i) {
+            cohortDefinition <- permuteTC(baseCohort, permutations[i,])
+            cohortJson <- RJSONIO::toJSON(cohortDefinition, indent = 2, digits = 12)
+            print(i)
+            return(cohortJson)
+          }))
 
 
 allCohortsSql <-
   do.call("rbind",
           lapply(1:nrow(permutations), function(i) {
-            cohortDefinition <- permuteTC(baseCohort, permutations[i,])
-            cohortSql <- ROhdsiWebApi::getCohortSql(cohortDefinition,
-                                                    baseUrlWebApi,
-                                                    generateStats = generateStats)
+            cohortDefinition <- permuteTC(baseCohort, permutations[i,], ingredientLevel = TRUE)
+            cohortSql <- CirceR::buildCohortQuery(
+              as.character(RJSONIO::toJSON(cohortDefinition)),
+              CirceR::createGenerateOptions(generateStats = TRUE))
+            print(i)
             return(cohortSql)
           }))
 
-allCohortsJson <-
-  do.call("rbind",
-          lapply(1:nrow(permutations), function(i) {
-            cohortDefinition <- permuteTC(baseCohort, permutations[i,])
-            cohortJson <- RJSONIO::toJSON(cohortDefinition$expression, indent = 2, digits = 12)
-            return(cohortJson)
-          }))
+
 
 
 permutations$json <- allCohortsJson
@@ -394,15 +358,16 @@ createPermutationsForDrugs <- function(classId){
 #classIds = c(30)
 
 # March 2023 GLP1RAs:
-classIds <- c(10,20,30,40)
-#classId <- 10
+#classIds <- c(10,20,30,40)
+classId <- 40
 permutationsForDrugs <- lapply(classIds, createPermutationsForDrugs) %>% bind_rows()
 
 permutationsForDrugs$json <-
   do.call("rbind",
           lapply(1:nrow(permutationsForDrugs), function(i) {
             cohortDefinition <- permuteTC(baseCohort, permutationsForDrugs[i,], ingredientLevel = TRUE)
-            cohortJson <- RJSONIO::toJSON(cohortDefinition$expression, indent = 2, digits = 10)
+            cohortJson <- RJSONIO::toJSON(cohortDefinition, indent = 2, digits = 10)
+            print(i)
             return(cohortJson)
             #return(cohortDefinition)
           }))
@@ -414,6 +379,8 @@ permutationsForDrugs$sql <-
             cohortSql <- ROhdsiWebApi::getCohortSql(cohortDefinition,
                                                     baseUrlWebApi,
                                                     generateStats = generateStats)
+            print(i)
+            return(cohortSql)
           }))
 
  # cohortDefinition <- permuteTC(baseCohort, permutationsForDrugs[1,])
@@ -433,6 +400,7 @@ for (value in tolower(unique(permutationsForDrugs$class))){
       SqlRender::writeSql(row$sql, sqlFileName)
       jsonFileName <- file.path("inst/cohorts", tolower(row$class), paste(row$name, "json", sep = "."))
       SqlRender::writeSql(row$json, jsonFileName)
+      print(i)
     }
 
 }
@@ -544,3 +512,4 @@ for (this.class in unique(permutationsForDrugs$class)){
   
   readr::write_csv(drugTcos, file.path(filePath, fileName))
 }
+
