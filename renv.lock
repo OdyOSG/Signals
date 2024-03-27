@@ -2115,36 +2115,6 @@
       ],
       "Hash": "3a1f41807d648a908e3c7f0334bf85e6"
     },
-    "signals": {
-      "Package": "Signals",
-      "Version": "2.1.1",
-      "Source": "unknown",
-      "Requirements": [
-        "Andromeda",
-        "CirceR",
-        "CohortDiagnostics",
-        "CohortMethod",
-        "Cyclops",
-        "DatabaseConnector",
-        "EmpiricalCalibration",
-        "FeatureExtraction",
-        "MethodEvaluation",
-        "ParallelLogger",
-        "R",
-        "RJSONIO",
-        "SqlRender",
-        "diffr",
-        "dplyr",
-        "meta",
-        "plyr",
-        "purrr",
-        "readr",
-        "survival",
-        "tibble",
-        "zip"
-      ],
-      "Hash": "278238e5c7c0116bf4781ace00b2fb92"
-    },
     "snow": {
       "Package": "snow",
       "Version": "0.4-4",
