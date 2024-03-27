@@ -68,24 +68,19 @@
     },
     "CohortDiagnostics": {
       "Package": "CohortDiagnostics",
-      "Version": "3.2.5",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteUsername": "ohdsi",
-      "RemoteRepo": "CohortDiagnostics",
-      "RemoteRef": "main",
-      "RemoteSha": "03c40ab06832a329f2c904fbd686a0596ea9af6f",
-      "Remotes": "ohdsi/Eunomia, ohdsi/FeatureExtraction, ohdsi/ResultModelManager, ohdsi/ROhdsiWebApi, ohdsi/CirceR, ohdsi/CohortGenerator, ohdsi/OhdsiShinyModules",
+      "Version": "2.1.3",
+      "Source": "URL",
+      "RemoteType": "url",
+      "RemoteUrl": "https://github.com/OHDSI/CohortDiagnostics/archive/refs/tags/v2.1.3.tar.gz",
+      "Remotes": "ohdsi/Eunomia, ohdsi/FeatureExtraction, ohdsi/ROhdsiWebApi, ohdsi/CirceR",
       "Requirements": [
         "Andromeda",
-        "CohortGenerator",
         "DatabaseConnector",
         "FeatureExtraction",
         "ParallelLogger",
         "R",
         "RJSONIO",
-        "ResultModelManager",
+        "ROhdsiWebApi",
         "SqlRender",
         "checkmate",
         "clock",
@@ -93,42 +88,11 @@
         "dplyr",
         "methods",
         "readr",
-        "remotes",
         "rlang",
         "stringr",
         "tidyr"
       ],
-      "Hash": "81d70f0470dd2d267c48a5490eb76d04"
-    },
-    "CohortGenerator": {
-      "Package": "CohortGenerator",
-      "Version": "0.8.1",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteUsername": "ohdsi",
-      "RemoteRepo": "CohortGenerator",
-      "RemoteRef": "main",
-      "RemoteSha": "78757f1b191a395cf9dcff0d5bbe2b9fa4aa163e",
-      "Remotes": "ohdsi/CirceR, ohdsi/Eunomia, ohdsi/ROhdsiWebApi",
-      "Requirements": [
-        "DatabaseConnector",
-        "ParallelLogger",
-        "R",
-        "R6",
-        "RJSONIO",
-        "SqlRender",
-        "bit64",
-        "checkmate",
-        "digest",
-        "dplyr",
-        "jsonlite",
-        "lubridate",
-        "readr",
-        "rlang",
-        "stringi"
-      ],
-      "Hash": "12b26b68b771bbe771c627452aefe8b5"
+      "Hash": "ebcaa423922f6b481269a69e7e775d33"
     },
     "CohortMethod": {
       "Package": "CohortMethod",
@@ -452,35 +416,6 @@
         "utils"
       ],
       "Hash": "df49e3306f232ec28f1604e36a202847"
-    },
-    "ResultModelManager": {
-      "Package": "ResultModelManager",
-      "Version": "0.5.6",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteUsername": "ohdsi",
-      "RemoteRepo": "ResultModelManager",
-      "RemoteRef": "main",
-      "RemoteSha": "58100690f36000bfa7f8058bc6584780b11311d5",
-      "Requirements": [
-        "DBI",
-        "DatabaseConnector",
-        "ParallelLogger",
-        "R",
-        "R6",
-        "SqlRender",
-        "checkmate",
-        "dbplyr",
-        "dplyr",
-        "fastmap",
-        "lubridate",
-        "pool",
-        "readr",
-        "rlang",
-        "zip"
-      ],
-      "Hash": "0241ba6042820206fa03c94060861700"
     },
     "SqlRender": {
       "Package": "SqlRender",
@@ -1772,21 +1707,6 @@
       ],
       "Hash": "6b8177fd19982f0020743fadbfdbd933"
     },
-    "pool": {
-      "Package": "pool",
-      "Version": "1.0.3",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "DBI",
-        "R",
-        "R6",
-        "later",
-        "methods",
-        "rlang"
-      ],
-      "Hash": "b336b9f1b3cc72033258c70dc17edbf1"
-    },
     "praise": {
       "Package": "praise",
       "Version": "1.0.0",
@@ -2194,6 +2114,36 @@
         "xtable"
       ],
       "Hash": "3a1f41807d648a908e3c7f0334bf85e6"
+    },
+    "signals": {
+      "Package": "Signals",
+      "Version": "2.1.1",
+      "Source": "unknown",
+      "Requirements": [
+        "Andromeda",
+        "CirceR",
+        "CohortDiagnostics",
+        "CohortMethod",
+        "Cyclops",
+        "DatabaseConnector",
+        "EmpiricalCalibration",
+        "FeatureExtraction",
+        "MethodEvaluation",
+        "ParallelLogger",
+        "R",
+        "RJSONIO",
+        "SqlRender",
+        "diffr",
+        "dplyr",
+        "meta",
+        "plyr",
+        "purrr",
+        "readr",
+        "survival",
+        "tibble",
+        "zip"
+      ],
+      "Hash": "278238e5c7c0116bf4781ace00b2fb92"
     },
     "snow": {
       "Package": "snow",
