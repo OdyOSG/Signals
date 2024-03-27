@@ -1,393 +1,393 @@
 targetId,comparatorId,outcomeIds,excludedCovariateConceptIds,targetName,comparatorName
-2110000,2210000,-1,NA,albiglutide,dulaglutide
-2110000,2310000,-1,NA,albiglutide,exenatide
-2110000,2410000,-1,NA,albiglutide,liraglutide
-2110000,2510000,-1,NA,albiglutide,lixisenatide
-2110000,2610000,-1,NA,albiglutide,semaglutide
-2110000,2710000,-1,NA,albiglutide,tirzepatide
-2110000,2810000,-1,NA,albiglutide,efpeglenatide
-2210000,2310000,-1,NA,dulaglutide,exenatide
-2210000,2410000,-1,NA,dulaglutide,liraglutide
-2210000,2510000,-1,NA,dulaglutide,lixisenatide
-2210000,2610000,-1,NA,dulaglutide,semaglutide
-2210000,2710000,-1,NA,dulaglutide,tirzepatide
-2210000,2810000,-1,NA,dulaglutide,efpeglenatide
-2310000,2410000,-1,NA,exenatide,liraglutide
-2310000,2510000,-1,NA,exenatide,lixisenatide
-2310000,2610000,-1,NA,exenatide,semaglutide
-2310000,2710000,-1,NA,exenatide,tirzepatide
-2310000,2810000,-1,NA,exenatide,efpeglenatide
-2410000,2510000,-1,NA,liraglutide,lixisenatide
-2410000,2610000,-1,NA,liraglutide,semaglutide
-2410000,2710000,-1,NA,liraglutide,tirzepatide
-2410000,2810000,-1,NA,liraglutide,efpeglenatide
-2510000,2610000,-1,NA,lixisenatide,semaglutide
-2510000,2710000,-1,NA,lixisenatide,tirzepatide
-2510000,2810000,-1,NA,lixisenatide,efpeglenatide
-2610000,2710000,-1,NA,semaglutide,tirzepatide
-2610000,2810000,-1,NA,semaglutide,efpeglenatide
-2710000,2810000,-1,NA,tirzepatide,efpeglenatide
-2110100,2210100,-1,NA,albiglutide,dulaglutide
-2110100,2310100,-1,NA,albiglutide,exenatide
-2110100,2410100,-1,NA,albiglutide,liraglutide
-2110100,2510100,-1,NA,albiglutide,lixisenatide
-2110100,2610100,-1,NA,albiglutide,semaglutide
-2110100,2710100,-1,NA,albiglutide,tirzepatide
-2110100,2810100,-1,NA,albiglutide,efpeglenatide
-2210100,2310100,-1,NA,dulaglutide,exenatide
-2210100,2410100,-1,NA,dulaglutide,liraglutide
-2210100,2510100,-1,NA,dulaglutide,lixisenatide
-2210100,2610100,-1,NA,dulaglutide,semaglutide
-2210100,2710100,-1,NA,dulaglutide,tirzepatide
-2210100,2810100,-1,NA,dulaglutide,efpeglenatide
-2310100,2410100,-1,NA,exenatide,liraglutide
-2310100,2510100,-1,NA,exenatide,lixisenatide
-2310100,2610100,-1,NA,exenatide,semaglutide
-2310100,2710100,-1,NA,exenatide,tirzepatide
-2310100,2810100,-1,NA,exenatide,efpeglenatide
-2410100,2510100,-1,NA,liraglutide,lixisenatide
-2410100,2610100,-1,NA,liraglutide,semaglutide
-2410100,2710100,-1,NA,liraglutide,tirzepatide
-2410100,2810100,-1,NA,liraglutide,efpeglenatide
-2510100,2610100,-1,NA,lixisenatide,semaglutide
-2510100,2710100,-1,NA,lixisenatide,tirzepatide
-2510100,2810100,-1,NA,lixisenatide,efpeglenatide
-2610100,2710100,-1,NA,semaglutide,tirzepatide
-2610100,2810100,-1,NA,semaglutide,efpeglenatide
-2710100,2810100,-1,NA,tirzepatide,efpeglenatide
-2110300,2210300,-1,NA,albiglutide,dulaglutide
-2110300,2310300,-1,NA,albiglutide,exenatide
-2110300,2410300,-1,NA,albiglutide,liraglutide
-2110300,2510300,-1,NA,albiglutide,lixisenatide
-2110300,2610300,-1,NA,albiglutide,semaglutide
-2110300,2710300,-1,NA,albiglutide,tirzepatide
-2110300,2810300,-1,NA,albiglutide,efpeglenatide
-2210300,2310300,-1,NA,dulaglutide,exenatide
-2210300,2410300,-1,NA,dulaglutide,liraglutide
-2210300,2510300,-1,NA,dulaglutide,lixisenatide
-2210300,2610300,-1,NA,dulaglutide,semaglutide
-2210300,2710300,-1,NA,dulaglutide,tirzepatide
-2210300,2810300,-1,NA,dulaglutide,efpeglenatide
-2310300,2410300,-1,NA,exenatide,liraglutide
-2310300,2510300,-1,NA,exenatide,lixisenatide
-2310300,2610300,-1,NA,exenatide,semaglutide
-2310300,2710300,-1,NA,exenatide,tirzepatide
-2310300,2810300,-1,NA,exenatide,efpeglenatide
-2410300,2510300,-1,NA,liraglutide,lixisenatide
-2410300,2610300,-1,NA,liraglutide,semaglutide
-2410300,2710300,-1,NA,liraglutide,tirzepatide
-2410300,2810300,-1,NA,liraglutide,efpeglenatide
-2510300,2610300,-1,NA,lixisenatide,semaglutide
-2510300,2710300,-1,NA,lixisenatide,tirzepatide
-2510300,2810300,-1,NA,lixisenatide,efpeglenatide
-2610300,2710300,-1,NA,semaglutide,tirzepatide
-2610300,2810300,-1,NA,semaglutide,efpeglenatide
-2710300,2810300,-1,NA,tirzepatide,efpeglenatide
-2110010,2210010,-1,NA,albiglutide,dulaglutide
-2110010,2310010,-1,NA,albiglutide,exenatide
-2110010,2410010,-1,NA,albiglutide,liraglutide
-2110010,2510010,-1,NA,albiglutide,lixisenatide
-2110010,2610010,-1,NA,albiglutide,semaglutide
-2110010,2710010,-1,NA,albiglutide,tirzepatide
-2110010,2810010,-1,NA,albiglutide,efpeglenatide
-2210010,2310010,-1,NA,dulaglutide,exenatide
-2210010,2410010,-1,NA,dulaglutide,liraglutide
-2210010,2510010,-1,NA,dulaglutide,lixisenatide
-2210010,2610010,-1,NA,dulaglutide,semaglutide
-2210010,2710010,-1,NA,dulaglutide,tirzepatide
-2210010,2810010,-1,NA,dulaglutide,efpeglenatide
-2310010,2410010,-1,NA,exenatide,liraglutide
-2310010,2510010,-1,NA,exenatide,lixisenatide
-2310010,2610010,-1,NA,exenatide,semaglutide
-2310010,2710010,-1,NA,exenatide,tirzepatide
-2310010,2810010,-1,NA,exenatide,efpeglenatide
-2410010,2510010,-1,NA,liraglutide,lixisenatide
-2410010,2610010,-1,NA,liraglutide,semaglutide
-2410010,2710010,-1,NA,liraglutide,tirzepatide
-2410010,2810010,-1,NA,liraglutide,efpeglenatide
-2510010,2610010,-1,NA,lixisenatide,semaglutide
-2510010,2710010,-1,NA,lixisenatide,tirzepatide
-2510010,2810010,-1,NA,lixisenatide,efpeglenatide
-2610010,2710010,-1,NA,semaglutide,tirzepatide
-2610010,2810010,-1,NA,semaglutide,efpeglenatide
-2710010,2810010,-1,NA,tirzepatide,efpeglenatide
-2110030,2210030,-1,NA,albiglutide,dulaglutide
-2110030,2310030,-1,NA,albiglutide,exenatide
-2110030,2410030,-1,NA,albiglutide,liraglutide
-2110030,2510030,-1,NA,albiglutide,lixisenatide
-2110030,2610030,-1,NA,albiglutide,semaglutide
-2110030,2710030,-1,NA,albiglutide,tirzepatide
-2110030,2810030,-1,NA,albiglutide,efpeglenatide
-2210030,2310030,-1,NA,dulaglutide,exenatide
-2210030,2410030,-1,NA,dulaglutide,liraglutide
-2210030,2510030,-1,NA,dulaglutide,lixisenatide
-2210030,2610030,-1,NA,dulaglutide,semaglutide
-2210030,2710030,-1,NA,dulaglutide,tirzepatide
-2210030,2810030,-1,NA,dulaglutide,efpeglenatide
-2310030,2410030,-1,NA,exenatide,liraglutide
-2310030,2510030,-1,NA,exenatide,lixisenatide
-2310030,2610030,-1,NA,exenatide,semaglutide
-2310030,2710030,-1,NA,exenatide,tirzepatide
-2310030,2810030,-1,NA,exenatide,efpeglenatide
-2410030,2510030,-1,NA,liraglutide,lixisenatide
-2410030,2610030,-1,NA,liraglutide,semaglutide
-2410030,2710030,-1,NA,liraglutide,tirzepatide
-2410030,2810030,-1,NA,liraglutide,efpeglenatide
-2510030,2610030,-1,NA,lixisenatide,semaglutide
-2510030,2710030,-1,NA,lixisenatide,tirzepatide
-2510030,2810030,-1,NA,lixisenatide,efpeglenatide
-2610030,2710030,-1,NA,semaglutide,tirzepatide
-2610030,2810030,-1,NA,semaglutide,efpeglenatide
-2710030,2810030,-1,NA,tirzepatide,efpeglenatide
-2110002,2210002,-1,NA,albiglutide,dulaglutide
-2110002,2310002,-1,NA,albiglutide,exenatide
-2110002,2410002,-1,NA,albiglutide,liraglutide
-2110002,2510002,-1,NA,albiglutide,lixisenatide
-2110002,2610002,-1,NA,albiglutide,semaglutide
-2110002,2710002,-1,NA,albiglutide,tirzepatide
-2110002,2810002,-1,NA,albiglutide,efpeglenatide
-2210002,2310002,-1,NA,dulaglutide,exenatide
-2210002,2410002,-1,NA,dulaglutide,liraglutide
-2210002,2510002,-1,NA,dulaglutide,lixisenatide
-2210002,2610002,-1,NA,dulaglutide,semaglutide
-2210002,2710002,-1,NA,dulaglutide,tirzepatide
-2210002,2810002,-1,NA,dulaglutide,efpeglenatide
-2310002,2410002,-1,NA,exenatide,liraglutide
-2310002,2510002,-1,NA,exenatide,lixisenatide
-2310002,2610002,-1,NA,exenatide,semaglutide
-2310002,2710002,-1,NA,exenatide,tirzepatide
-2310002,2810002,-1,NA,exenatide,efpeglenatide
-2410002,2510002,-1,NA,liraglutide,lixisenatide
-2410002,2610002,-1,NA,liraglutide,semaglutide
-2410002,2710002,-1,NA,liraglutide,tirzepatide
-2410002,2810002,-1,NA,liraglutide,efpeglenatide
-2510002,2610002,-1,NA,lixisenatide,semaglutide
-2510002,2710002,-1,NA,lixisenatide,tirzepatide
-2510002,2810002,-1,NA,lixisenatide,efpeglenatide
-2610002,2710002,-1,NA,semaglutide,tirzepatide
-2610002,2810002,-1,NA,semaglutide,efpeglenatide
-2710002,2810002,-1,NA,tirzepatide,efpeglenatide
-2110001,2210001,-1,NA,albiglutide,dulaglutide
-2110001,2310001,-1,NA,albiglutide,exenatide
-2110001,2410001,-1,NA,albiglutide,liraglutide
-2110001,2510001,-1,NA,albiglutide,lixisenatide
-2110001,2610001,-1,NA,albiglutide,semaglutide
-2110001,2710001,-1,NA,albiglutide,tirzepatide
-2110001,2810001,-1,NA,albiglutide,efpeglenatide
-2210001,2310001,-1,NA,dulaglutide,exenatide
-2210001,2410001,-1,NA,dulaglutide,liraglutide
-2210001,2510001,-1,NA,dulaglutide,lixisenatide
-2210001,2610001,-1,NA,dulaglutide,semaglutide
-2210001,2710001,-1,NA,dulaglutide,tirzepatide
-2210001,2810001,-1,NA,dulaglutide,efpeglenatide
-2310001,2410001,-1,NA,exenatide,liraglutide
-2310001,2510001,-1,NA,exenatide,lixisenatide
-2310001,2610001,-1,NA,exenatide,semaglutide
-2310001,2710001,-1,NA,exenatide,tirzepatide
-2310001,2810001,-1,NA,exenatide,efpeglenatide
-2410001,2510001,-1,NA,liraglutide,lixisenatide
-2410001,2610001,-1,NA,liraglutide,semaglutide
-2410001,2710001,-1,NA,liraglutide,tirzepatide
-2410001,2810001,-1,NA,liraglutide,efpeglenatide
-2510001,2610001,-1,NA,lixisenatide,semaglutide
-2510001,2710001,-1,NA,lixisenatide,tirzepatide
-2510001,2810001,-1,NA,lixisenatide,efpeglenatide
-2610001,2710001,-1,NA,semaglutide,tirzepatide
-2610001,2810001,-1,NA,semaglutide,efpeglenatide
-2710001,2810001,-1,NA,tirzepatide,efpeglenatide
-2120000,2220000,-1,NA,albiglutide,dulaglutide
-2120000,2320000,-1,NA,albiglutide,exenatide
-2120000,2420000,-1,NA,albiglutide,liraglutide
-2120000,2520000,-1,NA,albiglutide,lixisenatide
-2120000,2620000,-1,NA,albiglutide,semaglutide
-2120000,2720000,-1,NA,albiglutide,tirzepatide
-2120000,2820000,-1,NA,albiglutide,efpeglenatide
-2220000,2320000,-1,NA,dulaglutide,exenatide
-2220000,2420000,-1,NA,dulaglutide,liraglutide
-2220000,2520000,-1,NA,dulaglutide,lixisenatide
-2220000,2620000,-1,NA,dulaglutide,semaglutide
-2220000,2720000,-1,NA,dulaglutide,tirzepatide
-2220000,2820000,-1,NA,dulaglutide,efpeglenatide
-2320000,2420000,-1,NA,exenatide,liraglutide
-2320000,2520000,-1,NA,exenatide,lixisenatide
-2320000,2620000,-1,NA,exenatide,semaglutide
-2320000,2720000,-1,NA,exenatide,tirzepatide
-2320000,2820000,-1,NA,exenatide,efpeglenatide
-2420000,2520000,-1,NA,liraglutide,lixisenatide
-2420000,2620000,-1,NA,liraglutide,semaglutide
-2420000,2720000,-1,NA,liraglutide,tirzepatide
-2420000,2820000,-1,NA,liraglutide,efpeglenatide
-2520000,2620000,-1,NA,lixisenatide,semaglutide
-2520000,2720000,-1,NA,lixisenatide,tirzepatide
-2520000,2820000,-1,NA,lixisenatide,efpeglenatide
-2620000,2720000,-1,NA,semaglutide,tirzepatide
-2620000,2820000,-1,NA,semaglutide,efpeglenatide
-2720000,2820000,-1,NA,tirzepatide,efpeglenatide
-2120100,2220100,-1,NA,albiglutide,dulaglutide
-2120100,2320100,-1,NA,albiglutide,exenatide
-2120100,2420100,-1,NA,albiglutide,liraglutide
-2120100,2520100,-1,NA,albiglutide,lixisenatide
-2120100,2620100,-1,NA,albiglutide,semaglutide
-2120100,2720100,-1,NA,albiglutide,tirzepatide
-2120100,2820100,-1,NA,albiglutide,efpeglenatide
-2220100,2320100,-1,NA,dulaglutide,exenatide
-2220100,2420100,-1,NA,dulaglutide,liraglutide
-2220100,2520100,-1,NA,dulaglutide,lixisenatide
-2220100,2620100,-1,NA,dulaglutide,semaglutide
-2220100,2720100,-1,NA,dulaglutide,tirzepatide
-2220100,2820100,-1,NA,dulaglutide,efpeglenatide
-2320100,2420100,-1,NA,exenatide,liraglutide
-2320100,2520100,-1,NA,exenatide,lixisenatide
-2320100,2620100,-1,NA,exenatide,semaglutide
-2320100,2720100,-1,NA,exenatide,tirzepatide
-2320100,2820100,-1,NA,exenatide,efpeglenatide
-2420100,2520100,-1,NA,liraglutide,lixisenatide
-2420100,2620100,-1,NA,liraglutide,semaglutide
-2420100,2720100,-1,NA,liraglutide,tirzepatide
-2420100,2820100,-1,NA,liraglutide,efpeglenatide
-2520100,2620100,-1,NA,lixisenatide,semaglutide
-2520100,2720100,-1,NA,lixisenatide,tirzepatide
-2520100,2820100,-1,NA,lixisenatide,efpeglenatide
-2620100,2720100,-1,NA,semaglutide,tirzepatide
-2620100,2820100,-1,NA,semaglutide,efpeglenatide
-2720100,2820100,-1,NA,tirzepatide,efpeglenatide
-2120300,2220300,-1,NA,albiglutide,dulaglutide
-2120300,2320300,-1,NA,albiglutide,exenatide
-2120300,2420300,-1,NA,albiglutide,liraglutide
-2120300,2520300,-1,NA,albiglutide,lixisenatide
-2120300,2620300,-1,NA,albiglutide,semaglutide
-2120300,2720300,-1,NA,albiglutide,tirzepatide
-2120300,2820300,-1,NA,albiglutide,efpeglenatide
-2220300,2320300,-1,NA,dulaglutide,exenatide
-2220300,2420300,-1,NA,dulaglutide,liraglutide
-2220300,2520300,-1,NA,dulaglutide,lixisenatide
-2220300,2620300,-1,NA,dulaglutide,semaglutide
-2220300,2720300,-1,NA,dulaglutide,tirzepatide
-2220300,2820300,-1,NA,dulaglutide,efpeglenatide
-2320300,2420300,-1,NA,exenatide,liraglutide
-2320300,2520300,-1,NA,exenatide,lixisenatide
-2320300,2620300,-1,NA,exenatide,semaglutide
-2320300,2720300,-1,NA,exenatide,tirzepatide
-2320300,2820300,-1,NA,exenatide,efpeglenatide
-2420300,2520300,-1,NA,liraglutide,lixisenatide
-2420300,2620300,-1,NA,liraglutide,semaglutide
-2420300,2720300,-1,NA,liraglutide,tirzepatide
-2420300,2820300,-1,NA,liraglutide,efpeglenatide
-2520300,2620300,-1,NA,lixisenatide,semaglutide
-2520300,2720300,-1,NA,lixisenatide,tirzepatide
-2520300,2820300,-1,NA,lixisenatide,efpeglenatide
-2620300,2720300,-1,NA,semaglutide,tirzepatide
-2620300,2820300,-1,NA,semaglutide,efpeglenatide
-2720300,2820300,-1,NA,tirzepatide,efpeglenatide
-2120010,2220010,-1,NA,albiglutide,dulaglutide
-2120010,2320010,-1,NA,albiglutide,exenatide
-2120010,2420010,-1,NA,albiglutide,liraglutide
-2120010,2520010,-1,NA,albiglutide,lixisenatide
-2120010,2620010,-1,NA,albiglutide,semaglutide
-2120010,2720010,-1,NA,albiglutide,tirzepatide
-2120010,2820010,-1,NA,albiglutide,efpeglenatide
-2220010,2320010,-1,NA,dulaglutide,exenatide
-2220010,2420010,-1,NA,dulaglutide,liraglutide
-2220010,2520010,-1,NA,dulaglutide,lixisenatide
-2220010,2620010,-1,NA,dulaglutide,semaglutide
-2220010,2720010,-1,NA,dulaglutide,tirzepatide
-2220010,2820010,-1,NA,dulaglutide,efpeglenatide
-2320010,2420010,-1,NA,exenatide,liraglutide
-2320010,2520010,-1,NA,exenatide,lixisenatide
-2320010,2620010,-1,NA,exenatide,semaglutide
-2320010,2720010,-1,NA,exenatide,tirzepatide
-2320010,2820010,-1,NA,exenatide,efpeglenatide
-2420010,2520010,-1,NA,liraglutide,lixisenatide
-2420010,2620010,-1,NA,liraglutide,semaglutide
-2420010,2720010,-1,NA,liraglutide,tirzepatide
-2420010,2820010,-1,NA,liraglutide,efpeglenatide
-2520010,2620010,-1,NA,lixisenatide,semaglutide
-2520010,2720010,-1,NA,lixisenatide,tirzepatide
-2520010,2820010,-1,NA,lixisenatide,efpeglenatide
-2620010,2720010,-1,NA,semaglutide,tirzepatide
-2620010,2820010,-1,NA,semaglutide,efpeglenatide
-2720010,2820010,-1,NA,tirzepatide,efpeglenatide
-2120030,2220030,-1,NA,albiglutide,dulaglutide
-2120030,2320030,-1,NA,albiglutide,exenatide
-2120030,2420030,-1,NA,albiglutide,liraglutide
-2120030,2520030,-1,NA,albiglutide,lixisenatide
-2120030,2620030,-1,NA,albiglutide,semaglutide
-2120030,2720030,-1,NA,albiglutide,tirzepatide
-2120030,2820030,-1,NA,albiglutide,efpeglenatide
-2220030,2320030,-1,NA,dulaglutide,exenatide
-2220030,2420030,-1,NA,dulaglutide,liraglutide
-2220030,2520030,-1,NA,dulaglutide,lixisenatide
-2220030,2620030,-1,NA,dulaglutide,semaglutide
-2220030,2720030,-1,NA,dulaglutide,tirzepatide
-2220030,2820030,-1,NA,dulaglutide,efpeglenatide
-2320030,2420030,-1,NA,exenatide,liraglutide
-2320030,2520030,-1,NA,exenatide,lixisenatide
-2320030,2620030,-1,NA,exenatide,semaglutide
-2320030,2720030,-1,NA,exenatide,tirzepatide
-2320030,2820030,-1,NA,exenatide,efpeglenatide
-2420030,2520030,-1,NA,liraglutide,lixisenatide
-2420030,2620030,-1,NA,liraglutide,semaglutide
-2420030,2720030,-1,NA,liraglutide,tirzepatide
-2420030,2820030,-1,NA,liraglutide,efpeglenatide
-2520030,2620030,-1,NA,lixisenatide,semaglutide
-2520030,2720030,-1,NA,lixisenatide,tirzepatide
-2520030,2820030,-1,NA,lixisenatide,efpeglenatide
-2620030,2720030,-1,NA,semaglutide,tirzepatide
-2620030,2820030,-1,NA,semaglutide,efpeglenatide
-2720030,2820030,-1,NA,tirzepatide,efpeglenatide
-2120002,2220002,-1,NA,albiglutide,dulaglutide
-2120002,2320002,-1,NA,albiglutide,exenatide
-2120002,2420002,-1,NA,albiglutide,liraglutide
-2120002,2520002,-1,NA,albiglutide,lixisenatide
-2120002,2620002,-1,NA,albiglutide,semaglutide
-2120002,2720002,-1,NA,albiglutide,tirzepatide
-2120002,2820002,-1,NA,albiglutide,efpeglenatide
-2220002,2320002,-1,NA,dulaglutide,exenatide
-2220002,2420002,-1,NA,dulaglutide,liraglutide
-2220002,2520002,-1,NA,dulaglutide,lixisenatide
-2220002,2620002,-1,NA,dulaglutide,semaglutide
-2220002,2720002,-1,NA,dulaglutide,tirzepatide
-2220002,2820002,-1,NA,dulaglutide,efpeglenatide
-2320002,2420002,-1,NA,exenatide,liraglutide
-2320002,2520002,-1,NA,exenatide,lixisenatide
-2320002,2620002,-1,NA,exenatide,semaglutide
-2320002,2720002,-1,NA,exenatide,tirzepatide
-2320002,2820002,-1,NA,exenatide,efpeglenatide
-2420002,2520002,-1,NA,liraglutide,lixisenatide
-2420002,2620002,-1,NA,liraglutide,semaglutide
-2420002,2720002,-1,NA,liraglutide,tirzepatide
-2420002,2820002,-1,NA,liraglutide,efpeglenatide
-2520002,2620002,-1,NA,lixisenatide,semaglutide
-2520002,2720002,-1,NA,lixisenatide,tirzepatide
-2520002,2820002,-1,NA,lixisenatide,efpeglenatide
-2620002,2720002,-1,NA,semaglutide,tirzepatide
-2620002,2820002,-1,NA,semaglutide,efpeglenatide
-2720002,2820002,-1,NA,tirzepatide,efpeglenatide
-2120001,2220001,-1,NA,albiglutide,dulaglutide
-2120001,2320001,-1,NA,albiglutide,exenatide
-2120001,2420001,-1,NA,albiglutide,liraglutide
-2120001,2520001,-1,NA,albiglutide,lixisenatide
-2120001,2620001,-1,NA,albiglutide,semaglutide
-2120001,2720001,-1,NA,albiglutide,tirzepatide
-2120001,2820001,-1,NA,albiglutide,efpeglenatide
-2220001,2320001,-1,NA,dulaglutide,exenatide
-2220001,2420001,-1,NA,dulaglutide,liraglutide
-2220001,2520001,-1,NA,dulaglutide,lixisenatide
-2220001,2620001,-1,NA,dulaglutide,semaglutide
-2220001,2720001,-1,NA,dulaglutide,tirzepatide
-2220001,2820001,-1,NA,dulaglutide,efpeglenatide
-2320001,2420001,-1,NA,exenatide,liraglutide
-2320001,2520001,-1,NA,exenatide,lixisenatide
-2320001,2620001,-1,NA,exenatide,semaglutide
-2320001,2720001,-1,NA,exenatide,tirzepatide
-2320001,2820001,-1,NA,exenatide,efpeglenatide
-2420001,2520001,-1,NA,liraglutide,lixisenatide
-2420001,2620001,-1,NA,liraglutide,semaglutide
-2420001,2720001,-1,NA,liraglutide,tirzepatide
-2420001,2820001,-1,NA,liraglutide,efpeglenatide
-2520001,2620001,-1,NA,lixisenatide,semaglutide
-2520001,2720001,-1,NA,lixisenatide,tirzepatide
-2520001,2820001,-1,NA,lixisenatide,efpeglenatide
-2620001,2720001,-1,NA,semaglutide,tirzepatide
-2620001,2820001,-1,NA,semaglutide,efpeglenatide
-2720001,2820001,-1,NA,tirzepatide,efpeglenatide
+2110000,2210000,-1,NA,albiglutide main,dulaglutide main
+2110000,2310000,-1,NA,albiglutide main,exenatide main
+2110000,2410000,-1,NA,albiglutide main,liraglutide main
+2110000,2510000,-1,NA,albiglutide main,lixisenatide main
+2110000,2610000,-1,NA,albiglutide main,semaglutide main
+2110000,2710000,-1,NA,albiglutide main,tirzepatide main
+2110000,2810000,-1,NA,albiglutide main,efpeglenatide main
+2210000,2310000,-1,NA,dulaglutide main,exenatide main
+2210000,2410000,-1,NA,dulaglutide main,liraglutide main
+2210000,2510000,-1,NA,dulaglutide main,lixisenatide main
+2210000,2610000,-1,NA,dulaglutide main,semaglutide main
+2210000,2710000,-1,NA,dulaglutide main,tirzepatide main
+2210000,2810000,-1,NA,dulaglutide main,efpeglenatide main
+2310000,2410000,-1,NA,exenatide main,liraglutide main
+2310000,2510000,-1,NA,exenatide main,lixisenatide main
+2310000,2610000,-1,NA,exenatide main,semaglutide main
+2310000,2710000,-1,NA,exenatide main,tirzepatide main
+2310000,2810000,-1,NA,exenatide main,efpeglenatide main
+2410000,2510000,-1,NA,liraglutide main,lixisenatide main
+2410000,2610000,-1,NA,liraglutide main,semaglutide main
+2410000,2710000,-1,NA,liraglutide main,tirzepatide main
+2410000,2810000,-1,NA,liraglutide main,efpeglenatide main
+2510000,2610000,-1,NA,lixisenatide main,semaglutide main
+2510000,2710000,-1,NA,lixisenatide main,tirzepatide main
+2510000,2810000,-1,NA,lixisenatide main,efpeglenatide main
+2610000,2710000,-1,NA,semaglutide main,tirzepatide main
+2610000,2810000,-1,NA,semaglutide main,efpeglenatide main
+2710000,2810000,-1,NA,tirzepatide main,efpeglenatide main
+2110100,2210100,-1,NA,albiglutide younger-age,dulaglutide younger-age
+2110100,2310100,-1,NA,albiglutide younger-age,exenatide younger-age
+2110100,2410100,-1,NA,albiglutide younger-age,liraglutide younger-age
+2110100,2510100,-1,NA,albiglutide younger-age,lixisenatide younger-age
+2110100,2610100,-1,NA,albiglutide younger-age,semaglutide younger-age
+2110100,2710100,-1,NA,albiglutide younger-age,tirzepatide younger-age
+2110100,2810100,-1,NA,albiglutide younger-age,efpeglenatide younger-age
+2210100,2310100,-1,NA,dulaglutide younger-age,exenatide younger-age
+2210100,2410100,-1,NA,dulaglutide younger-age,liraglutide younger-age
+2210100,2510100,-1,NA,dulaglutide younger-age,lixisenatide younger-age
+2210100,2610100,-1,NA,dulaglutide younger-age,semaglutide younger-age
+2210100,2710100,-1,NA,dulaglutide younger-age,tirzepatide younger-age
+2210100,2810100,-1,NA,dulaglutide younger-age,efpeglenatide younger-age
+2310100,2410100,-1,NA,exenatide younger-age,liraglutide younger-age
+2310100,2510100,-1,NA,exenatide younger-age,lixisenatide younger-age
+2310100,2610100,-1,NA,exenatide younger-age,semaglutide younger-age
+2310100,2710100,-1,NA,exenatide younger-age,tirzepatide younger-age
+2310100,2810100,-1,NA,exenatide younger-age,efpeglenatide younger-age
+2410100,2510100,-1,NA,liraglutide younger-age,lixisenatide younger-age
+2410100,2610100,-1,NA,liraglutide younger-age,semaglutide younger-age
+2410100,2710100,-1,NA,liraglutide younger-age,tirzepatide younger-age
+2410100,2810100,-1,NA,liraglutide younger-age,efpeglenatide younger-age
+2510100,2610100,-1,NA,lixisenatide younger-age,semaglutide younger-age
+2510100,2710100,-1,NA,lixisenatide younger-age,tirzepatide younger-age
+2510100,2810100,-1,NA,lixisenatide younger-age,efpeglenatide younger-age
+2610100,2710100,-1,NA,semaglutide younger-age,tirzepatide younger-age
+2610100,2810100,-1,NA,semaglutide younger-age,efpeglenatide younger-age
+2710100,2810100,-1,NA,tirzepatide younger-age,efpeglenatide younger-age
+2110300,2210300,-1,NA,albiglutide older-age,dulaglutide older-age
+2110300,2310300,-1,NA,albiglutide older-age,exenatide older-age
+2110300,2410300,-1,NA,albiglutide older-age,liraglutide older-age
+2110300,2510300,-1,NA,albiglutide older-age,lixisenatide older-age
+2110300,2610300,-1,NA,albiglutide older-age,semaglutide older-age
+2110300,2710300,-1,NA,albiglutide older-age,tirzepatide older-age
+2110300,2810300,-1,NA,albiglutide older-age,efpeglenatide older-age
+2210300,2310300,-1,NA,dulaglutide older-age,exenatide older-age
+2210300,2410300,-1,NA,dulaglutide older-age,liraglutide older-age
+2210300,2510300,-1,NA,dulaglutide older-age,lixisenatide older-age
+2210300,2610300,-1,NA,dulaglutide older-age,semaglutide older-age
+2210300,2710300,-1,NA,dulaglutide older-age,tirzepatide older-age
+2210300,2810300,-1,NA,dulaglutide older-age,efpeglenatide older-age
+2310300,2410300,-1,NA,exenatide older-age,liraglutide older-age
+2310300,2510300,-1,NA,exenatide older-age,lixisenatide older-age
+2310300,2610300,-1,NA,exenatide older-age,semaglutide older-age
+2310300,2710300,-1,NA,exenatide older-age,tirzepatide older-age
+2310300,2810300,-1,NA,exenatide older-age,efpeglenatide older-age
+2410300,2510300,-1,NA,liraglutide older-age,lixisenatide older-age
+2410300,2610300,-1,NA,liraglutide older-age,semaglutide older-age
+2410300,2710300,-1,NA,liraglutide older-age,tirzepatide older-age
+2410300,2810300,-1,NA,liraglutide older-age,efpeglenatide older-age
+2510300,2610300,-1,NA,lixisenatide older-age,semaglutide older-age
+2510300,2710300,-1,NA,lixisenatide older-age,tirzepatide older-age
+2510300,2810300,-1,NA,lixisenatide older-age,efpeglenatide older-age
+2610300,2710300,-1,NA,semaglutide older-age,tirzepatide older-age
+2610300,2810300,-1,NA,semaglutide older-age,efpeglenatide older-age
+2710300,2810300,-1,NA,tirzepatide older-age,efpeglenatide older-age
+2110010,2210010,-1,NA,albiglutide female,dulaglutide female
+2110010,2310010,-1,NA,albiglutide female,exenatide female
+2110010,2410010,-1,NA,albiglutide female,liraglutide female
+2110010,2510010,-1,NA,albiglutide female,lixisenatide female
+2110010,2610010,-1,NA,albiglutide female,semaglutide female
+2110010,2710010,-1,NA,albiglutide female,tirzepatide female
+2110010,2810010,-1,NA,albiglutide female,efpeglenatide female
+2210010,2310010,-1,NA,dulaglutide female,exenatide female
+2210010,2410010,-1,NA,dulaglutide female,liraglutide female
+2210010,2510010,-1,NA,dulaglutide female,lixisenatide female
+2210010,2610010,-1,NA,dulaglutide female,semaglutide female
+2210010,2710010,-1,NA,dulaglutide female,tirzepatide female
+2210010,2810010,-1,NA,dulaglutide female,efpeglenatide female
+2310010,2410010,-1,NA,exenatide female,liraglutide female
+2310010,2510010,-1,NA,exenatide female,lixisenatide female
+2310010,2610010,-1,NA,exenatide female,semaglutide female
+2310010,2710010,-1,NA,exenatide female,tirzepatide female
+2310010,2810010,-1,NA,exenatide female,efpeglenatide female
+2410010,2510010,-1,NA,liraglutide female,lixisenatide female
+2410010,2610010,-1,NA,liraglutide female,semaglutide female
+2410010,2710010,-1,NA,liraglutide female,tirzepatide female
+2410010,2810010,-1,NA,liraglutide female,efpeglenatide female
+2510010,2610010,-1,NA,lixisenatide female,semaglutide female
+2510010,2710010,-1,NA,lixisenatide female,tirzepatide female
+2510010,2810010,-1,NA,lixisenatide female,efpeglenatide female
+2610010,2710010,-1,NA,semaglutide female,tirzepatide female
+2610010,2810010,-1,NA,semaglutide female,efpeglenatide female
+2710010,2810010,-1,NA,tirzepatide female,efpeglenatide female
+2110030,2210030,-1,NA,albiglutide male,dulaglutide male
+2110030,2310030,-1,NA,albiglutide male,exenatide male
+2110030,2410030,-1,NA,albiglutide male,liraglutide male
+2110030,2510030,-1,NA,albiglutide male,lixisenatide male
+2110030,2610030,-1,NA,albiglutide male,semaglutide male
+2110030,2710030,-1,NA,albiglutide male,tirzepatide male
+2110030,2810030,-1,NA,albiglutide male,efpeglenatide male
+2210030,2310030,-1,NA,dulaglutide male,exenatide male
+2210030,2410030,-1,NA,dulaglutide male,liraglutide male
+2210030,2510030,-1,NA,dulaglutide male,lixisenatide male
+2210030,2610030,-1,NA,dulaglutide male,semaglutide male
+2210030,2710030,-1,NA,dulaglutide male,tirzepatide male
+2210030,2810030,-1,NA,dulaglutide male,efpeglenatide male
+2310030,2410030,-1,NA,exenatide male,liraglutide male
+2310030,2510030,-1,NA,exenatide male,lixisenatide male
+2310030,2610030,-1,NA,exenatide male,semaglutide male
+2310030,2710030,-1,NA,exenatide male,tirzepatide male
+2310030,2810030,-1,NA,exenatide male,efpeglenatide male
+2410030,2510030,-1,NA,liraglutide male,lixisenatide male
+2410030,2610030,-1,NA,liraglutide male,semaglutide male
+2410030,2710030,-1,NA,liraglutide male,tirzepatide male
+2410030,2810030,-1,NA,liraglutide male,efpeglenatide male
+2510030,2610030,-1,NA,lixisenatide male,semaglutide male
+2510030,2710030,-1,NA,lixisenatide male,tirzepatide male
+2510030,2810030,-1,NA,lixisenatide male,efpeglenatide male
+2610030,2710030,-1,NA,semaglutide male,tirzepatide male
+2610030,2810030,-1,NA,semaglutide male,efpeglenatide male
+2710030,2810030,-1,NA,tirzepatide male,efpeglenatide male
+2110001,2210001,-1,NA,albiglutide without-obesity,dulaglutide without-obesity
+2110001,2310001,-1,NA,albiglutide without-obesity,exenatide without-obesity
+2110001,2410001,-1,NA,albiglutide without-obesity,liraglutide without-obesity
+2110001,2510001,-1,NA,albiglutide without-obesity,lixisenatide without-obesity
+2110001,2610001,-1,NA,albiglutide without-obesity,semaglutide without-obesity
+2110001,2710001,-1,NA,albiglutide without-obesity,tirzepatide without-obesity
+2110001,2810001,-1,NA,albiglutide without-obesity,efpeglenatide without-obesity
+2210001,2310001,-1,NA,dulaglutide without-obesity,exenatide without-obesity
+2210001,2410001,-1,NA,dulaglutide without-obesity,liraglutide without-obesity
+2210001,2510001,-1,NA,dulaglutide without-obesity,lixisenatide without-obesity
+2210001,2610001,-1,NA,dulaglutide without-obesity,semaglutide without-obesity
+2210001,2710001,-1,NA,dulaglutide without-obesity,tirzepatide without-obesity
+2210001,2810001,-1,NA,dulaglutide without-obesity,efpeglenatide without-obesity
+2310001,2410001,-1,NA,exenatide without-obesity,liraglutide without-obesity
+2310001,2510001,-1,NA,exenatide without-obesity,lixisenatide without-obesity
+2310001,2610001,-1,NA,exenatide without-obesity,semaglutide without-obesity
+2310001,2710001,-1,NA,exenatide without-obesity,tirzepatide without-obesity
+2310001,2810001,-1,NA,exenatide without-obesity,efpeglenatide without-obesity
+2410001,2510001,-1,NA,liraglutide without-obesity,lixisenatide without-obesity
+2410001,2610001,-1,NA,liraglutide without-obesity,semaglutide without-obesity
+2410001,2710001,-1,NA,liraglutide without-obesity,tirzepatide without-obesity
+2410001,2810001,-1,NA,liraglutide without-obesity,efpeglenatide without-obesity
+2510001,2610001,-1,NA,lixisenatide without-obesity,semaglutide without-obesity
+2510001,2710001,-1,NA,lixisenatide without-obesity,tirzepatide without-obesity
+2510001,2810001,-1,NA,lixisenatide without-obesity,efpeglenatide without-obesity
+2610001,2710001,-1,NA,semaglutide without-obesity,tirzepatide without-obesity
+2610001,2810001,-1,NA,semaglutide without-obesity,efpeglenatide without-obesity
+2710001,2810001,-1,NA,tirzepatide without-obesity,efpeglenatide without-obesity
+2110002,2210002,-1,NA,albiglutide with-obesity,dulaglutide with-obesity
+2110002,2310002,-1,NA,albiglutide with-obesity,exenatide with-obesity
+2110002,2410002,-1,NA,albiglutide with-obesity,liraglutide with-obesity
+2110002,2510002,-1,NA,albiglutide with-obesity,lixisenatide with-obesity
+2110002,2610002,-1,NA,albiglutide with-obesity,semaglutide with-obesity
+2110002,2710002,-1,NA,albiglutide with-obesity,tirzepatide with-obesity
+2110002,2810002,-1,NA,albiglutide with-obesity,efpeglenatide with-obesity
+2210002,2310002,-1,NA,dulaglutide with-obesity,exenatide with-obesity
+2210002,2410002,-1,NA,dulaglutide with-obesity,liraglutide with-obesity
+2210002,2510002,-1,NA,dulaglutide with-obesity,lixisenatide with-obesity
+2210002,2610002,-1,NA,dulaglutide with-obesity,semaglutide with-obesity
+2210002,2710002,-1,NA,dulaglutide with-obesity,tirzepatide with-obesity
+2210002,2810002,-1,NA,dulaglutide with-obesity,efpeglenatide with-obesity
+2310002,2410002,-1,NA,exenatide with-obesity,liraglutide with-obesity
+2310002,2510002,-1,NA,exenatide with-obesity,lixisenatide with-obesity
+2310002,2610002,-1,NA,exenatide with-obesity,semaglutide with-obesity
+2310002,2710002,-1,NA,exenatide with-obesity,tirzepatide with-obesity
+2310002,2810002,-1,NA,exenatide with-obesity,efpeglenatide with-obesity
+2410002,2510002,-1,NA,liraglutide with-obesity,lixisenatide with-obesity
+2410002,2610002,-1,NA,liraglutide with-obesity,semaglutide with-obesity
+2410002,2710002,-1,NA,liraglutide with-obesity,tirzepatide with-obesity
+2410002,2810002,-1,NA,liraglutide with-obesity,efpeglenatide with-obesity
+2510002,2610002,-1,NA,lixisenatide with-obesity,semaglutide with-obesity
+2510002,2710002,-1,NA,lixisenatide with-obesity,tirzepatide with-obesity
+2510002,2810002,-1,NA,lixisenatide with-obesity,efpeglenatide with-obesity
+2610002,2710002,-1,NA,semaglutide with-obesity,tirzepatide with-obesity
+2610002,2810002,-1,NA,semaglutide with-obesity,efpeglenatide with-obesity
+2710002,2810002,-1,NA,tirzepatide with-obesity,efpeglenatide with-obesity
+2120000,2220000,-1,NA,albiglutide main ot2,dulaglutide main ot2
+2120000,2320000,-1,NA,albiglutide main ot2,exenatide main ot2
+2120000,2420000,-1,NA,albiglutide main ot2,liraglutide main ot2
+2120000,2520000,-1,NA,albiglutide main ot2,lixisenatide main ot2
+2120000,2620000,-1,NA,albiglutide main ot2,semaglutide main ot2
+2120000,2720000,-1,NA,albiglutide main ot2,tirzepatide main ot2
+2120000,2820000,-1,NA,albiglutide main ot2,efpeglenatide main ot2
+2220000,2320000,-1,NA,dulaglutide main ot2,exenatide main ot2
+2220000,2420000,-1,NA,dulaglutide main ot2,liraglutide main ot2
+2220000,2520000,-1,NA,dulaglutide main ot2,lixisenatide main ot2
+2220000,2620000,-1,NA,dulaglutide main ot2,semaglutide main ot2
+2220000,2720000,-1,NA,dulaglutide main ot2,tirzepatide main ot2
+2220000,2820000,-1,NA,dulaglutide main ot2,efpeglenatide main ot2
+2320000,2420000,-1,NA,exenatide main ot2,liraglutide main ot2
+2320000,2520000,-1,NA,exenatide main ot2,lixisenatide main ot2
+2320000,2620000,-1,NA,exenatide main ot2,semaglutide main ot2
+2320000,2720000,-1,NA,exenatide main ot2,tirzepatide main ot2
+2320000,2820000,-1,NA,exenatide main ot2,efpeglenatide main ot2
+2420000,2520000,-1,NA,liraglutide main ot2,lixisenatide main ot2
+2420000,2620000,-1,NA,liraglutide main ot2,semaglutide main ot2
+2420000,2720000,-1,NA,liraglutide main ot2,tirzepatide main ot2
+2420000,2820000,-1,NA,liraglutide main ot2,efpeglenatide main ot2
+2520000,2620000,-1,NA,lixisenatide main ot2,semaglutide main ot2
+2520000,2720000,-1,NA,lixisenatide main ot2,tirzepatide main ot2
+2520000,2820000,-1,NA,lixisenatide main ot2,efpeglenatide main ot2
+2620000,2720000,-1,NA,semaglutide main ot2,tirzepatide main ot2
+2620000,2820000,-1,NA,semaglutide main ot2,efpeglenatide main ot2
+2720000,2820000,-1,NA,tirzepatide main ot2,efpeglenatide main ot2
+2120100,2220100,-1,NA,albiglutide ot2 younger-age,dulaglutide ot2 younger-age
+2120100,2320100,-1,NA,albiglutide ot2 younger-age,exenatide ot2 younger-age
+2120100,2420100,-1,NA,albiglutide ot2 younger-age,liraglutide ot2 younger-age
+2120100,2520100,-1,NA,albiglutide ot2 younger-age,lixisenatide ot2 younger-age
+2120100,2620100,-1,NA,albiglutide ot2 younger-age,semaglutide ot2 younger-age
+2120100,2720100,-1,NA,albiglutide ot2 younger-age,tirzepatide ot2 younger-age
+2120100,2820100,-1,NA,albiglutide ot2 younger-age,efpeglenatide ot2 younger-age
+2220100,2320100,-1,NA,dulaglutide ot2 younger-age,exenatide ot2 younger-age
+2220100,2420100,-1,NA,dulaglutide ot2 younger-age,liraglutide ot2 younger-age
+2220100,2520100,-1,NA,dulaglutide ot2 younger-age,lixisenatide ot2 younger-age
+2220100,2620100,-1,NA,dulaglutide ot2 younger-age,semaglutide ot2 younger-age
+2220100,2720100,-1,NA,dulaglutide ot2 younger-age,tirzepatide ot2 younger-age
+2220100,2820100,-1,NA,dulaglutide ot2 younger-age,efpeglenatide ot2 younger-age
+2320100,2420100,-1,NA,exenatide ot2 younger-age,liraglutide ot2 younger-age
+2320100,2520100,-1,NA,exenatide ot2 younger-age,lixisenatide ot2 younger-age
+2320100,2620100,-1,NA,exenatide ot2 younger-age,semaglutide ot2 younger-age
+2320100,2720100,-1,NA,exenatide ot2 younger-age,tirzepatide ot2 younger-age
+2320100,2820100,-1,NA,exenatide ot2 younger-age,efpeglenatide ot2 younger-age
+2420100,2520100,-1,NA,liraglutide ot2 younger-age,lixisenatide ot2 younger-age
+2420100,2620100,-1,NA,liraglutide ot2 younger-age,semaglutide ot2 younger-age
+2420100,2720100,-1,NA,liraglutide ot2 younger-age,tirzepatide ot2 younger-age
+2420100,2820100,-1,NA,liraglutide ot2 younger-age,efpeglenatide ot2 younger-age
+2520100,2620100,-1,NA,lixisenatide ot2 younger-age,semaglutide ot2 younger-age
+2520100,2720100,-1,NA,lixisenatide ot2 younger-age,tirzepatide ot2 younger-age
+2520100,2820100,-1,NA,lixisenatide ot2 younger-age,efpeglenatide ot2 younger-age
+2620100,2720100,-1,NA,semaglutide ot2 younger-age,tirzepatide ot2 younger-age
+2620100,2820100,-1,NA,semaglutide ot2 younger-age,efpeglenatide ot2 younger-age
+2720100,2820100,-1,NA,tirzepatide ot2 younger-age,efpeglenatide ot2 younger-age
+2120300,2220300,-1,NA,albiglutide ot2 older-age,dulaglutide ot2 older-age
+2120300,2320300,-1,NA,albiglutide ot2 older-age,exenatide ot2 older-age
+2120300,2420300,-1,NA,albiglutide ot2 older-age,liraglutide ot2 older-age
+2120300,2520300,-1,NA,albiglutide ot2 older-age,lixisenatide ot2 older-age
+2120300,2620300,-1,NA,albiglutide ot2 older-age,semaglutide ot2 older-age
+2120300,2720300,-1,NA,albiglutide ot2 older-age,tirzepatide ot2 older-age
+2120300,2820300,-1,NA,albiglutide ot2 older-age,efpeglenatide ot2 older-age
+2220300,2320300,-1,NA,dulaglutide ot2 older-age,exenatide ot2 older-age
+2220300,2420300,-1,NA,dulaglutide ot2 older-age,liraglutide ot2 older-age
+2220300,2520300,-1,NA,dulaglutide ot2 older-age,lixisenatide ot2 older-age
+2220300,2620300,-1,NA,dulaglutide ot2 older-age,semaglutide ot2 older-age
+2220300,2720300,-1,NA,dulaglutide ot2 older-age,tirzepatide ot2 older-age
+2220300,2820300,-1,NA,dulaglutide ot2 older-age,efpeglenatide ot2 older-age
+2320300,2420300,-1,NA,exenatide ot2 older-age,liraglutide ot2 older-age
+2320300,2520300,-1,NA,exenatide ot2 older-age,lixisenatide ot2 older-age
+2320300,2620300,-1,NA,exenatide ot2 older-age,semaglutide ot2 older-age
+2320300,2720300,-1,NA,exenatide ot2 older-age,tirzepatide ot2 older-age
+2320300,2820300,-1,NA,exenatide ot2 older-age,efpeglenatide ot2 older-age
+2420300,2520300,-1,NA,liraglutide ot2 older-age,lixisenatide ot2 older-age
+2420300,2620300,-1,NA,liraglutide ot2 older-age,semaglutide ot2 older-age
+2420300,2720300,-1,NA,liraglutide ot2 older-age,tirzepatide ot2 older-age
+2420300,2820300,-1,NA,liraglutide ot2 older-age,efpeglenatide ot2 older-age
+2520300,2620300,-1,NA,lixisenatide ot2 older-age,semaglutide ot2 older-age
+2520300,2720300,-1,NA,lixisenatide ot2 older-age,tirzepatide ot2 older-age
+2520300,2820300,-1,NA,lixisenatide ot2 older-age,efpeglenatide ot2 older-age
+2620300,2720300,-1,NA,semaglutide ot2 older-age,tirzepatide ot2 older-age
+2620300,2820300,-1,NA,semaglutide ot2 older-age,efpeglenatide ot2 older-age
+2720300,2820300,-1,NA,tirzepatide ot2 older-age,efpeglenatide ot2 older-age
+2120010,2220010,-1,NA,albiglutide ot2 female,dulaglutide ot2 female
+2120010,2320010,-1,NA,albiglutide ot2 female,exenatide ot2 female
+2120010,2420010,-1,NA,albiglutide ot2 female,liraglutide ot2 female
+2120010,2520010,-1,NA,albiglutide ot2 female,lixisenatide ot2 female
+2120010,2620010,-1,NA,albiglutide ot2 female,semaglutide ot2 female
+2120010,2720010,-1,NA,albiglutide ot2 female,tirzepatide ot2 female
+2120010,2820010,-1,NA,albiglutide ot2 female,efpeglenatide ot2 female
+2220010,2320010,-1,NA,dulaglutide ot2 female,exenatide ot2 female
+2220010,2420010,-1,NA,dulaglutide ot2 female,liraglutide ot2 female
+2220010,2520010,-1,NA,dulaglutide ot2 female,lixisenatide ot2 female
+2220010,2620010,-1,NA,dulaglutide ot2 female,semaglutide ot2 female
+2220010,2720010,-1,NA,dulaglutide ot2 female,tirzepatide ot2 female
+2220010,2820010,-1,NA,dulaglutide ot2 female,efpeglenatide ot2 female
+2320010,2420010,-1,NA,exenatide ot2 female,liraglutide ot2 female
+2320010,2520010,-1,NA,exenatide ot2 female,lixisenatide ot2 female
+2320010,2620010,-1,NA,exenatide ot2 female,semaglutide ot2 female
+2320010,2720010,-1,NA,exenatide ot2 female,tirzepatide ot2 female
+2320010,2820010,-1,NA,exenatide ot2 female,efpeglenatide ot2 female
+2420010,2520010,-1,NA,liraglutide ot2 female,lixisenatide ot2 female
+2420010,2620010,-1,NA,liraglutide ot2 female,semaglutide ot2 female
+2420010,2720010,-1,NA,liraglutide ot2 female,tirzepatide ot2 female
+2420010,2820010,-1,NA,liraglutide ot2 female,efpeglenatide ot2 female
+2520010,2620010,-1,NA,lixisenatide ot2 female,semaglutide ot2 female
+2520010,2720010,-1,NA,lixisenatide ot2 female,tirzepatide ot2 female
+2520010,2820010,-1,NA,lixisenatide ot2 female,efpeglenatide ot2 female
+2620010,2720010,-1,NA,semaglutide ot2 female,tirzepatide ot2 female
+2620010,2820010,-1,NA,semaglutide ot2 female,efpeglenatide ot2 female
+2720010,2820010,-1,NA,tirzepatide ot2 female,efpeglenatide ot2 female
+2120030,2220030,-1,NA,albiglutide ot2 male,dulaglutide ot2 male
+2120030,2320030,-1,NA,albiglutide ot2 male,exenatide ot2 male
+2120030,2420030,-1,NA,albiglutide ot2 male,liraglutide ot2 male
+2120030,2520030,-1,NA,albiglutide ot2 male,lixisenatide ot2 male
+2120030,2620030,-1,NA,albiglutide ot2 male,semaglutide ot2 male
+2120030,2720030,-1,NA,albiglutide ot2 male,tirzepatide ot2 male
+2120030,2820030,-1,NA,albiglutide ot2 male,efpeglenatide ot2 male
+2220030,2320030,-1,NA,dulaglutide ot2 male,exenatide ot2 male
+2220030,2420030,-1,NA,dulaglutide ot2 male,liraglutide ot2 male
+2220030,2520030,-1,NA,dulaglutide ot2 male,lixisenatide ot2 male
+2220030,2620030,-1,NA,dulaglutide ot2 male,semaglutide ot2 male
+2220030,2720030,-1,NA,dulaglutide ot2 male,tirzepatide ot2 male
+2220030,2820030,-1,NA,dulaglutide ot2 male,efpeglenatide ot2 male
+2320030,2420030,-1,NA,exenatide ot2 male,liraglutide ot2 male
+2320030,2520030,-1,NA,exenatide ot2 male,lixisenatide ot2 male
+2320030,2620030,-1,NA,exenatide ot2 male,semaglutide ot2 male
+2320030,2720030,-1,NA,exenatide ot2 male,tirzepatide ot2 male
+2320030,2820030,-1,NA,exenatide ot2 male,efpeglenatide ot2 male
+2420030,2520030,-1,NA,liraglutide ot2 male,lixisenatide ot2 male
+2420030,2620030,-1,NA,liraglutide ot2 male,semaglutide ot2 male
+2420030,2720030,-1,NA,liraglutide ot2 male,tirzepatide ot2 male
+2420030,2820030,-1,NA,liraglutide ot2 male,efpeglenatide ot2 male
+2520030,2620030,-1,NA,lixisenatide ot2 male,semaglutide ot2 male
+2520030,2720030,-1,NA,lixisenatide ot2 male,tirzepatide ot2 male
+2520030,2820030,-1,NA,lixisenatide ot2 male,efpeglenatide ot2 male
+2620030,2720030,-1,NA,semaglutide ot2 male,tirzepatide ot2 male
+2620030,2820030,-1,NA,semaglutide ot2 male,efpeglenatide ot2 male
+2720030,2820030,-1,NA,tirzepatide ot2 male,efpeglenatide ot2 male
+2120001,2220001,-1,NA,albiglutide ot2 without-obesity,dulaglutide ot2 without-obesity
+2120001,2320001,-1,NA,albiglutide ot2 without-obesity,exenatide ot2 without-obesity
+2120001,2420001,-1,NA,albiglutide ot2 without-obesity,liraglutide ot2 without-obesity
+2120001,2520001,-1,NA,albiglutide ot2 without-obesity,lixisenatide ot2 without-obesity
+2120001,2620001,-1,NA,albiglutide ot2 without-obesity,semaglutide ot2 without-obesity
+2120001,2720001,-1,NA,albiglutide ot2 without-obesity,tirzepatide ot2 without-obesity
+2120001,2820001,-1,NA,albiglutide ot2 without-obesity,efpeglenatide ot2 without-obesity
+2220001,2320001,-1,NA,dulaglutide ot2 without-obesity,exenatide ot2 without-obesity
+2220001,2420001,-1,NA,dulaglutide ot2 without-obesity,liraglutide ot2 without-obesity
+2220001,2520001,-1,NA,dulaglutide ot2 without-obesity,lixisenatide ot2 without-obesity
+2220001,2620001,-1,NA,dulaglutide ot2 without-obesity,semaglutide ot2 without-obesity
+2220001,2720001,-1,NA,dulaglutide ot2 without-obesity,tirzepatide ot2 without-obesity
+2220001,2820001,-1,NA,dulaglutide ot2 without-obesity,efpeglenatide ot2 without-obesity
+2320001,2420001,-1,NA,exenatide ot2 without-obesity,liraglutide ot2 without-obesity
+2320001,2520001,-1,NA,exenatide ot2 without-obesity,lixisenatide ot2 without-obesity
+2320001,2620001,-1,NA,exenatide ot2 without-obesity,semaglutide ot2 without-obesity
+2320001,2720001,-1,NA,exenatide ot2 without-obesity,tirzepatide ot2 without-obesity
+2320001,2820001,-1,NA,exenatide ot2 without-obesity,efpeglenatide ot2 without-obesity
+2420001,2520001,-1,NA,liraglutide ot2 without-obesity,lixisenatide ot2 without-obesity
+2420001,2620001,-1,NA,liraglutide ot2 without-obesity,semaglutide ot2 without-obesity
+2420001,2720001,-1,NA,liraglutide ot2 without-obesity,tirzepatide ot2 without-obesity
+2420001,2820001,-1,NA,liraglutide ot2 without-obesity,efpeglenatide ot2 without-obesity
+2520001,2620001,-1,NA,lixisenatide ot2 without-obesity,semaglutide ot2 without-obesity
+2520001,2720001,-1,NA,lixisenatide ot2 without-obesity,tirzepatide ot2 without-obesity
+2520001,2820001,-1,NA,lixisenatide ot2 without-obesity,efpeglenatide ot2 without-obesity
+2620001,2720001,-1,NA,semaglutide ot2 without-obesity,tirzepatide ot2 without-obesity
+2620001,2820001,-1,NA,semaglutide ot2 without-obesity,efpeglenatide ot2 without-obesity
+2720001,2820001,-1,NA,tirzepatide ot2 without-obesity,efpeglenatide ot2 without-obesity
+2120002,2220002,-1,NA,albiglutide ot2 with-obesity,dulaglutide ot2 with-obesity
+2120002,2320002,-1,NA,albiglutide ot2 with-obesity,exenatide ot2 with-obesity
+2120002,2420002,-1,NA,albiglutide ot2 with-obesity,liraglutide ot2 with-obesity
+2120002,2520002,-1,NA,albiglutide ot2 with-obesity,lixisenatide ot2 with-obesity
+2120002,2620002,-1,NA,albiglutide ot2 with-obesity,semaglutide ot2 with-obesity
+2120002,2720002,-1,NA,albiglutide ot2 with-obesity,tirzepatide ot2 with-obesity
+2120002,2820002,-1,NA,albiglutide ot2 with-obesity,efpeglenatide ot2 with-obesity
+2220002,2320002,-1,NA,dulaglutide ot2 with-obesity,exenatide ot2 with-obesity
+2220002,2420002,-1,NA,dulaglutide ot2 with-obesity,liraglutide ot2 with-obesity
+2220002,2520002,-1,NA,dulaglutide ot2 with-obesity,lixisenatide ot2 with-obesity
+2220002,2620002,-1,NA,dulaglutide ot2 with-obesity,semaglutide ot2 with-obesity
+2220002,2720002,-1,NA,dulaglutide ot2 with-obesity,tirzepatide ot2 with-obesity
+2220002,2820002,-1,NA,dulaglutide ot2 with-obesity,efpeglenatide ot2 with-obesity
+2320002,2420002,-1,NA,exenatide ot2 with-obesity,liraglutide ot2 with-obesity
+2320002,2520002,-1,NA,exenatide ot2 with-obesity,lixisenatide ot2 with-obesity
+2320002,2620002,-1,NA,exenatide ot2 with-obesity,semaglutide ot2 with-obesity
+2320002,2720002,-1,NA,exenatide ot2 with-obesity,tirzepatide ot2 with-obesity
+2320002,2820002,-1,NA,exenatide ot2 with-obesity,efpeglenatide ot2 with-obesity
+2420002,2520002,-1,NA,liraglutide ot2 with-obesity,lixisenatide ot2 with-obesity
+2420002,2620002,-1,NA,liraglutide ot2 with-obesity,semaglutide ot2 with-obesity
+2420002,2720002,-1,NA,liraglutide ot2 with-obesity,tirzepatide ot2 with-obesity
+2420002,2820002,-1,NA,liraglutide ot2 with-obesity,efpeglenatide ot2 with-obesity
+2520002,2620002,-1,NA,lixisenatide ot2 with-obesity,semaglutide ot2 with-obesity
+2520002,2720002,-1,NA,lixisenatide ot2 with-obesity,tirzepatide ot2 with-obesity
+2520002,2820002,-1,NA,lixisenatide ot2 with-obesity,efpeglenatide ot2 with-obesity
+2620002,2720002,-1,NA,semaglutide ot2 with-obesity,tirzepatide ot2 with-obesity
+2620002,2820002,-1,NA,semaglutide ot2 with-obesity,efpeglenatide ot2 with-obesity
+2720002,2820002,-1,NA,tirzepatide ot2 with-obesity,efpeglenatide ot2 with-obesity

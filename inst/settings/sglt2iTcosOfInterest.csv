@@ -1,85 +1,85 @@
 targetId,comparatorId,outcomeIds,excludedCovariateConceptIds,targetName,comparatorName
-3110000,3210000,-1,NA,canagliflozin,dapagliflozin
-3110000,3310000,-1,NA,canagliflozin,empagliflozin
-3110000,3410000,-1,NA,canagliflozin,ertugliflozin
-3210000,3310000,-1,NA,dapagliflozin,empagliflozin
-3210000,3410000,-1,NA,dapagliflozin,ertugliflozin
-3310000,3410000,-1,NA,empagliflozin,ertugliflozin
-3110100,3210100,-1,NA,canagliflozin,dapagliflozin
-3110100,3310100,-1,NA,canagliflozin,empagliflozin
-3110100,3410100,-1,NA,canagliflozin,ertugliflozin
-3210100,3310100,-1,NA,dapagliflozin,empagliflozin
-3210100,3410100,-1,NA,dapagliflozin,ertugliflozin
-3310100,3410100,-1,NA,empagliflozin,ertugliflozin
-3110300,3210300,-1,NA,canagliflozin,dapagliflozin
-3110300,3310300,-1,NA,canagliflozin,empagliflozin
-3110300,3410300,-1,NA,canagliflozin,ertugliflozin
-3210300,3310300,-1,NA,dapagliflozin,empagliflozin
-3210300,3410300,-1,NA,dapagliflozin,ertugliflozin
-3310300,3410300,-1,NA,empagliflozin,ertugliflozin
-3110010,3210010,-1,NA,canagliflozin,dapagliflozin
-3110010,3310010,-1,NA,canagliflozin,empagliflozin
-3110010,3410010,-1,NA,canagliflozin,ertugliflozin
-3210010,3310010,-1,NA,dapagliflozin,empagliflozin
-3210010,3410010,-1,NA,dapagliflozin,ertugliflozin
-3310010,3410010,-1,NA,empagliflozin,ertugliflozin
-3110030,3210030,-1,NA,canagliflozin,dapagliflozin
-3110030,3310030,-1,NA,canagliflozin,empagliflozin
-3110030,3410030,-1,NA,canagliflozin,ertugliflozin
-3210030,3310030,-1,NA,dapagliflozin,empagliflozin
-3210030,3410030,-1,NA,dapagliflozin,ertugliflozin
-3310030,3410030,-1,NA,empagliflozin,ertugliflozin
-3110002,3210002,-1,NA,canagliflozin,dapagliflozin
-3110002,3310002,-1,NA,canagliflozin,empagliflozin
-3110002,3410002,-1,NA,canagliflozin,ertugliflozin
-3210002,3310002,-1,NA,dapagliflozin,empagliflozin
-3210002,3410002,-1,NA,dapagliflozin,ertugliflozin
-3310002,3410002,-1,NA,empagliflozin,ertugliflozin
-3110001,3210001,-1,NA,canagliflozin,dapagliflozin
-3110001,3310001,-1,NA,canagliflozin,empagliflozin
-3110001,3410001,-1,NA,canagliflozin,ertugliflozin
-3210001,3310001,-1,NA,dapagliflozin,empagliflozin
-3210001,3410001,-1,NA,dapagliflozin,ertugliflozin
-3310001,3410001,-1,NA,empagliflozin,ertugliflozin
-3120000,3220000,-1,NA,canagliflozin,dapagliflozin
-3120000,3320000,-1,NA,canagliflozin,empagliflozin
-3120000,3420000,-1,NA,canagliflozin,ertugliflozin
-3220000,3320000,-1,NA,dapagliflozin,empagliflozin
-3220000,3420000,-1,NA,dapagliflozin,ertugliflozin
-3320000,3420000,-1,NA,empagliflozin,ertugliflozin
-3120100,3220100,-1,NA,canagliflozin,dapagliflozin
-3120100,3320100,-1,NA,canagliflozin,empagliflozin
-3120100,3420100,-1,NA,canagliflozin,ertugliflozin
-3220100,3320100,-1,NA,dapagliflozin,empagliflozin
-3220100,3420100,-1,NA,dapagliflozin,ertugliflozin
-3320100,3420100,-1,NA,empagliflozin,ertugliflozin
-3120300,3220300,-1,NA,canagliflozin,dapagliflozin
-3120300,3320300,-1,NA,canagliflozin,empagliflozin
-3120300,3420300,-1,NA,canagliflozin,ertugliflozin
-3220300,3320300,-1,NA,dapagliflozin,empagliflozin
-3220300,3420300,-1,NA,dapagliflozin,ertugliflozin
-3320300,3420300,-1,NA,empagliflozin,ertugliflozin
-3120010,3220010,-1,NA,canagliflozin,dapagliflozin
-3120010,3320010,-1,NA,canagliflozin,empagliflozin
-3120010,3420010,-1,NA,canagliflozin,ertugliflozin
-3220010,3320010,-1,NA,dapagliflozin,empagliflozin
-3220010,3420010,-1,NA,dapagliflozin,ertugliflozin
-3320010,3420010,-1,NA,empagliflozin,ertugliflozin
-3120030,3220030,-1,NA,canagliflozin,dapagliflozin
-3120030,3320030,-1,NA,canagliflozin,empagliflozin
-3120030,3420030,-1,NA,canagliflozin,ertugliflozin
-3220030,3320030,-1,NA,dapagliflozin,empagliflozin
-3220030,3420030,-1,NA,dapagliflozin,ertugliflozin
-3320030,3420030,-1,NA,empagliflozin,ertugliflozin
-3120002,3220002,-1,NA,canagliflozin,dapagliflozin
-3120002,3320002,-1,NA,canagliflozin,empagliflozin
-3120002,3420002,-1,NA,canagliflozin,ertugliflozin
-3220002,3320002,-1,NA,dapagliflozin,empagliflozin
-3220002,3420002,-1,NA,dapagliflozin,ertugliflozin
-3320002,3420002,-1,NA,empagliflozin,ertugliflozin
-3120001,3220001,-1,NA,canagliflozin,dapagliflozin
-3120001,3320001,-1,NA,canagliflozin,empagliflozin
-3120001,3420001,-1,NA,canagliflozin,ertugliflozin
-3220001,3320001,-1,NA,dapagliflozin,empagliflozin
-3220001,3420001,-1,NA,dapagliflozin,ertugliflozin
-3320001,3420001,-1,NA,empagliflozin,ertugliflozin
+3110000,3210000,-1,NA,canagliflozin main,dapagliflozin main
+3110000,3310000,-1,NA,canagliflozin main,empagliflozin main
+3110000,3410000,-1,NA,canagliflozin main,ertugliflozin main
+3210000,3310000,-1,NA,dapagliflozin main,empagliflozin main
+3210000,3410000,-1,NA,dapagliflozin main,ertugliflozin main
+3310000,3410000,-1,NA,empagliflozin main,ertugliflozin main
+3110100,3210100,-1,NA,canagliflozin younger-age,dapagliflozin younger-age
+3110100,3310100,-1,NA,canagliflozin younger-age,empagliflozin younger-age
+3110100,3410100,-1,NA,canagliflozin younger-age,ertugliflozin younger-age
+3210100,3310100,-1,NA,dapagliflozin younger-age,empagliflozin younger-age
+3210100,3410100,-1,NA,dapagliflozin younger-age,ertugliflozin younger-age
+3310100,3410100,-1,NA,empagliflozin younger-age,ertugliflozin younger-age
+3110300,3210300,-1,NA,canagliflozin older-age,dapagliflozin older-age
+3110300,3310300,-1,NA,canagliflozin older-age,empagliflozin older-age
+3110300,3410300,-1,NA,canagliflozin older-age,ertugliflozin older-age
+3210300,3310300,-1,NA,dapagliflozin older-age,empagliflozin older-age
+3210300,3410300,-1,NA,dapagliflozin older-age,ertugliflozin older-age
+3310300,3410300,-1,NA,empagliflozin older-age,ertugliflozin older-age
+3110010,3210010,-1,NA,canagliflozin female,dapagliflozin female
+3110010,3310010,-1,NA,canagliflozin female,empagliflozin female
+3110010,3410010,-1,NA,canagliflozin female,ertugliflozin female
+3210010,3310010,-1,NA,dapagliflozin female,empagliflozin female
+3210010,3410010,-1,NA,dapagliflozin female,ertugliflozin female
+3310010,3410010,-1,NA,empagliflozin female,ertugliflozin female
+3110030,3210030,-1,NA,canagliflozin male,dapagliflozin male
+3110030,3310030,-1,NA,canagliflozin male,empagliflozin male
+3110030,3410030,-1,NA,canagliflozin male,ertugliflozin male
+3210030,3310030,-1,NA,dapagliflozin male,empagliflozin male
+3210030,3410030,-1,NA,dapagliflozin male,ertugliflozin male
+3310030,3410030,-1,NA,empagliflozin male,ertugliflozin male
+3110001,3210001,-1,NA,canagliflozin without-obesity,dapagliflozin without-obesity
+3110001,3310001,-1,NA,canagliflozin without-obesity,empagliflozin without-obesity
+3110001,3410001,-1,NA,canagliflozin without-obesity,ertugliflozin without-obesity
+3210001,3310001,-1,NA,dapagliflozin without-obesity,empagliflozin without-obesity
+3210001,3410001,-1,NA,dapagliflozin without-obesity,ertugliflozin without-obesity
+3310001,3410001,-1,NA,empagliflozin without-obesity,ertugliflozin without-obesity
+3110002,3210002,-1,NA,canagliflozin with-obesity,dapagliflozin with-obesity
+3110002,3310002,-1,NA,canagliflozin with-obesity,empagliflozin with-obesity
+3110002,3410002,-1,NA,canagliflozin with-obesity,ertugliflozin with-obesity
+3210002,3310002,-1,NA,dapagliflozin with-obesity,empagliflozin with-obesity
+3210002,3410002,-1,NA,dapagliflozin with-obesity,ertugliflozin with-obesity
+3310002,3410002,-1,NA,empagliflozin with-obesity,ertugliflozin with-obesity
+3120000,3220000,-1,NA,canagliflozin main ot2,dapagliflozin main ot2
+3120000,3320000,-1,NA,canagliflozin main ot2,empagliflozin main ot2
+3120000,3420000,-1,NA,canagliflozin main ot2,ertugliflozin main ot2
+3220000,3320000,-1,NA,dapagliflozin main ot2,empagliflozin main ot2
+3220000,3420000,-1,NA,dapagliflozin main ot2,ertugliflozin main ot2
+3320000,3420000,-1,NA,empagliflozin main ot2,ertugliflozin main ot2
+3120100,3220100,-1,NA,canagliflozin ot2 younger-age,dapagliflozin ot2 younger-age
+3120100,3320100,-1,NA,canagliflozin ot2 younger-age,empagliflozin ot2 younger-age
+3120100,3420100,-1,NA,canagliflozin ot2 younger-age,ertugliflozin ot2 younger-age
+3220100,3320100,-1,NA,dapagliflozin ot2 younger-age,empagliflozin ot2 younger-age
+3220100,3420100,-1,NA,dapagliflozin ot2 younger-age,ertugliflozin ot2 younger-age
+3320100,3420100,-1,NA,empagliflozin ot2 younger-age,ertugliflozin ot2 younger-age
+3120300,3220300,-1,NA,canagliflozin ot2 older-age,dapagliflozin ot2 older-age
+3120300,3320300,-1,NA,canagliflozin ot2 older-age,empagliflozin ot2 older-age
+3120300,3420300,-1,NA,canagliflozin ot2 older-age,ertugliflozin ot2 older-age
+3220300,3320300,-1,NA,dapagliflozin ot2 older-age,empagliflozin ot2 older-age
+3220300,3420300,-1,NA,dapagliflozin ot2 older-age,ertugliflozin ot2 older-age
+3320300,3420300,-1,NA,empagliflozin ot2 older-age,ertugliflozin ot2 older-age
+3120010,3220010,-1,NA,canagliflozin ot2 female,dapagliflozin ot2 female
+3120010,3320010,-1,NA,canagliflozin ot2 female,empagliflozin ot2 female
+3120010,3420010,-1,NA,canagliflozin ot2 female,ertugliflozin ot2 female
+3220010,3320010,-1,NA,dapagliflozin ot2 female,empagliflozin ot2 female
+3220010,3420010,-1,NA,dapagliflozin ot2 female,ertugliflozin ot2 female
+3320010,3420010,-1,NA,empagliflozin ot2 female,ertugliflozin ot2 female
+3120030,3220030,-1,NA,canagliflozin ot2 male,dapagliflozin ot2 male
+3120030,3320030,-1,NA,canagliflozin ot2 male,empagliflozin ot2 male
+3120030,3420030,-1,NA,canagliflozin ot2 male,ertugliflozin ot2 male
+3220030,3320030,-1,NA,dapagliflozin ot2 male,empagliflozin ot2 male
+3220030,3420030,-1,NA,dapagliflozin ot2 male,ertugliflozin ot2 male
+3320030,3420030,-1,NA,empagliflozin ot2 male,ertugliflozin ot2 male
+3120001,3220001,-1,NA,canagliflozin ot2 without-obesity,dapagliflozin ot2 without-obesity
+3120001,3320001,-1,NA,canagliflozin ot2 without-obesity,empagliflozin ot2 without-obesity
+3120001,3420001,-1,NA,canagliflozin ot2 without-obesity,ertugliflozin ot2 without-obesity
+3220001,3320001,-1,NA,dapagliflozin ot2 without-obesity,empagliflozin ot2 without-obesity
+3220001,3420001,-1,NA,dapagliflozin ot2 without-obesity,ertugliflozin ot2 without-obesity
+3320001,3420001,-1,NA,empagliflozin ot2 without-obesity,ertugliflozin ot2 without-obesity
+3120002,3220002,-1,NA,canagliflozin ot2 with-obesity,dapagliflozin ot2 with-obesity
+3120002,3320002,-1,NA,canagliflozin ot2 with-obesity,empagliflozin ot2 with-obesity
+3120002,3420002,-1,NA,canagliflozin ot2 with-obesity,ertugliflozin ot2 with-obesity
+3220002,3320002,-1,NA,dapagliflozin ot2 with-obesity,empagliflozin ot2 with-obesity
+3220002,3420002,-1,NA,dapagliflozin ot2 with-obesity,ertugliflozin ot2 with-obesity
+3320002,3420002,-1,NA,empagliflozin ot2 with-obesity,ertugliflozin ot2 with-obesity
