@@ -14,9 +14,9 @@
 # install.packages('https://github.com/OHDSI/CohortDiagnostics/archive/refs/tags/v3.0.1.tar.gz')
 # install.packages('https://github.com/OHDSI/CirceR/archive/refs/tags/v1.2.0.tar.gz')
 # install.packages('https://github.com/OHDSI/MethodEvaluation/archive/refs/tags/v2.3.0.tar.gz')
-# library(dplyr)
+library(dplyr)
 library(Signals)
-
+baseUrlWebApi = 'https://atlas.odysseusinc.com/WebAPI'
 baseCohort <- jsonlite::read_json("inst/settings/baseCohort.json")
 # start from drug-level permutations and exposures
 # permutations <- read.csv("extra/classGeneratorList.csv")
@@ -35,12 +35,12 @@ makeName <- function(permutation) {
          permutation$obesity, " obesity")
 }
 
-makeName <- function(permutation) {
-  paste0(permutation$shortName, ": ", permutation$tar, ", ", permutation$met, " prior met, ",
-         permutation$age, " age, ", permutation$sex, " sex, ", 
-         permutation$obesity, " obesity")
-}
-
+# makeName <- function(permutation) {
+#   paste0(permutation$shortName, ": ", permutation$tar, ", ", permutation$met, " prior met, ",
+#          permutation$age, " age, ", permutation$sex, " sex, ", 
+#          permutation$obesity, " obesity")
+# }
+ingredientLevel = FALSE
 makeShortName <- function(permutation) {
   paste0(permutation$shortName,
          ifelse(permutation$age == "any" &
@@ -54,7 +54,7 @@ makeShortName <- function(permutation) {
 }
 #cohort  = baseCohort_orig 
 cohort = baseCohort
-ingredientLevel = TRUE
+
 permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   c1Id <- floor(permutation$comparator1Id / 10)
   c2Id <- floor(permutation$comparator2Id / 10)
@@ -65,6 +65,8 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   delta <- delta + 1
   #cohort$ConceptSets[[13]] <- NULL
   tId <- floor(permutation$targetId / 10)
+
+  
   
   cohort$PrimaryCriteria$CriteriaList[[1]]$DrugExposure$CodesetId <- tId
   target <- 2 - delta - 1
@@ -221,7 +223,7 @@ allCohortsJson <-
 allCohortsSql <-
   do.call("rbind",
           lapply(1:nrow(permutations), function(i) {
-            cohortDefinition <- permuteTC(baseCohort, permutations[i,], ingredientLevel = TRUE)
+            cohortDefinition <- permuteTC(baseCohort, permutations[i,])
             cohortSql <- CirceR::buildCohortQuery(
               as.character(RJSONIO::toJSON(cohortDefinition)),
               CirceR::createGenerateOptions(generateStats = TRUE))
@@ -335,7 +337,7 @@ exposuresOfInterestTable <- readr::read_csv("inst/settings/ExposuresOfInterest.c
 #                             select(cohortId, shortName), by = c("targetId" = "cohortId"))
 
 # permutations <- permutations %>% filter(cohortId == 101100000)
- classId <- 10
+
 
 createPermutationsForDrugs <- function(classId){
   drugsForClass <- exposuresOfInterestTable %>% filter(cohortId > classId, cohortId < (classId + 10)) %>% mutate(classId = classId)
@@ -355,11 +357,13 @@ createPermutationsForDrugs <- function(classId){
 #classIds <- c(10, 20, 30, 40)
 #classIds = c(10)
 # shift to SGLT2I
-#classIds = c(30)
+
 
 # March 2023 GLP1RAs:
 #classIds <- c(10,20,30,40)
-classId <- 40
+
+classId <- 10
+classIds <- classId
 permutationsForDrugs <- lapply(classIds, createPermutationsForDrugs) %>% bind_rows()
 
 permutationsForDrugs$json <-
@@ -378,7 +382,7 @@ permutationsForDrugs$sql <-
             cohortDefinition <- permuteTC(baseCohort, permutationsForDrugs[i,], ingredientLevel = TRUE)
             cohortSql <- ROhdsiWebApi::getCohortSql(cohortDefinition,
                                                     baseUrlWebApi,
-                                                    generateStats = generateStats)
+                                                    generateStats = TRUE)
             print(i)
             return(cohortSql)
           }))

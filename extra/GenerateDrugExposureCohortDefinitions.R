@@ -58,9 +58,9 @@ createPermutationsForDrugs <- function(classId){
     mutate(cohortId = as.integer(sub(paste0("^",classId), targetId, cohortId))) %>%
     mutate(name = paste0("ID", as.integer(cohortId)))
 }
-cohort = baseCohort
-permutation = permutationsForDrugs[1,] 
-ingredientLevel = TRUE
+# cohort = baseCohort
+# permutation = permutationsForDrugs[1,] 
+# ingredientLevel = TRUE
 # another function to actually permute the target-comparator pairs----
 permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
   c1Id <- floor(permutation$comparator1Id / 10)
@@ -100,7 +100,7 @@ permuteTC <- function(cohort, permutation, ingredientLevel = FALSE) {
       }))
     cohort$ConceptSets[[classId]] <- targetSet
     cohort$ConceptSets[[12]] <- excludeSet
-    cohort$ConceptSets[[13]] <- excludeSet
+    #cohort$ConceptSets[[13]] <- excludeSet
     tId <- classId
     cohort$InclusionRules[[1]]$expression$CriteriaList[[1]]$Criteria$DrugExposure$CodesetId <- 17
   } else {
@@ -275,22 +275,26 @@ permutationsForDrugs$json <-
           lapply(1:nrow(permutationsForDrugs), function(i) {
             cohortDefinition <- permuteTC(baseCohort, permutationsForDrugs[i,], ingredientLevel = TRUE)
             cohortJson <- RJSONIO::toJSON(cohortDefinition, indent = 2, digits = 10)
+            print(i)
             return(cohortJson)
           }))
 
 generateOptions <- CirceR::createGenerateOptions(generateStats = TRUE)
 
 # Build the SQL query from the cohort definition
-cohortSql <- CirceR::buildCohortQuery(cohortJson, generateOptions)
+#cohortSql <- CirceR::buildCohortQuery(cohortJson, generateOptions)
 
 
 permutationsForDrugs$sql <-
   do.call("rbind",
           lapply(1:nrow(permutationsForDrugs), function(i) {
+            print(i)
             cohortDefinition <- permuteTC(baseCohort, permutationsForDrugs[i,], ingredientLevel = TRUE)
             cohortSql <- CirceR::buildCohortQuery(
               as.character(RJSONIO::toJSON(cohortDefinition)),
               CirceR::createGenerateOptions(generateStats = TRUE))
+            
+            return(cohortSql)
           }))
 # save SQL and JSON files under class name (e.g., "DPP4I") folder
 ## need to create the directory for this class first
