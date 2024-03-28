@@ -302,18 +302,15 @@
     },
     "ParallelLogger": {
       "Package": "ParallelLogger",
-      "Version": "3.3.0",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "jsonlite",
-        "methods",
-        "snow",
-        "utils",
-        "xml2"
-      ],
-      "Hash": "fd636fc067099b75b8ad17e9104b10f3"
+      "Version": "2.0.1",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "ParallelLogger",
+      "RemoteUsername": "OHDSI",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "feaa03f8178b8f0652ad25244c7a0b7d01fe6f07",
+      "Hash": "97aaa5cd0d4c0c641a7a4d0e119d104e"
     },
     "R6": {
       "Package": "R6",
@@ -1836,14 +1833,10 @@
     },
     "rJava": {
       "Package": "rJava",
-      "Version": "1.0-11",
+      "Version": "1.0-4",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "methods"
-      ],
-      "Hash": "524167e771b81342f8dd7a891ed3afa8"
+      "Hash": "0cd1ee479ba887170411af6d81705003"
     },
     "ragg": {
       "Package": "ragg",
